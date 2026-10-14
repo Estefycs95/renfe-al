@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Incidencias Renfe</title>
+</head>
+<body>
+
+<h1>🚆 Incidencias Renfe</h1>
+
+<button onclick="cargar()">
+Actualizar incidencias
+</button>
+
+<div id="resultado">
+Pulsa el botón para cargar incidencias.
+</div>
+
+<script>
+
+async function cargar(){
+
+    const respuesta =
+        await fetch("./incidencias.json");
+
+    const datos =
+        await respuesta.json();
+
+    let html = "";
+
+    datos.entity.forEach(e => {
+
+        const texto =
+            e.alert?.descriptionText
+            ?.translation?.[0]
+            ?.text;
+
+        if(texto){
+            html += "<p>" + texto + "</p>";
+        }
+
+    });
+
+    document
+        .getElementById("resultado")
+        .innerHTML = html;
+
+}
+
+</script>
+
+</body>
+</html>
