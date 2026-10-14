@@ -34,20 +34,29 @@ for entity in feed.entity:
     if match:
         linea = match.group(1).upper()
 
+    lat = vehicle.position.latitude
+    lon = vehicle.position.longitude
+
+    # Filtro aproximado Madrid
+
+    if not (
+        40.0 <= lat <= 41.1
+        and
+        -4.4 <= lon <= -3.0
+    ):
+        continue
+
     vehiculos.append({
 
         "linea": linea,
 
         "trip_id": trip_id,
 
-        "latitud":
-            vehicle.position.latitude,
+        "latitud": lat,
 
-        "longitud":
-            vehicle.position.longitude,
+        "longitud": lon,
 
-        "timestamp":
-            vehicle.timestamp
+        "timestamp": vehicle.timestamp
 
     })
 
@@ -65,5 +74,5 @@ with open(
     )
 
 print(
-    f"{len(vehiculos)} trenes encontrados"
+    f"{len(vehiculos)} trenes de Madrid encontrados"
 )
