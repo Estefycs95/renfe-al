@@ -43,6 +43,11 @@ jobs:
         run: |
           python generar_sentidos.py
 
+      - name: Generar resumen sentidos
+        run: |
+          python generar_resumen_sentidos.py
+
+
       - name: Commit cambios
         run: |
 
@@ -52,6 +57,7 @@ jobs:
           git add estaciones-madrid.json
           git add rutas-madrid.json
           git add vehiculos_sentido.json
+          git add sentidos_resumen.json
 
           if ! git diff --cached --quiet; then
 
