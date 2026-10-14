@@ -1,38 +1,52 @@
 [
   {
-    "linea": "C3",
-    "trip_id": "1085X20037C3",
-    "latitud": 40.03502655029297,
-    "longitud": -3.618971347808838,
-    "timestamp": 1791965591,
+    "linea": "C4B",
+    "trip_id": "1085X20442C4b",
+    "latitud": 40.64484405517578,
+    "longitud": -3.7762608528137207,
+    "timestamp": 1791966611,
     "distancias": {
-      "Atocha": 41.75,
-      "Recoletos": 43.61,
-      "Nuevos Ministerios": 46.19,
-      "Sol": 43.05,
-      "Chamartín": 48.8
-    }
-  },
-  {
-    "linea": "C3",
-    "trip_id": "1085X20036C3",
-    "latitud": 40.47138214111328,
-    "longitud": -3.683478593826294,
-    "timestamp": 1791965591,
-    "distancias": {
-      "Atocha": 7.22,
-      "Recoletos": 5.38,
-      "Nuevos Ministerios": 2.85,
-      "Sol": 6.28,
-      "Chamartín": 0.05
+      "Atocha": 27.49,
+      "Recoletos": 25.66,
+      "Nuevos Ministerios": 23.15,
+      "Sol": 26.1,
+      "Chamartín": 20.86
     }
   },
   {
     "linea": "C5",
-    "trip_id": "1085X20794C5",
+    "trip_id": "1085X20797C5",
+    "latitud": 40.406280517578125,
+    "longitud": -3.71290922164917,
+    "timestamp": 1791966611,
+    "distancias": {
+      "Atocha": 1.99,
+      "Recoletos": 2.66,
+      "Nuevos Ministerios": 4.81,
+      "Sol": 1.45,
+      "Chamartín": 7.65
+    }
+  },
+  {
+    "linea": "C2",
+    "trip_id": "1085X21530C2",
+    "latitud": 40.40549850463867,
+    "longitud": -3.6881072521209717,
+    "timestamp": 1791966611,
+    "distancias": {
+      "Atocha": 0.17,
+      "Recoletos": 2.0,
+      "Nuevos Ministerios": 4.59,
+      "Sol": 1.78,
+      "Chamartín": 7.32
+    }
+  },
+  {
+    "linea": "C5",
+    "trip_id": "1085X20796C5",
     "latitud": 40.33088302612305,
     "longitud": -3.882378339767456,
-    "timestamp": 1791965591,
+    "timestamp": 1791966611,
     "distancias": {
       "Atocha": 18.39,
       "Recoletos": 19.2,
@@ -43,10 +57,136 @@
   },
   {
     "linea": "C3",
+    "trip_id": "1085X20037C3",
+    "latitud": 40.1961555480957,
+    "longitud": -3.6648213863372803,
+    "timestamp": 1791966611,
+    "distancias": {
+      "Atocha": 23.5,
+      "Recoletos": 25.36,
+      "Nuevos Ministerios": 27.95,
+      "Sol": 24.75,
+      "Chamartín": 30.62
+    }
+  },
+  {
+    "linea": "C1",
+    "trip_id": "1085X19843C1",
+    "latitud": 40.492401123046875,
+    "longitud": -3.5934829711914062,
+    "timestamp": 1791966611,
+    "distancias": {
+      "Atocha": 12.53,
+      "Recoletos": 11.26,
+      "Nuevos Ministerios": 9.79,
+      "Sol": 12.5,
+      "Chamartín": 7.93
+    }
+  },
+  {
+    "linea": "C4B",
+    "trip_id": "1085X20440C4b",
+    "latitud": 40.4713249206543,
+    "longitud": -3.683309555053711,
+    "timestamp": 1791966611,
+    "distancias": {
+      "Atocha": 7.21,
+      "Recoletos": 5.37,
+      "Nuevos Ministerios": 2.85,
+      "Sol": 6.28,
+      "Chamartín": 0.03
+    }
+  },
+  {
+    "linea": "C3",
+    "trip_id": "1085X20036C3",
+    "latitud": 40.417022705078125,
+    "longitud": -3.7031636238098145,
+    "timestamp": 1791966611,
+    "distancias": {
+      "Atocha": 1.64,
+      "Recoletos": 1.25,
+      "Nuevos Ministerios": 3.42,
+      "Sol": 0.03,
+      "Chamartín": 6.26
+    }
+  },
+  {
+    "linea": "C8A",
+    "trip_id": "1085X17151C8a",
+    "latitud": 40.58531951904297,
+    "longitud": -4.132195472717285,
+    "timestamp": 1791966611,
+    "distancias": {
+      "Atocha": 42.39,
+      "Recoletos": 41.43,
+      "Nuevos Ministerios": 40.25,
+      "Sol": 40.85,
+      "Chamartín": 40.03
+    }
+  },
+  {
+    "linea": "C5",
+    "trip_id": "1085X20794C5",
+    "latitud": 40.38126754760742,
+    "longitud": -3.780212640762329,
+    "timestamp": 1791966611,
+    "distancias": {
+      "Atocha": 8.19,
+      "Recoletos": 8.89,
+      "Nuevos Ministerios": 10.4,
+      "Sol": 7.65,
+      "Chamartín": 12.95
+    }
+  },
+  {
+    "linea": "C7",
+    "trip_id": "1085X21814C7",
+    "latitud": 40.46417236328125,
+    "longitud": -3.441476583480835,
+    "timestamp": 1791966611,
+    "distancias": {
+      "Atocha": 21.94,
+      "Recoletos": 21.59,
+      "Nuevos Ministerios": 21.32,
+      "Sol": 22.74,
+      "Chamartín": 20.44
+    }
+  },
+  {
+    "linea": "C3",
     "trip_id": "1085X20035C3",
+    "latitud": 40.40653991699219,
+    "longitud": -3.6895105838775635,
+    "timestamp": 1791966611,
+    "distancias": {
+      "Atocha": 0.01,
+      "Recoletos": 1.88,
+      "Nuevos Ministerios": 4.46,
+      "Sol": 1.61,
+      "Chamartín": 7.21
+    }
+  },
+  {
+    "linea": "C4B",
+    "trip_id": "1085X20449C4b",
+    "latitud": 40.50164794921875,
+    "longitud": -3.6821796894073486,
+    "timestamp": 1791966611,
+    "distancias": {
+      "Atocha": 10.58,
+      "Recoletos": 8.74,
+      "Nuevos Ministerios": 6.18,
+      "Sol": 9.59,
+      "Chamartín": 3.39
+    }
+  },
+  {
+    "linea": "C3",
+    "trip_id": "1085X20034C3",
     "latitud": 40.305755615234375,
     "longitud": -3.707587957382202,
-    "timestamp": 1791965591,
+    "timestamp": 1791966611,
     "distancias": {
       "Atocha": 11.32,
       "Recoletos": 13.15,
@@ -56,151 +196,11 @@
     }
   },
   {
-    "linea": "C4B",
-    "trip_id": "1085X20443C4b",
-    "latitud": 40.5097770690918,
-    "longitud": -3.6839256286621094,
-    "timestamp": 1791965591,
-    "distancias": {
-      "Atocha": 11.48,
-      "Recoletos": 9.63,
-      "Nuevos Ministerios": 7.06,
-      "Sol": 10.45,
-      "Chamartín": 4.29
-    }
-  },
-  {
-    "linea": "C4B",
-    "trip_id": "1085X20442C4b",
-    "latitud": 40.64484405517578,
-    "longitud": -3.7762608528137207,
-    "timestamp": 1791965591,
-    "distancias": {
-      "Atocha": 27.49,
-      "Recoletos": 25.66,
-      "Nuevos Ministerios": 23.15,
-      "Sol": 26.1,
-      "Chamartín": 20.86
-    }
-  },
-  {
-    "linea": "C2",
-    "trip_id": "1085X21530C2",
-    "latitud": 40.470970153808594,
-    "longitud": -3.68245005607605,
-    "timestamp": 1791965591,
-    "distancias": {
-      "Atocha": 7.18,
-      "Recoletos": 5.34,
-      "Nuevos Ministerios": 2.83,
-      "Sol": 6.26,
-      "Chamartín": 0.05
-    }
-  },
-  {
-    "linea": "C3",
-    "trip_id": "1085X20034C3",
-    "latitud": 40.40653991699219,
-    "longitud": -3.6895105838775635,
-    "timestamp": 1791965591,
-    "distancias": {
-      "Atocha": 0.01,
-      "Recoletos": 1.88,
-      "Nuevos Ministerios": 4.46,
-      "Sol": 1.61,
-      "Chamartín": 7.21
-    }
-  },
-  {
-    "linea": "C4B",
-    "trip_id": "1085X20440C4b",
-    "latitud": 40.596805572509766,
-    "longitud": -3.7145779132843018,
-    "timestamp": 1791965591,
-    "distancias": {
-      "Atocha": 21.25,
-      "Recoletos": 19.39,
-      "Nuevos Ministerios": 16.8,
-      "Sol": 20.03,
-      "Chamartín": 14.22
-    }
-  },
-  {
-    "linea": "C5",
-    "trip_id": "1085X20793C5",
-    "latitud": 40.383338928222656,
-    "longitud": -3.769827365875244,
-    "timestamp": 1791965591,
-    "distancias": {
-      "Atocha": 7.28,
-      "Recoletos": 8.03,
-      "Nuevos Ministerios": 9.62,
-      "Sol": 6.79,
-      "Chamartín": 12.23
-    }
-  },
-  {
-    "linea": "C7",
-    "trip_id": "1085X21816C7",
-    "latitud": 40.40666961669922,
-    "longitud": -3.6893937587738037,
-    "timestamp": 1791965591,
-    "distancias": {
-      "Atocha": 0.01,
-      "Recoletos": 1.86,
-      "Nuevos Ministerios": 4.45,
-      "Sol": 1.61,
-      "Chamartín": 7.19
-    }
-  },
-  {
-    "linea": "C10",
-    "trip_id": "1085X21122C10",
-    "latitud": 40.62599182128906,
-    "longitud": -4.008115291595459,
-    "timestamp": 1791965591,
-    "distancias": {
-      "Atocha": 36.34,
-      "Recoletos": 35.02,
-      "Nuevos Ministerios": 33.31,
-      "Sol": 34.73,
-      "Chamartín": 32.42
-    }
-  },
-  {
-    "linea": "C7",
-    "trip_id": "1085X21814C7",
-    "latitud": 40.423397064208984,
-    "longitud": -3.5613489151000977,
-    "timestamp": 1791965591,
-    "distancias": {
-      "Atocha": 11.0,
-      "Recoletos": 10.97,
-      "Nuevos Ministerios": 11.38,
-      "Sol": 12.0,
-      "Chamartín": 11.58
-    }
-  },
-  {
-    "linea": "C4B",
-    "trip_id": "1085X20449C4b",
-    "latitud": 40.40653991699219,
-    "longitud": -3.6895105838775635,
-    "timestamp": 1791965591,
-    "distancias": {
-      "Atocha": 0.01,
-      "Recoletos": 1.88,
-      "Nuevos Ministerios": 4.46,
-      "Sol": 1.61,
-      "Chamartín": 7.21
-    }
-  },
-  {
     "linea": "C4",
     "trip_id": "1085X20447C4",
     "latitud": 40.24142837524414,
     "longitud": -3.7691590785980225,
-    "timestamp": 1791965591,
+    "timestamp": 1791966611,
     "distancias": {
       "Atocha": 19.57,
       "Recoletos": 21.29,
@@ -210,95 +210,95 @@
     }
   },
   {
-    "linea": "C5",
-    "trip_id": "1085X19618C5",
-    "latitud": 40.35029983520508,
-    "longitud": -3.831759452819824,
-    "timestamp": 1791965591,
+    "linea": "C8A",
+    "trip_id": "1085X21019C8a",
+    "latitud": 40.47113037109375,
+    "longitud": -3.682833194732666,
+    "timestamp": 1791966611,
     "distancias": {
-      "Atocha": 13.58,
-      "Recoletos": 14.43,
-      "Nuevos Ministerios": 15.94,
-      "Sol": 13.19,
-      "Chamartín": 18.42
+      "Atocha": 7.2,
+      "Recoletos": 5.35,
+      "Nuevos Ministerios": 2.84,
+      "Sol": 6.27,
+      "Chamartín": 0.01
+    }
+  },
+  {
+    "linea": "C4B",
+    "trip_id": "1085X20446C4b",
+    "latitud": 40.64484405517578,
+    "longitud": -3.7762608528137207,
+    "timestamp": 1791966611,
+    "distancias": {
+      "Atocha": 27.49,
+      "Recoletos": 25.66,
+      "Nuevos Ministerios": 23.15,
+      "Sol": 26.1,
+      "Chamartín": 20.86
+    }
+  },
+  {
+    "linea": "C5",
+    "trip_id": "1085X20793C5",
+    "latitud": 40.32693862915039,
+    "longitud": -3.8683550357818604,
+    "timestamp": 1791966611,
+    "distancias": {
+      "Atocha": 17.56,
+      "Recoletos": 18.46,
+      "Nuevos Ministerios": 19.98,
+      "Sol": 17.22,
+      "Chamartín": 22.44
+    }
+  },
+  {
+    "linea": "C10",
+    "trip_id": "1085X21122C10",
+    "latitud": 40.62599182128906,
+    "longitud": -4.008115291595459,
+    "timestamp": 1791966611,
+    "distancias": {
+      "Atocha": 36.34,
+      "Recoletos": 35.02,
+      "Nuevos Ministerios": 33.31,
+      "Sol": 34.73,
+      "Chamartín": 32.42
     }
   },
   {
     "linea": "C5",
     "trip_id": "1085X20792C5",
-    "latitud": 40.378265380859375,
-    "longitud": -3.790415048599243,
-    "timestamp": 1791965591,
+    "latitud": 40.39591979980469,
+    "longitud": -3.677996873855591,
+    "timestamp": 1791966611,
     "distancias": {
-      "Atocha": 9.11,
-      "Recoletos": 9.8,
-      "Nuevos Ministerios": 11.26,
-      "Sol": 8.57,
-      "Chamartín": 13.77
+      "Atocha": 1.53,
+      "Recoletos": 3.24,
+      "Nuevos Ministerios": 5.77,
+      "Sol": 3.14,
+      "Chamartín": 8.38
     }
   },
   {
-    "linea": "C3",
-    "trip_id": "1085X20033C3",
-    "latitud": 40.47138214111328,
-    "longitud": -3.683478593826294,
-    "timestamp": 1791965591,
+    "linea": "C5",
+    "trip_id": "1085X19618C5",
+    "latitud": 40.38715362548828,
+    "longitud": -3.7594895362854004,
+    "timestamp": 1791966611,
     "distancias": {
-      "Atocha": 7.22,
-      "Recoletos": 5.38,
-      "Nuevos Ministerios": 2.85,
-      "Sol": 6.28,
-      "Chamartín": 0.05
-    }
-  },
-  {
-    "linea": "C3",
-    "trip_id": "1085X20032C3",
-    "latitud": 40.305755615234375,
-    "longitud": -3.707587957382202,
-    "timestamp": 1791965591,
-    "distancias": {
-      "Atocha": 11.32,
-      "Recoletos": 13.15,
-      "Nuevos Ministerios": 15.72,
-      "Sol": 12.36,
-      "Chamartín": 18.51
+      "Atocha": 6.31,
+      "Recoletos": 7.07,
+      "Nuevos Ministerios": 8.72,
+      "Sol": 5.82,
+      "Chamartín": 11.37
     }
   },
   {
     "linea": "C5",
     "trip_id": "1085X19619C5",
-    "latitud": 40.39885330200195,
-    "longitud": -3.746026039123535,
-    "timestamp": 1791965591,
-    "distancias": {
-      "Atocha": 4.87,
-      "Recoletos": 5.4,
-      "Nuevos Ministerios": 6.99,
-      "Sol": 4.17,
-      "Chamartín": 9.65
-    }
-  },
-  {
-    "linea": "C5",
-    "trip_id": "1085X19614C5",
-    "latitud": 40.3413200378418,
-    "longitud": -3.7123663425445557,
-    "timestamp": 1791965591,
-    "distancias": {
-      "Atocha": 7.52,
-      "Recoletos": 9.3,
-      "Nuevos Ministerios": 11.83,
-      "Sol": 8.44,
-      "Chamartín": 14.65
-    }
-  },
-  {
-    "linea": "C5",
-    "trip_id": "1085X19613C5",
     "latitud": 40.32875061035156,
     "longitud": -3.863691568374634,
-    "timestamp": 1791965591,
+    "timestamp": 1791966611,
     "distancias": {
       "Atocha": 17.11,
       "Recoletos": 18.02,
@@ -309,24 +309,38 @@
   },
   {
     "linea": "C5",
+    "trip_id": "1085X19614C5",
+    "latitud": 40.25558853149414,
+    "longitud": -3.8284666538238525,
+    "timestamp": 1791966611,
+    "distancias": {
+      "Atocha": 20.52,
+      "Recoletos": 22.0,
+      "Nuevos Ministerios": 24.17,
+      "Sol": 20.85,
+      "Chamartín": 26.96
+    }
+  },
+  {
+    "linea": "C5",
     "trip_id": "1085X19616C5",
-    "latitud": 40.405067443847656,
-    "longitud": -3.7026901245117188,
-    "timestamp": 1791965591,
+    "latitud": 40.3413200378418,
+    "longitud": -3.7123663425445557,
+    "timestamp": 1791966611,
     "distancias": {
-      "Atocha": 1.14,
-      "Recoletos": 2.27,
-      "Nuevos Ministerios": 4.7,
-      "Sol": 1.31,
-      "Chamartín": 7.54
+      "Atocha": 7.52,
+      "Recoletos": 9.3,
+      "Nuevos Ministerios": 11.83,
+      "Sol": 8.44,
+      "Chamartín": 14.65
     }
   },
   {
     "linea": "C4A",
-    "trip_id": "1085X20256C4a",
+    "trip_id": "1085X20258C4a",
     "latitud": 40.546417236328125,
     "longitud": -3.635117530822754,
-    "timestamp": 1791965591,
+    "timestamp": 1791966611,
     "distancias": {
       "Atocha": 16.21,
       "Recoletos": 14.47,
@@ -336,45 +350,45 @@
     }
   },
   {
-    "linea": "C4A",
-    "trip_id": "1085X20254C4a",
-    "latitud": 40.546417236328125,
-    "longitud": -3.635117530822754,
-    "timestamp": 1791965591,
+    "linea": "C3",
+    "trip_id": "1085X20032C3",
+    "latitud": 40.15931701660156,
+    "longitud": -3.6098835468292236,
+    "timestamp": 1791966611,
     "distancias": {
-      "Atocha": 16.21,
-      "Recoletos": 14.47,
-      "Nuevos Ministerios": 12.11,
-      "Sol": 15.5,
-      "Chamartín": 9.29
-    }
-  },
-  {
-    "linea": "C10",
-    "trip_id": "1085X21120C10",
-    "latitud": 40.619571685791016,
-    "longitud": -3.994675397872925,
-    "timestamp": 1791965591,
-    "distancias": {
-      "Atocha": 35.02,
-      "Recoletos": 33.69,
-      "Nuevos Ministerios": 31.98,
-      "Sol": 33.41,
-      "Chamartín": 31.08
+      "Atocha": 28.31,
+      "Recoletos": 30.16,
+      "Nuevos Ministerios": 32.7,
+      "Sol": 29.7,
+      "Chamartín": 35.23
     }
   },
   {
     "linea": "C5",
     "trip_id": "1085X20790C5",
-    "latitud": 40.39591979980469,
-    "longitud": -3.677996873855591,
-    "timestamp": 1791965591,
+    "latitud": 40.328765869140625,
+    "longitud": -3.7714624404907227,
+    "timestamp": 1791966611,
     "distancias": {
-      "Atocha": 1.53,
-      "Recoletos": 3.24,
-      "Nuevos Ministerios": 5.77,
-      "Sol": 3.14,
-      "Chamartín": 8.38
+      "Atocha": 11.1,
+      "Recoletos": 12.54,
+      "Nuevos Ministerios": 14.72,
+      "Sol": 11.39,
+      "Chamartín": 17.52
+    }
+  },
+  {
+    "linea": "C4A",
+    "trip_id": "1085X20254C4a",
+    "latitud": 40.534828186035156,
+    "longitud": -3.6985762119293213,
+    "timestamp": 1791966611,
+    "distancias": {
+      "Atocha": 14.28,
+      "Recoletos": 12.41,
+      "Nuevos Ministerios": 9.82,
+      "Sol": 13.12,
+      "Chamartín": 7.2
     }
   },
   {
@@ -382,7 +396,7 @@
     "trip_id": "1085X20253C4a",
     "latitud": 40.24142837524414,
     "longitud": -3.7691590785980225,
-    "timestamp": 1791965591,
+    "timestamp": 1791966611,
     "distancias": {
       "Atocha": 19.57,
       "Recoletos": 21.29,
@@ -392,45 +406,59 @@
     }
   },
   {
-    "linea": "C2",
-    "trip_id": "1085X21529C2",
-    "latitud": 40.644256591796875,
-    "longitud": -3.182323694229126,
-    "timestamp": 1791965591,
+    "linea": "C10",
+    "trip_id": "1085X21220C10",
+    "latitud": 40.470848083496094,
+    "longitud": -3.6825029850006104,
+    "timestamp": 1791966611,
     "distancias": {
-      "Atocha": 50.35,
-      "Recoletos": 49.51,
-      "Nuevos Ministerios": 48.37,
-      "Sol": 50.74,
-      "Chamartín": 46.47
+      "Atocha": 7.17,
+      "Recoletos": 5.33,
+      "Nuevos Ministerios": 2.82,
+      "Sol": 6.25,
+      "Chamartín": 0.05
     }
   },
   {
     "linea": "C2",
-    "trip_id": "1085X21528C2",
-    "latitud": 40.44276809692383,
-    "longitud": -3.533984422683716,
-    "timestamp": 1791965591,
+    "trip_id": "1085X21529C2",
+    "latitud": 40.63505172729492,
+    "longitud": -3.1914145946502686,
+    "timestamp": 1791966611,
     "distancias": {
-      "Atocha": 13.76,
-      "Recoletos": 13.46,
-      "Nuevos Ministerios": 13.41,
-      "Sol": 14.58,
-      "Chamartín": 12.99
+      "Atocha": 49.17,
+      "Recoletos": 48.34,
+      "Nuevos Ministerios": 47.23,
+      "Sol": 49.57,
+      "Chamartín": 45.35
     }
   },
   {
     "linea": "C4A",
     "trip_id": "1085X20252C4a",
-    "latitud": 40.554019927978516,
-    "longitud": -3.683704376220703,
-    "timestamp": 1791965591,
+    "latitud": 40.417022705078125,
+    "longitud": -3.7031636238098145,
+    "timestamp": 1791966611,
     "distancias": {
-      "Atocha": 16.4,
-      "Recoletos": 14.54,
-      "Nuevos Ministerios": 11.96,
-      "Sol": 15.34,
-      "Chamartín": 9.21
+      "Atocha": 1.64,
+      "Recoletos": 1.25,
+      "Nuevos Ministerios": 3.42,
+      "Sol": 0.03,
+      "Chamartín": 6.26
+    }
+  },
+  {
+    "linea": "C2",
+    "trip_id": "1085X21528C2",
+    "latitud": 40.4803466796875,
+    "longitud": -3.392940044403076,
+    "timestamp": 1791966611,
+    "distancias": {
+      "Atocha": 26.4,
+      "Recoletos": 26.0,
+      "Nuevos Ministerios": 25.61,
+      "Sol": 27.16,
+      "Chamartín": 24.55
     }
   },
   {
@@ -438,7 +466,7 @@
     "trip_id": "1085X20251C4a",
     "latitud": 40.24142837524414,
     "longitud": -3.7691590785980225,
-    "timestamp": 1791965591,
+    "timestamp": 1791966611,
     "distancias": {
       "Atocha": 19.57,
       "Recoletos": 21.29,
@@ -448,11 +476,25 @@
     }
   },
   {
+    "linea": "C4A",
+    "trip_id": "1085X20250C4a",
+    "latitud": 40.30986785888672,
+    "longitud": -3.733689069747925,
+    "timestamp": 1791966611,
+    "distancias": {
+      "Atocha": 11.39,
+      "Recoletos": 13.13,
+      "Nuevos Ministerios": 15.6,
+      "Sol": 12.18,
+      "Chamartín": 18.44
+    }
+  },
+  {
     "linea": "C9",
     "trip_id": "1085X80681C9",
     "latitud": 40.73768997192383,
     "longitud": -4.065776348114014,
-    "timestamp": 1791965591,
+    "timestamp": 1791966611,
     "distancias": {
       "Atocha": 48.64,
       "Recoletos": 47.16,
@@ -466,7 +508,7 @@
     "trip_id": "1085X80680C9",
     "latitud": 40.822418212890625,
     "longitud": -3.964555263519287,
-    "timestamp": 1791965591,
+    "timestamp": 1791966611,
     "distancias": {
       "Atocha": 51.74,
       "Recoletos": 50.02,
@@ -476,31 +518,45 @@
     }
   },
   {
-    "linea": "C10",
-    "trip_id": "1085X21116C10",
-    "latitud": 40.40666580200195,
-    "longitud": -3.6893956661224365,
-    "timestamp": 1791965591,
+    "linea": "C2",
+    "trip_id": "1085X21527C2",
+    "latitud": 40.38254928588867,
+    "longitud": -3.668825387954712,
+    "timestamp": 1791966611,
     "distancias": {
-      "Atocha": 0.01,
-      "Recoletos": 1.86,
-      "Nuevos Ministerios": 4.45,
-      "Sol": 1.61,
-      "Chamartín": 7.19
+      "Atocha": 3.2,
+      "Recoletos": 4.91,
+      "Nuevos Ministerios": 7.4,
+      "Sol": 4.78,
+      "Chamartín": 9.93
+    }
+  },
+  {
+    "linea": "C4B",
+    "trip_id": "1085X20438C4b",
+    "latitud": 40.30986785888672,
+    "longitud": -3.733689069747925,
+    "timestamp": 1791966611,
+    "distancias": {
+      "Atocha": 11.39,
+      "Recoletos": 13.13,
+      "Nuevos Ministerios": 15.6,
+      "Sol": 12.18,
+      "Chamartín": 18.44
     }
   },
   {
     "linea": "C5",
-    "trip_id": "1085X20786C5",
-    "latitud": 40.31249237060547,
-    "longitud": -3.7833499908447266,
-    "timestamp": 1791965591,
+    "trip_id": "1085X20799C5",
+    "latitud": 40.340858459472656,
+    "longitud": -3.748263359069824,
+    "timestamp": 1791966611,
     "distancias": {
-      "Atocha": 13.15,
-      "Recoletos": 14.61,
-      "Nuevos Ministerios": 16.79,
-      "Sol": 13.46,
-      "Chamartín": 19.59
+      "Atocha": 8.85,
+      "Recoletos": 10.38,
+      "Nuevos Ministerios": 12.68,
+      "Sol": 9.29,
+      "Chamartín": 15.51
     }
   },
   {
@@ -508,7 +564,7 @@
     "trip_id": "1085X20785C5",
     "latitud": 40.33088302612305,
     "longitud": -3.882378339767456,
-    "timestamp": 1791965591,
+    "timestamp": 1791966611,
     "distancias": {
       "Atocha": 18.39,
       "Recoletos": 19.2,
@@ -518,95 +574,39 @@
     }
   },
   {
-    "linea": "C2",
-    "trip_id": "1085X21527C2",
-    "latitud": 40.41621398925781,
-    "longitud": -3.571255683898926,
-    "timestamp": 1791965591,
+    "linea": "C10",
+    "trip_id": "1085X21118C10",
+    "latitud": 40.62599182128906,
+    "longitud": -4.008115291595459,
+    "timestamp": 1791966611,
     "distancias": {
-      "Atocha": 10.06,
-      "Recoletos": 10.16,
-      "Nuevos Ministerios": 10.79,
-      "Sol": 11.14,
-      "Chamartín": 11.26
-    }
-  },
-  {
-    "linea": "C4B",
-    "trip_id": "1085X20438C4b",
-    "latitud": 40.40653991699219,
-    "longitud": -3.6895105838775635,
-    "timestamp": 1791965591,
-    "distancias": {
-      "Atocha": 0.01,
-      "Recoletos": 1.88,
-      "Nuevos Ministerios": 4.46,
-      "Sol": 1.61,
-      "Chamartín": 7.21
-    }
-  },
-  {
-    "linea": "C2",
-    "trip_id": "1085X21526C2",
-    "latitud": 40.644256591796875,
-    "longitud": -3.182323694229126,
-    "timestamp": 1791965591,
-    "distancias": {
-      "Atocha": 50.35,
-      "Recoletos": 49.51,
-      "Nuevos Ministerios": 48.37,
-      "Sol": 50.74,
-      "Chamartín": 46.47
-    }
-  },
-  {
-    "linea": "C5",
-    "trip_id": "1085X20799C5",
-    "latitud": 40.28323745727539,
-    "longitud": -3.7991464138031006,
-    "timestamp": 1791965591,
-    "distancias": {
-      "Atocha": 16.57,
-      "Recoletos": 18.08,
-      "Nuevos Ministerios": 20.3,
-      "Sol": 16.95,
-      "Chamartín": 23.1
+      "Atocha": 36.34,
+      "Recoletos": 35.02,
+      "Nuevos Ministerios": 33.31,
+      "Sol": 34.73,
+      "Chamartín": 32.42
     }
   },
   {
     "linea": "C4B",
     "trip_id": "1085X20436C4b",
-    "latitud": 40.35267639160156,
-    "longitud": -3.684072971343994,
-    "timestamp": 1791965591,
+    "latitud": 40.286109924316406,
+    "longitud": -3.7376058101654053,
+    "timestamp": 1791966611,
     "distancias": {
-      "Atocha": 6.02,
-      "Recoletos": 7.88,
-      "Nuevos Ministerios": 10.47,
-      "Sol": 7.31,
-      "Chamartín": 13.18
+      "Atocha": 14.01,
+      "Recoletos": 15.77,
+      "Nuevos Ministerios": 18.26,
+      "Sol": 14.83,
+      "Chamartín": 21.09
     }
   },
   {
     "linea": "C5",
-    "trip_id": "1085X19606C5",
-    "latitud": 40.25558853149414,
-    "longitud": -3.8284666538238525,
-    "timestamp": 1791965591,
-    "distancias": {
-      "Atocha": 20.52,
-      "Recoletos": 22.0,
-      "Nuevos Ministerios": 24.17,
-      "Sol": 20.85,
-      "Chamartín": 26.96
-    }
-  },
-  {
-    "linea": "C5",
-    "trip_id": "1085X19609C5",
+    "trip_id": "1085X20798C5",
     "latitud": 40.33088302612305,
     "longitud": -3.882378339767456,
-    "timestamp": 1791965591,
+    "timestamp": 1791966611,
     "distancias": {
       "Atocha": 18.39,
       "Recoletos": 19.2,
@@ -616,73 +616,59 @@
     }
   },
   {
-    "linea": "C1",
-    "trip_id": "1085X19832C1",
-    "latitud": 40.48339080810547,
-    "longitud": -3.653610944747925,
-    "timestamp": 1791965591,
+    "linea": "C3",
+    "trip_id": "1085X20039C3",
+    "latitud": 40.03502655029297,
+    "longitud": -3.618971347808838,
+    "timestamp": 1791966611,
     "distancias": {
-      "Atocha": 9.06,
-      "Recoletos": 7.38,
-      "Nuevos Ministerios": 5.24,
-      "Sol": 8.49,
-      "Chamartín": 2.83
+      "Atocha": 41.75,
+      "Recoletos": 43.61,
+      "Nuevos Ministerios": 46.19,
+      "Sol": 43.05,
+      "Chamartín": 48.8
     }
   },
   {
     "linea": "C8A",
     "trip_id": "1085X21017C8a",
-    "latitud": 40.55410385131836,
-    "longitud": -3.897893190383911,
-    "timestamp": 1791965591,
+    "latitud": 40.609378814697266,
+    "longitud": -4.0463762283325195,
+    "timestamp": 1791966611,
     "distancias": {
-      "Atocha": 24.08,
-      "Recoletos": 22.75,
-      "Nuevos Ministerios": 21.09,
-      "Sol": 22.47,
-      "Chamartín": 20.38
-    }
-  },
-  {
-    "linea": "C10",
-    "trip_id": "1085X21212C10",
-    "latitud": 40.57441329956055,
-    "longitud": -3.9567041397094727,
-    "timestamp": 1791965591,
-    "distancias": {
-      "Atocha": 29.31,
-      "Recoletos": 28.05,
-      "Nuevos Ministerios": 26.48,
-      "Sol": 27.71,
-      "Chamartín": 25.83
-    }
-  },
-  {
-    "linea": "C5",
-    "trip_id": "1085X19610C5",
-    "latitud": 40.28323745727539,
-    "longitud": -3.7991464138031006,
-    "timestamp": 1791965591,
-    "distancias": {
-      "Atocha": 16.57,
-      "Recoletos": 18.08,
-      "Nuevos Ministerios": 20.3,
-      "Sol": 16.95,
-      "Chamartín": 23.1
+      "Atocha": 37.67,
+      "Recoletos": 36.48,
+      "Nuevos Ministerios": 34.97,
+      "Sol": 36.08,
+      "Chamartín": 34.34
     }
   },
   {
     "linea": "C4B",
     "trip_id": "1085X20445C4b",
-    "latitud": 40.50164794921875,
-    "longitud": -3.6821796894073486,
-    "timestamp": 1791965591,
+    "latitud": 40.558834075927734,
+    "longitud": -3.7141592502593994,
+    "timestamp": 1791966611,
     "distancias": {
-      "Atocha": 10.58,
-      "Recoletos": 8.74,
-      "Nuevos Ministerios": 6.18,
-      "Sol": 9.59,
-      "Chamartín": 3.39
+      "Atocha": 17.05,
+      "Recoletos": 15.19,
+      "Nuevos Ministerios": 12.61,
+      "Sol": 15.81,
+      "Chamartín": 10.1
+    }
+  },
+  {
+    "linea": "C2",
+    "trip_id": "1085X21610C2",
+    "latitud": 40.42485046386719,
+    "longitud": -3.5603909492492676,
+    "timestamp": 1791966611,
+    "distancias": {
+      "Atocha": 11.11,
+      "Recoletos": 11.05,
+      "Nuevos Ministerios": 11.43,
+      "Sol": 12.09,
+      "Chamartín": 11.58
     }
   },
   {
@@ -690,7 +676,7 @@
     "trip_id": "1085X20444C4b",
     "latitud": 40.64484405517578,
     "longitud": -3.7762608528137207,
-    "timestamp": 1791965591,
+    "timestamp": 1791966611,
     "distancias": {
       "Atocha": 27.49,
       "Recoletos": 25.66,
@@ -702,253 +688,99 @@
   {
     "linea": "C8A",
     "trip_id": "1085X21016C8a",
-    "latitud": 40.58531951904297,
-    "longitud": -4.132195472717285,
-    "timestamp": 1791965591,
+    "latitud": 40.609378814697266,
+    "longitud": -4.0463762283325195,
+    "timestamp": 1791966611,
     "distancias": {
-      "Atocha": 42.39,
-      "Recoletos": 41.43,
-      "Nuevos Ministerios": 40.25,
-      "Sol": 40.85,
-      "Chamartín": 40.03
-    }
-  },
-  {
-    "linea": "C7",
-    "trip_id": "1085X21820C7",
-    "latitud": 40.421630859375,
-    "longitud": -3.71932053565979,
-    "timestamp": 1791965591,
-    "distancias": {
-      "Atocha": 3.03,
-      "Recoletos": 2.41,
-      "Nuevos Ministerios": 3.6,
-      "Sol": 1.49,
-      "Chamartín": 6.31
-    }
-  },
-  {
-    "linea": "C5",
-    "trip_id": "1085X19621C5",
-    "latitud": 40.36713409423828,
-    "longitud": -3.7043795585632324,
-    "timestamp": 1791965591,
-    "distancias": {
-      "Atocha": 4.57,
-      "Recoletos": 6.36,
-      "Nuevos Ministerios": 8.9,
-      "Sol": 5.53,
-      "Chamartín": 11.71
-    }
-  },
-  {
-    "linea": "C4B",
-    "trip_id": "1085X20455C4b",
-    "latitud": 40.24142837524414,
-    "longitud": -3.7691590785980225,
-    "timestamp": 1791965591,
-    "distancias": {
-      "Atocha": 19.57,
-      "Recoletos": 21.29,
-      "Nuevos Ministerios": 23.73,
-      "Sol": 20.3,
-      "Chamartín": 26.57
+      "Atocha": 37.67,
+      "Recoletos": 36.48,
+      "Nuevos Ministerios": 34.97,
+      "Sol": 36.08,
+      "Chamartín": 34.34
     }
   },
   {
     "linea": "C4A",
-    "trip_id": "1085X20244C4a",
-    "latitud": 40.27556228637695,
-    "longitud": -3.73885440826416,
-    "timestamp": 1791965591,
-    "distancias": {
-      "Atocha": 15.16,
-      "Recoletos": 16.93,
-      "Nuevos Ministerios": 19.43,
-      "Sol": 16.01,
-      "Chamartín": 22.26
-    }
-  },
-  {
-    "linea": "C5",
-    "trip_id": "1085X19620C5",
-    "latitud": 40.33088302612305,
-    "longitud": -3.882378339767456,
-    "timestamp": 1791965591,
-    "distancias": {
-      "Atocha": 18.39,
-      "Recoletos": 19.2,
-      "Nuevos Ministerios": 20.61,
-      "Sol": 17.96,
-      "Chamartín": 22.99
-    }
-  },
-  {
-    "linea": "C5",
-    "trip_id": "1085X19623C5",
-    "latitud": 40.25558853149414,
-    "longitud": -3.8284666538238525,
-    "timestamp": 1791965591,
-    "distancias": {
-      "Atocha": 20.52,
-      "Recoletos": 22.0,
-      "Nuevos Ministerios": 24.17,
-      "Sol": 20.85,
-      "Chamartín": 26.96
-    }
-  },
-  {
-    "linea": "C4B",
-    "trip_id": "1085X20453C4b",
+    "trip_id": "1085X20245C4a",
     "latitud": 40.24142837524414,
     "longitud": -3.7691590785980225,
-    "timestamp": 1791965591,
+    "timestamp": 1791966611,
     "distancias": {
       "Atocha": 19.57,
       "Recoletos": 21.29,
       "Nuevos Ministerios": 23.73,
       "Sol": 20.3,
       "Chamartín": 26.57
-    }
-  },
-  {
-    "linea": "C4B",
-    "trip_id": "1085X20451C4b",
-    "latitud": 40.40653991699219,
-    "longitud": -3.6895105838775635,
-    "timestamp": 1791965591,
-    "distancias": {
-      "Atocha": 0.01,
-      "Recoletos": 1.88,
-      "Nuevos Ministerios": 4.46,
-      "Sol": 1.61,
-      "Chamartín": 7.21
-    }
-  },
-  {
-    "linea": "C7",
-    "trip_id": "1085X21827C7",
-    "latitud": 40.423397064208984,
-    "longitud": -3.5613489151000977,
-    "timestamp": 1791965591,
-    "distancias": {
-      "Atocha": 11.0,
-      "Recoletos": 10.97,
-      "Nuevos Ministerios": 11.38,
-      "Sol": 12.0,
-      "Chamartín": 11.58
-    }
-  },
-  {
-    "linea": "C7",
-    "trip_id": "1085X21825C7",
-    "latitud": 40.423519134521484,
-    "longitud": -3.6912522315979004,
-    "timestamp": 1791965591,
-    "distancias": {
-      "Atocha": 1.89,
-      "Recoletos": 0.03,
-      "Nuevos Ministerios": 2.57,
-      "Sol": 1.23,
-      "Chamartín": 5.35
-    }
-  },
-  {
-    "linea": "C8B",
-    "trip_id": "1085X20614C8b",
-    "latitud": 40.737613677978516,
-    "longitud": -4.066298484802246,
-    "timestamp": 1791965591,
-    "distancias": {
-      "Atocha": 48.66,
-      "Recoletos": 47.18,
-      "Nuevos Ministerios": 45.21,
-      "Sol": 47.05,
-      "Chamartín": 43.88
     }
   },
   {
     "linea": "C4A",
     "trip_id": "1085X20243C4a",
-    "latitud": 40.4713249206543,
-    "longitud": -3.683309555053711,
-    "timestamp": 1791965591,
+    "latitud": 40.54633331298828,
+    "longitud": -3.648334503173828,
+    "timestamp": 1791966611,
     "distancias": {
-      "Atocha": 7.21,
-      "Recoletos": 5.37,
-      "Nuevos Ministerios": 2.85,
-      "Sol": 6.28,
-      "Chamartín": 0.03
-    }
-  },
-  {
-    "linea": "C7",
-    "trip_id": "1085X21823C7",
-    "latitud": 40.49546813964844,
-    "longitud": -3.7261993885040283,
-    "timestamp": 1791965591,
-    "distancias": {
-      "Atocha": 10.36,
-      "Recoletos": 8.55,
-      "Nuevos Ministerios": 6.14,
-      "Sol": 8.96,
-      "Chamartín": 4.55
-    }
-  },
-  {
-    "linea": "C7",
-    "trip_id": "1085X21822C7",
-    "latitud": 40.421630859375,
-    "longitud": -3.71932053565979,
-    "timestamp": 1791965591,
-    "distancias": {
-      "Atocha": 3.03,
-      "Recoletos": 2.41,
-      "Nuevos Ministerios": 3.6,
-      "Sol": 1.49,
-      "Chamartín": 6.31
-    }
-  },
-  {
-    "linea": "C8B",
-    "trip_id": "1085X20612C8b",
-    "latitud": 40.692569732666016,
-    "longitud": -4.035974025726318,
-    "timestamp": 1791965591,
-    "distancias": {
-      "Atocha": 43.22,
-      "Recoletos": 41.78,
-      "Nuevos Ministerios": 39.88,
-      "Sol": 41.61,
-      "Chamartín": 38.66
-    }
-  },
-  {
-    "linea": "C8B",
-    "trip_id": "1085X20611C8b",
-    "latitud": 40.47113037109375,
-    "longitud": -3.682833194732666,
-    "timestamp": 1791965591,
-    "distancias": {
-      "Atocha": 7.2,
-      "Recoletos": 5.35,
-      "Nuevos Ministerios": 2.84,
-      "Sol": 6.27,
-      "Chamartín": 0.01
-    }
-  },
-  {
-    "linea": "C4A",
-    "trip_id": "1085X20241C4a",
-    "latitud": 40.54745101928711,
-    "longitud": -3.6543185710906982,
-    "timestamp": 1791965591,
-    "distancias": {
-      "Atocha": 15.94,
+      "Atocha": 15.92,
       "Recoletos": 14.14,
-      "Nuevos Ministerios": 11.66,
-      "Sol": 15.09,
-      "Chamartín": 8.82
+      "Nuevos Ministerios": 11.69,
+      "Sol": 15.12,
+      "Chamartín": 8.85
+    }
+  },
+  {
+    "linea": "C4B",
+    "trip_id": "1085X20443C4b",
+    "latitud": 40.61166000366211,
+    "longitud": -3.721165657043457,
+    "timestamp": 1791966611,
+    "distancias": {
+      "Atocha": 22.96,
+      "Recoletos": 21.09,
+      "Nuevos Ministerios": 18.51,
+      "Sol": 21.72,
+      "Chamartín": 15.95
+    }
+  },
+  {
+    "linea": "C5",
+    "trip_id": "1085X20803C5",
+    "latitud": 40.28323745727539,
+    "longitud": -3.7991464138031006,
+    "timestamp": 1791966611,
+    "distancias": {
+      "Atocha": 16.57,
+      "Recoletos": 18.08,
+      "Nuevos Ministerios": 20.3,
+      "Sol": 16.95,
+      "Chamartín": 23.1
+    }
+  },
+  {
+    "linea": "C2",
+    "trip_id": "1085X21737C2",
+    "latitud": 40.489192962646484,
+    "longitud": -3.3662831783294678,
+    "timestamp": 1791966611,
+    "distancias": {
+      "Atocha": 28.85,
+      "Recoletos": 28.43,
+      "Nuevos Ministerios": 27.99,
+      "Sol": 29.59,
+      "Chamartín": 26.86
+    }
+  },
+  {
+    "linea": "C2",
+    "trip_id": "1085X21615C2",
+    "latitud": 40.644256591796875,
+    "longitud": -3.182323694229126,
+    "timestamp": 1791966611,
+    "distancias": {
+      "Atocha": 50.35,
+      "Recoletos": 49.51,
+      "Nuevos Ministerios": 48.37,
+      "Sol": 50.74,
+      "Chamartín": 46.47
     }
   },
   {
@@ -956,7 +788,7 @@
     "trip_id": "1085X20801C5",
     "latitud": 40.28323745727539,
     "longitud": -3.7991464138031006,
-    "timestamp": 1791965591,
+    "timestamp": 1791966611,
     "distancias": {
       "Atocha": 16.57,
       "Recoletos": 18.08,
@@ -970,7 +802,7 @@
     "trip_id": "1085X21218C10",
     "latitud": 40.470848083496094,
     "longitud": -3.6825029850006104,
-    "timestamp": 1791965591,
+    "timestamp": 1791966611,
     "distancias": {
       "Atocha": 7.17,
       "Recoletos": 5.33,
@@ -980,25 +812,67 @@
     }
   },
   {
+    "linea": "C7",
+    "trip_id": "1085X21820C7",
+    "latitud": 40.4681510925293,
+    "longitud": -3.819255828857422,
+    "timestamp": 1791966611,
+    "distancias": {
+      "Atocha": 12.94,
+      "Recoletos": 11.95,
+      "Nuevos Ministerios": 11.0,
+      "Sol": 11.38,
+      "Chamartín": 11.54
+    }
+  },
+  {
     "linea": "C2",
     "trip_id": "1085X21735C2",
-    "latitud": 40.4803466796875,
-    "longitud": -3.392940044403076,
-    "timestamp": 1791965591,
+    "latitud": 40.421783447265625,
+    "longitud": -3.562619686126709,
+    "timestamp": 1791966611,
     "distancias": {
-      "Atocha": 26.4,
-      "Recoletos": 26.0,
-      "Nuevos Ministerios": 25.61,
-      "Sol": 27.16,
-      "Chamartín": 24.55
+      "Atocha": 10.87,
+      "Recoletos": 10.86,
+      "Nuevos Ministerios": 11.32,
+      "Sol": 11.89,
+      "Chamartín": 11.57
     }
   },
   {
     "linea": "C4A",
     "trip_id": "1085X20249C4a",
+    "latitud": 40.32313537597656,
+    "longitud": -3.7273621559143066,
+    "timestamp": 1791966611,
+    "distancias": {
+      "Atocha": 9.82,
+      "Recoletos": 11.57,
+      "Nuevos Ministerios": 14.05,
+      "Sol": 10.63,
+      "Chamartín": 16.89
+    }
+  },
+  {
+    "linea": "C5",
+    "trip_id": "1085X19621C5",
+    "latitud": 40.39885330200195,
+    "longitud": -3.746026039123535,
+    "timestamp": 1791966611,
+    "distancias": {
+      "Atocha": 4.87,
+      "Recoletos": 5.4,
+      "Nuevos Ministerios": 6.99,
+      "Sol": 4.17,
+      "Chamartín": 9.65
+    }
+  },
+  {
+    "linea": "C4B",
+    "trip_id": "1085X20455C4b",
     "latitud": 40.24142837524414,
     "longitud": -3.7691590785980225,
-    "timestamp": 1791965591,
+    "timestamp": 1791966611,
     "distancias": {
       "Atocha": 19.57,
       "Recoletos": 21.29,
@@ -1008,67 +882,263 @@
     }
   },
   {
-    "linea": "C7",
-    "trip_id": "1085X21821C7",
-    "latitud": 40.44862747192383,
-    "longitud": -3.7833173274993896,
-    "timestamp": 1791965591,
+    "linea": "C2",
+    "trip_id": "1085X21613C2",
+    "latitud": 40.46330261230469,
+    "longitud": -3.4440958499908447,
+    "timestamp": 1791966611,
     "distancias": {
-      "Atocha": 9.22,
-      "Recoletos": 8.31,
-      "Nuevos Ministerios": 7.7,
-      "Sol": 7.67,
-      "Chamartín": 8.85
-    }
-  },
-  {
-    "linea": "C8B",
-    "trip_id": "1085X20609C8b",
-    "latitud": 40.657981872558594,
-    "longitud": -4.0351080894470215,
-    "timestamp": 1791965591,
-    "distancias": {
-      "Atocha": 40.43,
-      "Recoletos": 39.07,
-      "Nuevos Ministerios": 37.3,
-      "Sol": 38.82,
-      "Chamartín": 36.28
-    }
-  },
-  {
-    "linea": "C7",
-    "trip_id": "1085X21818C7",
-    "latitud": 40.49546813964844,
-    "longitud": -3.7261993885040283,
-    "timestamp": 1791965591,
-    "distancias": {
-      "Atocha": 10.36,
-      "Recoletos": 8.55,
-      "Nuevos Ministerios": 6.14,
-      "Sol": 8.96,
-      "Chamartín": 4.55
+      "Atocha": 21.7,
+      "Recoletos": 21.35,
+      "Nuevos Ministerios": 21.09,
+      "Sol": 22.5,
+      "Chamartín": 20.22
     }
   },
   {
     "linea": "C5",
-    "trip_id": "1085X19625C5",
-    "latitud": 40.25558853149414,
-    "longitud": -3.8284666538238525,
-    "timestamp": 1791965591,
+    "trip_id": "1085X19620C5",
+    "latitud": 40.341949462890625,
+    "longitud": -3.842332601547241,
+    "timestamp": 1791966611,
     "distancias": {
-      "Atocha": 20.52,
-      "Recoletos": 22.0,
-      "Nuevos Ministerios": 24.17,
-      "Sol": 20.85,
-      "Chamartín": 26.96
+      "Atocha": 14.81,
+      "Recoletos": 15.7,
+      "Nuevos Ministerios": 17.23,
+      "Sol": 14.45,
+      "Chamartín": 19.71
+    }
+  },
+  {
+    "linea": "C2",
+    "trip_id": "1085X21612C2",
+    "latitud": 40.470970153808594,
+    "longitud": -3.68245005607605,
+    "timestamp": 1791966611,
+    "distancias": {
+      "Atocha": 7.18,
+      "Recoletos": 5.34,
+      "Nuevos Ministerios": 2.83,
+      "Sol": 6.26,
+      "Chamartín": 0.05
+    }
+  },
+  {
+    "linea": "C2",
+    "trip_id": "1085X21733C2",
+    "latitud": 40.470970153808594,
+    "longitud": -3.68245005607605,
+    "timestamp": 1791966611,
+    "distancias": {
+      "Atocha": 7.18,
+      "Recoletos": 5.34,
+      "Nuevos Ministerios": 2.83,
+      "Sol": 6.26,
+      "Chamartín": 0.05
+    }
+  },
+  {
+    "linea": "C5",
+    "trip_id": "1085X19623C5",
+    "latitud": 40.36713409423828,
+    "longitud": -3.7043795585632324,
+    "timestamp": 1791966611,
+    "distancias": {
+      "Atocha": 4.57,
+      "Recoletos": 6.36,
+      "Nuevos Ministerios": 8.9,
+      "Sol": 5.53,
+      "Chamartín": 11.71
     }
   },
   {
     "linea": "C10",
-    "trip_id": "1085X21319C10",
+    "trip_id": "1085X21216C10",
+    "latitud": 40.400421142578125,
+    "longitud": -3.692784309387207,
+    "timestamp": 1791966611,
+    "distancias": {
+      "Atocha": 0.75,
+      "Recoletos": 2.56,
+      "Nuevos Ministerios": 5.14,
+      "Sol": 2.02,
+      "Chamartín": 7.91
+    }
+  },
+  {
+    "linea": "C5",
+    "trip_id": "1085X19622C5",
+    "latitud": 40.33088302612305,
+    "longitud": -3.882378339767456,
+    "timestamp": 1791966611,
+    "distancias": {
+      "Atocha": 18.39,
+      "Recoletos": 19.2,
+      "Nuevos Ministerios": 20.61,
+      "Sol": 17.96,
+      "Chamartín": 22.99
+    }
+  },
+  {
+    "linea": "C4B",
+    "trip_id": "1085X20453C4b",
+    "latitud": 40.35267639160156,
+    "longitud": -3.684072971343994,
+    "timestamp": 1791966611,
+    "distancias": {
+      "Atocha": 6.02,
+      "Recoletos": 7.88,
+      "Nuevos Ministerios": 10.47,
+      "Sol": 7.31,
+      "Chamartín": 13.18
+    }
+  },
+  {
+    "linea": "C1",
+    "trip_id": "1085X19838C1",
+    "latitud": 40.47101974487305,
+    "longitud": -3.6825692653656006,
+    "timestamp": 1791966611,
+    "distancias": {
+      "Atocha": 7.18,
+      "Recoletos": 5.35,
+      "Nuevos Ministerios": 2.84,
+      "Sol": 6.26,
+      "Chamartín": 0.04
+    }
+  },
+  {
+    "linea": "C4B",
+    "trip_id": "1085X20451C4b",
+    "latitud": 40.417022705078125,
+    "longitud": -3.7031636238098145,
+    "timestamp": 1791966611,
+    "distancias": {
+      "Atocha": 1.64,
+      "Recoletos": 1.25,
+      "Nuevos Ministerios": 3.42,
+      "Sol": 0.03,
+      "Chamartín": 6.26
+    }
+  },
+  {
+    "linea": "C1",
+    "trip_id": "1085X19839C1",
+    "latitud": 40.48491668701172,
+    "longitud": -3.663029432296753,
+    "timestamp": 1791966611,
+    "distancias": {
+      "Atocha": 8.99,
+      "Recoletos": 7.24,
+      "Nuevos Ministerios": 4.93,
+      "Sol": 8.28,
+      "Chamartín": 2.27
+    }
+  },
+  {
+    "linea": "C7",
+    "trip_id": "1085X21827C7",
+    "latitud": 40.376155853271484,
+    "longitud": -3.65612530708313,
+    "timestamp": 1791966611,
+    "distancias": {
+      "Atocha": 4.41,
+      "Recoletos": 6.02,
+      "Nuevos Ministerios": 8.41,
+      "Sol": 6.01,
+      "Chamartín": 10.81
+    }
+  },
+  {
+    "linea": "C1",
+    "trip_id": "1085X19834C1",
+    "latitud": 40.492401123046875,
+    "longitud": -3.5934829711914062,
+    "timestamp": 1791966611,
+    "distancias": {
+      "Atocha": 12.53,
+      "Recoletos": 11.26,
+      "Nuevos Ministerios": 9.79,
+      "Sol": 12.5,
+      "Chamartín": 7.93
+    }
+  },
+  {
+    "linea": "C1",
+    "trip_id": "1085X19836C1",
+    "latitud": 40.47101974487305,
+    "longitud": -3.6825692653656006,
+    "timestamp": 1791966611,
+    "distancias": {
+      "Atocha": 7.18,
+      "Recoletos": 5.35,
+      "Nuevos Ministerios": 2.84,
+      "Sol": 6.26,
+      "Chamartín": 0.04
+    }
+  },
+  {
+    "linea": "C7",
+    "trip_id": "1085X21825C7",
+    "latitud": 40.48826599121094,
+    "longitud": -3.6947743892669678,
+    "timestamp": 1791966611,
+    "distancias": {
+      "Atocha": 9.09,
+      "Recoletos": 7.22,
+      "Nuevos Ministerios": 4.63,
+      "Sol": 7.97,
+      "Chamartín": 2.15
+    }
+  },
+  {
+    "linea": "C10",
+    "trip_id": "1085X21323C10",
+    "latitud": 40.52248001098633,
+    "longitud": -3.881829261779785,
+    "timestamp": 1791966611,
+    "distancias": {
+      "Atocha": 20.76,
+      "Recoletos": 19.55,
+      "Nuevos Ministerios": 18.11,
+      "Sol": 19.16,
+      "Chamartín": 17.76
+    }
+  },
+  {
+    "linea": "C10",
+    "trip_id": "1085X21322C10",
+    "latitud": 40.470848083496094,
+    "longitud": -3.6825029850006104,
+    "timestamp": 1791966611,
+    "distancias": {
+      "Atocha": 7.17,
+      "Recoletos": 5.33,
+      "Nuevos Ministerios": 2.82,
+      "Sol": 6.25,
+      "Chamartín": 0.05
+    }
+  },
+  {
+    "linea": "C8B",
+    "trip_id": "1085X20614C8b",
+    "latitud": 40.737613677978516,
+    "longitud": -4.066298484802246,
+    "timestamp": 1791966611,
+    "distancias": {
+      "Atocha": 48.66,
+      "Recoletos": 47.18,
+      "Nuevos Ministerios": 45.21,
+      "Sol": 47.05,
+      "Chamartín": 43.88
+    }
+  },
+  {
+    "linea": "C10",
+    "trip_id": "1085X21321C10",
     "latitud": 40.448577880859375,
     "longitud": -3.7855594158172607,
-    "timestamp": 1791965591,
+    "timestamp": 1791966611,
     "distancias": {
       "Atocha": 9.38,
       "Recoletos": 8.49,
@@ -1078,17 +1148,255 @@
     }
   },
   {
+    "linea": "C7",
+    "trip_id": "1085X21823C7",
+    "latitud": 40.49440383911133,
+    "longitud": -3.8680198192596436,
+    "timestamp": 1791966611,
+    "distancias": {
+      "Atocha": 17.99,
+      "Recoletos": 16.94,
+      "Nuevos Ministerios": 15.78,
+      "Sol": 16.42,
+      "Chamartín": 15.86
+    }
+  },
+  {
+    "linea": "C8B",
+    "trip_id": "1085X20612C8b",
+    "latitud": 40.552284240722656,
+    "longitud": -3.8969664573669434,
+    "timestamp": 1791966611,
+    "distancias": {
+      "Atocha": 23.88,
+      "Recoletos": 22.56,
+      "Nuevos Ministerios": 20.91,
+      "Sol": 22.28,
+      "Chamartín": 20.22
+    }
+  },
+  {
+    "linea": "C7",
+    "trip_id": "1085X21822C7",
+    "latitud": 40.421630859375,
+    "longitud": -3.71932053565979,
+    "timestamp": 1791966611,
+    "distancias": {
+      "Atocha": 3.03,
+      "Recoletos": 2.41,
+      "Nuevos Ministerios": 3.6,
+      "Sol": 1.49,
+      "Chamartín": 6.31
+    }
+  },
+  {
+    "linea": "C4B",
+    "trip_id": "1085X20457C4b",
+    "latitud": 40.24142837524414,
+    "longitud": -3.7691590785980225,
+    "timestamp": 1791966611,
+    "distancias": {
+      "Atocha": 19.57,
+      "Recoletos": 21.29,
+      "Nuevos Ministerios": 23.73,
+      "Sol": 20.3,
+      "Chamartín": 26.57
+    }
+  },
+  {
+    "linea": "C10",
+    "trip_id": "1085X21320C10",
+    "latitud": 40.43933868408203,
+    "longitud": -3.691338300704956,
+    "timestamp": 1791966611,
+    "distancias": {
+      "Atocha": 3.64,
+      "Recoletos": 1.78,
+      "Nuevos Ministerios": 0.81,
+      "Sol": 2.68,
+      "Chamartín": 3.61
+    }
+  },
+  {
+    "linea": "C8B",
+    "trip_id": "1085X20611C8b",
+    "latitud": 40.494449615478516,
+    "longitud": -3.727541208267212,
+    "timestamp": 1791966611,
+    "distancias": {
+      "Atocha": 10.28,
+      "Recoletos": 8.49,
+      "Nuevos Ministerios": 6.09,
+      "Sol": 8.88,
+      "Chamartín": 4.57
+    }
+  },
+  {
+    "linea": "C8B",
+    "trip_id": "1085X20609C8b",
+    "latitud": 40.737613677978516,
+    "longitud": -4.066298484802246,
+    "timestamp": 1791966611,
+    "distancias": {
+      "Atocha": 48.66,
+      "Recoletos": 47.18,
+      "Nuevos Ministerios": 45.21,
+      "Sol": 47.05,
+      "Chamartín": 43.88
+    }
+  },
+  {
+    "linea": "C2",
+    "trip_id": "1085X21608C2",
+    "latitud": 40.56715774536133,
+    "longitud": -3.258240222930908,
+    "timestamp": 1791966611,
+    "distancias": {
+      "Atocha": 40.6,
+      "Recoletos": 39.93,
+      "Nuevos Ministerios": 39.07,
+      "Sol": 41.15,
+      "Chamartín": 37.45
+    }
+  },
+  {
+    "linea": "C2",
+    "trip_id": "1085X21724C2",
+    "latitud": 40.38177490234375,
+    "longitud": -3.668128252029419,
+    "timestamp": 1791966611,
+    "distancias": {
+      "Atocha": 3.3,
+      "Recoletos": 5.01,
+      "Nuevos Ministerios": 7.5,
+      "Sol": 4.89,
+      "Chamartín": 10.02
+    }
+  },
+  {
+    "linea": "C2",
+    "trip_id": "1085X21722C2",
+    "latitud": 40.40103530883789,
+    "longitud": -3.595762252807617,
+    "timestamp": 1791966611,
+    "distancias": {
+      "Atocha": 7.96,
+      "Recoletos": 8.43,
+      "Nuevos Ministerios": 9.62,
+      "Sol": 9.24,
+      "Chamartín": 10.74
+    }
+  },
+  {
+    "linea": "C4A",
+    "trip_id": "1085X20247C4a",
+    "latitud": 40.4713249206543,
+    "longitud": -3.683309555053711,
+    "timestamp": 1791966611,
+    "distancias": {
+      "Atocha": 7.21,
+      "Recoletos": 5.37,
+      "Nuevos Ministerios": 2.85,
+      "Sol": 6.28,
+      "Chamartín": 0.03
+    }
+  },
+  {
+    "linea": "C7",
+    "trip_id": "1085X21818C7",
+    "latitud": 40.46332550048828,
+    "longitud": -3.6847176551818848,
+    "timestamp": 1791966611,
+    "distancias": {
+      "Atocha": 6.32,
+      "Recoletos": 4.47,
+      "Nuevos Ministerios": 1.97,
+      "Sol": 5.39,
+      "Chamartín": 0.89
+    }
+  },
+  {
+    "linea": "C5",
+    "trip_id": "1085X19625C5",
+    "latitud": 40.28323745727539,
+    "longitud": -3.7991464138031006,
+    "timestamp": 1791966611,
+    "distancias": {
+      "Atocha": 16.57,
+      "Recoletos": 18.08,
+      "Nuevos Ministerios": 20.3,
+      "Sol": 16.95,
+      "Chamartín": 23.1
+    }
+  },
+  {
+    "linea": "C5",
+    "trip_id": "1085X19627C5",
+    "latitud": 40.25558853149414,
+    "longitud": -3.8284666538238525,
+    "timestamp": 1791966611,
+    "distancias": {
+      "Atocha": 20.52,
+      "Recoletos": 22.0,
+      "Nuevos Ministerios": 24.17,
+      "Sol": 20.85,
+      "Chamartín": 26.96
+    }
+  },
+  {
+    "linea": "C7",
+    "trip_id": "1085X21831C7",
+    "latitud": 40.48889923095703,
+    "longitud": -3.366670846939087,
+    "timestamp": 1791966611,
+    "distancias": {
+      "Atocha": 28.8,
+      "Recoletos": 28.39,
+      "Nuevos Ministerios": 27.95,
+      "Sol": 29.55,
+      "Chamartín": 26.82
+    }
+  },
+  {
+    "linea": "C10",
+    "trip_id": "1085X21214C10",
+    "latitud": 40.55410385131836,
+    "longitud": -3.897893190383911,
+    "timestamp": 1791966611,
+    "distancias": {
+      "Atocha": 24.08,
+      "Recoletos": 22.75,
+      "Nuevos Ministerios": 21.09,
+      "Sol": 22.47,
+      "Chamartín": 20.38
+    }
+  },
+  {
+    "linea": "C10",
+    "trip_id": "1085X21319C10",
+    "latitud": 40.399742126464844,
+    "longitud": -3.6913228034973145,
+    "timestamp": 1791966611,
+    "distancias": {
+      "Atocha": 0.78,
+      "Recoletos": 2.63,
+      "Nuevos Ministerios": 5.21,
+      "Sol": 2.14,
+      "Chamartín": 7.97
+    }
+  },
+  {
     "linea": "C10",
     "trip_id": "1085X21318C10",
-    "latitud": 40.42141342163086,
-    "longitud": -3.7190256118774414,
-    "timestamp": 1791965591,
+    "latitud": 40.49440383911133,
+    "longitud": -3.86802077293396,
+    "timestamp": 1791966611,
     "distancias": {
-      "Atocha": 3.0,
-      "Recoletos": 2.39,
-      "Nuevos Ministerios": 3.6,
-      "Sol": 1.46,
-      "Chamartín": 6.32
+      "Atocha": 17.99,
+      "Recoletos": 16.94,
+      "Nuevos Ministerios": 15.78,
+      "Sol": 16.42,
+      "Chamartín": 15.86
     }
   },
   {
@@ -1096,7 +1404,7 @@
     "trip_id": "1085X21829C7",
     "latitud": 40.48889923095703,
     "longitud": -3.366670846939087,
-    "timestamp": 1791965591,
+    "timestamp": 1791966611,
     "distancias": {
       "Atocha": 28.8,
       "Recoletos": 28.39,
@@ -1110,7 +1418,7 @@
     "trip_id": "1085X19841C1",
     "latitud": 40.492401123046875,
     "longitud": -3.5934829711914062,
-    "timestamp": 1791965591,
+    "timestamp": 1791966611,
     "distancias": {
       "Atocha": 12.53,
       "Recoletos": 11.26,
@@ -1120,269 +1428,17 @@
     }
   },
   {
-    "linea": "C2",
-    "trip_id": "1085X21613C2",
-    "latitud": 40.52812957763672,
-    "longitud": -3.3066556453704834,
-    "timestamp": 1791965591,
+    "linea": "C3",
+    "trip_id": "1085X20038C3",
+    "latitud": 40.47138214111328,
+    "longitud": -3.683478593826294,
+    "timestamp": 1791966611,
     "distancias": {
-      "Atocha": 35.09,
-      "Recoletos": 34.53,
-      "Nuevos Ministerios": 33.85,
-      "Sol": 35.73,
-      "Chamartín": 32.44
-    }
-  },
-  {
-    "linea": "C5",
-    "trip_id": "1085X20797C5",
-    "latitud": 40.3413200378418,
-    "longitud": -3.7123663425445557,
-    "timestamp": 1791965591,
-    "distancias": {
-      "Atocha": 7.52,
-      "Recoletos": 9.3,
-      "Nuevos Ministerios": 11.83,
-      "Sol": 8.44,
-      "Chamartín": 14.65
-    }
-  },
-  {
-    "linea": "C2",
-    "trip_id": "1085X21612C2",
-    "latitud": 40.470970153808594,
-    "longitud": -3.68245005607605,
-    "timestamp": 1791965591,
-    "distancias": {
-      "Atocha": 7.18,
-      "Recoletos": 5.34,
-      "Nuevos Ministerios": 2.83,
-      "Sol": 6.26,
+      "Atocha": 7.22,
+      "Recoletos": 5.38,
+      "Nuevos Ministerios": 2.85,
+      "Sol": 6.28,
       "Chamartín": 0.05
-    }
-  },
-  {
-    "linea": "C10",
-    "trip_id": "1085X21216C10",
-    "latitud": 40.44654846191406,
-    "longitud": -3.6914730072021484,
-    "timestamp": 1791965591,
-    "distancias": {
-      "Atocha": 4.44,
-      "Recoletos": 2.58,
-      "Nuevos Ministerios": 0.07,
-      "Sol": 3.44,
-      "Chamartín": 2.83
-    }
-  },
-  {
-    "linea": "C4A",
-    "trip_id": "1085X20248C4a",
-    "latitud": 40.3413200378418,
-    "longitud": -3.7123663425445557,
-    "timestamp": 1791965591,
-    "distancias": {
-      "Atocha": 7.52,
-      "Recoletos": 9.3,
-      "Nuevos Ministerios": 11.83,
-      "Sol": 8.44,
-      "Chamartín": 14.65
-    }
-  },
-  {
-    "linea": "C1",
-    "trip_id": "1085X19837C1",
-    "latitud": 40.492401123046875,
-    "longitud": -3.5934829711914062,
-    "timestamp": 1791965591,
-    "distancias": {
-      "Atocha": 12.53,
-      "Recoletos": 11.26,
-      "Nuevos Ministerios": 9.79,
-      "Sol": 12.5,
-      "Chamartín": 7.93
-    }
-  },
-  {
-    "linea": "C1",
-    "trip_id": "1085X19839C1",
-    "latitud": 40.492401123046875,
-    "longitud": -3.5934829711914062,
-    "timestamp": 1791965591,
-    "distancias": {
-      "Atocha": 12.53,
-      "Recoletos": 11.26,
-      "Nuevos Ministerios": 9.79,
-      "Sol": 12.5,
-      "Chamartín": 7.93
-    }
-  },
-  {
-    "linea": "C1",
-    "trip_id": "1085X19834C1",
-    "latitud": 40.47101974487305,
-    "longitud": -3.6825692653656006,
-    "timestamp": 1791965591,
-    "distancias": {
-      "Atocha": 7.18,
-      "Recoletos": 5.35,
-      "Nuevos Ministerios": 2.84,
-      "Sol": 6.26,
-      "Chamartín": 0.04
-    }
-  },
-  {
-    "linea": "C1",
-    "trip_id": "1085X19836C1",
-    "latitud": 40.47101974487305,
-    "longitud": -3.6825692653656006,
-    "timestamp": 1791965591,
-    "distancias": {
-      "Atocha": 7.18,
-      "Recoletos": 5.35,
-      "Nuevos Ministerios": 2.84,
-      "Sol": 6.26,
-      "Chamartín": 0.04
-    }
-  },
-  {
-    "linea": "C10",
-    "trip_id": "1085X21321C10",
-    "latitud": 40.52248001098633,
-    "longitud": -3.881829261779785,
-    "timestamp": 1791965591,
-    "distancias": {
-      "Atocha": 20.76,
-      "Recoletos": 19.55,
-      "Nuevos Ministerios": 18.11,
-      "Sol": 19.16,
-      "Chamartín": 17.76
-    }
-  },
-  {
-    "linea": "C4B",
-    "trip_id": "1085X20434C4b",
-    "latitud": 40.28837203979492,
-    "longitud": -3.737349271774292,
-    "timestamp": 1791965591,
-    "distancias": {
-      "Atocha": 13.76,
-      "Recoletos": 15.52,
-      "Nuevos Ministerios": 18.01,
-      "Sol": 14.58,
-      "Chamartín": 20.84
-    }
-  },
-  {
-    "linea": "C5",
-    "trip_id": "1085X20796C5",
-    "latitud": 40.33088302612305,
-    "longitud": -3.882378339767456,
-    "timestamp": 1791965591,
-    "distancias": {
-      "Atocha": 18.39,
-      "Recoletos": 19.2,
-      "Nuevos Ministerios": 20.61,
-      "Sol": 17.96,
-      "Chamartín": 22.99
-    }
-  },
-  {
-    "linea": "C10",
-    "trip_id": "1085X21320C10",
-    "latitud": 40.470848083496094,
-    "longitud": -3.6825029850006104,
-    "timestamp": 1791965591,
-    "distancias": {
-      "Atocha": 7.17,
-      "Recoletos": 5.33,
-      "Nuevos Ministerios": 2.82,
-      "Sol": 6.25,
-      "Chamartín": 0.05
-    }
-  },
-  {
-    "linea": "C2",
-    "trip_id": "1085X21608C2",
-    "latitud": 40.50537872314453,
-    "longitud": -3.3352832794189453,
-    "timestamp": 1791965591,
-    "distancias": {
-      "Atocha": 31.91,
-      "Recoletos": 31.44,
-      "Nuevos Ministerios": 30.9,
-      "Sol": 32.62,
-      "Chamartín": 29.65
-    }
-  },
-  {
-    "linea": "C2",
-    "trip_id": "1085X21724C2",
-    "latitud": 40.470970153808594,
-    "longitud": -3.68245005607605,
-    "timestamp": 1791965591,
-    "distancias": {
-      "Atocha": 7.18,
-      "Recoletos": 5.34,
-      "Nuevos Ministerios": 2.83,
-      "Sol": 6.26,
-      "Chamartín": 0.05
-    }
-  },
-  {
-    "linea": "C2",
-    "trip_id": "1085X21722C2",
-    "latitud": 40.40666961669922,
-    "longitud": -3.689394950866699,
-    "timestamp": 1791965591,
-    "distancias": {
-      "Atocha": 0.01,
-      "Recoletos": 1.86,
-      "Nuevos Ministerios": 4.45,
-      "Sol": 1.61,
-      "Chamartín": 7.19
-    }
-  },
-  {
-    "linea": "C2",
-    "trip_id": "1085X21610C2",
-    "latitud": 40.38177490234375,
-    "longitud": -3.668128252029419,
-    "timestamp": 1791965591,
-    "distancias": {
-      "Atocha": 3.3,
-      "Recoletos": 5.01,
-      "Nuevos Ministerios": 7.5,
-      "Sol": 4.89,
-      "Chamartín": 10.02
-    }
-  },
-  {
-    "linea": "C10",
-    "trip_id": "1085X21214C10",
-    "latitud": 40.46546936035156,
-    "longitud": -3.8076725006103516,
-    "timestamp": 1791965591,
-    "distancias": {
-      "Atocha": 11.96,
-      "Recoletos": 10.93,
-      "Nuevos Ministerios": 9.98,
-      "Sol": 10.39,
-      "Chamartín": 10.57
-    }
-  },
-  {
-    "linea": "C4A",
-    "trip_id": "1085X20245C4a",
-    "latitud": 40.417022705078125,
-    "longitud": -3.7031636238098145,
-    "timestamp": 1791965591,
-    "distancias": {
-      "Atocha": 1.64,
-      "Recoletos": 1.25,
-      "Nuevos Ministerios": 3.42,
-      "Sol": 0.03,
-      "Chamartín": 6.26
     }
   }
 ]
