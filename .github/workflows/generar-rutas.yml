@@ -1,7 +1,12 @@
 name: Generar rutas Madrid
 
+name: Generar rutas Madrid
+
 on:
   workflow_dispatch:
+
+  schedule:
+    - cron: "*/5 * * * *"
 
 permissions:
   contents: write
