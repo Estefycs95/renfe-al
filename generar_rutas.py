@@ -104,3 +104,19 @@ for linea, viajes in trayectos.items():
 
             resultado[linea] = madrid
             break
+
+with open(
+    "rutas-madrid.json",
+    "w",
+    encoding="utf-8"
+) as f:
+
+    json.dump(
+        resultado,
+        f,
+        ensure_ascii=False,
+        indent=2
+    )
+
+print("Generado rutas-madrid.json")
+
