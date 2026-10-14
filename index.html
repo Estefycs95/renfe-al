@@ -9,50 +9,38 @@
 
 body{
     font-family:Arial,sans-serif;
-    max-width:1100px;
+    max-width:900px;
     margin:auto;
     padding:20px;
 }
 
 select{
+    width:100%;
+    margin:5px 0;
     padding:10px;
-    min-width:320px;
-    margin:5px;
 }
 
 button{
-    padding:10px 20px;
+    padding:12px 20px;
+    margin-top:10px;
     cursor:pointer;
 }
 
-#resultado{
+.card{
     margin-top:20px;
+    padding:15px;
+    border-radius:8px;
+    border:1px solid #ddd;
 }
 
 .ok{
-    background:#e8f8e8;
-    border:1px solid green;
-    border-radius:5px;
-    padding:15px;
-}
-
-.error{
-    background:#fff4f4;
-    border:1px solid red;
-    border-radius:5px;
-    padding:15px;
-}
-
-.info{
-    margin-top:15px;
-    background:#eef5ff;
-    border:1px solid #0066cc;
-    border-radius:5px;
-    padding:15px;
+    background:#eefbea;
 }
 
 .linea{
-    padding:6px 0;
+    margin-top:10px;
+    padding:10px;
+    border-top:1px solid #ddd;
 }
 
 </style>
@@ -62,96 +50,33 @@ button{
 
 <h1>🚆 Información al Viajero</h1>
 
-<p>Seleccione origen y destino</p>
-
 <select id="origen"></select>
 <select id="destino"></select>
 
-<br><br>
-
 <button onclick="buscarRuta()">
-Buscar alternativa
+Buscar
 </button>
 
 <div id="resultado"></div>
 
 <script>
 
-async function obtenerEstaciones(){
-    const r = await fetch("./estaciones-madrid.json");
-    return await r.json();
-}
-
-async function obtenerRutas(){
-    const r = await fetch("./rutas-madrid.json");
-    return await r.json();
-}
-
-async function obtenerVehiculos(){
-    const r = await fetch("./vehiculos_resumen.json");
-    return await r.json();
-}
-
-async function obtenerSentidos(){
-    const r = await fetch("./sentidos_resumen.json");
-    return await r.json();
-}
-
-async function obtenerLineasAfectadas(){
+async function cargarJSON(nombre){
 
     const r =
-        await fetch("./incidencias.json");
+        await fetch(nombre);
 
-    const datos =
-        await r.json();
+    return await r.json();
 
-    const afectadas =
-        new Set();
+}
 
-    datos.entity?.forEach(entidad => {
+function nombreEstacion(
+    estaciones,
+    codigo
+){
 
-        const texto =
-            entidad.alert
-            ?.descriptionText
-            ?.translation?.[0]
-            ?.text
-            ?.toLowerCase()
-            || "";
-
-        const grave =
-
-            texto.includes("sin servicio") ||
-            texto.includes("interrumpido") ||
-            texto.includes("suspendido") ||
-            texto.includes("suprimido") ||
-            texto.includes("suprimidos") ||
-            texto.includes("no circulan");
-
-        if(!grave){
-            return;
-        }
-
-        entidad.alert?.informedEntity?.forEach(item => {
-
-            const m =
-                item.routeId
-                ?.match(
-                    /C\d+[ABab]?/i
-                );
-
-            if(m){
-
-                afectadas.add(
-                    m[0].toUpperCase()
-                );
-
-            }
-
-        });
-
-    });
-
-    return [...afectadas];
+    return estaciones[codigo]?.nombre
+        || codigo;
 
 }
 
@@ -168,7 +93,9 @@ function obtenerDistancia(
         return null;
     }
 
-    if(datos[linea] != null){
+    if(
+        datos[linea] != null
+    ){
         return datos[linea];
     }
 
@@ -206,53 +133,353 @@ function obtenerDistancia(
 
 }
 
-function obtenerSentido(
+function obtenerSentidoCorrecto(
     sentidos,
-    linea
+    rutas,
+    linea,
+    origen,
+    destino
 ){
 
+    let trenes = [];
+
+    if(sentidos[linea]){
+
+        trenes =
+            sentidos[linea];
+
+    }
+
     if(
-        sentidos[linea]
-        &&
-        sentidos[linea].length
+        linea === "C4"
     ){
 
-        return sentidos[linea][0];
+        trenes = [
+
+            ...(sentidos["C4A"] || []),
+
+            ...(sentidos["C4B"] || [])
+
+        ];
 
     }
 
-    if(linea === "C4"){
+    if(
+        linea === "C8"
+    ){
 
-        return (
-            sentidos["C4A"]?.[0]
-            ||
-            sentidos["C4B"]?.[0]
-            ||
-            null
+        trenes = [
+
+            ...(sentidos["C8A"] || []),
+
+            ...(sentidos["C8B"] || [])
+
+        ];
+
+    }
+
+    if(
+        !trenes.length
+    ){
+        return null;
+    }
+
+    const recorrido =
+        rutas[linea];
+
+    if(
+        !recorrido
+    ){
+        return trenes[0];
+    }
+
+    const pOrigen =
+        recorrido.indexOf(
+            origen
         );
 
-    }
-
-    if(linea === "C8"){
-
-        return (
-            sentidos["C8A"]?.[0]
-            ||
-            sentidos["C8B"]?.[0]
-            ||
-            null
+    const pDestino =
+        recorrido.indexOf(
+            destino
         );
 
+    if(
+        pOrigen === -1 ||
+        pDestino === -1
+    ){
+        return trenes[0];
     }
 
-    return null;
+    const ida =
+        pDestino > pOrigen;
+
+    const candidatos =
+
+        trenes.filter(
+            tren => {
+
+                const i1 =
+                    recorrido.indexOf(
+                        tren.origen_viaje
+                    );
+
+                const i2 =
+                    recorrido.indexOf(
+                        tren.destino_viaje
+                    );
+
+                if(
+                    i1 === -1 ||
+                    i2 === -1
+                ){
+                    return false;
+                }
+
+                return ida
+                    ? i2 > i1
+                    : i2 < i1;
+
+            }
+        );
+
+    return candidatos[0]
+        || trenes[0];
 
 }
 
-async function cargarEstaciones(){
+async function buscarRuta(){
 
     const estaciones =
-        await obtenerEstaciones();
+        await cargarJSON(
+            "estaciones-madrid.json"
+        );
+
+    const rutas =
+        await cargarJSON(
+            "rutas-madrid.json"
+        );
+
+    const vehiculos =
+        await cargarJSON(
+            "vehiculos_resumen.json"
+        );
+
+    const sentidos =
+        await cargarJSON(
+            "sentidos_resumen.json"
+        );
+
+    const origen =
+        document.getElementById(
+            "origen"
+        ).value;
+
+    const destino =
+        document.getElementById(
+            "destino"
+        ).value;
+
+    const lineas = [];
+
+    Object.entries(rutas)
+
+        .forEach(
+            ([linea,recorrido])=>{
+
+            if(
+
+                recorrido.includes(
+                    origen
+                )
+
+                &&
+
+                recorrido.includes(
+                    destino
+                )
+
+            ){
+
+                lineas.push(
+                    linea
+                );
+
+            }
+
+        });
+
+    if(
+        !lineas.length
+    ){
+
+        document
+            .getElementById(
+                "resultado"
+            )
+            .innerHTML =
+
+            `
+            <div class="card">
+            No se ha encontrado ruta.
+            </div>
+            `;
+
+        return;
+
+    }
+
+    lineas.sort((a,b)=>{
+
+        const da =
+            obtenerDistancia(
+                vehiculos,
+                origen,
+                a
+            ) ?? 999;
+
+        const db =
+            obtenerDistancia(
+                vehiculos,
+                origen,
+                b
+            ) ?? 999;
+
+        return da - db;
+
+    });
+
+    const mejor =
+        lineas[0];
+
+    const tren =
+        obtenerSentidoCorrecto(
+            sentidos,
+            rutas,
+            mejor,
+            origen,
+            destino
+        );
+
+    let html =
+
+    `
+    <div class="card ok">
+
+    <h2>
+    ✅ Ruta recomendada
+    </h2>
+
+    <h3>
+    ${mejor}
+    </h3>
+
+    <p>
+
+    Destino del tren:
+
+    <strong>
+
+    ${
+        tren
+        ?
+        nombreEstacion(
+            estaciones,
+            tren.destino_viaje
+        )
+        :
+        "No disponible"
+    }
+
+    </strong>
+
+    </p>
+
+    <p>
+
+    Tren detectado en:
+
+    <strong>
+
+    ${
+        tren
+        ?
+        nombreEstacion(
+            estaciones,
+            tren.proxima_estacion
+        )
+        :
+        "No disponible"
+    }
+
+    </strong>
+
+    </p>
+
+    <hr>
+
+    <h3>
+    Alternativas
+    </h3>
+    `;
+
+    lineas.forEach(
+        linea => {
+
+        const t =
+            obtenerSentidoCorrecto(
+                sentidos,
+                rutas,
+                linea,
+                origen,
+                destino
+            );
+
+        html +=
+
+        `
+        <div class="linea">
+
+        <strong>
+        ${linea}
+        </strong>
+
+        <br>
+
+        Destino:
+
+        ${
+            t
+            ?
+            nombreEstacion(
+                estaciones,
+                t.destino_viaje
+            )
+            :
+            "No disponible"
+        }
+
+        </div>
+        `;
+
+    });
+
+    html +=
+    "</div>";
+
+    document
+        .getElementById(
+            "resultado"
+        )
+        .innerHTML = html;
+
+}
+
+async function iniciar(){
+
+    const estaciones =
+        await cargarJSON(
+            "estaciones-madrid.json"
+        );
 
     const origen =
         document.getElementById(
@@ -266,334 +493,34 @@ async function cargarEstaciones(){
 
     Object.entries(estaciones)
 
-        .sort((a,b)=>
+        .sort(
+            (a,b)=>
 
             a[1].nombre.localeCompare(
-                b[1].nombre,
-                "es"
+                b[1].nombre
             )
-
         )
 
-        .forEach(([id,datos]) => {
+        .forEach(
+            ([id,datos])=>{
 
-            const o1 =
-                document.createElement(
-                    "option"
-                );
+            origen.innerHTML +=
 
-            o1.value = id;
-            o1.textContent =
-                datos.nombre;
+            `<option value="${id}">
+            ${datos.nombre}
+            </option>`;
 
-            origen.appendChild(o1);
+            destino.innerHTML +=
 
-            const o2 =
-                document.createElement(
-                    "option"
-                );
-
-            o2.value = id;
-            o2.textContent =
-                datos.nombre;
-
-            destino.appendChild(o2);
+            `<option value="${id}">
+            ${datos.nombre}
+            </option>`;
 
         });
 
 }
 
-async function buscarRuta(){
-
-    const origen =
-        document.getElementById(
-            "origen"
-        ).value;
-
-    const destino =
-        document.getElementById(
-            "destino"
-        ).value;
-
-    if(origen === destino){
-
-        document
-            .getElementById(
-                "resultado"
-            )
-            .innerHTML =
-            `
-            <div class="error">
-            El origen y destino son iguales.
-            </div>
-            `;
-
-        return;
-
-    }
-
-    const estaciones =
-        await obtenerEstaciones();
-
-    const rutas =
-        await obtenerRutas();
-
-    const vehiculos =
-        await obtenerVehiculos();
-
-    const sentidos =
-        await obtenerSentidos();
-
-    const afectadas =
-        await obtenerLineasAfectadas();
-
-    const lineasPosibles = [];
-
-    Object.entries(rutas)
-
-        .forEach(([linea,paradas]) => {
-
-            if(
-                paradas.includes(origen)
-                &&
-                paradas.includes(destino)
-            ){
-
-                lineasPosibles.push(
-                    linea
-                );
-
-            }
-
-        });
-
-    const disponibles =
-
-        lineasPosibles.filter(
-            linea =>
-                !afectadas.includes(
-                    linea
-                )
-        );
-
-    disponibles.sort((a,b)=>{
-
-        const da =
-
-            obtenerDistancia(
-                vehiculos,
-                origen,
-                a
-            ) ?? 999;
-
-        const db =
-
-            obtenerDistancia(
-                vehiculos,
-                origen,
-                b
-            ) ?? 999;
-
-        return da - db;
-
-    });
-
-    if(!disponibles.length){
-
-        document
-            .getElementById(
-                "resultado"
-            )
-            .innerHTML =
-            `
-            <div class="error">
-            <h2>
-            🚨 Sin alternativa disponible
-            </h2>
-            </div>
-            `;
-
-        return;
-
-    }
-
-    const recomendada =
-        disponibles[0];
-
-    const distancia =
-        obtenerDistancia(
-            vehiculos,
-            origen,
-            recomendada
-        );
-
-    const sentido =
-        obtenerSentido(
-            sentidos,
-            recomendada
-        );
-
-    let html =
-
-    `
-    <div class="ok">
-
-        <h2>
-        ✅ Ruta recomendada
-        </h2>
-
-        <h3>
-        ${recomendada}
-        </h3>
-
-        <p>
-
-        Tren detectado en:
-
-        <strong>
-
-        ${
-            sentido?.proxima_estacion
-            ?
-            (
-                estaciones[
-                    sentido.proxima_estacion
-                ]?.nombre
-                ||
-                sentido.proxima_estacion
-            )
-            :
-            "No disponible"
-        }
-
-        </strong>
-
-        </p>
-
-        <p>
-
-        Destino del tren:
-
-        <strong>
-
-        ${
-            sentido?.destino_viaje
-            ?
-            (
-                estaciones[
-                    sentido.destino_viaje
-                ]?.nombre
-                ||
-                sentido.destino_viaje
-            )
-            :
-            "No disponible"
-        }
-
-        </strong>
-
-        </p>
-
-        <p>
-
-        Distancia:
-
-        <strong>
-
-        ${
-            distancia != null
-            ?
-            distancia + " km"
-            :
-            "No disponible"
-        }
-
-        </strong>
-
-        </p>
-
-        <div class="info">
-
-            <strong>
-            Alternativas
-            </strong>
-
-            <br><br>
-    `;
-
-    disponibles.forEach(linea => {
-
-        const d =
-            obtenerDistancia(
-                vehiculos,
-                origen,
-                linea
-            );
-
-        const s =
-            obtenerSentido(
-                sentidos,
-                linea
-            );
-
-        html +=
-        `
-        <div class="linea">
-
-        <strong>
-        ${linea}
-        </strong>
-
-        · Destino:
-
-        ${
-            s?.destino_viaje
-            ?
-            (
-                estaciones[
-                    s.destino_viaje
-                ]?.nombre
-                ||
-                s.destino_viaje
-            )
-            :
-            "No disponible"
-        }
-
-        · Distancia:
-
-        ${
-            d != null
-            ?
-            d + " km"
-            :
-            "No disponible"
-        }
-
-        </div>
-        `;
-
-    });
-
-    html +=
-    `
-        </div>
-    </div>
-    `;
-
-    document
-        .getElementById(
-            "resultado"
-        )
-        .innerHTML = html;
-
-}
-
-window.onload = () => {
-
-    cargarEstaciones();
-
-};
+iniciar();
 
 </script>
 
