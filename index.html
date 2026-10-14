@@ -8,15 +8,19 @@
 <style>
 
 body{
-    font-family: Arial, sans-serif;
+    font-family: Arial,sans-serif;
     max-width:1000px;
     margin:auto;
     padding:20px;
 }
 
+h1{
+    color:#333;
+}
+
 select{
     padding:10px;
-    min-width:300px;
+    min-width:320px;
     margin:5px;
 }
 
@@ -25,36 +29,35 @@ button{
     cursor:pointer;
 }
 
+#resultado{
+    margin-top:20px;
+}
+
 .ok{
     background:#e8f8e8;
     border:1px solid green;
-    padding:15px;
     border-radius:5px;
+    padding:15px;
 }
 
 .error{
     background:#fff5f5;
     border:1px solid red;
-    padding:15px;
     border-radius:5px;
+    padding:15px;
 }
 
 .info{
-    margin-top:10px;
+    margin-top:15px;
     background:#eef5ff;
     border:1px solid #0066cc;
-    padding:10px;
+    padding:15px;
     border-radius:5px;
-}
-
-#resultado{
-    margin-top:20px;
 }
 
 </style>
 
 </head>
-
 <body>
 
 <h1>🚆 Información al Viajero</h1>
@@ -62,19 +65,51 @@ button{
 <p>Seleccione origen y destino:</p>
 
 <select id="origen">
-    <option value="18000">Madrid-Atocha Cercanías</option>
-    <option value="18001">Madrid-Recoletos</option>
-    <option value="18002">Madrid-Nuevos Ministerios</option>
-    <option value="18101">Sol</option>
-    <option value="17000">Madrid-Chamartín-Clara Campoamor</option>
+
+    <option value="18000">
+        Madrid-Atocha Cercanías
+    </option>
+
+    <option value="18001">
+        Madrid-Recoletos
+    </option>
+
+    <option value="18002">
+        Madrid-Nuevos Ministerios
+    </option>
+
+    <option value="18101">
+        Sol
+    </option>
+
+    <option value="17000">
+        Madrid-Chamartín-Clara Campoamor
+    </option>
+
 </select>
 
 <select id="destino">
-    <option value="17000">Madrid-Chamartín-Clara Campoamor</option>
-    <option value="18000">Madrid-Atocha Cercanías</option>
-    <option value="18001">Madrid-Recoletos</option>
-    <option value="18002">Madrid-Nuevos Ministerios</option>
-    <option value="18101">Sol</option>
+
+    <option value="17000">
+        Madrid-Chamartín-Clara Campoamor
+    </option>
+
+    <option value="18000">
+        Madrid-Atocha Cercanías
+    </option>
+
+    <option value="18001">
+        Madrid-Recoletos
+    </option>
+
+    <option value="18002">
+        Madrid-Nuevos Ministerios
+    </option>
+
+    <option value="18101">
+        Sol
+    </option>
+
 </select>
 
 <br><br>
@@ -131,6 +166,7 @@ async function obtenerLineasAfectadas(){
             texto.includes("interrumpido") ||
             texto.includes("suspendido") ||
             texto.includes("suprimido") ||
+            texto.includes("suprimidos") ||
             texto.includes("no circulan");
 
         if(!grave){
@@ -179,7 +215,7 @@ async function buscarRuta(){
         .getElementById("resultado")
         .innerHTML = `
             <div class="error">
-                El origen y destino son iguales.
+                El origen y el destino son iguales.
             </div>
         `;
 
@@ -216,24 +252,34 @@ async function buscarRuta(){
     const disponibles =
         lineasPosibles.filter(
             linea =>
-            !afectadas.includes(linea)
+
+                !afectadas.includes(linea)
+
+                &&
+
+                salidas[origen]?.[linea]
+
         );
 
     disponibles.sort((a,b)=>{
 
         const horaA =
-            salidas[a] || "99:99:99";
+            salidas[origen]?.[a]
+            || "99:99:99";
 
         const horaB =
-            salidas[b] || "99:99:99";
+            salidas[origen]?.[b]
+            || "99:99:99";
 
-        return horaA.localeCompare(horaB);
+        return horaA.localeCompare(
+            horaB
+        );
 
     });
 
     let html = "";
 
-    if(disponibles.length > 0){
+    if(disponibles.length){
 
         const recomendada =
             disponibles[0];
@@ -247,17 +293,21 @@ async function buscarRuta(){
             </h2>
 
             <p>
-                Línea:
                 <strong>
-                    ${recomendada}
+                    Línea ${recomendada}
                 </strong>
             </p>
 
             <p>
-                Próxima salida:
+
+                Próxima salida detectada:
+
                 <strong>
-                    ${salidas[recomendada] || "Sin datos"}
+
+                    ${salidas[origen]?.[recomendada]}
+
                 </strong>
+
             </p>
 
             <div class="info">
@@ -270,10 +320,10 @@ async function buscarRuta(){
 
                 ${disponibles.map(
                     linea =>
-                    `
-                    ${linea}
-                    (${salidas[linea] || "Sin datos"})
-                    `
+
+                    `${linea}
+                    (${salidas[origen]?.[linea]})`
+
                 ).join("<br>")}
 
             </div>
@@ -293,10 +343,11 @@ async function buscarRuta(){
             </h2>
 
             <p>
-                Todas las líneas identificadas
-                para este trayecto presentan
-                incidencias graves o no existen
-                datos en tiempo real.
+
+                No existen líneas para este
+                trayecto con datos de salida
+                disponibles en este momento.
+
             </p>
 
         </div>
