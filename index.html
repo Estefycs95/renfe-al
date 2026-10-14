@@ -47,6 +47,14 @@ button{
     border-radius:5px;
 }
 
+.info{
+    background:#eef6ff;
+    border:1px solid #0066cc;
+    padding:15px;
+    border-radius:5px;
+    margin-top:10px;
+}
+
 </style>
 
 </head>
@@ -94,6 +102,29 @@ async function obtenerLineasAfectadas(){
         new Set();
 
     datos.entity.forEach(entidad => {
+
+        const texto =
+            entidad.alert
+            ?.descriptionText
+            ?.translation?.[0]
+            ?.text
+            ?.toLowerCase() || "";
+
+        const esGrave =
+
+            texto.includes("sin servicio") ||
+            texto.includes("interrumpido") ||
+            texto.includes("suspendido") ||
+            texto.includes("suspende") ||
+            texto.includes("cortado") ||
+            texto.includes("no circulan") ||
+            texto.includes("suprimido") ||
+            texto.includes("suprimidos") ||
+            texto.includes("suprimen");
+
+        if(!esGrave){
+            return;
+        }
 
         entidad.alert
             ?.informedEntity
@@ -182,17 +213,27 @@ async function buscarRuta(){
         });
 
     const disponibles =
-    lineasPosibles.filter(
-        linea =>
-        !afectadas.includes(linea)
+        lineasPosibles.filter(
+            linea =>
+            !afectadas.includes(linea)
+        );
+
+    console.log(
+        "Lineas posibles:",
+        lineasPosibles
     );
 
-console.log("Lineas posibles:", lineasPosibles);
-console.log("Afectadas:", afectadas);
-console.log("Disponibles:", disponibles);
+    console.log(
+        "Afectadas graves:",
+        afectadas
+    );
 
-let html = "";
+    console.log(
+        "Disponibles:",
+        disponibles
+    );
 
+    let html = "";
 
     if(disponibles.length > 0){
 
@@ -200,26 +241,27 @@ let html = "";
             <div class="ok">
 
                 <h2>
-                ✅ Ruta recomendada
+                    ✅ Ruta recomendada
                 </h2>
 
                 <p>
-
-                Utilice la línea:
-
-                <strong>
-                ${disponibles[0]}
-                </strong>
-
+                    Utilice la línea:
+                    <strong>
+                        ${disponibles[0]}
+                    </strong>
                 </p>
 
-                <p>
+                <div class="info">
 
-                Alternativas disponibles:
+                    <strong>
+                        Otras alternativas disponibles:
+                    </strong>
 
-                ${disponibles.join(", ")}
+                    <br><br>
 
-                </p>
+                    ${disponibles.join(", ")}
+
+                </div>
 
             </div>
         `;
@@ -230,14 +272,15 @@ let html = "";
             <div class="error">
 
                 <h2>
-                🚨 Sin alternativa disponible
+                    🚨 Sin alternativa disponible
                 </h2>
 
                 <p>
 
-                Todas las líneas identificadas
-                para este trayecto presentan
-                incidencias o no existen datos.
+                    Todas las líneas detectadas
+                    para este trayecto se
+                    encuentran afectadas por
+                    incidencias graves.
 
                 </p>
 
