@@ -56,4 +56,3 @@ with open(
     )
 
 print(f"Guardados {len(salidas)} viajes")
-`
