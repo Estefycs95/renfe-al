@@ -30,14 +30,38 @@ async function cargar(){
 
     datos.entity.forEach(e => {
 
-        const texto =
-            e.alert?.descriptionText
-            ?.translation?.[0]
-            ?.text;
+        const alerta =
+            e.alert;
 
-        if(texto){
-            html += "<p>" + texto + "</p>";
-        }
+        if(!alerta) return;
+
+        const lineas =
+            alerta.informedEntity
+            ?.map(x => x.routeId)
+            ?.join(", ");
+
+        const texto =
+            alerta.descriptionText
+            ?.translation?.[0]
+            ?.text || "";
+
+        html += `
+            <div style="
+                border:1px solid red;
+                padding:10px;
+                margin-bottom:15px;
+                background:#fff5f5;
+            ">
+
+                <b>Líneas:</b>
+                ${lineas}
+
+                <br><br>
+
+                ${texto}
+
+            </div>
+        `;
 
     });
 
