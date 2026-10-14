@@ -9,28 +9,20 @@
 
 body{
     font-family: Arial, sans-serif;
-    max-width: 1000px;
-    margin: 20px auto;
-    padding: 20px;
-}
-
-h1{
-    color:#333;
+    max-width:1000px;
+    margin:auto;
+    padding:20px;
 }
 
 select{
     padding:10px;
-    margin:5px;
     min-width:300px;
+    margin:5px;
 }
 
 button{
     padding:10px 20px;
     cursor:pointer;
-}
-
-#resultado{
-    margin-top:20px;
 }
 
 .ok{
@@ -48,16 +40,21 @@ button{
 }
 
 .info{
-    background:#eef6ff;
-    border:1px solid #0066cc;
-    padding:15px;
-    border-radius:5px;
     margin-top:10px;
+    background:#eef5ff;
+    border:1px solid #0066cc;
+    padding:10px;
+    border-radius:5px;
+}
+
+#resultado{
+    margin-top:20px;
 }
 
 </style>
 
 </head>
+
 <body>
 
 <h1>🚆 Información al Viajero</h1>
@@ -90,13 +87,31 @@ Buscar alternativa
 
 <script>
 
+async function obtenerRutas(){
+
+    const r =
+        await fetch("./rutas-madrid.json");
+
+    return await r.json();
+
+}
+
+async function obtenerSalidas(){
+
+    const r =
+        await fetch("./salidas.json");
+
+    return await r.json();
+
+}
+
 async function obtenerLineasAfectadas(){
 
-    const respuesta =
+    const r =
         await fetch("./incidencias.json");
 
     const datos =
-        await respuesta.json();
+        await r.json();
 
     const afectadas =
         new Set();
@@ -110,19 +125,15 @@ async function obtenerLineasAfectadas(){
             ?.text
             ?.toLowerCase() || "";
 
-        const esGrave =
+        const grave =
 
             texto.includes("sin servicio") ||
             texto.includes("interrumpido") ||
             texto.includes("suspendido") ||
-            texto.includes("suspende") ||
-            texto.includes("cortado") ||
-            texto.includes("no circulan") ||
             texto.includes("suprimido") ||
-            texto.includes("suprimidos") ||
-            texto.includes("suprimen");
+            texto.includes("no circulan");
 
-        if(!esGrave){
+        if(!grave){
             return;
         }
 
@@ -130,14 +141,14 @@ async function obtenerLineasAfectadas(){
             ?.informedEntity
             ?.forEach(item => {
 
-                const match =
+                const m =
                     item.routeId
                     ?.match(/C\d+[ab]?/i);
 
-                if(match){
+                if(m){
 
                     afectadas.add(
-                        match[0].toUpperCase()
+                        m[0].toUpperCase()
                     );
 
                 }
@@ -150,42 +161,37 @@ async function obtenerLineasAfectadas(){
 
 }
 
-async function obtenerRutas(){
-
-    const respuesta =
-        await fetch("./rutas-madrid.json");
-
-    return await respuesta.json();
-
-}
-
 async function buscarRuta(){
 
     const origen =
-        document.getElementById(
-            "origen"
-        ).value;
+        document
+        .getElementById("origen")
+        .value;
 
     const destino =
-        document.getElementById(
-            "destino"
-        ).value;
+        document
+        .getElementById("destino")
+        .value;
 
     if(origen === destino){
 
         document
-            .getElementById("resultado")
-            .innerHTML = `
-                <div class="error">
-                    El origen y el destino son iguales.
-                </div>
-            `;
+        .getElementById("resultado")
+        .innerHTML = `
+            <div class="error">
+                El origen y destino son iguales.
+            </div>
+        `;
 
         return;
+
     }
 
     const rutas =
         await obtenerRutas();
+
+    const salidas =
+        await obtenerSalidas();
 
     const afectadas =
         await obtenerLineasAfectadas();
@@ -195,15 +201,10 @@ async function buscarRuta(){
     Object.entries(rutas)
         .forEach(([linea, estaciones]) => {
 
-            const origenExiste =
-                estaciones.includes(origen);
-
-            const destinoExiste =
-                estaciones.includes(destino);
-
             if(
-                origenExiste &&
-                destinoExiste
+                estaciones.includes(origen)
+                &&
+                estaciones.includes(destino)
             ){
 
                 lineasPosibles.push(linea);
@@ -218,73 +219,88 @@ async function buscarRuta(){
             !afectadas.includes(linea)
         );
 
-    console.log(
-        "Lineas posibles:",
-        lineasPosibles
-    );
+    disponibles.sort((a,b)=>{
 
-    console.log(
-        "Afectadas graves:",
-        afectadas
-    );
+        const horaA =
+            salidas[a] || "99:99:99";
 
-    console.log(
-        "Disponibles:",
-        disponibles
-    );
+        const horaB =
+            salidas[b] || "99:99:99";
+
+        return horaA.localeCompare(horaB);
+
+    });
 
     let html = "";
 
     if(disponibles.length > 0){
 
+        const recomendada =
+            disponibles[0];
+
         html = `
-            <div class="ok">
 
-                <h2>
-                    ✅ Ruta recomendada
-                </h2>
+        <div class="ok">
 
-                <p>
-                    Utilice la línea:
-                    <strong>
-                        ${disponibles[0]}
-                    </strong>
-                </p>
+            <h2>
+                ✅ Ruta recomendada
+            </h2>
 
-                <div class="info">
+            <p>
+                Línea:
+                <strong>
+                    ${recomendada}
+                </strong>
+            </p>
 
-                    <strong>
-                        Otras alternativas disponibles:
-                    </strong>
+            <p>
+                Próxima salida:
+                <strong>
+                    ${salidas[recomendada] || "Sin datos"}
+                </strong>
+            </p>
 
-                    <br><br>
+            <div class="info">
 
-                    ${disponibles.join(", ")}
+                <strong>
+                    Alternativas disponibles
+                </strong>
 
-                </div>
+                <br><br>
+
+                ${disponibles.map(
+                    linea =>
+                    `
+                    ${linea}
+                    (${salidas[linea] || "Sin datos"})
+                    `
+                ).join("<br>")}
 
             </div>
+
+        </div>
+
         `;
 
     }else{
 
         html = `
-            <div class="error">
 
-                <h2>
-                    🚨 Sin alternativa disponible
-                </h2>
+        <div class="error">
 
-                <p>
+            <h2>
+                🚨 Sin alternativa disponible
+            </h2>
 
-                    Todas las líneas detectadas
-                    para este trayecto se
-                    encuentran afectadas por
-                    incidencias graves.
+            <p>
+                Todas las líneas identificadas
+                para este trayecto presentan
+                incidencias graves o no existen
+                datos en tiempo real.
+            </p>
 
-                </p>
+        </div>
 
-            </div>
         `;
 
     }
