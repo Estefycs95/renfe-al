@@ -9,24 +9,24 @@
 
 body{
     font-family: Arial, sans-serif;
-    max-width: 1100px;
-    margin: auto;
-    padding: 20px;
+    max-width:1100px;
+    margin:auto;
+    padding:20px;
 }
 
 select{
-    padding: 10px;
-    min-width: 350px;
-    margin: 5px;
+    padding:10px;
+    min-width:350px;
+    margin:5px;
 }
 
 button{
-    padding: 10px 20px;
-    cursor: pointer;
+    padding:10px 20px;
+    cursor:pointer;
 }
 
 #resultado{
-    margin-top: 20px;
+    margin-top:20px;
 }
 
 .ok{
@@ -56,6 +56,7 @@ button{
 }
 
 </style>
+
 </head>
 
 <body>
@@ -87,13 +88,13 @@ async function obtenerRutas(){
     return await r.json();
 }
 
-async function obtenerSalidas(){
-    const r = await fetch("./salidas.json");
+async function obtenerVehiculos(){
+    const r = await fetch("./vehiculos_resumen.json");
     return await r.json();
 }
 
-async function obtenerVehiculos(){
-    const r = await fetch("./vehiculos_resumen.json");
+async function obtenerSentidos(){
+    const r = await fetch("./sentidos_resumen.json");
     return await r.json();
 }
 
@@ -130,8 +131,9 @@ async function obtenerLineasAfectadas(){
         entidad.alert?.informedEntity?.forEach(item => {
 
             const m =
-                item.routeId
-                ?.match(/C\d+[ABab]?/i);
+                item.routeId?.match(
+                    /C\d+[ABab]?/i
+                );
 
             if(m){
                 afectadas.add(
@@ -153,24 +155,18 @@ async function cargarEstaciones(){
         await obtenerEstaciones();
 
     const origen =
-        document.getElementById(
-            "origen"
-        );
+        document.getElementById("origen");
 
     const destino =
-        document.getElementById(
-            "destino"
-        );
+        document.getElementById("destino");
 
     Object.entries(estaciones)
 
         .sort((a,b)=>
-
             a[1].nombre.localeCompare(
                 b[1].nombre,
                 "es"
             )
-
         )
 
         .forEach(([id,datos])=>{
@@ -184,9 +180,7 @@ async function cargarEstaciones(){
             o1.textContent =
                 datos.nombre;
 
-            origen.appendChild(
-                o1
-            );
+            origen.appendChild(o1);
 
             const o2 =
                 document.createElement(
@@ -197,14 +191,9 @@ async function cargarEstaciones(){
             o2.textContent =
                 datos.nombre;
 
-            destino.appendChild(
-                o2
-            );
+            destino.appendChild(o2);
 
         });
-
-    origen.value = "18000";
-    destino.value = "17000";
 
 }
 
@@ -227,69 +216,65 @@ function obtenerDistancia(
 
     if(linea === "C4"){
 
-        const a = datos["C4A"];
-        const b = datos["C4B"];
+        return Math.min(
+            datos["C4A"] ?? 999,
+            datos["C4B"] ?? 999
+        );
 
-        if(a != null && b != null){
-            return Math.min(a,b);
-        }
-
-        return a ?? b ?? null;
     }
 
     if(linea === "C8"){
 
-        const a = datos["C8A"];
-        const b = datos["C8B"];
+        return Math.min(
+            datos["C8A"] ?? 999,
+            datos["C8B"] ?? 999
+        );
 
-        if(a != null && b != null){
-            return Math.min(a,b);
-        }
-
-        return a ?? b ?? null;
     }
 
     return null;
 
 }
 
-function obtenerHora(
-    salidas,
+function obtenerSentido(
+    sentidos,
     estacion,
     linea
 ){
 
-    const datos =
-        salidas[estacion];
+    const info =
+        sentidos?.[estacion];
 
-    if(!datos){
+    if(!info){
         return null;
     }
 
-    if(datos[linea]){
-        return datos[linea];
+    if(info[linea]){
+        return info[linea];
     }
 
     if(linea === "C4"){
 
         return (
-            datos["C4A"]
+            info["C4A"]
             ||
-            datos["C4B"]
+            info["C4B"]
             ||
             null
         );
+
     }
 
     if(linea === "C8"){
 
         return (
-            datos["C8A"]
+            info["C8A"]
             ||
-            datos["C8B"]
+            info["C8B"]
             ||
             null
         );
+
     }
 
     return null;
@@ -311,13 +296,15 @@ async function buscarRuta(){
     if(origen === destino){
 
         document
-        .getElementById(
-            "resultado"
-        )
-        .innerHTML = `
-        <div class="error">
-        El origen y el destino son iguales.
-        </div>`;
+            .getElementById(
+                "resultado"
+            )
+            .innerHTML =
+            `
+            <div class="error">
+            El origen y destino son iguales.
+            </div>
+            `;
 
         return;
     }
@@ -325,11 +312,11 @@ async function buscarRuta(){
     const rutas =
         await obtenerRutas();
 
-    const salidas =
-        await obtenerSalidas();
-
     const vehiculos =
         await obtenerVehiculos();
+
+    const sentidos =
+        await obtenerSentidos();
 
     const afectadas =
         await obtenerLineasAfectadas();
@@ -338,12 +325,21 @@ async function buscarRuta(){
 
     Object.entries(rutas)
 
-        .forEach(([linea, estaciones]) => {
+        .forEach(([linea,
+            estaciones])=>{
 
             if(
-                estaciones.includes(origen)
+
+                estaciones.includes(
+                    origen
+                )
+
                 &&
-                estaciones.includes(destino)
+
+                estaciones.includes(
+                    destino
+                )
+
             ){
 
                 lineasPosibles.push(
@@ -355,16 +351,18 @@ async function buscarRuta(){
         });
 
     const disponibles =
+
         lineasPosibles.filter(
             linea =>
-            !afectadas.includes(
-                linea
-            )
+                !afectadas.includes(
+                    linea
+                )
         );
 
     disponibles.sort((a,b)=>{
 
         const da =
+
             obtenerDistancia(
                 vehiculos,
                 origen,
@@ -372,6 +370,7 @@ async function buscarRuta(){
             ) ?? 999;
 
         const db =
+
             obtenerDistancia(
                 vehiculos,
                 origen,
@@ -385,14 +384,18 @@ async function buscarRuta(){
     if(!disponibles.length){
 
         document
-        .getElementById(
-            "resultado"
-        )
-        .innerHTML = `
-        <div class="error">
-        <h2>🚨 Sin alternativa disponible</h2>
-        </div>
-        `;
+            .getElementById(
+                "resultado"
+            )
+            .innerHTML =
+
+            `
+            <div class="error">
+            <h2>
+            🚨 Sin alternativa disponible
+            </h2>
+            </div>
+            `;
 
         return;
 
@@ -402,21 +405,24 @@ async function buscarRuta(){
         disponibles[0];
 
     const distancia =
+
         obtenerDistancia(
             vehiculos,
             origen,
             recomendada
         );
 
-    const hora =
-        obtenerHora(
-            salidas,
+    const sentido =
+
+        obtenerSentido(
+            sentidos,
             origen,
             recomendada
         );
 
-    let html = `
+    let html =
 
+    `
     <div class="ok">
 
         <h2>
@@ -429,20 +435,37 @@ async function buscarRuta(){
 
         <p>
 
-        Horario:
+        Próxima estación:
 
         <strong>
+
         ${
-            hora ??
-            "No disponible"
+            sentido?.proxima_estacion
+            || "No disponible"
         }
+
         </strong>
 
         </p>
 
         <p>
 
-        Tren más cercano:
+        Destino del tren:
+
+        <strong>
+
+        ${
+            sentido?.destino_viaje
+            || "No disponible"
+        }
+
+        </strong>
+
+        </p>
+
+        <p>
+
+        Distancia:
 
         <strong>
 
@@ -458,41 +481,45 @@ async function buscarRuta(){
 
         <div class="info">
 
-            <strong>
-            Alternativas disponibles
-            </strong>
+        <strong>
+        Alternativas
+        </strong>
 
-            <br><br>
-
+        <br><br>
     `;
 
     disponibles.forEach(linea=>{
 
         const d =
+
             obtenerDistancia(
                 vehiculos,
                 origen,
                 linea
             );
 
-        const h =
-            obtenerHora(
-                salidas,
+        const s =
+
+            obtenerSentido(
+                sentidos,
                 origen,
                 linea
             );
 
-        html += `
+        html +=
 
+        `
         <div class="linea">
 
-        <strong>${linea}</strong>
+        <strong>
+        ${linea}
+        </strong>
 
-        · Horario:
+        · Destino:
 
         ${
-            h ??
-            "No disponible"
+            s?.destino_viaje
+            || "No disponible"
         }
 
         · Distancia:
@@ -504,21 +531,21 @@ async function buscarRuta(){
         }
 
         </div>
-
         `;
 
     });
 
-    html += `
-        </div>
+    html +=
+    `
+    </div>
     </div>
     `;
 
     document
-    .getElementById(
-        "resultado"
-    )
-    .innerHTML = html;
+        .getElementById(
+            "resultado"
+        )
+        .innerHTML = html;
 
 }
 
