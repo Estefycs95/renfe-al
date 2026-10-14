@@ -79,28 +79,28 @@ with open("stop_times.txt", encoding="utf-8") as f:
 
 resultado = {}
 
+ESTACIONES_MADRID = {
+    "17000",
+    "18000",
+    "18001",
+    "18002",
+    "18003",
+    "18004",
+    "18005",
+    "18101"
+}
+
 for linea, viajes in trayectos.items():
 
-    mejor = max(
-        viajes,
-        key=len
-    )
+    for viaje in viajes:
 
-    resultado[linea] = mejor
+        madrid = [
+            parada
+            for parada in viaje
+            if parada in ESTACIONES_MADRID
+        ]
 
-with open(
-    "rutas-madrid.json",
-    "w",
-    encoding="utf-8"
-) as f:
+        if len(madrid) > 1:
 
-    json.dump(
-        resultado,
-        f,
-        ensure_ascii=False,
-        indent=2
-    )
-
-print(
-    "Generado rutas-madrid.json"
-)
+            resultado[linea] = madrid
+            break
