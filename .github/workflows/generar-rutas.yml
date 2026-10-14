@@ -46,6 +46,10 @@ jobs:
         run: |
           python generar_resumen_sentidos.py
 
+      - name: Actualizar incidencias
+        run: |
+          python generar_incidencias.py
+
       - name: Commit cambios
         run: |
 
