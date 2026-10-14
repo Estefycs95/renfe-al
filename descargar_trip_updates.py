@@ -1,59 +1,35 @@
-import json
-import requests
+name: Actualizar horarios tiempo real
 
-from google.transit import gtfs_realtime_pb2
+on:
+  workflow_dispatch:
 
-URL = "https://gtfsrt.renfe.com/trip_updates.pb"
+permissions:
+  contents: write
 
-feed = gtfs_realtime_pb2.FeedMessage()
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
 
-data = requests.get(URL, timeout=60).content
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
 
-feed.ParseFromString(data)
+      - name: Instalar dependencias
+        run: |
+          pip install gtfs-realtime-bindings requests protobuf
 
-salidas = []
+      - name: Descargar GTFS RT
+        run: |
+          python descargar_trip_updates.py
 
-for entity in feed.entity:
+      - name: Commit cambios
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
 
-    if not entity.HasField("trip_update"):
-        continue
+          git add trip_updates.json
 
-    trip = entity.trip_update
-
-    item = {
-        "trip_id": trip.trip.trip_id,
-        "route_id": trip.trip.route_id,
-        "stops": []
-    }
-
-    for stop in trip.stop_time_update:
-
-        registro = {
-            "stop_id": stop.stop_id
-        }
-
-        if stop.arrival.time:
-            registro["arrival"] = stop.arrival.time
-
-        if stop.departure.time:
-            registro["departure"] = stop.departure.time
-
-        item["stops"].append(registro)
-
-    salidas.append(item)
-
-with open(
-    "trip_updates.json",
-    "w",
-    encoding="utf-8"
-) as f:
-
-    json.dump(
-        salidas,
-        f,
-        ensure_ascii=False,
-        indent=2
-    )
-
-print(f"Guardados {len(salidas)} viajes")
-``
+          if ! git diff --cached --quiet; then
+            git commit -m "Actualizar tiempo real"
+            git push
+          fi
