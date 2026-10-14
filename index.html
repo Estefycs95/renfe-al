@@ -1,39 +1,32 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Información al Viajero</title>
 
 <style>
 
 body{
-    font-family: Arial,sans-serif;
-    max-width:1100px;
-    margin:auto;
-    padding:20px;
-}
-
-h1{
-    color:#333;
+    font-family: Arial, sans-serif;
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
 }
 
 select{
-    padding:10px;
-    min-width:350px;
-    margin:5px;
+    padding: 10px;
+    min-width: 350px;
+    margin: 5px;
 }
 
 button{
-    padding:10px 20px;
-    cursor:pointer;
+    padding: 10px 20px;
+    cursor: pointer;
 }
 
 #resultado{
-    margin-top:20px;
+    margin-top: 20px;
 }
 
 .ok{
@@ -63,7 +56,6 @@ button{
 }
 
 </style>
-
 </head>
 
 <body>
@@ -73,7 +65,6 @@ button{
 <p>Seleccione origen y destino</p>
 
 <select id="origen"></select>
-
 <select id="destino"></select>
 
 <br><br>
@@ -87,53 +78,34 @@ Buscar alternativa
 <script>
 
 async function obtenerEstaciones(){
-
-    const r =
-        await fetch("./estaciones-madrid.json");
-
+    const r = await fetch("./estaciones-madrid.json");
     return await r.json();
-
 }
 
 async function obtenerRutas(){
-
-    const r =
-        await fetch("./rutas-madrid.json");
-
+    const r = await fetch("./rutas-madrid.json");
     return await r.json();
-
 }
 
 async function obtenerSalidas(){
-
-    const r =
-        await fetch("./salidas.json");
-
+    const r = await fetch("./salidas.json");
     return await r.json();
-
 }
 
 async function obtenerVehiculos(){
-
-    const r =
-        await fetch("./vehiculos_resumen.json");
-
+    const r = await fetch("./vehiculos_resumen.json");
     return await r.json();
-
 }
 
 async function obtenerLineasAfectadas(){
 
-    const r =
-        await fetch("./incidencias.json");
+    const r = await fetch("./incidencias.json");
 
-    const datos =
-        await r.json();
+    const datos = await r.json();
 
-    const afectadas =
-        new Set();
+    const afectadas = new Set();
 
-    datos.entity.forEach(entidad => {
+    datos.entity?.forEach(entidad => {
 
         const texto =
             entidad.alert
@@ -155,23 +127,19 @@ async function obtenerLineasAfectadas(){
             return;
         }
 
-        entidad.alert
-            ?.informedEntity
-            ?.forEach(item => {
+        entidad.alert?.informedEntity?.forEach(item => {
 
-                const m =
-                    item.routeId
-                    ?.match(/C\d+[ab]?/i);
+            const m =
+                item.routeId
+                ?.match(/C\d+[ABab]?/i);
 
-                if(m){
+            if(m){
+                afectadas.add(
+                    m[0].toUpperCase()
+                );
+            }
 
-                    afectadas.add(
-                        m[0].toUpperCase()
-                    );
-
-                }
-
-            });
+        });
 
     });
 
@@ -185,24 +153,27 @@ async function cargarEstaciones(){
         await obtenerEstaciones();
 
     const origen =
-        document.getElementById("origen");
+        document.getElementById(
+            "origen"
+        );
 
     const destino =
-        document.getElementById("destino");
-
-    origen.innerHTML = "";
-    destino.innerHTML = "";
+        document.getElementById(
+            "destino"
+        );
 
     Object.entries(estaciones)
 
         .sort((a,b)=>
+
             a[1].nombre.localeCompare(
                 b[1].nombre,
                 "es"
             )
+
         )
 
-        .forEach(([id,datos]) => {
+        .forEach(([id,datos])=>{
 
             const o1 =
                 document.createElement(
@@ -213,7 +184,9 @@ async function cargarEstaciones(){
             o1.textContent =
                 datos.nombre;
 
-            origen.appendChild(o1);
+            origen.appendChild(
+                o1
+            );
 
             const o2 =
                 document.createElement(
@@ -224,12 +197,102 @@ async function cargarEstaciones(){
             o2.textContent =
                 datos.nombre;
 
-            destino.appendChild(o2);
+            destino.appendChild(
+                o2
+            );
 
         });
 
     origen.value = "18000";
     destino.value = "17000";
+
+}
+
+function obtenerDistancia(
+    vehiculos,
+    estacion,
+    linea
+){
+
+    const datos =
+        vehiculos[estacion];
+
+    if(!datos){
+        return null;
+    }
+
+    if(datos[linea] != null){
+        return datos[linea];
+    }
+
+    if(linea === "C4"){
+
+        const a = datos["C4A"];
+        const b = datos["C4B"];
+
+        if(a != null && b != null){
+            return Math.min(a,b);
+        }
+
+        return a ?? b ?? null;
+    }
+
+    if(linea === "C8"){
+
+        const a = datos["C8A"];
+        const b = datos["C8B"];
+
+        if(a != null && b != null){
+            return Math.min(a,b);
+        }
+
+        return a ?? b ?? null;
+    }
+
+    return null;
+
+}
+
+function obtenerHora(
+    salidas,
+    estacion,
+    linea
+){
+
+    const datos =
+        salidas[estacion];
+
+    if(!datos){
+        return null;
+    }
+
+    if(datos[linea]){
+        return datos[linea];
+    }
+
+    if(linea === "C4"){
+
+        return (
+            datos["C4A"]
+            ||
+            datos["C4B"]
+            ||
+            null
+        );
+    }
+
+    if(linea === "C8"){
+
+        return (
+            datos["C8A"]
+            ||
+            datos["C8B"]
+            ||
+            null
+        );
+    }
+
+    return null;
 
 }
 
@@ -248,17 +311,15 @@ async function buscarRuta(){
     if(origen === destino){
 
         document
-            .getElementById(
-                "resultado"
-            )
-            .innerHTML = `
-                <div class="error">
-                    El origen y el destino son iguales.
-                </div>
-            `;
+        .getElementById(
+            "resultado"
+        )
+        .innerHTML = `
+        <div class="error">
+        El origen y el destino son iguales.
+        </div>`;
 
         return;
-
     }
 
     const rutas =
@@ -276,6 +337,7 @@ async function buscarRuta(){
     const lineasPosibles = [];
 
     Object.entries(rutas)
+
         .forEach(([linea, estaciones]) => {
 
             if(
@@ -295,156 +357,168 @@ async function buscarRuta(){
     const disponibles =
         lineasPosibles.filter(
             linea =>
-                !afectadas.includes(
-                    linea
-                )
+            !afectadas.includes(
+                linea
+            )
         );
-
-    console.log(
-        "Origen:",
-        origen
-    );
-
-    console.log(
-        "Destino:",
-        destino
-    );
-
-    console.log(
-        "Lineas posibles:",
-        lineasPosibles
-    );
-
-    console.log(
-        "Disponibles:",
-        disponibles
-    );
 
     disponibles.sort((a,b)=>{
 
-        const distanciaA =
-            vehiculos[origen]?.[a]
-            ?? 999;
+        const da =
+            obtenerDistancia(
+                vehiculos,
+                origen,
+                a
+            ) ?? 999;
 
-        const distanciaB =
-            vehiculos[origen]?.[b]
-            ?? 999;
+        const db =
+            obtenerDistancia(
+                vehiculos,
+                origen,
+                b
+            ) ?? 999;
 
-        return distanciaA -
-               distanciaB;
+        return da - db;
 
     });
 
-    let html = "";
+    if(!disponibles.length){
 
-    if(disponibles.length > 0){
-
-        const recomendada =
-            disponibles[0];
-
-        html = `
-
-        <div class="ok">
-
-            <h2>
-                ✅ Ruta recomendada
-            </h2>
-
-            <p>
-
-                <strong>
-                    ${recomendada}
-                </strong>
-
-            </p>
-
-            <p>
-
-                Próxima salida:
-
-                <strong>
-
-                    ${salidas[origen]?.[recomendada]
-                    || "Sin datos"}
-
-                </strong>
-
-            </p>
-
-            <p>
-
-                Tren más cercano:
-
-                <strong>
-
-                    ${vehiculos[origen]?.[recomendada]
-                    ?? "Sin datos"} km
-
-                </strong>
-
-            </p>
-
-            <div class="info">
-
-                <strong>
-                    Alternativas disponibles
-                </strong>
-
-                <br><br>
-
-                ${disponibles.map(
-                    linea =>
-
-                    `<div class="linea">
-
-                    <strong>${linea}</strong>
-
-                    · Salida:
-                    ${salidas[origen]?.[linea]
-                    || "Sin datos"}
-
-                    · Distancia:
-                    ${vehiculos[origen]?.[linea]
-                    ?? "Sin datos"} km
-
-                    </div>`
-
-                ).join("")}
-
-            </div>
-
-        </div>
-
-        `;
-
-    }else{
-
-        html = `
-
-        <div class="error">
-
-            <h2>
-                🚨 Sin alternativa disponible
-            </h2>
-
-            <p>
-
-                No existen líneas válidas
-                para este trayecto.
-
-            </p>
-
-        </div>
-
-        `;
-
-    }
-
-    document
+        document
         .getElementById(
             "resultado"
         )
-        .innerHTML = html;
+        .innerHTML = `
+        <div class="error">
+        <h2>🚨 Sin alternativa disponible</h2>
+        </div>
+        `;
+
+        return;
+
+    }
+
+    const recomendada =
+        disponibles[0];
+
+    const distancia =
+        obtenerDistancia(
+            vehiculos,
+            origen,
+            recomendada
+        );
+
+    const hora =
+        obtenerHora(
+            salidas,
+            origen,
+            recomendada
+        );
+
+    let html = `
+
+    <div class="ok">
+
+        <h2>
+        ✅ Ruta recomendada
+        </h2>
+
+        <h3>
+        ${recomendada}
+        </h3>
+
+        <p>
+
+        Horario:
+
+        <strong>
+        ${
+            hora ??
+            "No disponible"
+        }
+        </strong>
+
+        </p>
+
+        <p>
+
+        Tren más cercano:
+
+        <strong>
+
+        ${
+            distancia != null
+            ? distancia + " km"
+            : "No disponible"
+        }
+
+        </strong>
+
+        </p>
+
+        <div class="info">
+
+            <strong>
+            Alternativas disponibles
+            </strong>
+
+            <br><br>
+
+    `;
+
+    disponibles.forEach(linea=>{
+
+        const d =
+            obtenerDistancia(
+                vehiculos,
+                origen,
+                linea
+            );
+
+        const h =
+            obtenerHora(
+                salidas,
+                origen,
+                linea
+            );
+
+        html += `
+
+        <div class="linea">
+
+        <strong>${linea}</strong>
+
+        · Horario:
+
+        ${
+            h ??
+            "No disponible"
+        }
+
+        · Distancia:
+
+        ${
+            d != null
+            ? d + " km"
+            : "No disponible"
+        }
+
+        </div>
+
+        `;
+
+    });
+
+    html += `
+        </div>
+    </div>
+    `;
+
+    document
+    .getElementById(
+        "resultado"
+    )
+    .innerHTML = html;
 
 }
 
