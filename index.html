@@ -182,12 +182,17 @@ async function buscarRuta(){
         });
 
     const disponibles =
-        lineasPosibles.filter(
-            linea =>
-            !afectadas.includes(linea)
-        );
+    lineasPosibles.filter(
+        linea =>
+        !afectadas.includes(linea)
+    );
 
-    let html = "";
+console.log("Lineas posibles:", lineasPosibles);
+console.log("Afectadas:", afectadas);
+console.log("Disponibles:", disponibles);
+
+let html = "";
+
 
     if(disponibles.length > 0){
 
