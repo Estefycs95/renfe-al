@@ -10,7 +10,6 @@ from math import atan2
 
 from google.transit import gtfs_realtime_pb2
 
-
 URL = "https://gtfsrt.renfe.com/vehicle_positions.pb"
 
 
@@ -41,35 +40,35 @@ def distancia_km(lat1, lon1, lat2, lon2):
 
 ESTACIONES = {
 
-    "18000": (
-        "Atocha",
-        40.4066191,
-        -3.6894391
-    ),
+    "18000": {
+        "nombre": "Atocha",
+        "lat": 40.4066191,
+        "lon": -3.6894391
+    },
 
-    "18001": (
-        "Recoletos",
-        40.4233731,
-        -3.6909310
-    ),
+    "18001": {
+        "nombre": "Recoletos",
+        "lat": 40.4233731,
+        "lon": -3.6909310
+    },
 
-    "18002": (
-        "Nuevos Ministerios",
-        40.4466271,
-        -3.6923468
-    ),
+    "18002": {
+        "nombre": "Nuevos Ministerios",
+        "lat": 40.4466271,
+        "lon": -3.6923468
+    },
 
-    "18101": (
-        "Sol",
-        40.4168665,
-        -3.7028765
-    ),
+    "18101": {
+        "nombre": "Sol",
+        "lat": 40.4168665,
+        "lon": -3.7028765
+    },
 
-    "17000": (
-        "Chamartín",
-        40.4711789,
-        -3.6829524
-    )
+    "17000": {
+        "nombre": "Chamartín",
+        "lat": 40.4711789,
+        "lon": -3.6829524
+    }
 
 }
 
@@ -82,6 +81,11 @@ response.raise_for_status()
 feed.ParseFromString(response.content)
 
 vehiculos = []
+
+resumen = {}
+
+for stop_id in ESTACIONES.keys():
+    resumen[stop_id] = {}
 
 for entity in feed.entity:
 
@@ -97,10 +101,10 @@ for entity in feed.entity:
         trip_id
     )
 
-    linea = ""
+    if not match:
+        continue
 
-    if match:
-        linea = match.group(1).upper()
+    linea = match.group(1).upper()
 
     lat = vehicle.position.latitude
     lon = vehicle.position.longitude
@@ -116,16 +120,21 @@ for entity in feed.entity:
 
     distancias = {}
 
-    for stop_id, datos in ESTACIONES.items():
+    for stop_id, estacion in ESTACIONES.items():
 
-        nombre, lat_est, lon_est = datos
-
-        distancias[nombre] = distancia_km(
+        distancia = distancia_km(
             lat,
             lon,
-            lat_est,
-            lon_est
+            estacion["lat"],
+            estacion["lon"]
         )
+
+        distancias[estacion["nombre"]] = distancia
+
+        actual = resumen[stop_id].get(linea)
+
+        if actual is None or distancia < actual:
+            resumen[stop_id][linea] = distancia
 
     vehiculos.append({
 
@@ -143,6 +152,7 @@ for entity in feed.entity:
 
     })
 
+
 with open(
     "vehiculos.json",
     "w",
@@ -156,6 +166,20 @@ with open(
         indent=2
     )
 
+
+with open(
+    "vehiculos_resumen.json",
+    "w",
+    encoding="utf-8"
+) as f:
+
+    json.dump(
+        resumen,
+        f,
+        ensure_ascii=False,
+        indent=2
+    )
+
 print(
-    f"{len(vehiculos)} trenes de Madrid encontrados"
+    f"{len(vehiculos)} trenes Madrid procesados"
 )
