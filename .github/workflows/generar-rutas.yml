@@ -30,10 +30,11 @@ jobs:
         run: |
           python generar_estaciones_madrid.py
 
-      - name: Generar rutas
+      - name: Generar sentidos
         run: |
-          python generar_rutas.py
+          python generar_sentidos.py
 
+     
       - name: Commit
         run: |
           git config user.name "github-actions"
