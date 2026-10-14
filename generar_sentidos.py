@@ -20,36 +20,21 @@ with open(
     estaciones = json.load(f)
 
 # ---------------------------------
-# trip_id -> linea
+# Obtener línea desde trip_id
 # ---------------------------------
 
-trip_linea = {}
+def obtener_linea(trip_id):
 
-with open(
-    "trips.txt",
-    encoding="utf-8"
-) as f:
+    match = re.search(
+        r"(C\d+[A-Za-z]?)",
+        trip_id,
+        re.IGNORECASE
+    )
 
-    reader = csv.DictReader(f)
+    if match:
+        return match.group(1).upper()
 
-    for row in reader:
-
-        trip_id = row["trip_id"]
-
-        match = re.search(
-            r"(C\d+[A-Z]?)$",
-            trip_id,
-            re.IGNORECASE
-        )
-
-        if match:
-
-            trip_linea[
-                trip_id
-            ] = (
-                match.group(1)
-                .upper()
-            )
+    return ""
 
 # ---------------------------------
 # trip_id -> recorrido
@@ -80,7 +65,7 @@ with open(
             .append(stop_id)
 
 # ---------------------------------
-# Trip Updates
+# Leer Trip Updates
 # ---------------------------------
 
 trip_feed = gtfs_realtime_pb2.FeedMessage()
@@ -105,17 +90,13 @@ for entity in trip_feed.entity:
     ):
         continue
 
-    trip_update = (
-        entity.trip_update
-    )
+    trip_update = entity.trip_update
 
     trip_id = (
         trip_update.trip.trip_id
     )
 
-    for stop in (
-        trip_update.stop_time_update
-    ):
+    for stop in trip_update.stop_time_update:
 
         stop_id = stop.stop_id
 
@@ -128,13 +109,10 @@ for entity in trip_feed.entity:
             break
 
 # ---------------------------------
-# Vehicle Positions
+# Leer Vehicle Positions
 # ---------------------------------
 
-vehicle_feed = (
-    gtfs_realtime_pb2
-    .FeedMessage()
-)
+vehicle_feed = gtfs_realtime_pb2.FeedMessage()
 
 response = requests.get(
     URL_VEHICLES,
@@ -169,9 +147,8 @@ for entity in vehicle_feed.entity:
     if not recorrido:
         continue
 
-    linea = trip_linea.get(
-        trip_id,
-        ""
+    linea = obtener_linea(
+        trip_id
     )
 
     resultado.append({
@@ -202,7 +179,7 @@ for entity in vehicle_feed.entity:
     })
 
 # ---------------------------------
-# Guardar
+# Guardar resultado
 # ---------------------------------
 
 with open(
@@ -218,4 +195,6 @@ with open(
         indent=2
     )
 
-print
+print(
+    f"{len(resultado)} trenes procesados"
+)
