@@ -5,22 +5,14 @@ on:
 
 jobs:
   actualizar:
-
     runs-on: ubuntu-latest
 
     steps:
-
       - name: Checkout
         uses: actions/checkout@v4
 
       - name: Descargar incidencias
-        run: |
-          curl https://gtfsrt.renfe.com/alerts.json -o incidencias.json
-
-      - name: Mostrar contenido
-        run: |
-          ls -la
-          head incidencias.json
+        run: curl https://gtfsrt.renfe.com/alerts.json -o incidencias.json
 
       - name: Commit cambios
         run: |
@@ -29,7 +21,7 @@ jobs:
 
           git add incidencias.json
 
-          git diff --staged --quiet || git commit -m "Actualizar incidencias"
-
-          git push
-`
+          if ! git diff --cached --quiet; then
+            git commit -m "Actualizar incidencias"
+            git push
+          fi
