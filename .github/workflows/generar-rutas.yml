@@ -62,6 +62,7 @@ jobs:
           git add rutas-madrid.json
           git add vehiculos_sentido.json
           git add sentidos_resumen.json
+          git add sentidos_linea.json
 
           if ! git diff --cached --quiet; then
 
