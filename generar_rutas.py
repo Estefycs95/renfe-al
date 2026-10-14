@@ -2,14 +2,30 @@ import csv
 import json
 import re
 
-# ---------------------------------
+# ----------------------------
+# Cargar todas las estaciones
+# ----------------------------
+
+with open(
+    "estaciones-madrid.json",
+    encoding="utf-8"
+) as f:
+
+    estaciones_madrid = set(
+        json.load(f).keys()
+    )
+
+# ----------------------------
 # trips.txt
 # trip_id -> linea
-# ---------------------------------
+# ----------------------------
 
 trip_linea = {}
 
-with open("trips.txt", encoding="utf-8") as f:
+with open(
+    "trips.txt",
+    encoding="utf-8"
+) as f:
 
     reader = csv.DictReader(f)
 
@@ -17,23 +33,30 @@ with open("trips.txt", encoding="utf-8") as f:
 
         trip_id = row["trip_id"]
 
-        m = re.search(r"(C\d+[abAB]?)$", trip_id)
+        m = re.search(
+            r"(C\d+[abAB]?)$",
+            trip_id
+        )
 
         if m:
 
-            trip_linea[trip_id] = m.group(1).upper()
+            trip_linea[trip_id] = (
+                m.group(1).upper()
+            )
 
-
-# ---------------------------------
+# ----------------------------
 # stop_times.txt
-# ---------------------------------
+# ----------------------------
 
 trayectos = {}
 
 trip_actual = None
 stops_actual = []
 
-with open("stop_times.txt", encoding="utf-8") as f:
+with open(
+    "stop_times.txt",
+    encoding="utf-8"
+) as f:
 
     reader = csv.DictReader(f)
 
@@ -47,63 +70,78 @@ with open("stop_times.txt", encoding="utf-8") as f:
 
         if trip_id != trip_actual:
 
-            linea = trip_linea.get(trip_actual)
+            linea = trip_linea.get(
+                trip_actual
+            )
 
             if linea and stops_actual:
 
-                trayectos.setdefault(
-                    linea,
-                    []
-                ).append(stops_actual)
+                trayectos\
+                    .setdefault(
+                        linea,
+                        []
+                    )\
+                    .append(
+                        stops_actual
+                    )
 
             stops_actual = []
             trip_actual = trip_id
 
-        stops_actual.append(stop_id)
+        stops_actual.append(
+            stop_id
+        )
 
     if stops_actual:
 
-        linea = trip_linea.get(trip_actual)
+        linea = trip_linea.get(
+            trip_actual
+        )
 
         if linea:
 
-            trayectos.setdefault(
-                linea,
-                []
-            ).append(stops_actual)
+            trayectos\
+                .setdefault(
+                    linea,
+                    []
+                )\
+                .append(
+                    stops_actual
+                )
 
-# ---------------------------------
-# Elegimos el trayecto más largo
-# por línea
-# ---------------------------------
+# ----------------------------
+# Trayecto más largo
+# ----------------------------
 
 resultado = {}
 
-ESTACIONES_MADRID = {
-    "17000",
-    "18000",
-    "18001",
-    "18002",
-    "18003",
-    "18004",
-    "18005",
-    "18101"
-}
-
 for linea, viajes in trayectos.items():
+
+    mejor = []
 
     for viaje in viajes:
 
-        madrid = [
+        estaciones = [
+
             parada
+
             for parada in viaje
-            if parada in ESTACIONES_MADRID
+
+            if parada in estaciones_madrid
+
         ]
 
-        if len(madrid) > 1:
+        if len(estaciones) > len(mejor):
 
-            resultado[linea] = madrid
-            break
+            mejor = estaciones
+
+    if len(mejor) > 1:
+
+        resultado[linea] = mejor
+
+# ----------------------------
+# Guardar JSON
+# ----------------------------
 
 with open(
     "rutas-madrid.json",
@@ -118,5 +156,6 @@ with open(
         indent=2
     )
 
-print("Generado rutas-madrid.json")
-
+print(
+    f"Generadas {len(resultado)} líneas"
+)
