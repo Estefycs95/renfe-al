@@ -27,7 +27,7 @@ jobs:
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
 
-          git add trip_updates.json
+          git add salidas.json
 
           if ! git diff --cached --quiet; then
             git commit -m "Actualizar tiempo real"
