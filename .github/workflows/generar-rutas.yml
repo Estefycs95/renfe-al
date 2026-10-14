@@ -26,6 +26,10 @@ jobs:
         run: |
           unzip -o fomento_transit.zip
 
+      - name: Generar estaciones Madrid
+        run: |
+          python generar_estaciones_madrid.py
+
       - name: Generar rutas
         run: |
           python generar_rutas.py
@@ -35,9 +39,10 @@ jobs:
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
 
+          git add estaciones-madrid.json
           git add rutas-madrid.json
 
           if ! git diff --cached --quiet; then
-            git commit -m "Actualizar rutas Madrid"
+            git commit -m "Actualizar estaciones y rutas Madrid"
             git push
           fi
