@@ -14,7 +14,7 @@ response.raise_for_status()
 
 feed.ParseFromString(response.content)
 
-salidas = []
+salidas = {}
 
 for entity in feed.entity:
 
@@ -30,53 +30,43 @@ for entity in feed.entity:
         trip_id
     )
 
-    linea = ""
+    if not match:
+        continue
 
-    if match:
-        linea = match.group(1).upper()
+    linea = match.group(1).upper()
 
-    registro = {
-        "trip_id": trip_id,
-        "linea": linea,
-        "stops": []
-    }
+    hora = None
 
     for stop in trip.stop_time_update:
 
-        parada = {
-            "stop_id": stop.stop_id
-        }
-
         if stop.arrival.time:
 
-            parada["arrival"] = stop.arrival.time
+            hora = datetime.fromtimestamp(
+                stop.arrival.time
+            ).strftime("%H:%M:%S")
 
-            parada["arrival_hora"] = (
-                datetime.fromtimestamp(
-                    stop.arrival.time
-                ).strftime("%Y-%m-%d %H:%M:%S")
-            )
+            break
 
         if stop.departure.time:
 
-            parada["departure"] = stop.departure.time
+            hora = datetime.fromtimestamp(
+                stop.departure.time
+            ).strftime("%H:%M:%S")
 
-            parada["departure_hora"] = (
-                datetime.fromtimestamp(
-                    stop.departure.time
-                ).strftime("%Y-%m-%d %H:%M:%S")
-            )
+            break
 
-        registro["stops"].append(
-            parada
-        )
+    if not hora:
+        continue
 
-    salidas.append(
-        registro
-    )
+    if (
+        linea not in salidas
+        or hora < salidas[linea]
+    ):
+
+        salidas[linea] = hora
 
 with open(
-    "trip_updates.json",
+    "salidas.json",
     "w",
     encoding="utf-8"
 ) as f:
@@ -89,5 +79,5 @@ with open(
     )
 
 print(
-    f"Generados {len(salidas)} viajes"
+    f"Generadas {len(salidas)} líneas"
 )
