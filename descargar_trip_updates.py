@@ -7,6 +7,14 @@ from google.transit import gtfs_realtime_pb2
 
 URL = "https://gtfsrt.renfe.com/trip_updates.pb"
 
+ESTACIONES_MADRID = {
+    "17000",
+    "18000",
+    "18001",
+    "18002",
+    "18101"
+}
+
 feed = gtfs_realtime_pb2.FeedMessage()
 
 response = requests.get(URL, timeout=60)
@@ -35,35 +43,38 @@ for entity in feed.entity:
 
     linea = match.group(1).upper()
 
-    hora = None
-
     for stop in trip.stop_time_update:
 
+        stop_id = stop.stop_id
+
+        if stop_id not in ESTACIONES_MADRID:
+            continue
+
+        timestamp = None
+
         if stop.arrival.time:
+            timestamp = stop.arrival.time
 
-            hora = datetime.fromtimestamp(
-                stop.arrival.time
-            ).strftime("%H:%M:%S")
+        elif stop.departure.time:
+            timestamp = stop.departure.time
 
-            break
+        if not timestamp:
+            continue
 
-        if stop.departure.time:
+        hora = datetime.fromtimestamp(
+            timestamp
+        ).strftime("%H:%M:%S")
 
-            hora = datetime.fromtimestamp(
-                stop.departure.time
-            ).strftime("%H:%M:%S")
+        if stop_id not in salidas:
+            salidas[stop_id] = {}
 
-            break
+        existente = salidas[stop_id].get(linea)
 
-    if not hora:
-        continue
-
-    if (
-        linea not in salidas
-        or hora < salidas[linea]
-    ):
-
-        salidas[linea] = hora
+        if (
+            existente is None
+            or hora < existente
+        ):
+            salidas[stop_id][linea] = hora
 
 with open(
     "salidas.json",
@@ -78,6 +89,4 @@ with open(
         indent=2
     )
 
-print(
-    f"Generadas {len(salidas)} líneas"
-)
+print("Salidas generadas")
