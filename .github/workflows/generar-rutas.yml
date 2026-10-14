@@ -1,7 +1,5 @@
 name: Generar rutas Madrid
 
-name: Generar rutas Madrid
-
 on:
   workflow_dispatch:
 
