@@ -1,0 +1,15 @@
+{
+  "entity": [
+    {
+      "alert": {
+        "descriptionText": {
+          "translation": [
+            {
+              "text": "Prueba de incidencia Renfe"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
