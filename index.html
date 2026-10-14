@@ -2,21 +2,94 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Incidencias Renfe</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Información al Viajero</title>
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    margin:30px;
+}
+
+button{
+    padding:10px;
+    cursor:pointer;
+}
+
+#resultado{
+    margin-top:20px;
+}
+
+.alerta{
+    border:1px solid #d6001c;
+    background:#fff5f5;
+    padding:10px;
+    margin-bottom:15px;
+    border-radius:5px;
+}
+
+.ok{
+    border:1px solid green;
+    background:#f0fff0;
+    padding:10px;
+    margin-top:15px;
+}
+
+</style>
 </head>
+
 <body>
 
-<h1>🚆 Incidencias Renfe</h1>
+<h1>🚆 Información al Viajero</h1>
 
 <button onclick="cargar()">
 Actualizar incidencias
 </button>
 
-<div id="resultado">
-Pulsa el botón para cargar incidencias.
-</div>
+<div id="resultado"></div>
 
 <script>
+
+async function obtenerLineasAfectadas(){
+
+    const r =
+        await fetch("./incidencias.json");
+
+    const datos =
+        await r.json();
+
+    const lineas =
+        new Set();
+
+    datos.entity.forEach(entidad => {
+
+        entidad.alert
+            ?.informedEntity
+            ?.forEach(item => {
+
+                const ruta =
+                    item.routeId || "";
+
+                const encontrada =
+                    ruta.match(/C\d+[ab]?/i);
+
+                if(encontrada){
+
+                    lineas.add(
+                        encontrada[0]
+                        .toUpperCase()
+                    );
+
+                }
+
+            });
+
+    });
+
+    return [...lineas];
+
+}
 
 async function cargar(){
 
@@ -26,7 +99,20 @@ async function cargar(){
     const datos =
         await respuesta.json();
 
+    const afectadas =
+        await obtenerLineasAfectadas();
+
     let html = "";
+
+    html += `
+        <div class="ok">
+            <strong>Líneas afectadas actualmente:</strong>
+            <br><br>
+            ${afectadas.join(", ")}
+        </div>
+    `;
+
+    html += "<h2>Incidencias activas</h2>";
 
     datos.entity.forEach(e => {
 
@@ -38,7 +124,7 @@ async function cargar(){
         const lineas =
             alerta.informedEntity
             ?.map(x => x.routeId)
-            ?.join(", ");
+            ?.join(", ") || "";
 
         const texto =
             alerta.descriptionText
@@ -46,14 +132,12 @@ async function cargar(){
             ?.text || "";
 
         html += `
-            <div style="
-                border:1px solid red;
-                padding:10px;
-                margin-bottom:15px;
-                background:#fff5f5;
-            ">
+            <div class="alerta">
 
-                <b>Líneas:</b>
+                <strong>Líneas:</strong>
+
+                <br>
+
                 ${lineas}
 
                 <br><br>
@@ -65,6 +149,34 @@ async function cargar(){
 
     });
 
+    html += `
+        <h2>Alternativas sugeridas</h2>
+    `;
+
+    const todas = [
+        "C1",
+        "C2",
+        "C3",
+        "C4A",
+        "C4B",
+        "C5",
+        "C7",
+        "C8",
+        "C10"
+    ];
+
+    const disponibles =
+        todas.filter(
+            x =>
+            !afectadas.includes(x)
+        );
+
+    html += `
+        <div class="ok">
+            ${disponibles.join(", ")}
+        </div>
+    `;
+
     document
         .getElementById("resultado")
         .innerHTML = html;
@@ -75,3 +187,4 @@ async function cargar(){
 
 </body>
 </html>
+``
