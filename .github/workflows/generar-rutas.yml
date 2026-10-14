@@ -7,6 +7,7 @@ permissions:
   contents: write
 
 jobs:
+
   generar:
 
     runs-on: ubuntu-latest
@@ -26,26 +27,35 @@ jobs:
         run: |
           unzip -o fomento_transit.zip
 
+      - name: Instalar dependencias
+        run: |
+          pip install gtfs-realtime-bindings requests protobuf
+
       - name: Generar estaciones Madrid
         run: |
           python generar_estaciones_madrid.py
+
+      - name: Generar rutas
+        run: |
+          python generar_rutas.py
 
       - name: Generar sentidos
         run: |
           python generar_sentidos.py
 
-     
-      - name: Commit
+      - name: Commit cambios
         run: |
+
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
 
           git add estaciones-madrid.json
           git add rutas-madrid.json
+          git add vehiculos_sentido.json
 
           if ! git diff --cached --quiet; then
 
-            git commit -m "Actualizar estaciones y rutas Madrid"
+            git commit -m "Actualizar datos Cercanias"
 
             git pull --rebase origin main
 
