@@ -47,6 +47,10 @@ jobs:
         run: |
           python generar_resumen_sentidos.py
 
+      - name: Generar resumen por línea
+        run: |
+          python generar_resumen_sentidos.py
+
 
       - name: Commit cambios
         run: |
