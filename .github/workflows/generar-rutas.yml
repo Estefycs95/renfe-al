@@ -19,11 +19,10 @@ jobs:
 
       - name: Descargar GTFS
         run: |
-          curl -L \
-          https://ssl.renfe.com/ftransit/Fichero_CER_FOMENTO/fomento_transit.zip \
+          curl -L https://ssl.renfe.com/ftransit/Fichero_CER_FOMENTO/fomento_transit.zip \
           -o fomento_transit.zip
 
-      - name: Descomprimir
+      - name: Descomprimir GTFS
         run: |
           unzip -o fomento_transit.zip
 
@@ -31,7 +30,7 @@ jobs:
         run: |
           pip install gtfs-realtime-bindings requests protobuf
 
-      - name: Generar estaciones Madrid
+      - name: Generar estaciones
         run: |
           python generar_estaciones_madrid.py
 
@@ -47,22 +46,13 @@ jobs:
         run: |
           python generar_resumen_sentidos.py
 
-      - name: Generar resumen por línea
-        run: |
-          python generar_resumen_sentidos.py
-
-
       - name: Commit cambios
         run: |
 
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
 
-          git add estaciones-madrid.json
-          git add rutas-madrid.json
-          git add vehiculos_sentido.json
-          git add sentidos_resumen.json
-          git add sentidos_linea.json
+          git add *.json
 
           if ! git diff --cached --quiet; then
 
@@ -71,5 +61,9 @@ jobs:
             git pull --rebase origin main
 
             git push origin main
+
+          else
+
+            echo "Sin cambios"
 
           fi
