@@ -3,7 +3,7 @@ import json
 import re
 
 # ----------------------------
-# Cargar todas las estaciones
+# Cargar estaciones Madrid
 # ----------------------------
 
 with open(
@@ -17,7 +17,7 @@ with open(
 
 # ----------------------------
 # trips.txt
-# trip_id -> linea
+# trip_id -> línea
 # ----------------------------
 
 trip_linea = {}
@@ -33,15 +33,15 @@ with open(
 
         trip_id = row["trip_id"]
 
-        m = re.search(
-            r"(C\d+[abAB]?)$",
+        match = re.search(
+            r"(C\d+[ABab]?)$",
             trip_id
         )
 
-        if m:
+        if match:
 
             trip_linea[trip_id] = (
-                m.group(1).upper()
+                match.group(1).upper()
             )
 
 # ----------------------------
@@ -76,14 +76,12 @@ with open(
 
             if linea and stops_actual:
 
-                trayectos\
-                    .setdefault(
-                        linea,
-                        []
-                    )\
-                    .append(
-                        stops_actual
-                    )
+                trayectos.setdefault(
+                    linea,
+                    []
+                ).append(
+                    stops_actual
+                )
 
             stops_actual = []
             trip_actual = trip_id
@@ -91,6 +89,8 @@ with open(
         stops_actual.append(
             stop_id
         )
+
+    # último viaje
 
     if stops_actual:
 
@@ -100,44 +100,42 @@ with open(
 
         if linea:
 
-            trayectos\
-                .setdefault(
-                    linea,
-                    []
-                )\
-                .append(
-                    stops_actual
-                )
+            trayectos.setdefault(
+                linea,
+                []
+            ).append(
+                stops_actual
+            )
 
 # ----------------------------
-# Trayecto más largo
+# Unir todas las estaciones
 # ----------------------------
 
 resultado = {}
 
 for linea, viajes in trayectos.items():
 
-    mejor = []
+    estaciones_linea = []
 
     for viaje in viajes:
 
-        estaciones = [
+        for parada in viaje:
 
-            parada
+            if (
+                parada in estaciones_madrid
+                and
+                parada not in estaciones_linea
+            ):
 
-            for parada in viaje
+                estaciones_linea.append(
+                    parada
+                )
 
-            if parada in estaciones_madrid
+    if len(estaciones_linea) > 1:
 
-        ]
-
-        if len(estaciones) > len(mejor):
-
-            mejor = estaciones
-
-    if len(mejor) > 1:
-
-        resultado[linea] = mejor
+        resultado[linea] = (
+            estaciones_linea
+        )
 
 # ----------------------------
 # Guardar JSON
