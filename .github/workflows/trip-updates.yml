@@ -11,9 +11,11 @@ permissions:
 
 jobs:
   actualizar:
+
     runs-on: ubuntu-latest
 
     steps:
+
       - name: Checkout
         uses: actions/checkout@v4
 
@@ -21,7 +23,7 @@ jobs:
         run: |
           pip install gtfs-realtime-bindings requests protobuf
 
-      - name: Descargar GTFS RT
+      - name: Generar salidas
         run: |
           python descargar_trip_updates.py
 
@@ -33,6 +35,6 @@ jobs:
           git add salidas.json
 
           if ! git diff --cached --quiet; then
-            git commit -m "Actualizar tiempo real"
+            git commit -m "Actualizar salidas"
             git push
           fi
