@@ -9,11 +9,23 @@
 
 body{
     font-family: Arial, sans-serif;
-    margin:30px;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+h1{
+    color:#333;
+}
+
+select{
+    padding:10px;
+    margin:5px;
+    min-width:300px;
 }
 
 button{
-    padding:10px;
+    padding:10px 20px;
     cursor:pointer;
 }
 
@@ -21,30 +33,49 @@ button{
     margin-top:20px;
 }
 
-.alerta{
-    border:1px solid #d6001c;
-    background:#fff5f5;
-    padding:10px;
-    margin-bottom:15px;
+.ok{
+    background:#e8f8e8;
+    border:1px solid green;
+    padding:15px;
     border-radius:5px;
 }
 
-.ok{
-    border:1px solid green;
-    background:#f0fff0;
-    padding:10px;
-    margin-top:15px;
+.error{
+    background:#fff5f5;
+    border:1px solid red;
+    padding:15px;
+    border-radius:5px;
 }
 
 </style>
-</head>
 
+</head>
 <body>
 
 <h1>🚆 Información al Viajero</h1>
 
-<button onclick="cargar()">
-Actualizar incidencias
+<p>Seleccione origen y destino:</p>
+
+<select id="origen">
+    <option value="18000">Madrid-Atocha Cercanías</option>
+    <option value="18001">Madrid-Recoletos</option>
+    <option value="18002">Madrid-Nuevos Ministerios</option>
+    <option value="18101">Sol</option>
+    <option value="17000">Madrid-Chamartín-Clara Campoamor</option>
+</select>
+
+<select id="destino">
+    <option value="17000">Madrid-Chamartín-Clara Campoamor</option>
+    <option value="18000">Madrid-Atocha Cercanías</option>
+    <option value="18001">Madrid-Recoletos</option>
+    <option value="18002">Madrid-Nuevos Ministerios</option>
+    <option value="18101">Sol</option>
+</select>
+
+<br><br>
+
+<button onclick="buscarRuta()">
+Buscar alternativa
 </button>
 
 <div id="resultado"></div>
@@ -53,13 +84,13 @@ Actualizar incidencias
 
 async function obtenerLineasAfectadas(){
 
-    const r =
+    const respuesta =
         await fetch("./incidencias.json");
 
     const datos =
-        await r.json();
+        await respuesta.json();
 
-    const lineas =
+    const afectadas =
         new Set();
 
     datos.entity.forEach(entidad => {
@@ -68,17 +99,14 @@ async function obtenerLineasAfectadas(){
             ?.informedEntity
             ?.forEach(item => {
 
-                const ruta =
-                    item.routeId || "";
+                const match =
+                    item.routeId
+                    ?.match(/C\d+[ab]?/i);
 
-                const encontrada =
-                    ruta.match(/C\d+[ab]?/i);
+                if(match){
 
-                if(encontrada){
-
-                    lineas.add(
-                        encontrada[0]
-                        .toUpperCase()
+                    afectadas.add(
+                        match[0].toUpperCase()
                     );
 
                 }
@@ -87,95 +115,131 @@ async function obtenerLineasAfectadas(){
 
     });
 
-    return [...lineas];
+    return [...afectadas];
 
 }
 
-async function cargar(){
+async function obtenerRutas(){
 
     const respuesta =
-        await fetch("./incidencias.json");
+        await fetch("./rutas-madrid.json");
 
-    const datos =
-        await respuesta.json();
+    return await respuesta.json();
+
+}
+
+async function buscarRuta(){
+
+    const origen =
+        document.getElementById(
+            "origen"
+        ).value;
+
+    const destino =
+        document.getElementById(
+            "destino"
+        ).value;
+
+    if(origen === destino){
+
+        document
+            .getElementById("resultado")
+            .innerHTML = `
+                <div class="error">
+                    El origen y el destino son iguales.
+                </div>
+            `;
+
+        return;
+    }
+
+    const rutas =
+        await obtenerRutas();
 
     const afectadas =
         await obtenerLineasAfectadas();
 
+    const lineasPosibles = [];
+
+    Object.entries(rutas)
+        .forEach(([linea, estaciones]) => {
+
+            const origenExiste =
+                estaciones.includes(origen);
+
+            const destinoExiste =
+                estaciones.includes(destino);
+
+            if(
+                origenExiste &&
+                destinoExiste
+            ){
+
+                lineasPosibles.push(linea);
+
+            }
+
+        });
+
+    const disponibles =
+        lineasPosibles.filter(
+            linea =>
+            !afectadas.includes(linea)
+        );
+
     let html = "";
 
-    html += `
-        <div class="ok">
-            <strong>Líneas afectadas actualmente:</strong>
-            <br><br>
-            ${afectadas.join(", ")}
-        </div>
-    `;
+    if(disponibles.length > 0){
 
-    html += "<h2>Incidencias activas</h2>";
+        html = `
+            <div class="ok">
 
-    datos.entity.forEach(e => {
+                <h2>
+                ✅ Ruta recomendada
+                </h2>
 
-        const alerta =
-            e.alert;
+                <p>
 
-        if(!alerta) return;
+                Utilice la línea:
 
-        const lineas =
-            alerta.informedEntity
-            ?.map(x => x.routeId)
-            ?.join(", ") || "";
+                <strong>
+                ${disponibles[0]}
+                </strong>
 
-        const texto =
-            alerta.descriptionText
-            ?.translation?.[0]
-            ?.text || "";
+                </p>
 
-        html += `
-            <div class="alerta">
+                <p>
 
-                <strong>Líneas:</strong>
+                Alternativas disponibles:
 
-                <br>
+                ${disponibles.join(", ")}
 
-                ${lineas}
-
-                <br><br>
-
-                ${texto}
+                </p>
 
             </div>
         `;
 
-    });
+    }else{
 
-    html += `
-        <h2>Alternativas sugeridas</h2>
-    `;
+        html = `
+            <div class="error">
 
-    const todas = [
-        "C1",
-        "C2",
-        "C3",
-        "C4A",
-        "C4B",
-        "C5",
-        "C7",
-        "C8",
-        "C10"
-    ];
+                <h2>
+                🚨 Sin alternativa disponible
+                </h2>
 
-    const disponibles =
-        todas.filter(
-            x =>
-            !afectadas.includes(x)
-        );
+                <p>
 
-    html += `
-        <div class="ok">
-            ${disponibles.join(", ")}
-        </div>
-    `;
+                Todas las líneas identificadas
+                para este trayecto presentan
+                incidencias o no existen datos.
+
+                </p>
+
+            </div>
+        `;
+
+    }
 
     document
         .getElementById("resultado")
@@ -187,4 +251,3 @@ async function cargar(){
 
 </body>
 </html>
-``
