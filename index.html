@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Información al Viajero</title>
 
 <style>
 
 body{
-    font-family: Arial,sans-serif;
-    max-width:1000px;
-    margin:auto;
-    padding:20px;
+    font-family: Arial, sans-serif;
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
 }
 
 h1{
@@ -20,7 +23,7 @@ h1{
 
 select{
     padding:10px;
-    min-width:320px;
+    min-width:350px;
     margin:5px;
 }
 
@@ -41,7 +44,7 @@ button{
 }
 
 .error{
-    background:#fff5f5;
+    background:#fff4f4;
     border:1px solid red;
     border-radius:5px;
     padding:15px;
@@ -51,66 +54,27 @@ button{
     margin-top:15px;
     background:#eef5ff;
     border:1px solid #0066cc;
-    padding:15px;
     border-radius:5px;
+    padding:15px;
+}
+
+.linea{
+    padding:5px 0;
 }
 
 </style>
 
 </head>
+
 <body>
 
 <h1>🚆 Información al Viajero</h1>
 
-<p>Seleccione origen y destino:</p>
+<p>Seleccione origen y destino</p>
 
-<select id="origen">
+<select id="origen"></select>
 
-    <option value="18000">
-        Madrid-Atocha Cercanías
-    </option>
-
-    <option value="18001">
-        Madrid-Recoletos
-    </option>
-
-    <option value="18002">
-        Madrid-Nuevos Ministerios
-    </option>
-
-    <option value="18101">
-        Sol
-    </option>
-
-    <option value="17000">
-        Madrid-Chamartín-Clara Campoamor
-    </option>
-
-</select>
-
-<select id="destino">
-
-    <option value="17000">
-        Madrid-Chamartín-Clara Campoamor
-    </option>
-
-    <option value="18000">
-        Madrid-Atocha Cercanías
-    </option>
-
-    <option value="18001">
-        Madrid-Recoletos
-    </option>
-
-    <option value="18002">
-        Madrid-Nuevos Ministerios
-    </option>
-
-    <option value="18101">
-        Sol
-    </option>
-
-</select>
+<select id="destino"></select>
 
 <br><br>
 
@@ -121,6 +85,15 @@ Buscar alternativa
 <div id="resultado"></div>
 
 <script>
+
+async function obtenerEstaciones(){
+
+    const r =
+        await fetch("./estaciones-madrid.json");
+
+    return await r.json();
+
+}
 
 async function obtenerRutas(){
 
@@ -135,6 +108,15 @@ async function obtenerSalidas(){
 
     const r =
         await fetch("./salidas.json");
+
+    return await r.json();
+
+}
+
+async function obtenerVehiculos(){
+
+    const r =
+        await fetch("./vehiculos_resumen.json");
 
     return await r.json();
 
@@ -197,27 +179,89 @@ async function obtenerLineasAfectadas(){
 
 }
 
+async function cargarEstaciones(){
+
+    const estaciones =
+        await obtenerEstaciones();
+
+    const origen =
+        document.getElementById(
+            "origen"
+        );
+
+    const destino =
+        document.getElementById(
+            "destino"
+        );
+
+    origen.innerHTML = "";
+    destino.innerHTML = "";
+
+    Object.entries(estaciones)
+
+        .sort((a,b)=>
+
+            a[1].nombre.localeCompare(
+                b[1].nombre,
+                "es"
+            )
+
+        )
+
+        .forEach(([id,datos]) => {
+
+            const o1 =
+                document.createElement(
+                    "option"
+                );
+
+            o1.value = id;
+            o1.textContent =
+                datos.nombre;
+
+            origen.appendChild(o1);
+
+            const o2 =
+                document.createElement(
+                    "option"
+                );
+
+            o2.value = id;
+            o2.textContent =
+                datos.nombre;
+
+            destino.appendChild(o2);
+
+        });
+
+    origen.value = "18000";
+    destino.value = "17000";
+
+}
+
 async function buscarRuta(){
 
     const origen =
-        document
-        .getElementById("origen")
-        .value;
+        document.getElementById(
+            "origen"
+        ).value;
 
     const destino =
-        document
-        .getElementById("destino")
-        .value;
+        document.getElementById(
+            "destino"
+        ).value;
 
     if(origen === destino){
 
         document
-        .getElementById("resultado")
-        .innerHTML = `
-            <div class="error">
-                El origen y el destino son iguales.
-            </div>
-        `;
+            .getElementById(
+                "resultado"
+            )
+            .innerHTML = `
+                <div class="error">
+                    El origen y el destino son iguales.
+                </div>
+            `;
 
         return;
 
@@ -229,21 +273,29 @@ async function buscarRuta(){
     const salidas =
         await obtenerSalidas();
 
+    const vehiculos =
+        await obtenerVehiculos();
+
+    const estaciones =
+        await obtenerEstaciones();
+
     const afectadas =
         await obtenerLineasAfectadas();
 
     const lineasPosibles = [];
 
     Object.entries(rutas)
-        .forEach(([linea, estaciones]) => {
+        .forEach(([linea,paradas]) => {
 
             if(
-                estaciones.includes(origen)
+                paradas.includes(origen)
                 &&
-                estaciones.includes(destino)
+                paradas.includes(destino)
             ){
 
-                lineasPosibles.push(linea);
+                lineasPosibles.push(
+                    linea
+                );
 
             }
 
@@ -258,10 +310,28 @@ async function buscarRuta(){
                 &&
 
                 salidas[origen]?.[linea]
-
         );
 
     disponibles.sort((a,b)=>{
+
+        const distanciaA =
+            vehiculos[origen]?.[a] ??
+            999;
+
+        const distanciaB =
+            vehiculos[origen]?.[b] ??
+            999;
+
+        if(
+            distanciaA !== distanciaB
+        ){
+
+            return (
+                distanciaA -
+                distanciaB
+            );
+
+        }
 
         const horaA =
             salidas[origen]?.[a]
@@ -293,19 +363,29 @@ async function buscarRuta(){
             </h2>
 
             <p>
+
                 <strong>
-                    Línea ${recomendada}
+                    ${recomendada}
                 </strong>
+
             </p>
 
             <p>
 
-                Próxima salida detectada:
+                Próxima salida:
 
                 <strong>
-
                     ${salidas[origen]?.[recomendada]}
+                </strong>
 
+            </p>
+
+            <p>
+
+                Tren más cercano detectado:
+
+                <strong>
+                    ${vehiculos[origen]?.[recomendada] ?? "?"} km
                 </strong>
 
             </p>
@@ -313,7 +393,7 @@ async function buscarRuta(){
             <div class="info">
 
                 <strong>
-                    Alternativas disponibles
+                    Alternativas
                 </strong>
 
                 <br><br>
@@ -321,10 +401,21 @@ async function buscarRuta(){
                 ${disponibles.map(
                     linea =>
 
-                    `${linea}
-                    (${salidas[origen]?.[linea]})`
+                    `<div class="linea">
 
-                ).join("<br>")}
+                    <strong>${linea}</strong>
+
+                    · Salida:
+
+                    ${salidas[origen]?.[linea]}
+
+                    · Distancia:
+
+                    ${vehiculos[origen]?.[linea] ?? "?"} km
+
+                    </div>`
+
+                ).join("")}
 
             </div>
 
@@ -344,9 +435,9 @@ async function buscarRuta(){
 
             <p>
 
-                No existen líneas para este
-                trayecto con datos de salida
-                disponibles en este momento.
+                No se han encontrado
+                líneas disponibles para
+                este trayecto.
 
             </p>
 
@@ -357,10 +448,18 @@ async function buscarRuta(){
     }
 
     document
-        .getElementById("resultado")
+        .getElementById(
+            "resultado"
+        )
         .innerHTML = html;
 
 }
+
+window.onload = () => {
+
+    cargarEstaciones();
+
+};
 
 </script>
 
