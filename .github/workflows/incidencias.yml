@@ -3,6 +3,9 @@ name: Actualizar incidencias Renfe
 on:
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   actualizar:
     runs-on: ubuntu-latest
