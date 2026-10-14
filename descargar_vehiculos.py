@@ -2,9 +2,77 @@ import json
 import re
 import requests
 
+from math import radians
+from math import sin
+from math import cos
+from math import sqrt
+from math import atan2
+
 from google.transit import gtfs_realtime_pb2
 
+
 URL = "https://gtfsrt.renfe.com/vehicle_positions.pb"
+
+
+def distancia_km(lat1, lon1, lat2, lon2):
+
+    R = 6371
+
+    dlat = radians(lat2 - lat1)
+    dlon = radians(lon2 - lon1)
+
+    a = (
+        sin(dlat / 2) ** 2
+        +
+        cos(radians(lat1))
+        *
+        cos(radians(lat2))
+        *
+        sin(dlon / 2) ** 2
+    )
+
+    c = 2 * atan2(
+        sqrt(a),
+        sqrt(1 - a)
+    )
+
+    return round(R * c, 2)
+
+
+ESTACIONES = {
+
+    "18000": (
+        "Atocha",
+        40.4066191,
+        -3.6894391
+    ),
+
+    "18001": (
+        "Recoletos",
+        40.4233731,
+        -3.6909310
+    ),
+
+    "18002": (
+        "Nuevos Ministerios",
+        40.4466271,
+        -3.6923468
+    ),
+
+    "18101": (
+        "Sol",
+        40.4168665,
+        -3.7028765
+    ),
+
+    "17000": (
+        "Chamartín",
+        40.4711789,
+        -3.6829524
+    )
+
+}
+
 
 feed = gtfs_realtime_pb2.FeedMessage()
 
@@ -37,7 +105,7 @@ for entity in feed.entity:
     lat = vehicle.position.latitude
     lon = vehicle.position.longitude
 
-    # Filtro aproximado Madrid
+    # Solo Madrid
 
     if not (
         40.0 <= lat <= 41.1
@@ -45,6 +113,19 @@ for entity in feed.entity:
         -4.4 <= lon <= -3.0
     ):
         continue
+
+    distancias = {}
+
+    for stop_id, datos in ESTACIONES.items():
+
+        nombre, lat_est, lon_est = datos
+
+        distancias[nombre] = distancia_km(
+            lat,
+            lon,
+            lat_est,
+            lon_est
+        )
 
     vehiculos.append({
 
@@ -56,7 +137,9 @@ for entity in feed.entity:
 
         "longitud": lon,
 
-        "timestamp": vehicle.timestamp
+        "timestamp": vehicle.timestamp,
+
+        "distancias": distancias
 
     })
 
