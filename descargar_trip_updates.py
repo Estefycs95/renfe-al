@@ -7,26 +7,47 @@ from google.transit import gtfs_realtime_pb2
 
 URL = "https://gtfsrt.renfe.com/trip_updates.pb"
 
-ESTACIONES_MADRID = {
-    "17000",
-    "18000",
-    "18001",
-    "18002",
-    "18101"
-}
+# --------------------------------
+# Cargar todas las estaciones
+# --------------------------------
+
+with open(
+    "estaciones-madrid.json",
+    encoding="utf-8"
+) as f:
+
+    ESTACIONES_MADRID = set(
+        json.load(f).keys()
+    )
+
+# --------------------------------
+# Descargar feed
+# --------------------------------
 
 feed = gtfs_realtime_pb2.FeedMessage()
 
-response = requests.get(URL, timeout=60)
+response = requests.get(
+    URL,
+    timeout=60
+)
+
 response.raise_for_status()
 
-feed.ParseFromString(response.content)
+feed.ParseFromString(
+    response.content
+)
+
+# --------------------------------
+# Procesar salidas
+# --------------------------------
 
 salidas = {}
 
 for entity in feed.entity:
 
-    if not entity.HasField("trip_update"):
+    if not entity.HasField(
+        "trip_update"
+    ):
         continue
 
     trip = entity.trip_update
@@ -41,7 +62,10 @@ for entity in feed.entity:
     if not match:
         continue
 
-    linea = match.group(1).upper()
+    linea = (
+        match.group(1)
+        .upper()
+    )
 
     for stop in trip.stop_time_update:
 
@@ -53,28 +77,49 @@ for entity in feed.entity:
         timestamp = None
 
         if stop.arrival.time:
-            timestamp = stop.arrival.time
+
+            timestamp = (
+                stop.arrival.time
+            )
 
         elif stop.departure.time:
-            timestamp = stop.departure.time
+
+            timestamp = (
+                stop.departure.time
+            )
 
         if not timestamp:
             continue
 
-        hora = datetime.fromtimestamp(
-            timestamp
-        ).strftime("%H:%M:%S")
+        hora = datetime\
+            .fromtimestamp(
+                timestamp
+            )\
+            .strftime(
+                "%H:%M:%S"
+            )
 
         if stop_id not in salidas:
+
             salidas[stop_id] = {}
 
-        existente = salidas[stop_id].get(linea)
+        existente = (
+            salidas[stop_id]
+            .get(linea)
+        )
 
         if (
             existente is None
             or hora < existente
         ):
-            salidas[stop_id][linea] = hora
+
+            salidas[stop_id][linea] = (
+                hora
+            )
+
+# --------------------------------
+# Guardar JSON
+# --------------------------------
 
 with open(
     "salidas.json",
@@ -89,4 +134,7 @@ with open(
         indent=2
     )
 
-print("Salidas generadas")
+print(
+    f"Generadas salidas para "
+    f"{len(salidas)} estaciones"
+)
