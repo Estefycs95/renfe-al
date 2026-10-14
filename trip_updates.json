@@ -1,0 +1,3610 @@
+[
+  {
+    "trip_id": "3085X36809C5",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "43026",
+        "arrival": 1791963112
+      }
+    ]
+  },
+  {
+    "trip_id": "3085X23518C1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "51200",
+        "arrival": 1791963352
+      }
+    ]
+  },
+  {
+    "trip_id": "3085X23519C1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "50600",
+        "arrival": 1791963917
+      }
+    ]
+  },
+  {
+    "trip_id": "3085X23527C1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "51103",
+        "arrival": 1791963046
+      }
+    ]
+  },
+  {
+    "trip_id": "3085X36924C1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "50602",
+        "arrival": 1791964200
+      }
+    ]
+  },
+  {
+    "trip_id": "3085X35905C2",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "43000",
+        "arrival": 1791963135
+      }
+    ]
+  },
+  {
+    "trip_id": "3085X23529C1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "51112",
+        "arrival": 1791964080
+      }
+    ]
+  },
+  {
+    "trip_id": "3085X23522C1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "50701",
+        "arrival": 1791963428
+      }
+    ]
+  },
+  {
+    "trip_id": "3085X23523C1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "51003",
+        "arrival": 1791962991
+      }
+    ]
+  },
+  {
+    "trip_id": "3085X23525C1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "51110",
+        "arrival": 1791963212
+      }
+    ]
+  },
+  {
+    "trip_id": "3085X23807C5",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "43004",
+        "arrival": 1791963656
+      }
+    ]
+  },
+  {
+    "trip_id": "3085X36709C5",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "43003",
+        "arrival": 1791963426
+      }
+    ]
+  },
+  {
+    "trip_id": "3185X23430T1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "51451",
+        "arrival": 1791963660
+      }
+    ]
+  },
+  {
+    "trip_id": "3185X23210C1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "51404",
+        "arrival": 1791963120
+      }
+    ]
+  },
+  {
+    "trip_id": "3185X23212C1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "51401",
+        "arrival": 1791963420
+      }
+    ]
+  },
+  {
+    "trip_id": "3185X23213C1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "51406",
+        "arrival": 1791963180
+      }
+    ]
+  },
+  {
+    "trip_id": "3185X23273C1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "51300",
+        "arrival": 1791963480
+      }
+    ]
+  },
+  {
+    "trip_id": "3185X23427T1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "51461",
+        "arrival": 1791963120
+      }
+    ]
+  },
+  {
+    "trip_id": "3185X23428T1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "51409",
+        "arrival": 1791963240
+      }
+    ]
+  },
+  {
+    "trip_id": "3285X23321C1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "54513",
+        "arrival": 1791963175
+      }
+    ]
+  },
+  {
+    "trip_id": "3285X23323C1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "54509",
+        "arrival": 1791963194
+      }
+    ]
+  },
+  {
+    "trip_id": "3285X23316C1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "54518",
+        "arrival": 1791963100
+      }
+    ]
+  },
+  {
+    "trip_id": "3285X23314C1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "54517",
+        "arrival": 1791962955
+      }
+    ]
+  },
+  {
+    "trip_id": "3285X23318C1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "54511",
+        "arrival": 1791963164
+      }
+    ]
+  },
+  {
+    "trip_id": "3285X23320C1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "54515",
+        "arrival": 1791963720
+      }
+    ]
+  },
+  {
+    "trip_id": "4085X24026C2",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "64100",
+        "arrival": 1791962940
+      }
+    ]
+  },
+  {
+    "trip_id": "4085X24220C1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "69107",
+        "arrival": 1791964140
+      }
+    ]
+  },
+  {
+    "trip_id": "4085X24023C2",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "64105",
+        "arrival": 1791963581
+      }
+    ]
+  },
+  {
+    "trip_id": "4085X31407C3",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "66209",
+        "arrival": 1791963709
+      }
+    ]
+  },
+  {
+    "trip_id": "4085X31408C3",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "66211",
+        "arrival": 1791963202
+      }
+    ]
+  },
+  {
+    "trip_id": "4085X31405C3",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "66206",
+        "arrival": 1791963274
+      }
+    ]
+  },
+  {
+    "trip_id": "4085X24027C2",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "64203",
+        "arrival": 1791963420
+      }
+    ]
+  },
+  {
+    "trip_id": "4085X24280C1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "65000",
+        "arrival": 1791963656
+      }
+    ]
+  },
+  {
+    "trip_id": "4085X24019C2",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "64006",
+        "arrival": 1791963691
+      }
+    ]
+  },
+  {
+    "trip_id": "4085X31410C3",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "66207",
+        "arrival": 1791964200
+      }
+    ]
+  },
+  {
+    "trip_id": "4085X35413C6",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "65005",
+        "arrival": 1791963142
+      }
+    ]
+  },
+  {
+    "trip_id": "4085X24311C6",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "65000",
+        "arrival": 1791963629
+      }
+    ]
+  },
+  {
+    "trip_id": "4085X24310C6",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "65207",
+        "arrival": 1791963091
+      }
+    ]
+  },
+  {
+    "trip_id": "4085X24213C1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "69105",
+        "arrival": 1791963549
+      }
+    ]
+  },
+  {
+    "trip_id": "4085X24015C2",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "64006",
+        "arrival": 1791962335
+      }
+    ]
+  },
+  {
+    "trip_id": "4085X24214C1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "69102",
+        "arrival": 1791963367
+      }
+    ]
+  },
+  {
+    "trip_id": "4085X24312C6",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "65202",
+        "arrival": 1791963523
+      }
+    ]
+  },
+  {
+    "trip_id": "4085X24215C1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "69103",
+        "arrival": 1791963377
+      }
+    ]
+  },
+  {
+    "trip_id": "4085X24315C6",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "65203",
+        "arrival": 1791963069
+      }
+    ]
+  },
+  {
+    "trip_id": "4085X24314C6",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "65003",
+        "arrival": 1791963321
+      }
+    ]
+  },
+  {
+    "trip_id": "4085X24216C1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "69104",
+        "arrival": 1791963625
+      }
+    ]
+  },
+  {
+    "trip_id": "4085X24217C1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "64202",
+        "arrival": 1791963167
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X18123R16",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "65405",
+        "arrival": 1791963468
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X25613R1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "79200",
+        "arrival": 1791963519
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X25615R1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "79600",
+        "arrival": 1791963025
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X28562R2",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "71709",
+        "arrival": 1791963391
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X35525R3",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "77303",
+        "arrival": 1791963366
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X28560R2",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "71708",
+        "arrival": 1791963167
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X15003R15",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "71502",
+        "arrival": 1791963081
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X77522R4",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "78604",
+        "arrival": 1791963425
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X35520R3",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "77112",
+        "arrival": 1791963365
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X77406R4",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "78600",
+        "arrival": 1791963047
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X25721R1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "79405",
+        "arrival": 1791963184
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X77408R4",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "78610",
+        "arrival": 1791963274
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X28280R2S",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "71701",
+        "arrival": 1791963840
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X28416R2N",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "79009",
+        "arrival": 1791963368
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X25720R1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "72305",
+        "arrival": 1791963414
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X28414R2N",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "72400",
+        "arrival": 1791963348
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X25723R1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "79403",
+        "arrival": 1791963625
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X28418R2N",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "79100",
+        "arrival": 1791963238
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X15904R11",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "79306",
+        "arrival": 1791963035
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X25722R1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "79406",
+        "arrival": 1791963148
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X15908R11",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "79100",
+        "arrival": 1791964038
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X25725R1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "71801",
+        "arrival": 1791963295
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X33523R4",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "78506",
+        "arrival": 1791963365
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X33522RL4",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "78501",
+        "arrival": 1791964078
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X28275R2S",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "71703",
+        "arrival": 1791963224
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X77714R4",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "72300",
+        "arrival": 1791963299
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X28276R2S",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "71801",
+        "arrival": 1791963900
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X35535R3",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "77110",
+        "arrival": 1791963211
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X77716R4",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "78804",
+        "arrival": 1791963301
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X77410R4",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "78802",
+        "arrival": 1791963254
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X28279R2S",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "71802",
+        "arrival": 1791963480
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X77412R4",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "78805",
+        "arrival": 1791963365
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X77718R4",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "78705",
+        "arrival": 1791963131
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X28277R2S",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "71707",
+        "arrival": 1791963197
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X28278R2S",
+    "route_id": "",
+    "stops": []
+  },
+  {
+    "trip_id": "5185X25717R1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "79501",
+        "arrival": 1791963278
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X77414R4",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "72300",
+        "arrival": 1791963226
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X15006R15",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "71401",
+        "arrival": 1791963900
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X77416R4",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "72207",
+        "arrival": 1791963277
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X25719R1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "79412",
+        "arrival": 1791963013
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X15802R11",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "79202",
+        "arrival": 1791963000
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X35531R3",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "77114",
+        "arrival": 1791963482
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X35539R3",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "77105",
+        "arrival": 1791963290
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X25617R1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "79409",
+        "arrival": 1791963085
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X25619R1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "78804",
+        "arrival": 1791963153
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X28420R2N",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "79103",
+        "arrival": 1791963660
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X25628R1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "79501",
+        "arrival": 1791963102
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X25509R2S",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "71600",
+        "arrival": 1791963234
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X25508R2S",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "71802",
+        "arrival": 1791963133
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X25620R1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "72305",
+        "arrival": 1791963305
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X25622R1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "78804",
+        "arrival": 1791963140
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X77610R4",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "78710",
+        "arrival": 1791963235
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X28478R2",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "71705",
+        "arrival": 1791963080
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X25624R1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "79404",
+        "arrival": 1791963090
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X25626R1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "79410",
+        "arrival": 1791962990
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X18093R16",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "71801",
+        "arrival": 1791963099
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X77512R4",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "72204",
+        "arrival": 1791962995
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X77876R7",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "78706",
+        "arrival": 1791963115
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X77612R4",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "78804",
+        "arrival": 1791963102
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X77514R4",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "72209",
+        "arrival": 1791963152
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X77614R4",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "72302",
+        "arrival": 1791963178
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X78606R8",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "72210",
+        "arrival": 1791963000
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X25410R2N",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "79104",
+        "arrival": 1791963206
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X25412R2N",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "79007",
+        "arrival": 1791963169
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X25414R2N",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "71801",
+        "arrival": 1791963464
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X77516R4",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "72303",
+        "arrival": 1791963251
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X25416R2N",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "71707",
+        "arrival": 1791963900
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X30530R15",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "71802",
+        "arrival": 1791963269
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X77322R3",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "77103",
+        "arrival": 1791963372
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X15034R15",
+    "route_id": "",
+    "stops": []
+  },
+  {
+    "trip_id": "5185X25510R2S",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "71708",
+        "arrival": 1791963420
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X25630R1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "79608",
+        "arrival": 1791963253
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X25512R2S",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "71602",
+        "arrival": 1791963198
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X25514R2S",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "71601",
+        "arrival": 1791963420
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X25513R2S",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "71706",
+        "arrival": 1791963139
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X25515R2S",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "71801",
+        "arrival": 1791963308
+      }
+    ]
+  },
+  {
+    "trip_id": "6085X26607C3",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "13111",
+        "arrival": 1791963233
+      }
+    ]
+  },
+  {
+    "trip_id": "6085X71510C4",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "05467",
+        "arrival": 1791963276
+      }
+    ]
+  },
+  {
+    "trip_id": "6085X71515C4",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "05483",
+        "arrival": 1791963720
+      }
+    ]
+  },
+  {
+    "trip_id": "6085X71511C4",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "05451",
+        "arrival": 1791963076
+      }
+    ]
+  },
+  {
+    "trip_id": "6085X71870C5",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "05484",
+        "arrival": 1791963105
+      }
+    ]
+  },
+  {
+    "trip_id": "6085X26021C2",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "13506",
+        "arrival": 1791963072
+      }
+    ]
+  },
+  {
+    "trip_id": "6085X71512C4",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "13206",
+        "arrival": 1791963900
+      }
+    ]
+  },
+  {
+    "trip_id": "6085X26020C2",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "13200",
+        "arrival": 1791963091
+      }
+    ]
+  },
+  {
+    "trip_id": "6085X26124C1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "13404",
+        "arrival": 1791963600
+      }
+    ]
+  },
+  {
+    "trip_id": "6085X71513C4",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "05471",
+        "arrival": 1791963051
+      }
+    ]
+  },
+  {
+    "trip_id": "6085X26024C2",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "13505",
+        "arrival": 1791963420
+      }
+    ]
+  },
+  {
+    "trip_id": "6085X26123C1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "13205",
+        "arrival": 1791963000
+      }
+    ]
+  },
+  {
+    "trip_id": "6085X26608C3",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "13117",
+        "arrival": 1791963051
+      }
+    ]
+  },
+  {
+    "trip_id": "6085X26519C3",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "13116",
+        "arrival": 1791963360
+      }
+    ]
+  },
+  {
+    "trip_id": "6085X26518C3",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "13118",
+        "arrival": 1791963254
+      }
+    ]
+  },
+  {
+    "trip_id": "6085X26515C3",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "13119",
+        "arrival": 1791963104
+      }
+    ]
+  },
+  {
+    "trip_id": "6085X26517C3",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "13106",
+        "arrival": 1791963112
+      }
+    ]
+  },
+  {
+    "trip_id": "6085X26516C3",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "13104",
+        "arrival": 1791963094
+      }
+    ]
+  },
+  {
+    "trip_id": "6085X26122C1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "13304",
+        "arrival": 1791963091
+      }
+    ]
+  },
+  {
+    "trip_id": "6085X71508C4",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "05483",
+        "arrival": 1791963067
+      }
+    ]
+  },
+  {
+    "trip_id": "6085X26023C2",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "13501",
+        "arrival": 1791963149
+      }
+    ]
+  },
+  {
+    "trip_id": "6085X26022C2",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "13501",
+        "arrival": 1791963102
+      }
+    ]
+  },
+  {
+    "trip_id": "6185X35691C1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "11516",
+        "arrival": 1791963112
+      }
+    ]
+  },
+  {
+    "trip_id": "6185X35619C1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "11405",
+        "arrival": 1791963173
+      }
+    ]
+  },
+  {
+    "trip_id": "6185X35617C1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "11511",
+        "arrival": 1791963249
+      }
+    ]
+  },
+  {
+    "trip_id": "6185X35618C1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "11502",
+        "arrival": 1791963242
+      }
+    ]
+  },
+  {
+    "trip_id": "6185X35620C1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "11518",
+        "arrival": 1791963240
+      }
+    ]
+  },
+  {
+    "trip_id": "6185X35664C1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "11514",
+        "arrival": 1791963196
+      }
+    ]
+  },
+  {
+    "trip_id": "6285X71110C2",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "05611",
+        "arrival": 1791963094
+      }
+    ]
+  },
+  {
+    "trip_id": "6285X71111C2",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "05609",
+        "arrival": 1791963126
+      }
+    ]
+  },
+  {
+    "trip_id": "6285X71158C2",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "05625",
+        "arrival": 1791963164
+      }
+    ]
+  },
+  {
+    "trip_id": "6285X26908C1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "14206",
+        "arrival": 1791963186
+      }
+    ]
+  },
+  {
+    "trip_id": "6285X26911C1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "14215",
+        "arrival": 1791963140
+      }
+    ]
+  },
+  {
+    "trip_id": "6285X71851C3",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "05691",
+        "arrival": 1791963462
+      }
+    ]
+  },
+  {
+    "trip_id": "6285X26913C1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "14234",
+        "arrival": 1791963326
+      }
+    ]
+  },
+  {
+    "trip_id": "6285X71354C3",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "05651",
+        "arrival": 1791963077
+      }
+    ]
+  },
+  {
+    "trip_id": "6285X71160C2",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "05602",
+        "arrival": 1791963780
+      }
+    ]
+  },
+  {
+    "trip_id": "6285X71157C2",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "05625",
+        "arrival": 1791963122
+      }
+    ]
+  },
+  {
+    "trip_id": "6285X71204C3",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "05657",
+        "arrival": 1791963060
+      }
+    ]
+  },
+  {
+    "trip_id": "6285X71359C3",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "05657",
+        "arrival": 1791963252
+      }
+    ]
+  },
+  {
+    "trip_id": "6285X71356C3",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "05669",
+        "arrival": 1791963180
+      }
+    ]
+  },
+  {
+    "trip_id": "4685X70002C1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "21010",
+        "arrival": 1791963119
+      }
+    ]
+  },
+  {
+    "trip_id": "4685X71800C1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "05121",
+        "arrival": 1791963093
+      }
+    ]
+  },
+  {
+    "trip_id": "4685X71811C1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "05131",
+        "arrival": 1791963323
+      }
+    ]
+  },
+  {
+    "trip_id": "4785X71053C1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "05772",
+        "arrival": 1791963000
+      }
+    ]
+  },
+  {
+    "trip_id": "4785X71082C1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "05762",
+        "arrival": 1791964560
+      }
+    ]
+  },
+  {
+    "trip_id": "4785X71093C1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "05796",
+        "arrival": 1791963360
+      }
+    ]
+  },
+  {
+    "trip_id": "2085X22210C2",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "15218",
+        "arrival": 1791963180
+      }
+    ]
+  },
+  {
+    "trip_id": "2085X70308C4",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "15400",
+        "arrival": 1791963300
+      }
+    ]
+  },
+  {
+    "trip_id": "2085X70407C5",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "05509",
+        "arrival": 1791963240
+      }
+    ]
+  },
+  {
+    "trip_id": "2085X22013C1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "15123",
+        "arrival": 1791963720
+      }
+    ]
+  },
+  {
+    "trip_id": "2085X70303C4",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "05224",
+        "arrival": 1791963060
+      }
+    ]
+  },
+  {
+    "trip_id": "2085X22314C3",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "16301",
+        "arrival": 1791963240
+      }
+    ]
+  },
+  {
+    "trip_id": "2085X22108C1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "15212",
+        "arrival": 1791963180
+      }
+    ]
+  },
+  {
+    "trip_id": "2085X22315C3",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "15217",
+        "arrival": 1791963120
+      },
+      {
+        "stop_id": "15211"
+      }
+    ]
+  },
+  {
+    "trip_id": "2085X22207C2",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "15218",
+        "arrival": 1791963120
+      }
+    ]
+  },
+  {
+    "trip_id": "2085X70908C8",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "15206",
+        "arrival": 1791964800
+      }
+    ]
+  },
+  {
+    "trip_id": "2085X70405C5",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "05413",
+        "arrival": 1791964260
+      },
+      {
+        "stop_id": "15410"
+      },
+      {
+        "stop_id": "05426"
+      }
+    ]
+  },
+  {
+    "trip_id": "2085X70207C4",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "15400",
+        "arrival": 1791963600
+      }
+    ]
+  },
+  {
+    "trip_id": "2085X70306C4",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "05229",
+        "arrival": 1791963120
+      }
+    ]
+  },
+  {
+    "trip_id": "2085X70905C8",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "05369",
+        "arrival": 1791963240
+      }
+    ]
+  },
+  {
+    "trip_id": "2085X70804C6",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "05517",
+        "arrival": 1791965340
+      }
+    ]
+  },
+  {
+    "trip_id": "2085X70408C5",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "05441",
+        "arrival": 1791963960
+      }
+    ]
+  },
+  {
+    "trip_id": "2085X70509C7",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "05311",
+        "arrival": 1791963300
+      }
+    ]
+  },
+  {
+    "trip_id": "2085X70301C4",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "15410",
+        "arrival": 1791963240
+      }
+    ]
+  },
+  {
+    "trip_id": "2085X70805C6",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "05504",
+        "arrival": 1791963300
+      },
+      {
+        "stop_id": "15211"
+      }
+    ]
+  },
+  {
+    "trip_id": "2085X22106C1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "15206",
+        "arrival": 1791963300
+      }
+    ]
+  },
+  {
+    "trip_id": "2085X22361C3",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "15211",
+        "arrival": 1791964860
+      }
+    ]
+  },
+  {
+    "trip_id": "2085X70807C6",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "05507",
+        "arrival": 1791963360
+      }
+    ]
+  },
+  {
+    "trip_id": "2085X70857C6",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "15217",
+        "arrival": 1791963900
+      }
+    ]
+  },
+  {
+    "trip_id": "2085X70759C6",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "05504",
+        "arrival": 1791963300
+      },
+      {
+        "stop_id": "15211"
+      }
+    ]
+  },
+  {
+    "trip_id": "2085X70906C8",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "05385",
+        "arrival": 1791963240
+      }
+    ]
+  },
+  {
+    "trip_id": "2085X70305C4",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "05244",
+        "arrival": 1791963360
+      }
+    ]
+  },
+  {
+    "trip_id": "2085X70406C5",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "05409",
+        "arrival": 1791963180
+      }
+    ]
+  },
+  {
+    "trip_id": "2085X70205C4",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "05221",
+        "arrival": 1791963000
+      }
+    ]
+  },
+  {
+    "trip_id": "2085X22316C3",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "16403",
+        "arrival": 1791964260
+      }
+    ]
+  },
+  {
+    "trip_id": "2085X22209C2",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "16010",
+        "arrival": 1791963900
+      }
+    ]
+  },
+  {
+    "trip_id": "2085X70463C5a",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "05413",
+        "arrival": 1791964680
+      },
+      {
+        "stop_id": "15410"
+      },
+      {
+        "stop_id": "05504"
+      },
+      {
+        "stop_id": "15211"
+      }
+    ]
+  },
+  {
+    "trip_id": "2085X70512C7",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "05311",
+        "arrival": 1791963420
+      }
+    ]
+  },
+  {
+    "trip_id": "2085X70760C6",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "05507",
+        "arrival": 1791963360
+      }
+    ]
+  },
+  {
+    "trip_id": "2085X22317C3",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "16400",
+        "arrival": 1791963180
+      }
+    ]
+  },
+  {
+    "trip_id": "2085X22319C3",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "15217",
+        "arrival": 1791963420
+      }
+    ]
+  },
+  {
+    "trip_id": "2085X70210C4",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "05203",
+        "arrival": 1791964860
+      }
+    ]
+  },
+  {
+    "trip_id": "2085X70510C7",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "05327",
+        "arrival": 1791963540
+      }
+    ]
+  },
+  {
+    "trip_id": "2085X22011C1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "15207",
+        "arrival": 1791963120
+      }
+    ]
+  },
+  {
+    "trip_id": "2085X22012C1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "15401",
+        "arrival": 1791963240
+      }
+    ]
+  },
+  {
+    "trip_id": "4185X84906C2",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "06005",
+        "arrival": 1791963480
+      }
+    ]
+  },
+  {
+    "trip_id": "4185X84904C2",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "07007",
+        "arrival": 1791963660
+      }
+    ]
+  },
+  {
+    "trip_id": "4185X84905C2",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "06002",
+        "arrival": 1791965040
+      }
+    ]
+  },
+  {
+    "trip_id": "4185X24706C1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "62002",
+        "arrival": 1791963420
+      }
+    ]
+  },
+  {
+    "trip_id": "4185X14201C1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "60911",
+        "arrival": 1791962280
+      }
+    ]
+  },
+  {
+    "trip_id": "4185X24707C1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "62104",
+        "arrival": 1791963660
+      }
+    ]
+  },
+  {
+    "trip_id": "4185X32804C3",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "60914",
+        "arrival": 1791963960
+      }
+    ]
+  },
+  {
+    "trip_id": "4185X84907C2",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "06002",
+        "arrival": 1791966000
+      }
+    ]
+  },
+  {
+    "trip_id": "4185X32805C3",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "60914",
+        "arrival": 1791963540
+      }
+    ]
+  },
+  {
+    "trip_id": "4585X71609C1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "05975",
+        "arrival": 1791963000
+      }
+    ]
+  },
+  {
+    "trip_id": "4585X71606C1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "05952",
+        "arrival": 1791963120
+      }
+    ]
+  },
+  {
+    "trip_id": "4585X71608C1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "05975",
+        "arrival": 1791963720
+      }
+    ]
+  },
+  {
+    "trip_id": "4585X71611C1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "05952",
+        "arrival": 1791963720
+      }
+    ]
+  },
+  {
+    "trip_id": "7085X31513C1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "70807",
+        "arrival": 1791963840
+      }
+    ]
+  },
+  {
+    "trip_id": "7085X31508C1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "70806",
+        "arrival": 1791963300
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X20776C5",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "35010",
+        "arrival": 1791963120
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X20250C4a",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "19002",
+        "arrival": 1791963480
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X19828C1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "98003",
+        "arrival": 1791963660
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X80681C9",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "12020",
+        "arrival": 1791964860
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X19830C1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "98003",
+        "arrival": 1791964440
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X21116C10",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "10100",
+        "arrival": 1791963180
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X20786C5",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "35605",
+        "arrival": 1791963060
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X20027C3",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "17000",
+        "arrival": 1791962940
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X20785C5",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "18003",
+        "arrival": 1791963180
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X21114C10",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "18005",
+        "arrival": 1791963060
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X19831C1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "98003",
+        "arrival": 1791963360
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X21112C10",
+    "route_id": "",
+    "stops": []
+  },
+  {
+    "trip_id": "1085X20782C5",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "18000",
+        "arrival": 1791963240
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X21519C2",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "18001",
+        "arrival": 1791963180
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X20428C4b",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "37011",
+        "arrival": 1791963300
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X20607C8b",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "12002",
+        "arrival": 1791963180
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X21817C7",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "10000",
+        "arrival": 1791962940
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X21816C7",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "10007",
+        "arrival": 1791963180
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X21814C7",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "17000",
+        "arrival": 1791963480
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X20449C4b",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "37011",
+        "arrival": 1791963660
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X21812C7",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "70003",
+        "arrival": 1791963060
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X20447C4",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "37011",
+        "arrival": 1791963300
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X19619C5",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "35002",
+        "arrival": 1791963600
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X19614C5",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "35606",
+        "arrival": 1791963360
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X19613C5",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "35001",
+        "arrival": 1791963180
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X19616C5",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "35606",
+        "arrival": 1791964200
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X20773C5",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "35602",
+        "arrival": 1791963120
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X20135C3",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "17000",
+        "arrival": 1791962940
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X20252C4a",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "19002",
+        "arrival": 1791964500
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X20779C5",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "35600",
+        "arrival": 1791963120
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X21610C2",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "18002",
+        "arrival": 1791963660
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X21214C10",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "18002",
+        "arrival": 1791963240
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X21731C2",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "70108",
+        "arrival": 1791963240
+      },
+      {
+        "stop_id": "18001"
+      },
+      {
+        "stop_id": "18002"
+      },
+      {
+        "stop_id": "17000"
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X20246C4a",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "18002",
+        "arrival": 1791963240
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X20763C5",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "35607",
+        "arrival": 1791963240
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X20245C4a",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "37011",
+        "arrival": 1791963300
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X20244C4a",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "18101",
+        "arrival": 1791963180
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X21212C10",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "10000",
+        "arrival": 1791963300
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X20243C4a",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "60100",
+        "arrival": 1791963180
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X21210C10",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "10100",
+        "arrival": 1791963180
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X20241C4a",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "18000",
+        "arrival": 1791963600
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X20240C4a",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "37012",
+        "arrival": 1791963360
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X20769C5",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "35606",
+        "arrival": 1791963120
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X21613C2",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "70105",
+        "arrival": 1791965160
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X20248C4a",
+    "route_id": "",
+    "stops": []
+  },
+  {
+    "trip_id": "1085X21733C2",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "70111",
+        "arrival": 1791963960
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X21118C10",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "10104",
+        "arrival": 1791964140
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X20029C3",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "18101",
+        "arrival": 1791963060
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X20028C3",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "60104",
+        "arrival": 1791963240
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X19833C1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "98304",
+        "arrival": 1791963840
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X19835C1",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "98304",
+        "arrival": 1791964740
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X20235C4a",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "19001",
+        "arrival": 1791963120
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X21608C2",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "70002",
+        "arrival": 1791963180
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X21729C2",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "18001",
+        "arrival": 1791963120
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X21606C2",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "70112",
+        "arrival": 1791963180
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X21208C10",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "10200",
+        "arrival": 1791962940
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X21604C2",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "70105",
+        "arrival": 1791963240
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X20239C4a",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "18002",
+        "arrival": 1791963240
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X21722C2",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "18002",
+        "arrival": 1791964500
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X20247C4a",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "37011",
+        "arrival": 1791964080
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X21611C2",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "70102",
+        "arrival": 1791963120
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X20034C3",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "18002",
+        "arrival": 1791964800
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X20793C5",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "35010",
+        "arrival": 1791963120
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X20430C4b",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "60100",
+        "arrival": 1791963420
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X20792C5",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "35606",
+        "arrival": 1791964800
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X20033C3",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "60103",
+        "arrival": 1791963240
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X20032C3",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "18002",
+        "arrival": 1791963180
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X20790C5",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "35606",
+        "arrival": 1791963600
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X20031C3",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "18000",
+        "arrival": 1791963540
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X21528C2",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "18002",
+        "arrival": 1791963180
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X20439C4b",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "17001",
+        "arrival": 1791963180
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X20438C4b",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "17004",
+        "arrival": 1791963840
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X21527C2",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "70105",
+        "arrival": 1791963420
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X21526C2",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "70100",
+        "arrival": 1791963180
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X20436C4b",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "17001",
+        "arrival": 1791963480
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X20435C4b",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "17005",
+        "arrival": 1791963480
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X20030C3",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "60101",
+        "arrival": 1791963120
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X19606C5",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "35602",
+        "arrival": 1791963060
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X19609C5",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "35702",
+        "arrival": 1791963120
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X19602C5",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "35600",
+        "arrival": 1791963000
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X19605C5",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "35609",
+        "arrival": 1791963060
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X21017C8a",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "97201",
+        "arrival": 1791963720
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X19610C5",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "35605",
+        "arrival": 1791963060
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X20445C4b",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "37001",
+        "arrival": 1791963240
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X21015C8a",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "10100",
+        "arrival": 1791963600
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X20443C4b",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "18000",
+        "arrival": 1791963600
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X21014C8a",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "10103",
+        "arrival": 1791963300
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X20441C4",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "18000",
+        "arrival": 1791962940
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X21012C8a",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "10202",
+        "arrival": 1791963240
+      },
+      {
+        "stop_id": "10203"
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X20440C4b",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "17004",
+        "arrival": 1791965040
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X21011C8a",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "10202",
+        "arrival": 1791963120
+      }
+    ]
+  },
+  {
+    "trip_id": "SPECIAL_10_91027C4A",
+    "route_id": "10T0014C4a",
+    "stops": [
+      {
+        "stop_id": "37012",
+        "arrival": 1791962940,
+        "departure": 1791962940
+      },
+      {
+        "stop_id": "37011",
+        "arrival": 1791963240,
+        "departure": 1791963240
+      },
+      {
+        "stop_id": "37002",
+        "arrival": 1791963420,
+        "departure": 1791963420
+      },
+      {
+        "stop_id": "37010",
+        "arrival": 1791963540,
+        "departure": 1791963540
+      },
+      {
+        "stop_id": "37001",
+        "arrival": 1791963780,
+        "departure": 1791963780
+      },
+      {
+        "stop_id": "60100",
+        "arrival": 1791963960,
+        "departure": 1791963960
+      },
+      {
+        "stop_id": "18000",
+        "arrival": 1791964500,
+        "departure": 1791964500
+      },
+      {
+        "stop_id": "18101",
+        "arrival": 1791964740,
+        "departure": 1791964740
+      },
+      {
+        "stop_id": "18002",
+        "arrival": 1791964980,
+        "departure": 1791964980
+      },
+      {
+        "stop_id": "17000",
+        "arrival": 1791965280,
+        "departure": 1791965280
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X19621C5",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "35002",
+        "arrival": 1791964200
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X20610C8b",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "97100",
+        "arrival": 1791963660
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X20451C4b",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "37011",
+        "arrival": 1791964680
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X19586C5",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "35012",
+        "arrival": 1791963180
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X19580C5",
+    "route_id": "",
+    "stops": []
+  },
+  {
+    "trip_id": "1085X21825C7",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "70111",
+        "arrival": 1791964140
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X20612C8b",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "12005",
+        "arrival": 1791963300
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X21821C7",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "97201",
+        "arrival": 1791963180
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X20609C8b",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "10100",
+        "arrival": 1791963600
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X21819C7",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "10007",
+        "arrival": 1791963180
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X21818C7",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "10001",
+        "arrival": 1791964140
+      }
+    ]
+  },
+  {
+    "trip_id": "SPECIAL_10_91009C10",
+    "route_id": "10T0077C10",
+    "stops": [
+      {
+        "stop_id": "10203",
+        "arrival": 1791961020,
+        "departure": 1791961020
+      },
+      {
+        "stop_id": "10202",
+        "arrival": 1791961320,
+        "departure": 1791961320
+      },
+      {
+        "stop_id": "10201",
+        "arrival": 1791961440,
+        "departure": 1791961440
+      },
+      {
+        "stop_id": "10200",
+        "arrival": 1791961560,
+        "departure": 1791961560
+      },
+      {
+        "stop_id": "10104",
+        "arrival": 1791962100,
+        "departure": 1791962100
+      },
+      {
+        "stop_id": "10103",
+        "arrival": 1791962340,
+        "departure": 1791962340
+      },
+      {
+        "stop_id": "10101",
+        "arrival": 1791962640,
+        "departure": 1791962640
+      },
+      {
+        "stop_id": "10100",
+        "arrival": 1791962820,
+        "departure": 1791962820
+      },
+      {
+        "stop_id": "10005",
+        "arrival": 1791963060,
+        "departure": 1791963060
+      },
+      {
+        "stop_id": "10007",
+        "arrival": 1791963240,
+        "departure": 1791963240
+      },
+      {
+        "stop_id": "10010",
+        "arrival": 1791963420,
+        "departure": 1791963420
+      },
+      {
+        "stop_id": "10002",
+        "arrival": 1791963600,
+        "departure": 1791963600
+      },
+      {
+        "stop_id": "10001",
+        "arrival": 1791963780,
+        "departure": 1791963780
+      },
+      {
+        "stop_id": "10000",
+        "arrival": 1791961260,
+        "departure": 1791961260
+      },
+      {
+        "stop_id": "18005",
+        "arrival": 1791961440,
+        "departure": 1791961440
+      },
+      {
+        "stop_id": "18004",
+        "arrival": 1791961680,
+        "departure": 1791961680
+      },
+      {
+        "stop_id": "18003",
+        "arrival": 1791961860,
+        "departure": 1791961860
+      },
+      {
+        "stop_id": "18000",
+        "arrival": 1791962040,
+        "departure": 1791962040
+      },
+      {
+        "stop_id": "18001",
+        "arrival": 1791962220,
+        "departure": 1791962220
+      },
+      {
+        "stop_id": "18002",
+        "arrival": 1791962460,
+        "departure": 1791962460
+      },
+      {
+        "stop_id": "17000",
+        "arrival": 1791963120,
+        "departure": 1791963120
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X21314C10",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "10007",
+        "arrival": 1791963240
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X19599C5",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "35601",
+        "arrival": 1791963120
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X19598C5",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "35702",
+        "arrival": 1791963180
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X19595C5",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "35604",
+        "arrival": 1791963180
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X19594C5",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "37001",
+        "arrival": 1791963120
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X19591C5",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "35607",
+        "arrival": 1791963240
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X19590C5",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "35009",
+        "arrival": 1791963180
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X21716C2",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "70101",
+        "arrival": 1791963180
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X21319C10",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "10005",
+        "arrival": 1791964020
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X21318C10",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "18002",
+        "arrival": 1791964080
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X21317C10",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "10001",
+        "arrival": 1791963120
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X21316C10",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "18000",
+        "arrival": 1791963360
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X21315C10",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "18002",
+        "arrival": 1791963240
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X20434C4b",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "18002",
+        "arrival": 1791963300
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X21523C2",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "70109",
+        "arrival": 1791963120
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X20432C4b",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "18000",
+        "arrival": 1791963300
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X20035C3",
+    "route_id": "",
+    "stops": [
+      {
+        "stop_id": "60105",
+        "arrival": 1791964800
+      }
+    ]
+  }
+]
