@@ -3,45 +3,14 @@ import json
 import re
 import requests
 
-from math import radians
-from math import sin
-from math import cos
-from math import sqrt
-from math import atan2
-
 from google.transit import gtfs_realtime_pb2
 
-URL = "https://gtfsrt.renfe.com/vehicle_positions.pb"
+URL_TRIPS = "https://gtfsrt.renfe.com/trip_updates.pb"
+URL_VEHICLES = "https://gtfsrt.renfe.com/vehicle_positions.pb"
 
-
-def distancia_km(lat1, lon1, lat2, lon2):
-
-    R = 6371
-
-    dlat = radians(lat2 - lat1)
-    dlon = radians(lon2 - lon1)
-
-    a = (
-        sin(dlat / 2) ** 2
-        +
-        cos(radians(lat1))
-        *
-        cos(radians(lat2))
-        *
-        sin(dlon / 2) ** 2
-    )
-
-    c = 2 * atan2(
-        sqrt(a),
-        sqrt(1 - a)
-    )
-
-    return R * c
-
-
-# ----------------------------
-# Estaciones
-# ----------------------------
+# --------------------------------
+# Estaciones Madrid
+# --------------------------------
 
 with open(
     "estaciones-madrid.json",
@@ -50,9 +19,9 @@ with open(
 
     estaciones = json.load(f)
 
-# ----------------------------
-# trip -> linea
-# ----------------------------
+# --------------------------------
+# trip_id -> linea
+# --------------------------------
 
 trip_linea = {}
 
@@ -75,12 +44,13 @@ with open(
         if m:
 
             trip_linea[trip_id] = (
-                m.group(1).upper()
+                m.group(1)
+                .upper()
             )
 
-# ----------------------------
-# trip -> recorrido
-# ----------------------------
+# --------------------------------
+# trip_id -> recorrido
+# --------------------------------
 
 trip_stops = {}
 
@@ -94,37 +64,88 @@ with open(
     for row in reader:
 
         trip_id = row["trip_id"]
-
         stop_id = row["stop_id"]
 
         if stop_id not in estaciones:
             continue
 
-        trip_stops.setdefault(
-            trip_id,
-            []
-        ).append(stop_id)
+        trip_stops\
+            .setdefault(
+                trip_id,
+                []
+            )\
+            .append(stop_id)
 
-# ----------------------------
-# Feed vehículos
-# ----------------------------
+# --------------------------------
+# Cargar trip_updates
+# --------------------------------
 
-feed = gtfs_realtime_pb2.FeedMessage()
+trip_feed = gtfs_realtime_pb2.FeedMessage()
 
-response = requests.get(
-    URL,
+r = requests.get(
+    URL_TRIPS,
     timeout=60
 )
 
-response.raise_for_status()
+r.raise_for_status()
 
-feed.ParseFromString(
-    response.content
+trip_feed.ParseFromString(
+    r.content
+)
+
+proxima_parada = {}
+
+for entity in trip_feed.entity:
+
+    if not entity.HasField(
+        "trip_update"
+    ):
+        continue
+
+    update = entity.trip_update
+
+    trip_id = (
+        update.trip.trip_id
+    )
+
+    siguiente = None
+
+    for stop in update.stop_time_update:
+
+        if stop.stop_id in estaciones:
+
+            siguiente = stop.stop_id
+            break
+
+    if siguiente:
+
+        proxima_parada[
+            trip_id
+        ] = siguiente
+
+# --------------------------------
+# Cargar vehículos
+# --------------------------------
+
+vehicle_feed = (
+    gtfs_realtime_pb2
+    .FeedMessage()
+)
+
+r = requests.get(
+    URL_VEHICLES,
+    timeout=60
+)
+
+r.raise_for_status()
+
+vehicle_feed.ParseFromString(
+    r.content
 )
 
 resultado = []
 
-for entity in feed.entity:
+for entity in vehicle_feed.entity:
 
     if not entity.HasField(
         "vehicle"
@@ -137,100 +158,46 @@ for entity in feed.entity:
         vehicle.trip.trip_id
     )
 
-    if trip_id not in trip_stops:
-        continue
-
-    recorrido = trip_stops[
+    recorrido = trip_stops.get(
         trip_id
-    ]
+    )
 
-    if len(recorrido) < 2:
+    if not recorrido:
         continue
 
-    lat_tren = (
-        vehicle.position.latitude
-    )
-
-    lon_tren = (
-        vehicle.position.longitude
-    )
-
-    indice_mas_cercano = None
-    mejor_distancia = 999999
-
-    for i, stop_id in enumerate(
-        recorrido
-    ):
-
-        estacion = estaciones.get(
-            stop_id
-        )
-
-        if not estacion:
-            continue
-
-        distancia = distancia_km(
-            lat_tren,
-            lon_tren,
-            estacion["lat"],
-            estacion["lon"]
-        )
-
-        if distancia < mejor_distancia:
-
-            mejor_distancia = distancia
-
-            indice_mas_cercano = i
-
-    if indice_mas_cercano is None:
-        continue
-
-    siguiente_indice = min(
-        indice_mas_cercano + 1,
-        len(recorrido) - 1
-    )
-
-    estacion_actual = recorrido[
-        indice_mas_cercano
-    ]
-
-    siguiente_estacion = recorrido[
-        siguiente_indice
-    ]
+    origen = recorrido[0]
+    destino = recorrido[-1]
 
     resultado.append({
 
-        "linea": trip_linea.get(
+        "linea":
+            trip_linea.get(
+                trip_id,
+                ""
+            ),
+
+        "trip_id":
             trip_id,
-            ""
-        ),
 
-        "trip_id": trip_id,
+        "latitud":
+            vehicle.position.latitude,
 
-        "latitud": lat_tren,
-
-        "longitud": lon_tren,
-
-        "estacion_actual":
-            estacion_actual,
-
-        "siguiente_estacion":
-            siguiente_estacion,
+        "longitud":
+            vehicle.position.longitude,
 
         "origen_viaje":
-            recorrido[0],
+            origen,
 
         "destino_viaje":
-            recorrido[-1],
+            destino,
+
+        "proxima_estacion":
+            proxima_parada.get(
+                trip_id
+            ),
 
         "sentido":
-            f"hacia {recorrido[-1]}",
-
-        "distancia_a_estacion":
-            round(
-                mejor_distancia,
-                3
-            )
+            f"hacia {destino}"
 
     })
 
