@@ -1,1804 +1,1870 @@
 [
   {
-    "trip_id": "3085X36809C5",
-    "route_id": "",
+    "trip_id": "3085X23518C1",
+    "linea": "C1",
     "stops": [
       {
-        "stop_id": "43026",
-        "arrival": 1791963112
+        "stop_id": "51200",
+        "arrival": 1791963352,
+        "arrival_hora": "2026-10-14 07:35:52"
       }
     ]
   },
   {
-    "trip_id": "3085X23518C1",
-    "route_id": "",
+    "trip_id": "3085X35055C2",
+    "linea": "C2",
     "stops": [
       {
-        "stop_id": "51200",
-        "arrival": 1791963352
+        "stop_id": "51051",
+        "arrival": 1791964080,
+        "arrival_hora": "2026-10-14 07:48:00"
+      }
+    ]
+  },
+  {
+    "trip_id": "3085X36809C5",
+    "linea": "C5",
+    "stops": [
+      {
+        "stop_id": "43027",
+        "arrival": 1791964394,
+        "arrival_hora": "2026-10-14 07:53:14"
       }
     ]
   },
   {
     "trip_id": "3085X23519C1",
-    "route_id": "",
+    "linea": "C1",
     "stops": [
       {
         "stop_id": "50600",
-        "arrival": 1791963917
+        "arrival": 1791963919,
+        "arrival_hora": "2026-10-14 07:45:19"
       }
     ]
   },
   {
     "trip_id": "3085X23527C1",
-    "route_id": "",
+    "linea": "C1",
     "stops": [
       {
-        "stop_id": "51103",
-        "arrival": 1791963046
-      }
-    ]
-  },
-  {
-    "trip_id": "3085X36924C1",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "50602",
-        "arrival": 1791964200
-      }
-    ]
-  },
-  {
-    "trip_id": "3085X35905C2",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "43000",
-        "arrival": 1791963135
+        "stop_id": "51111",
+        "arrival": 1791963469,
+        "arrival_hora": "2026-10-14 07:37:49"
       }
     ]
   },
   {
     "trip_id": "3085X23529C1",
-    "route_id": "",
+    "linea": "C1",
     "stops": [
       {
         "stop_id": "51112",
-        "arrival": 1791964080
+        "arrival": 1791964080,
+        "arrival_hora": "2026-10-14 07:48:00"
+      }
+    ]
+  },
+  {
+    "trip_id": "3085X36924C1",
+    "linea": "C1",
+    "stops": [
+      {
+        "stop_id": "50602",
+        "arrival": 1791964200,
+        "arrival_hora": "2026-10-14 07:50:00"
+      }
+    ]
+  },
+  {
+    "trip_id": "3085X35905C2",
+    "linea": "C2",
+    "stops": [
+      {
+        "stop_id": "43000",
+        "arrival": 1791963135,
+        "arrival_hora": "2026-10-14 07:32:15"
       }
     ]
   },
   {
     "trip_id": "3085X23522C1",
-    "route_id": "",
+    "linea": "C1",
     "stops": [
       {
         "stop_id": "50701",
-        "arrival": 1791963428
-      }
-    ]
-  },
-  {
-    "trip_id": "3085X23523C1",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "51003",
-        "arrival": 1791962991
+        "arrival": 1791963423,
+        "arrival_hora": "2026-10-14 07:37:03"
       }
     ]
   },
   {
     "trip_id": "3085X23525C1",
-    "route_id": "",
+    "linea": "C1",
     "stops": [
       {
         "stop_id": "51110",
-        "arrival": 1791963212
+        "arrival": 1791963279,
+        "arrival_hora": "2026-10-14 07:34:39"
       }
     ]
   },
   {
     "trip_id": "3085X23807C5",
-    "route_id": "",
+    "linea": "C5",
     "stops": [
       {
         "stop_id": "43004",
-        "arrival": 1791963656
+        "arrival": 1791963656,
+        "arrival_hora": "2026-10-14 07:40:56"
       }
     ]
   },
   {
     "trip_id": "3085X36709C5",
-    "route_id": "",
+    "linea": "C5",
     "stops": [
       {
         "stop_id": "43003",
-        "arrival": 1791963426
+        "arrival": 1791963435,
+        "arrival_hora": "2026-10-14 07:37:15"
       }
     ]
   },
   {
     "trip_id": "3185X23430T1",
-    "route_id": "",
+    "linea": "",
     "stops": [
       {
         "stop_id": "51451",
-        "arrival": 1791963660
+        "arrival": 1791963660,
+        "arrival_hora": "2026-10-14 07:41:00"
       }
     ]
   },
   {
     "trip_id": "3185X23210C1",
-    "route_id": "",
+    "linea": "C1",
     "stops": [
       {
-        "stop_id": "51404",
-        "arrival": 1791963120
+        "stop_id": "51414",
+        "arrival": 1791963300,
+        "arrival_hora": "2026-10-14 07:35:00"
       }
     ]
   },
   {
     "trip_id": "3185X23212C1",
-    "route_id": "",
+    "linea": "C1",
     "stops": [
       {
         "stop_id": "51401",
-        "arrival": 1791963420
+        "arrival": 1791963360,
+        "arrival_hora": "2026-10-14 07:36:00"
       }
     ]
   },
   {
     "trip_id": "3185X23213C1",
-    "route_id": "",
+    "linea": "C1",
     "stops": [
       {
-        "stop_id": "51406",
-        "arrival": 1791963180
+        "stop_id": "51402",
+        "arrival": 1791963360,
+        "arrival_hora": "2026-10-14 07:36:00"
       }
     ]
   },
   {
     "trip_id": "3185X23273C1",
-    "route_id": "",
+    "linea": "C1",
     "stops": [
       {
         "stop_id": "51300",
-        "arrival": 1791963480
+        "arrival": 1791963540,
+        "arrival_hora": "2026-10-14 07:39:00"
       }
     ]
   },
   {
     "trip_id": "3185X23427T1",
-    "route_id": "",
+    "linea": "",
     "stops": [
       {
-        "stop_id": "51461",
-        "arrival": 1791963120
+        "stop_id": "51460",
+        "arrival": 1791963300,
+        "arrival_hora": "2026-10-14 07:35:00"
       }
     ]
   },
   {
     "trip_id": "3185X23428T1",
-    "route_id": "",
+    "linea": "",
     "stops": [
       {
         "stop_id": "51409",
-        "arrival": 1791963240
+        "arrival": 1791963240,
+        "arrival_hora": "2026-10-14 07:34:00"
       }
     ]
   },
   {
     "trip_id": "3285X23321C1",
-    "route_id": "",
+    "linea": "C1",
     "stops": [
       {
         "stop_id": "54513",
-        "arrival": 1791963175
+        "arrival": 1791963285,
+        "arrival_hora": "2026-10-14 07:34:45"
       }
     ]
   },
   {
     "trip_id": "3285X23323C1",
-    "route_id": "",
+    "linea": "C1",
     "stops": [
       {
-        "stop_id": "54509",
-        "arrival": 1791963194
-      }
-    ]
-  },
-  {
-    "trip_id": "3285X23316C1",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "54518",
-        "arrival": 1791963100
-      }
-    ]
-  },
-  {
-    "trip_id": "3285X23314C1",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "54517",
-        "arrival": 1791962955
-      }
-    ]
-  },
-  {
-    "trip_id": "3285X23318C1",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "54511",
-        "arrival": 1791963164
+        "stop_id": "54519",
+        "arrival": 1791963387,
+        "arrival_hora": "2026-10-14 07:36:27"
       }
     ]
   },
   {
     "trip_id": "3285X23320C1",
-    "route_id": "",
+    "linea": "C1",
     "stops": [
       {
         "stop_id": "54515",
-        "arrival": 1791963720
+        "arrival": 1791963720,
+        "arrival_hora": "2026-10-14 07:42:00"
+      }
+    ]
+  },
+  {
+    "trip_id": "3285X23318C1",
+    "linea": "C1",
+    "stops": [
+      {
+        "stop_id": "54510",
+        "arrival": 1791963500,
+        "arrival_hora": "2026-10-14 07:38:20"
+      }
+    ]
+  },
+  {
+    "trip_id": "3285X23316C1",
+    "linea": "C1",
+    "stops": [
+      {
+        "stop_id": "54520",
+        "arrival": 1791963266,
+        "arrival_hora": "2026-10-14 07:34:26"
       }
     ]
   },
   {
     "trip_id": "4085X24026C2",
-    "route_id": "",
+    "linea": "C2",
     "stops": [
       {
         "stop_id": "64100",
-        "arrival": 1791962940
-      }
-    ]
-  },
-  {
-    "trip_id": "4085X24220C1",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "69107",
-        "arrival": 1791964140
-      }
-    ]
-  },
-  {
-    "trip_id": "4085X24023C2",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "64105",
-        "arrival": 1791963581
-      }
-    ]
-  },
-  {
-    "trip_id": "4085X31407C3",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "66209",
-        "arrival": 1791963709
-      }
-    ]
-  },
-  {
-    "trip_id": "4085X31408C3",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "66211",
-        "arrival": 1791963202
-      }
-    ]
-  },
-  {
-    "trip_id": "4085X31405C3",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "66206",
-        "arrival": 1791963274
+        "arrival": 1791963515,
+        "arrival_hora": "2026-10-14 07:38:35"
       }
     ]
   },
   {
     "trip_id": "4085X24027C2",
-    "route_id": "",
+    "linea": "C2",
     "stops": [
       {
         "stop_id": "64203",
-        "arrival": 1791963420
+        "arrival": 1791963518,
+        "arrival_hora": "2026-10-14 07:38:38"
       }
     ]
   },
   {
     "trip_id": "4085X24280C1",
-    "route_id": "",
+    "linea": "C1",
     "stops": [
       {
         "stop_id": "65000",
-        "arrival": 1791963656
+        "arrival": 1791963666,
+        "arrival_hora": "2026-10-14 07:41:06"
       }
     ]
   },
   {
-    "trip_id": "4085X24019C2",
-    "route_id": "",
+    "trip_id": "4085X24220C1",
+    "linea": "C1",
     "stops": [
       {
-        "stop_id": "64006",
-        "arrival": 1791963691
+        "stop_id": "69107",
+        "arrival": 1791964140,
+        "arrival_hora": "2026-10-14 07:49:00"
+      }
+    ]
+  },
+  {
+    "trip_id": "4085X24023C2",
+    "linea": "C2",
+    "stops": [
+      {
+        "stop_id": "64105",
+        "arrival": 1791963574,
+        "arrival_hora": "2026-10-14 07:39:34"
       }
     ]
   },
   {
     "trip_id": "4085X31410C3",
-    "route_id": "",
+    "linea": "C3",
     "stops": [
       {
         "stop_id": "66207",
-        "arrival": 1791964200
+        "arrival": 1791964200,
+        "arrival_hora": "2026-10-14 07:50:00"
       }
     ]
   },
   {
-    "trip_id": "4085X35413C6",
-    "route_id": "",
+    "trip_id": "4085X31407C3",
+    "linea": "C3",
     "stops": [
       {
-        "stop_id": "65005",
-        "arrival": 1791963142
+        "stop_id": "66209",
+        "arrival": 1791963749,
+        "arrival_hora": "2026-10-14 07:42:29"
       }
     ]
   },
   {
-    "trip_id": "4085X24311C6",
-    "route_id": "",
+    "trip_id": "4085X31408C3",
+    "linea": "C3",
     "stops": [
       {
-        "stop_id": "65000",
-        "arrival": 1791963629
+        "stop_id": "66214",
+        "arrival": 1791963570,
+        "arrival_hora": "2026-10-14 07:39:30"
       }
     ]
   },
   {
-    "trip_id": "4085X24310C6",
-    "route_id": "",
+    "trip_id": "4085X31405C3",
+    "linea": "C3",
     "stops": [
       {
-        "stop_id": "65207",
-        "arrival": 1791963091
+        "stop_id": "66206",
+        "arrival": 1791963274,
+        "arrival_hora": "2026-10-14 07:34:34"
       }
     ]
   },
   {
     "trip_id": "4085X24213C1",
-    "route_id": "",
+    "linea": "C1",
     "stops": [
       {
-        "stop_id": "69105",
-        "arrival": 1791963549
+        "stop_id": "69107",
+        "arrival": 1791963554,
+        "arrival_hora": "2026-10-14 07:39:14"
       }
     ]
   },
   {
     "trip_id": "4085X24015C2",
-    "route_id": "",
+    "linea": "C2",
     "stops": [
       {
         "stop_id": "64006",
-        "arrival": 1791962335
+        "arrival": 1791962335,
+        "arrival_hora": "2026-10-14 07:18:55"
       }
     ]
   },
   {
     "trip_id": "4085X24214C1",
-    "route_id": "",
+    "linea": "C1",
     "stops": [
       {
-        "stop_id": "69102",
-        "arrival": 1791963367
+        "stop_id": "64200",
+        "arrival": 1791963853,
+        "arrival_hora": "2026-10-14 07:44:13"
       }
     ]
   },
   {
     "trip_id": "4085X24312C6",
-    "route_id": "",
+    "linea": "C6",
     "stops": [
       {
         "stop_id": "65202",
-        "arrival": 1791963523
+        "arrival": 1791963523,
+        "arrival_hora": "2026-10-14 07:38:43"
       }
     ]
   },
   {
     "trip_id": "4085X24215C1",
-    "route_id": "",
+    "linea": "C1",
     "stops": [
       {
         "stop_id": "69103",
-        "arrival": 1791963377
+        "arrival": 1791963431,
+        "arrival_hora": "2026-10-14 07:37:11"
       }
     ]
   },
   {
     "trip_id": "4085X24315C6",
-    "route_id": "",
+    "linea": "C6",
     "stops": [
       {
-        "stop_id": "65203",
-        "arrival": 1791963069
+        "stop_id": "65202",
+        "arrival": 1791963290,
+        "arrival_hora": "2026-10-14 07:34:50"
       }
     ]
   },
   {
     "trip_id": "4085X24314C6",
-    "route_id": "",
+    "linea": "C6",
     "stops": [
       {
         "stop_id": "65003",
-        "arrival": 1791963321
+        "arrival": 1791963386,
+        "arrival_hora": "2026-10-14 07:36:26"
       }
     ]
   },
   {
     "trip_id": "4085X24216C1",
-    "route_id": "",
+    "linea": "C1",
     "stops": [
       {
         "stop_id": "69104",
-        "arrival": 1791963625
+        "arrival": 1791963602,
+        "arrival_hora": "2026-10-14 07:40:02"
       }
     ]
   },
   {
     "trip_id": "4085X24217C1",
-    "route_id": "",
+    "linea": "C1",
     "stops": [
       {
         "stop_id": "64202",
-        "arrival": 1791963167
+        "arrival": 1791963244,
+        "arrival_hora": "2026-10-14 07:34:04"
       }
     ]
   },
   {
-    "trip_id": "5185X18123R16",
-    "route_id": "",
+    "trip_id": "4085X24019C2",
+    "linea": "C2",
     "stops": [
       {
-        "stop_id": "65405",
-        "arrival": 1791963468
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X25613R1",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "79200",
-        "arrival": 1791963519
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X25615R1",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "79600",
-        "arrival": 1791963025
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X28562R2",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "71709",
-        "arrival": 1791963391
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X35525R3",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "77303",
-        "arrival": 1791963366
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X28560R2",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "71708",
-        "arrival": 1791963167
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X15003R15",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "71502",
-        "arrival": 1791963081
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X77522R4",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "78604",
-        "arrival": 1791963425
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X35520R3",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "77112",
-        "arrival": 1791963365
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X77406R4",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "78600",
-        "arrival": 1791963047
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X25721R1",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "79405",
-        "arrival": 1791963184
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X77408R4",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "78610",
-        "arrival": 1791963274
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X28280R2S",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "71701",
-        "arrival": 1791963840
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X28416R2N",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "79009",
-        "arrival": 1791963368
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X25720R1",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "72305",
-        "arrival": 1791963414
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X28414R2N",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "72400",
-        "arrival": 1791963348
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X25723R1",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "79403",
-        "arrival": 1791963625
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X28418R2N",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "79100",
-        "arrival": 1791963238
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X15904R11",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "79306",
-        "arrival": 1791963035
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X25722R1",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "79406",
-        "arrival": 1791963148
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X15908R11",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "79100",
-        "arrival": 1791964038
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X25725R1",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "71801",
-        "arrival": 1791963295
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X33523R4",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "78506",
-        "arrival": 1791963365
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X33522RL4",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "78501",
-        "arrival": 1791964078
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X28275R2S",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "71703",
-        "arrival": 1791963224
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X77714R4",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "72300",
-        "arrival": 1791963299
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X28276R2S",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "71801",
-        "arrival": 1791963900
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X35535R3",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "77110",
-        "arrival": 1791963211
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X77716R4",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "78804",
-        "arrival": 1791963301
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X77410R4",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "78802",
-        "arrival": 1791963254
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X28279R2S",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "71802",
-        "arrival": 1791963480
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X77412R4",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "78805",
-        "arrival": 1791963365
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X77718R4",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "78705",
-        "arrival": 1791963131
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X28277R2S",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "71707",
-        "arrival": 1791963197
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X28278R2S",
-    "route_id": "",
-    "stops": []
-  },
-  {
-    "trip_id": "5185X25717R1",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "79501",
-        "arrival": 1791963278
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X77414R4",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "72300",
-        "arrival": 1791963226
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X15006R15",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "71401",
-        "arrival": 1791963900
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X77416R4",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "72207",
-        "arrival": 1791963277
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X25719R1",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "79412",
-        "arrival": 1791963013
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X15802R11",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "79202",
-        "arrival": 1791963000
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X35531R3",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "77114",
-        "arrival": 1791963482
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X35539R3",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "77105",
-        "arrival": 1791963290
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X25617R1",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "79409",
-        "arrival": 1791963085
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X25619R1",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "78804",
-        "arrival": 1791963153
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X28420R2N",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "79103",
-        "arrival": 1791963660
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X25628R1",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "79501",
-        "arrival": 1791963102
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X25509R2S",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "71600",
-        "arrival": 1791963234
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X25508R2S",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "71802",
-        "arrival": 1791963133
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X25620R1",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "72305",
-        "arrival": 1791963305
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X25622R1",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "78804",
-        "arrival": 1791963140
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X77610R4",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "78710",
-        "arrival": 1791963235
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X28478R2",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "71705",
-        "arrival": 1791963080
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X25624R1",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "79404",
-        "arrival": 1791963090
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X25626R1",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "79410",
-        "arrival": 1791962990
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X18093R16",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "71801",
-        "arrival": 1791963099
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X77512R4",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "72204",
-        "arrival": 1791962995
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X77876R7",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "78706",
-        "arrival": 1791963115
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X77612R4",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "78804",
-        "arrival": 1791963102
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X77514R4",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "72209",
-        "arrival": 1791963152
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X77614R4",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "72302",
-        "arrival": 1791963178
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X78606R8",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "72210",
-        "arrival": 1791963000
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X25410R2N",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "79104",
-        "arrival": 1791963206
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X25412R2N",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "79007",
-        "arrival": 1791963169
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X25414R2N",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "71801",
-        "arrival": 1791963464
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X77516R4",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "72303",
-        "arrival": 1791963251
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X25416R2N",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "71707",
-        "arrival": 1791963900
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X30530R15",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "71802",
-        "arrival": 1791963269
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X77322R3",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "77103",
-        "arrival": 1791963372
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X15034R15",
-    "route_id": "",
-    "stops": []
-  },
-  {
-    "trip_id": "5185X25510R2S",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "71708",
-        "arrival": 1791963420
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X25630R1",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "79608",
-        "arrival": 1791963253
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X25512R2S",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "71602",
-        "arrival": 1791963198
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X25514R2S",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "71601",
-        "arrival": 1791963420
-      }
-    ]
-  },
-  {
-    "trip_id": "5185X25513R2S",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "71706",
-        "arrival": 1791963139
+        "stop_id": "64006",
+        "arrival": 1791963689,
+        "arrival_hora": "2026-10-14 07:41:29"
       }
     ]
   },
   {
     "trip_id": "5185X25515R2S",
-    "route_id": "",
+    "linea": "",
     "stops": [
       {
         "stop_id": "71801",
-        "arrival": 1791963308
+        "arrival": 1791963308,
+        "arrival_hora": "2026-10-14 07:35:08"
       }
     ]
   },
   {
-    "trip_id": "6085X26607C3",
-    "route_id": "",
+    "trip_id": "5185X18123R16",
+    "linea": "",
     "stops": [
       {
-        "stop_id": "13111",
-        "arrival": 1791963233
+        "stop_id": "65405",
+        "arrival": 1791963468,
+        "arrival_hora": "2026-10-14 07:37:48"
       }
     ]
   },
   {
-    "trip_id": "6085X71510C4",
-    "route_id": "",
+    "trip_id": "5185X25613R1",
+    "linea": "",
     "stops": [
       {
-        "stop_id": "05467",
-        "arrival": 1791963276
+        "stop_id": "79200",
+        "arrival": 1791963519,
+        "arrival_hora": "2026-10-14 07:38:39"
       }
     ]
   },
   {
-    "trip_id": "6085X71515C4",
-    "route_id": "",
+    "trip_id": "5185X25615R1",
+    "linea": "",
     "stops": [
       {
-        "stop_id": "05483",
-        "arrival": 1791963720
+        "stop_id": "79601",
+        "arrival": 1791963390,
+        "arrival_hora": "2026-10-14 07:36:30"
       }
     ]
   },
   {
-    "trip_id": "6085X71511C4",
-    "route_id": "",
+    "trip_id": "5185X15003R15",
+    "linea": "",
     "stops": [
       {
-        "stop_id": "05451",
-        "arrival": 1791963076
+        "stop_id": "71500",
+        "arrival": 1791963681,
+        "arrival_hora": "2026-10-14 07:41:21"
       }
     ]
   },
   {
-    "trip_id": "6085X71870C5",
-    "route_id": "",
+    "trip_id": "5185X28562R2",
+    "linea": "",
     "stops": [
       {
-        "stop_id": "05484",
-        "arrival": 1791963105
+        "stop_id": "71709",
+        "arrival": 1791963445,
+        "arrival_hora": "2026-10-14 07:37:25"
       }
     ]
   },
   {
-    "trip_id": "6085X26021C2",
-    "route_id": "",
+    "trip_id": "5185X35525R3",
+    "linea": "",
     "stops": [
       {
-        "stop_id": "13506",
-        "arrival": 1791963072
+        "stop_id": "77303",
+        "arrival": 1791963366,
+        "arrival_hora": "2026-10-14 07:36:06"
       }
     ]
   },
   {
-    "trip_id": "6085X71512C4",
-    "route_id": "",
+    "trip_id": "5185X25721R1",
+    "linea": "",
     "stops": [
       {
-        "stop_id": "13206",
-        "arrival": 1791963900
+        "stop_id": "79406",
+        "arrival": 1791963325,
+        "arrival_hora": "2026-10-14 07:35:25"
       }
     ]
   },
   {
-    "trip_id": "6085X26020C2",
-    "route_id": "",
+    "trip_id": "5185X77520R4",
+    "linea": "",
     "stops": [
       {
-        "stop_id": "13200",
-        "arrival": 1791963091
+        "stop_id": "78709",
+        "arrival": 1791963383,
+        "arrival_hora": "2026-10-14 07:36:23"
       }
     ]
   },
   {
-    "trip_id": "6085X26124C1",
-    "route_id": "",
+    "trip_id": "5185X25720R1",
+    "linea": "",
     "stops": [
       {
-        "stop_id": "13404",
-        "arrival": 1791963600
+        "stop_id": "72305",
+        "arrival": 1791963482,
+        "arrival_hora": "2026-10-14 07:38:02"
       }
     ]
   },
   {
-    "trip_id": "6085X71513C4",
-    "route_id": "",
+    "trip_id": "5185X25723R1",
+    "linea": "",
     "stops": [
       {
-        "stop_id": "05471",
-        "arrival": 1791963051
+        "stop_id": "79403",
+        "arrival": 1791963638,
+        "arrival_hora": "2026-10-14 07:40:38"
       }
     ]
   },
   {
-    "trip_id": "6085X26024C2",
-    "route_id": "",
+    "trip_id": "5185X28560R2",
+    "linea": "",
     "stops": [
       {
-        "stop_id": "13505",
-        "arrival": 1791963420
+        "stop_id": "71707",
+        "arrival": 1791963431,
+        "arrival_hora": "2026-10-14 07:37:11"
       }
     ]
   },
   {
-    "trip_id": "6085X26123C1",
-    "route_id": "",
+    "trip_id": "5185X25722R1",
+    "linea": "",
     "stops": [
       {
-        "stop_id": "13205",
-        "arrival": 1791963000
+        "stop_id": "79405",
+        "arrival": 1791963255,
+        "arrival_hora": "2026-10-14 07:34:15"
       }
     ]
   },
   {
-    "trip_id": "6085X26608C3",
-    "route_id": "",
+    "trip_id": "5185X77522R4",
+    "linea": "",
     "stops": [
       {
-        "stop_id": "13117",
-        "arrival": 1791963051
+        "stop_id": "78605",
+        "arrival": 1791963662,
+        "arrival_hora": "2026-10-14 07:41:02"
       }
     ]
   },
   {
-    "trip_id": "6085X26519C3",
-    "route_id": "",
+    "trip_id": "5185X77886R7",
+    "linea": "",
     "stops": [
       {
-        "stop_id": "13116",
-        "arrival": 1791963360
+        "stop_id": "78708",
+        "arrival": 1791963272,
+        "arrival_hora": "2026-10-14 07:34:32"
       }
     ]
   },
   {
-    "trip_id": "6085X26518C3",
-    "route_id": "",
+    "trip_id": "5185X35520R3",
+    "linea": "",
     "stops": [
       {
-        "stop_id": "13118",
-        "arrival": 1791963254
+        "stop_id": "77112",
+        "arrival": 1791963360,
+        "arrival_hora": "2026-10-14 07:36:00"
       }
     ]
   },
   {
-    "trip_id": "6085X26515C3",
-    "route_id": "",
+    "trip_id": "5185X25725R1",
+    "linea": "",
     "stops": [
       {
-        "stop_id": "13119",
-        "arrival": 1791963104
+        "stop_id": "78805",
+        "arrival": 1791963502,
+        "arrival_hora": "2026-10-14 07:38:22"
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X77408R4",
+    "linea": "",
+    "stops": [
+      {
+        "stop_id": "78610",
+        "arrival": 1791963306,
+        "arrival_hora": "2026-10-14 07:35:06"
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X28280R2S",
+    "linea": "",
+    "stops": [
+      {
+        "stop_id": "71701",
+        "arrival": 1791963840,
+        "arrival_hora": "2026-10-14 07:44:00"
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X28275R2S",
+    "linea": "",
+    "stops": [
+      {
+        "stop_id": "71701",
+        "arrival": 1791963518,
+        "arrival_hora": "2026-10-14 07:38:38"
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X28416R2N",
+    "linea": "",
+    "stops": [
+      {
+        "stop_id": "79009",
+        "arrival": 1791963370,
+        "arrival_hora": "2026-10-14 07:36:10"
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X35535R3",
+    "linea": "",
+    "stops": [
+      {
+        "stop_id": "77111",
+        "arrival": 1791963517,
+        "arrival_hora": "2026-10-14 07:38:37"
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X77410R4",
+    "linea": "",
+    "stops": [
+      {
+        "stop_id": "78801",
+        "arrival": 1791963358,
+        "arrival_hora": "2026-10-14 07:35:58"
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X28414R2N",
+    "linea": "",
+    "stops": [
+      {
+        "stop_id": "72400",
+        "arrival": 1791963419,
+        "arrival_hora": "2026-10-14 07:36:59"
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X28279R2S",
+    "linea": "",
+    "stops": [
+      {
+        "stop_id": "71802",
+        "arrival": 1791963589,
+        "arrival_hora": "2026-10-14 07:39:49"
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X15061R17",
+    "linea": "",
+    "stops": [
+      {
+        "stop_id": "71503",
+        "arrival": 1791963933,
+        "arrival_hora": "2026-10-14 07:45:33"
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X77412R4",
+    "linea": "",
+    "stops": [
+      {
+        "stop_id": "78805",
+        "arrival": 1791963362,
+        "arrival_hora": "2026-10-14 07:36:02"
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X28277R2S",
+    "linea": "",
+    "stops": [
+      {
+        "stop_id": "71707",
+        "arrival": 1791963382,
+        "arrival_hora": "2026-10-14 07:36:22"
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X28278R2S",
+    "linea": "",
+    "stops": []
+  },
+  {
+    "trip_id": "5185X28418R2N",
+    "linea": "",
+    "stops": [
+      {
+        "stop_id": "79007",
+        "arrival": 1791963709,
+        "arrival_hora": "2026-10-14 07:41:49"
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X77414R4",
+    "linea": "",
+    "stops": [
+      {
+        "stop_id": "72300",
+        "arrival": 1791963328,
+        "arrival_hora": "2026-10-14 07:35:28"
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X15006R15",
+    "linea": "",
+    "stops": [
+      {
+        "stop_id": "71401",
+        "arrival": 1791963900,
+        "arrival_hora": "2026-10-14 07:45:00"
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X77416R4",
+    "linea": "",
+    "stops": [
+      {
+        "stop_id": "72208",
+        "arrival": 1791963720,
+        "arrival_hora": "2026-10-14 07:42:00"
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X15005R15",
+    "linea": "",
+    "stops": [
+      {
+        "stop_id": "71802",
+        "arrival": 1791964500,
+        "arrival_hora": "2026-10-14 07:55:00"
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X15004R15",
+    "linea": "",
+    "stops": [
+      {
+        "stop_id": "71801",
+        "arrival": 1791965437,
+        "arrival_hora": "2026-10-14 08:10:37"
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X15904R11",
+    "linea": "",
+    "stops": [
+      {
+        "stop_id": "79308",
+        "arrival": 1791963275,
+        "arrival_hora": "2026-10-14 07:34:35"
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X15802R11",
+    "linea": "",
+    "stops": [
+      {
+        "stop_id": "79203",
+        "arrival": 1791963360,
+        "arrival_hora": "2026-10-14 07:36:00"
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X35539R3",
+    "linea": "",
+    "stops": [
+      {
+        "stop_id": "77105",
+        "arrival": 1791963455,
+        "arrival_hora": "2026-10-14 07:37:35"
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X25617R1",
+    "linea": "",
+    "stops": [
+      {
+        "stop_id": "79410",
+        "arrival": 1791963344,
+        "arrival_hora": "2026-10-14 07:35:44"
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X25619R1",
+    "linea": "",
+    "stops": [
+      {
+        "stop_id": "79009",
+        "arrival": 1791963337,
+        "arrival_hora": "2026-10-14 07:35:37"
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X15908R11",
+    "linea": "",
+    "stops": [
+      {
+        "stop_id": "79100",
+        "arrival": 1791964123,
+        "arrival_hora": "2026-10-14 07:48:43"
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X15780R11",
+    "linea": "",
+    "stops": [
+      {
+        "stop_id": "79303",
+        "arrival": 1791965040,
+        "arrival_hora": "2026-10-14 08:04:00"
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X25628R1",
+    "linea": "",
+    "stops": [
+      {
+        "stop_id": "79500",
+        "arrival": 1791963374,
+        "arrival_hora": "2026-10-14 07:36:14"
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X25509R2S",
+    "linea": "",
+    "stops": [
+      {
+        "stop_id": "71600",
+        "arrival": 1791963280,
+        "arrival_hora": "2026-10-14 07:34:40"
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X33523R4",
+    "linea": "",
+    "stops": [
+      {
+        "stop_id": "78506",
+        "arrival": 1791963365,
+        "arrival_hora": "2026-10-14 07:36:05"
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X77610R4",
+    "linea": "",
+    "stops": [
+      {
+        "stop_id": "78710",
+        "arrival": 1791963394,
+        "arrival_hora": "2026-10-14 07:36:34"
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X25508R2S",
+    "linea": "",
+    "stops": [
+      {
+        "stop_id": "71802",
+        "arrival": 1791963133,
+        "arrival_hora": "2026-10-14 07:32:13"
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X77612R4",
+    "linea": "",
+    "stops": [
+      {
+        "stop_id": "78806",
+        "arrival": 1791963434,
+        "arrival_hora": "2026-10-14 07:37:14"
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X77614R4",
+    "linea": "",
+    "stops": [
+      {
+        "stop_id": "72303",
+        "arrival": 1791963231,
+        "arrival_hora": "2026-10-14 07:33:51"
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X25622R1",
+    "linea": "",
+    "stops": [
+      {
+        "stop_id": "78805",
+        "arrival": 1791963210,
+        "arrival_hora": "2026-10-14 07:33:30"
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X25624R1",
+    "linea": "",
+    "stops": [
+      {
+        "stop_id": "79403",
+        "arrival": 1791963385,
+        "arrival_hora": "2026-10-14 07:36:25"
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X25410R2N",
+    "linea": "",
+    "stops": [
+      {
+        "stop_id": "79104",
+        "arrival": 1791963294,
+        "arrival_hora": "2026-10-14 07:34:54"
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X25626R1",
+    "linea": "",
+    "stops": [
+      {
+        "stop_id": "79409",
+        "arrival": 1791963282,
+        "arrival_hora": "2026-10-14 07:34:42"
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X25412R2N",
+    "linea": "",
+    "stops": [
+      {
+        "stop_id": "79100",
+        "arrival": 1791963380,
+        "arrival_hora": "2026-10-14 07:36:20"
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X18093R16",
+    "linea": "",
+    "stops": [
+      {
+        "stop_id": "71700",
+        "arrival": 1791965192,
+        "arrival_hora": "2026-10-14 08:06:32"
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X77876R7",
+    "linea": "",
+    "stops": [
+      {
+        "stop_id": "78707",
+        "arrival": 1791963338,
+        "arrival_hora": "2026-10-14 07:35:38"
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X25414R2N",
+    "linea": "",
+    "stops": [
+      {
+        "stop_id": "71801",
+        "arrival": 1791963562,
+        "arrival_hora": "2026-10-14 07:39:22"
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X77514R4",
+    "linea": "",
+    "stops": [
+      {
+        "stop_id": "72208",
+        "arrival": 1791963634,
+        "arrival_hora": "2026-10-14 07:40:34"
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X78606R8",
+    "linea": "",
+    "stops": [
+      {
+        "stop_id": "72210",
+        "arrival": 1791963336,
+        "arrival_hora": "2026-10-14 07:35:36"
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X25416R2N",
+    "linea": "",
+    "stops": [
+      {
+        "stop_id": "71707",
+        "arrival": 1791963900,
+        "arrival_hora": "2026-10-14 07:45:00"
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X77516R4",
+    "linea": "",
+    "stops": [
+      {
+        "stop_id": "72303",
+        "arrival": 1791963323,
+        "arrival_hora": "2026-10-14 07:35:23"
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X77322R3",
+    "linea": "",
+    "stops": [
+      {
+        "stop_id": "77103",
+        "arrival": 1791963485,
+        "arrival_hora": "2026-10-14 07:38:05"
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X77720R4",
+    "linea": "",
+    "stops": [
+      {
+        "stop_id": "78710",
+        "arrival": 1791964080,
+        "arrival_hora": "2026-10-14 07:48:00"
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X77518R4",
+    "linea": "",
+    "stops": [
+      {
+        "stop_id": "78802",
+        "arrival": 1791963370,
+        "arrival_hora": "2026-10-14 07:36:10"
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X15852R11",
+    "linea": "",
+    "stops": [
+      {
+        "stop_id": "79009",
+        "arrival": 1791963581,
+        "arrival_hora": "2026-10-14 07:39:41"
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X30530R15",
+    "linea": "",
+    "stops": [
+      {
+        "stop_id": "71802",
+        "arrival": 1791963301,
+        "arrival_hora": "2026-10-14 07:35:01"
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X15034R15",
+    "linea": "",
+    "stops": []
+  },
+  {
+    "trip_id": "5185X25510R2S",
+    "linea": "",
+    "stops": [
+      {
+        "stop_id": "71708",
+        "arrival": 1791963487,
+        "arrival_hora": "2026-10-14 07:38:07"
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X25630R1",
+    "linea": "",
+    "stops": [
+      {
+        "stop_id": "79608",
+        "arrival": 1791963248,
+        "arrival_hora": "2026-10-14 07:34:08"
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X77714R4",
+    "linea": "",
+    "stops": [
+      {
+        "stop_id": "72211",
+        "arrival": 1791963394,
+        "arrival_hora": "2026-10-14 07:36:34"
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X25512R2S",
+    "linea": "",
+    "stops": [
+      {
+        "stop_id": "71603",
+        "arrival": 1791963393,
+        "arrival_hora": "2026-10-14 07:36:33"
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X25511R2S",
+    "linea": "",
+    "stops": [
+      {
+        "stop_id": "71700",
+        "arrival": 1791963571,
+        "arrival_hora": "2026-10-14 07:39:31"
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X77716R4",
+    "linea": "",
+    "stops": [
+      {
+        "stop_id": "78805",
+        "arrival": 1791963335,
+        "arrival_hora": "2026-10-14 07:35:35"
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X25514R2S",
+    "linea": "",
+    "stops": [
+      {
+        "stop_id": "71601",
+        "arrival": 1791963420,
+        "arrival_hora": "2026-10-14 07:37:00"
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X77718R4",
+    "linea": "",
+    "stops": [
+      {
+        "stop_id": "78706",
+        "arrival": 1791963319,
+        "arrival_hora": "2026-10-14 07:35:19"
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X25513R2S",
+    "linea": "",
+    "stops": [
+      {
+        "stop_id": "71706",
+        "arrival": 1791963155,
+        "arrival_hora": "2026-10-14 07:32:35"
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X25717R1",
+    "linea": "",
+    "stops": [
+      {
+        "stop_id": "79501",
+        "arrival": 1791963323,
+        "arrival_hora": "2026-10-14 07:35:23"
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X25719R1",
+    "linea": "",
+    "stops": [
+      {
+        "stop_id": "79500",
+        "arrival": 1791959940,
+        "arrival_hora": "2026-10-14 06:39:00"
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X35531R3",
+    "linea": "",
+    "stops": [
+      {
+        "stop_id": "77114",
+        "arrival": 1791963458,
+        "arrival_hora": "2026-10-14 07:37:38"
+      }
+    ]
+  },
+  {
+    "trip_id": "5185X28420R2N",
+    "linea": "",
+    "stops": [
+      {
+        "stop_id": "79103",
+        "arrival": 1791963660,
+        "arrival_hora": "2026-10-14 07:41:00"
       }
     ]
   },
   {
     "trip_id": "6085X26517C3",
-    "route_id": "",
+    "linea": "C3",
     "stops": [
       {
-        "stop_id": "13106",
-        "arrival": 1791963112
+        "stop_id": "13117",
+        "arrival": 1791963280,
+        "arrival_hora": "2026-10-14 07:34:40"
       }
     ]
   },
   {
     "trip_id": "6085X26516C3",
-    "route_id": "",
+    "linea": "C3",
     "stops": [
       {
-        "stop_id": "13104",
-        "arrival": 1791963094
+        "stop_id": "13103",
+        "arrival": 1791963410,
+        "arrival_hora": "2026-10-14 07:36:50"
       }
     ]
   },
   {
     "trip_id": "6085X26122C1",
-    "route_id": "",
+    "linea": "C1",
     "stops": [
       {
-        "stop_id": "13304",
-        "arrival": 1791963091
-      }
-    ]
-  },
-  {
-    "trip_id": "6085X71508C4",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "05483",
-        "arrival": 1791963067
+        "stop_id": "13208",
+        "arrival": 1791963324,
+        "arrival_hora": "2026-10-14 07:35:24"
       }
     ]
   },
   {
     "trip_id": "6085X26023C2",
-    "route_id": "",
+    "linea": "C2",
     "stops": [
       {
-        "stop_id": "13501",
-        "arrival": 1791963149
+        "stop_id": "13502",
+        "arrival": 1791963227,
+        "arrival_hora": "2026-10-14 07:33:47"
       }
     ]
   },
   {
     "trip_id": "6085X26022C2",
-    "route_id": "",
+    "linea": "C2",
     "stops": [
       {
-        "stop_id": "13501",
-        "arrival": 1791963102
+        "stop_id": "13400",
+        "arrival": 1791963428,
+        "arrival_hora": "2026-10-14 07:37:08"
+      }
+    ]
+  },
+  {
+    "trip_id": "6085X26025C2",
+    "linea": "C2",
+    "stops": [
+      {
+        "stop_id": "13205",
+        "arrival": 1791964020,
+        "arrival_hora": "2026-10-14 07:47:00"
+      }
+    ]
+  },
+  {
+    "trip_id": "6085X26124C1",
+    "linea": "C1",
+    "stops": [
+      {
+        "stop_id": "13404",
+        "arrival": 1791963600,
+        "arrival_hora": "2026-10-14 07:40:00"
+      }
+    ]
+  },
+  {
+    "trip_id": "6085X26024C2",
+    "linea": "C2",
+    "stops": [
+      {
+        "stop_id": "13505",
+        "arrival": 1791963420,
+        "arrival_hora": "2026-10-14 07:37:00"
+      }
+    ]
+  },
+  {
+    "trip_id": "6085X26123C1",
+    "linea": "C1",
+    "stops": [
+      {
+        "stop_id": "13207",
+        "arrival": 1791963244,
+        "arrival_hora": "2026-10-14 07:34:04"
+      }
+    ]
+  },
+  {
+    "trip_id": "6085X71508C4",
+    "linea": "C4",
+    "stops": [
+      {
+        "stop_id": "05485",
+        "arrival": 1791963306,
+        "arrival_hora": "2026-10-14 07:35:06"
+      }
+    ]
+  },
+  {
+    "trip_id": "6085X71513C4",
+    "linea": "C4",
+    "stops": [
+      {
+        "stop_id": "05469",
+        "arrival": 1791963241,
+        "arrival_hora": "2026-10-14 07:34:01"
+      }
+    ]
+  },
+  {
+    "trip_id": "6085X26608C3",
+    "linea": "C3",
+    "stops": [
+      {
+        "stop_id": "13107",
+        "arrival": 1791963225,
+        "arrival_hora": "2026-10-14 07:33:45"
+      }
+    ]
+  },
+  {
+    "trip_id": "6085X71510C4",
+    "linea": "C4",
+    "stops": [
+      {
+        "stop_id": "05469",
+        "arrival": 1791963525,
+        "arrival_hora": "2026-10-14 07:38:45"
+      }
+    ]
+  },
+  {
+    "trip_id": "6085X71870C5",
+    "linea": "C5",
+    "stops": [
+      {
+        "stop_id": "05487",
+        "arrival": 1791963845,
+        "arrival_hora": "2026-10-14 07:44:05"
+      }
+    ]
+  },
+  {
+    "trip_id": "6085X26515C3",
+    "linea": "C3",
+    "stops": [
+      {
+        "stop_id": "13120",
+        "arrival": 1791963212,
+        "arrival_hora": "2026-10-14 07:33:32"
+      }
+    ]
+  },
+  {
+    "trip_id": "6085X26519C3",
+    "linea": "C3",
+    "stops": [
+      {
+        "stop_id": "13116",
+        "arrival": 1791963447,
+        "arrival_hora": "2026-10-14 07:37:27"
+      }
+    ]
+  },
+  {
+    "trip_id": "6085X26607C3",
+    "linea": "C3",
+    "stops": [
+      {
+        "stop_id": "13112",
+        "arrival": 1791963332,
+        "arrival_hora": "2026-10-14 07:35:32"
+      }
+    ]
+  },
+  {
+    "trip_id": "6085X71515C4",
+    "linea": "C4",
+    "stops": [
+      {
+        "stop_id": "05483",
+        "arrival": 1791963720,
+        "arrival_hora": "2026-10-14 07:42:00"
+      }
+    ]
+  },
+  {
+    "trip_id": "6085X26518C3",
+    "linea": "C3",
+    "stops": [
+      {
+        "stop_id": "13118",
+        "arrival": 1791963272,
+        "arrival_hora": "2026-10-14 07:34:32"
+      }
+    ]
+  },
+  {
+    "trip_id": "6085X71512C4",
+    "linea": "C4",
+    "stops": [
+      {
+        "stop_id": "13206",
+        "arrival": 1791963900,
+        "arrival_hora": "2026-10-14 07:45:00"
       }
     ]
   },
   {
     "trip_id": "6185X35691C1",
-    "route_id": "",
+    "linea": "C1",
     "stops": [
       {
-        "stop_id": "11516",
-        "arrival": 1791963112
+        "stop_id": "11518",
+        "arrival": 1791963914,
+        "arrival_hora": "2026-10-14 07:45:14"
       }
     ]
   },
   {
     "trip_id": "6185X35619C1",
-    "route_id": "",
+    "linea": "C1",
     "stops": [
       {
-        "stop_id": "11405",
-        "arrival": 1791963173
+        "stop_id": "11406",
+        "arrival": 1791963253,
+        "arrival_hora": "2026-10-14 07:34:13"
       }
     ]
   },
   {
     "trip_id": "6185X35617C1",
-    "route_id": "",
+    "linea": "C1",
     "stops": [
       {
         "stop_id": "11511",
-        "arrival": 1791963249
+        "arrival": 1791963249,
+        "arrival_hora": "2026-10-14 07:34:09"
       }
     ]
   },
   {
     "trip_id": "6185X35618C1",
-    "route_id": "",
+    "linea": "C1",
     "stops": [
       {
         "stop_id": "11502",
-        "arrival": 1791963242
-      }
-    ]
-  },
-  {
-    "trip_id": "6185X35620C1",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "11518",
-        "arrival": 1791963240
+        "arrival": 1791963292,
+        "arrival_hora": "2026-10-14 07:34:52"
       }
     ]
   },
   {
     "trip_id": "6185X35664C1",
-    "route_id": "",
+    "linea": "C1",
     "stops": [
       {
         "stop_id": "11514",
-        "arrival": 1791963196
+        "arrival": 1791963193,
+        "arrival_hora": "2026-10-14 07:33:13"
       }
     ]
   },
   {
-    "trip_id": "6285X71110C2",
-    "route_id": "",
+    "trip_id": "6185X35620C1",
+    "linea": "C1",
     "stops": [
       {
-        "stop_id": "05611",
-        "arrival": 1791963094
-      }
-    ]
-  },
-  {
-    "trip_id": "6285X71111C2",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "05609",
-        "arrival": 1791963126
-      }
-    ]
-  },
-  {
-    "trip_id": "6285X71158C2",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "05625",
-        "arrival": 1791963164
-      }
-    ]
-  },
-  {
-    "trip_id": "6285X26908C1",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "14206",
-        "arrival": 1791963186
-      }
-    ]
-  },
-  {
-    "trip_id": "6285X26911C1",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "14215",
-        "arrival": 1791963140
-      }
-    ]
-  },
-  {
-    "trip_id": "6285X71851C3",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "05691",
-        "arrival": 1791963462
-      }
-    ]
-  },
-  {
-    "trip_id": "6285X26913C1",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "14234",
-        "arrival": 1791963326
-      }
-    ]
-  },
-  {
-    "trip_id": "6285X71354C3",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "05651",
-        "arrival": 1791963077
-      }
-    ]
-  },
-  {
-    "trip_id": "6285X71160C2",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "05602",
-        "arrival": 1791963780
+        "stop_id": "11518",
+        "arrival": 1791963240,
+        "arrival_hora": "2026-10-14 07:34:00"
       }
     ]
   },
   {
     "trip_id": "6285X71157C2",
-    "route_id": "",
+    "linea": "C2",
+    "stops": [
+      {
+        "stop_id": "05623",
+        "arrival": 1791963257,
+        "arrival_hora": "2026-10-14 07:34:17"
+      }
+    ]
+  },
+  {
+    "trip_id": "6285X71111C2",
+    "linea": "C2",
+    "stops": [
+      {
+        "stop_id": "05609",
+        "arrival": 1791963191,
+        "arrival_hora": "2026-10-14 07:33:11"
+      }
+    ]
+  },
+  {
+    "trip_id": "6285X71160C2",
+    "linea": "C2",
+    "stops": [
+      {
+        "stop_id": "05602",
+        "arrival": 1791963780,
+        "arrival_hora": "2026-10-14 07:43:00"
+      }
+    ]
+  },
+  {
+    "trip_id": "6285X26911C1",
+    "linea": "C1",
+    "stops": [
+      {
+        "stop_id": "14236",
+        "arrival": 1791963396,
+        "arrival_hora": "2026-10-14 07:36:36"
+      }
+    ]
+  },
+  {
+    "trip_id": "6285X26913C1",
+    "linea": "C1",
+    "stops": [
+      {
+        "stop_id": "14234",
+        "arrival": 1791963326,
+        "arrival_hora": "2026-10-14 07:35:26"
+      }
+    ]
+  },
+  {
+    "trip_id": "6285X71158C2",
+    "linea": "C2",
     "stops": [
       {
         "stop_id": "05625",
-        "arrival": 1791963122
+        "arrival": 1791963171,
+        "arrival_hora": "2026-10-14 07:32:51"
+      }
+    ]
+  },
+  {
+    "trip_id": "6285X26908C1",
+    "linea": "C1",
+    "stops": [
+      {
+        "stop_id": "14234",
+        "arrival": 1791963588,
+        "arrival_hora": "2026-10-14 07:39:48"
+      }
+    ]
+  },
+  {
+    "trip_id": "6285X71851C3",
+    "linea": "C3",
+    "stops": [
+      {
+        "stop_id": "05691",
+        "arrival": 1791963498,
+        "arrival_hora": "2026-10-14 07:38:18"
+      }
+    ]
+  },
+  {
+    "trip_id": "6285X71354C3",
+    "linea": "C3",
+    "stops": [
+      {
+        "stop_id": "05602",
+        "arrival": 1791963360,
+        "arrival_hora": "2026-10-14 07:36:00"
+      }
+    ]
+  },
+  {
+    "trip_id": "6285X71207C3",
+    "linea": "C3",
+    "stops": [
+      {
+        "stop_id": "05602",
+        "arrival": 1791964080,
+        "arrival_hora": "2026-10-14 07:48:00"
       }
     ]
   },
   {
     "trip_id": "6285X71204C3",
-    "route_id": "",
+    "linea": "C3",
     "stops": [
       {
-        "stop_id": "05657",
-        "arrival": 1791963060
+        "stop_id": "05655",
+        "arrival": 1791963405,
+        "arrival_hora": "2026-10-14 07:36:45"
       }
     ]
   },
   {
     "trip_id": "6285X71359C3",
-    "route_id": "",
+    "linea": "C3",
     "stops": [
       {
-        "stop_id": "05657",
-        "arrival": 1791963252
-      }
-    ]
-  },
-  {
-    "trip_id": "6285X71356C3",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "05669",
-        "arrival": 1791963180
+        "stop_id": "05658",
+        "arrival": 1791963281,
+        "arrival_hora": "2026-10-14 07:34:41"
       }
     ]
   },
   {
     "trip_id": "4685X70002C1",
-    "route_id": "",
+    "linea": "C1",
     "stops": [
       {
         "stop_id": "21010",
-        "arrival": 1791963119
+        "arrival": 1791963347,
+        "arrival_hora": "2026-10-14 07:35:47"
+      }
+    ]
+  },
+  {
+    "trip_id": "4685X70151C1",
+    "linea": "C1",
+    "stops": [
+      {
+        "stop_id": "05102",
+        "arrival": 1791964200,
+        "arrival_hora": "2026-10-14 07:50:00"
       }
     ]
   },
   {
     "trip_id": "4685X71800C1",
-    "route_id": "",
+    "linea": "C1",
     "stops": [
       {
-        "stop_id": "05121",
-        "arrival": 1791963093
+        "stop_id": "05119",
+        "arrival": 1791963273,
+        "arrival_hora": "2026-10-14 07:34:33"
       }
     ]
   },
   {
     "trip_id": "4685X71811C1",
-    "route_id": "",
+    "linea": "C1",
     "stops": [
       {
         "stop_id": "05131",
-        "arrival": 1791963323
-      }
-    ]
-  },
-  {
-    "trip_id": "4785X71053C1",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "05772",
-        "arrival": 1791963000
+        "arrival": 1791963323,
+        "arrival_hora": "2026-10-14 07:35:23"
       }
     ]
   },
   {
     "trip_id": "4785X71082C1",
-    "route_id": "",
+    "linea": "C1",
     "stops": [
       {
         "stop_id": "05762",
-        "arrival": 1791964560
+        "arrival": 1791964560,
+        "arrival_hora": "2026-10-14 07:56:00"
       }
     ]
   },
   {
     "trip_id": "4785X71093C1",
-    "route_id": "",
+    "linea": "C1",
     "stops": [
       {
         "stop_id": "05796",
-        "arrival": 1791963360
+        "arrival": 1791963360,
+        "arrival_hora": "2026-10-14 07:36:00"
       }
     ]
   },
   {
-    "trip_id": "2085X22210C2",
-    "route_id": "",
+    "trip_id": "4785X71053C1",
+    "linea": "C1",
     "stops": [
       {
-        "stop_id": "15218",
-        "arrival": 1791963180
+        "stop_id": "05787",
+        "arrival": 1791963360,
+        "arrival_hora": "2026-10-14 07:36:00"
       }
     ]
   },
   {
-    "trip_id": "2085X70308C4",
-    "route_id": "",
+    "trip_id": "2085X70906C8",
+    "linea": "C8",
     "stops": [
       {
-        "stop_id": "15400",
-        "arrival": 1791963300
+        "stop_id": "05389",
+        "arrival": 1791963720,
+        "arrival_hora": "2026-10-14 07:42:00"
       }
     ]
   },
   {
-    "trip_id": "2085X70407C5",
-    "route_id": "",
+    "trip_id": "2085X70406C5",
+    "linea": "C5",
     "stops": [
       {
-        "stop_id": "05509",
-        "arrival": 1791963240
-      }
-    ]
-  },
-  {
-    "trip_id": "2085X22013C1",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "15123",
-        "arrival": 1791963720
-      }
-    ]
-  },
-  {
-    "trip_id": "2085X70303C4",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "05224",
-        "arrival": 1791963060
-      }
-    ]
-  },
-  {
-    "trip_id": "2085X22314C3",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "16301",
-        "arrival": 1791963240
-      }
-    ]
-  },
-  {
-    "trip_id": "2085X22108C1",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "15212",
-        "arrival": 1791963180
-      }
-    ]
-  },
-  {
-    "trip_id": "2085X22315C3",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "15217",
-        "arrival": 1791963120
-      },
-      {
-        "stop_id": "15211"
-      }
-    ]
-  },
-  {
-    "trip_id": "2085X22207C2",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "15218",
-        "arrival": 1791963120
-      }
-    ]
-  },
-  {
-    "trip_id": "2085X70908C8",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "15206",
-        "arrival": 1791964800
+        "stop_id": "05407",
+        "arrival": 1791963300,
+        "arrival_hora": "2026-10-14 07:35:00"
       }
     ]
   },
   {
     "trip_id": "2085X70405C5",
-    "route_id": "",
+    "linea": "C5",
     "stops": [
       {
         "stop_id": "05413",
-        "arrival": 1791964260
+        "arrival": 1791964440,
+        "arrival_hora": "2026-10-14 07:54:00"
       },
       {
         "stop_id": "15410"
@@ -1810,134 +1876,111 @@
   },
   {
     "trip_id": "2085X70207C4",
-    "route_id": "",
+    "linea": "C4",
     "stops": [
       {
         "stop_id": "15400",
-        "arrival": 1791963600
+        "arrival": 1791963780,
+        "arrival_hora": "2026-10-14 07:43:00"
       }
     ]
   },
   {
     "trip_id": "2085X70306C4",
-    "route_id": "",
+    "linea": "C4",
     "stops": [
       {
-        "stop_id": "05229",
-        "arrival": 1791963120
-      }
-    ]
-  },
-  {
-    "trip_id": "2085X70905C8",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "05369",
-        "arrival": 1791963240
+        "stop_id": "05231",
+        "arrival": 1791963300,
+        "arrival_hora": "2026-10-14 07:35:00"
       }
     ]
   },
   {
     "trip_id": "2085X70804C6",
-    "route_id": "",
+    "linea": "C6",
     "stops": [
       {
         "stop_id": "05517",
-        "arrival": 1791965340
+        "arrival": 1791965520,
+        "arrival_hora": "2026-10-14 08:12:00"
       }
     ]
   },
   {
     "trip_id": "2085X70408C5",
-    "route_id": "",
+    "linea": "C5",
     "stops": [
       {
-        "stop_id": "05441",
-        "arrival": 1791963960
+        "stop_id": "05439",
+        "arrival": 1791963360,
+        "arrival_hora": "2026-10-14 07:36:00"
       }
     ]
   },
   {
-    "trip_id": "2085X70509C7",
-    "route_id": "",
+    "trip_id": "2085X70407C5",
+    "linea": "C5",
     "stops": [
       {
-        "stop_id": "05311",
-        "arrival": 1791963300
+        "stop_id": "05410",
+        "arrival": 1791963240,
+        "arrival_hora": "2026-10-14 07:34:00"
       }
     ]
   },
   {
-    "trip_id": "2085X70301C4",
-    "route_id": "",
+    "trip_id": "2085X70303C4",
+    "linea": "C4",
     "stops": [
       {
-        "stop_id": "15410",
-        "arrival": 1791963240
+        "stop_id": "05220",
+        "arrival": 1791963300,
+        "arrival_hora": "2026-10-14 07:35:00"
       }
     ]
   },
   {
-    "trip_id": "2085X70805C6",
-    "route_id": "",
+    "trip_id": "2085X22108C1",
+    "linea": "C1",
     "stops": [
       {
-        "stop_id": "05504",
-        "arrival": 1791963300
-      },
-      {
-        "stop_id": "15211"
+        "stop_id": "15217",
+        "arrival": 1791963300,
+        "arrival_hora": "2026-10-14 07:35:00"
       }
     ]
   },
   {
     "trip_id": "2085X22106C1",
-    "route_id": "",
+    "linea": "C1",
     "stops": [
       {
         "stop_id": "15206",
-        "arrival": 1791963300
+        "arrival": 1791963480,
+        "arrival_hora": "2026-10-14 07:38:00"
       }
     ]
   },
   {
     "trip_id": "2085X22361C3",
-    "route_id": "",
+    "linea": "C3",
     "stops": [
       {
         "stop_id": "15211",
-        "arrival": 1791964860
-      }
-    ]
-  },
-  {
-    "trip_id": "2085X70807C6",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "05507",
-        "arrival": 1791963360
-      }
-    ]
-  },
-  {
-    "trip_id": "2085X70857C6",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "15217",
-        "arrival": 1791963900
+        "arrival": 1791964860,
+        "arrival_hora": "2026-10-14 08:01:00"
       }
     ]
   },
   {
     "trip_id": "2085X70759C6",
-    "route_id": "",
+    "linea": "C6",
     "stops": [
       {
         "stop_id": "05504",
-        "arrival": 1791963300
+        "arrival": 1791963480,
+        "arrival_hora": "2026-10-14 07:38:00"
       },
       {
         "stop_id": "15211"
@@ -1945,72 +1988,57 @@
     ]
   },
   {
-    "trip_id": "2085X70906C8",
-    "route_id": "",
+    "trip_id": "2085X22207C2",
+    "linea": "C2",
     "stops": [
       {
-        "stop_id": "05385",
-        "arrival": 1791963240
+        "stop_id": "15211",
+        "arrival": 1791963360,
+        "arrival_hora": "2026-10-14 07:36:00"
+      }
+    ]
+  },
+  {
+    "trip_id": "2085X22009C1",
+    "linea": "C1",
+    "stops": [
+      {
+        "stop_id": "15301",
+        "arrival": 1791963300,
+        "arrival_hora": "2026-10-14 07:35:00"
       }
     ]
   },
   {
     "trip_id": "2085X70305C4",
-    "route_id": "",
+    "linea": "C4",
     "stops": [
       {
-        "stop_id": "05244",
-        "arrival": 1791963360
-      }
-    ]
-  },
-  {
-    "trip_id": "2085X70406C5",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "05409",
-        "arrival": 1791963180
-      }
-    ]
-  },
-  {
-    "trip_id": "2085X70205C4",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "05221",
-        "arrival": 1791963000
-      }
-    ]
-  },
-  {
-    "trip_id": "2085X22316C3",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "16403",
-        "arrival": 1791964260
+        "stop_id": "05243",
+        "arrival": 1791963540,
+        "arrival_hora": "2026-10-14 07:39:00"
       }
     ]
   },
   {
     "trip_id": "2085X22209C2",
-    "route_id": "",
+    "linea": "C2",
     "stops": [
       {
         "stop_id": "16010",
-        "arrival": 1791963900
+        "arrival": 1791963900,
+        "arrival_hora": "2026-10-14 07:45:00"
       }
     ]
   },
   {
     "trip_id": "2085X70463C5a",
-    "route_id": "",
+    "linea": "C5A",
     "stops": [
       {
         "stop_id": "05413",
-        "arrival": 1791964680
+        "arrival": 1791964860,
+        "arrival_hora": "2026-10-14 08:01:00"
       },
       {
         "stop_id": "15410"
@@ -2024,557 +2052,1002 @@
     ]
   },
   {
-    "trip_id": "2085X70512C7",
-    "route_id": "",
+    "trip_id": "2085X70760C6",
+    "linea": "C6",
     "stops": [
       {
-        "stop_id": "05311",
-        "arrival": 1791963420
+        "stop_id": "05507",
+        "arrival": 1791963360,
+        "arrival_hora": "2026-10-14 07:36:00"
       }
     ]
   },
   {
-    "trip_id": "2085X70760C6",
-    "route_id": "",
+    "trip_id": "2085X22112C1",
+    "linea": "C1",
     "stops": [
       {
-        "stop_id": "05507",
-        "arrival": 1791963360
+        "stop_id": "15401",
+        "arrival": 1791964980,
+        "arrival_hora": "2026-10-14 08:03:00"
+      }
+    ]
+  },
+  {
+    "trip_id": "2085X22013C1",
+    "linea": "C1",
+    "stops": [
+      {
+        "stop_id": "15123",
+        "arrival": 1791963900,
+        "arrival_hora": "2026-10-14 07:45:00"
+      }
+    ]
+  },
+  {
+    "trip_id": "2085X22314C3",
+    "linea": "C3",
+    "stops": [
+      {
+        "stop_id": "15301",
+        "arrival": 1791963480,
+        "arrival_hora": "2026-10-14 07:38:00"
+      }
+    ]
+  },
+  {
+    "trip_id": "2085X22315C3",
+    "linea": "C3",
+    "stops": [
+      {
+        "stop_id": "15217",
+        "arrival": 1791963300,
+        "arrival_hora": "2026-10-14 07:35:00"
+      },
+      {
+        "stop_id": "15211"
+      }
+    ]
+  },
+  {
+    "trip_id": "2085X22316C3",
+    "linea": "C3",
+    "stops": [
+      {
+        "stop_id": "16403",
+        "arrival": 1791964260,
+        "arrival_hora": "2026-10-14 07:51:00"
+      }
+    ]
+  },
+  {
+    "trip_id": "2085X70908C8",
+    "linea": "C8",
+    "stops": [
+      {
+        "stop_id": "15206",
+        "arrival": 1791964800,
+        "arrival_hora": "2026-10-14 08:00:00"
+      }
+    ]
+  },
+  {
+    "trip_id": "2085X70512C7",
+    "linea": "C7",
+    "stops": [
+      {
+        "stop_id": "05311",
+        "arrival": 1791963240,
+        "arrival_hora": "2026-10-14 07:34:00"
       }
     ]
   },
   {
     "trip_id": "2085X22317C3",
-    "route_id": "",
+    "linea": "C3",
     "stops": [
       {
-        "stop_id": "16400",
-        "arrival": 1791963180
+        "stop_id": "16408",
+        "arrival": 1791963240,
+        "arrival_hora": "2026-10-14 07:34:00"
+      }
+    ]
+  },
+  {
+    "trip_id": "2085X70905C8",
+    "linea": "C8",
+    "stops": [
+      {
+        "stop_id": "15205",
+        "arrival": 1791963540,
+        "arrival_hora": "2026-10-14 07:39:00"
+      }
+    ]
+  },
+  {
+    "trip_id": "2085X70514C7",
+    "linea": "C7",
+    "stops": [
+      {
+        "stop_id": "05300",
+        "arrival": 1791964920,
+        "arrival_hora": "2026-10-14 08:02:00"
       }
     ]
   },
   {
     "trip_id": "2085X22319C3",
-    "route_id": "",
+    "linea": "C3",
     "stops": [
       {
         "stop_id": "15217",
-        "arrival": 1791963420
+        "arrival": 1791963420,
+        "arrival_hora": "2026-10-14 07:37:00"
+      }
+    ]
+  },
+  {
+    "trip_id": "2085X70805C6",
+    "linea": "C6",
+    "stops": [
+      {
+        "stop_id": "05504",
+        "arrival": 1791963480,
+        "arrival_hora": "2026-10-14 07:38:00"
+      },
+      {
+        "stop_id": "15211"
+      }
+    ]
+  },
+  {
+    "trip_id": "2085X70409C5",
+    "linea": "C5",
+    "stops": [
+      {
+        "stop_id": "05403",
+        "arrival": 1791964920,
+        "arrival_hora": "2026-10-14 08:02:00"
       }
     ]
   },
   {
     "trip_id": "2085X70210C4",
-    "route_id": "",
+    "linea": "C4",
     "stops": [
       {
         "stop_id": "05203",
-        "arrival": 1791964860
+        "arrival": 1791964860,
+        "arrival_hora": "2026-10-14 08:01:00"
+      }
+    ]
+  },
+  {
+    "trip_id": "2085X70907C8",
+    "linea": "C8",
+    "stops": [
+      {
+        "stop_id": "05387",
+        "arrival": 1791965220,
+        "arrival_hora": "2026-10-14 08:07:00"
       }
     ]
   },
   {
     "trip_id": "2085X70510C7",
-    "route_id": "",
+    "linea": "C7",
     "stops": [
       {
         "stop_id": "05327",
-        "arrival": 1791963540
+        "arrival": 1791963660,
+        "arrival_hora": "2026-10-14 07:41:00"
+      }
+    ]
+  },
+  {
+    "trip_id": "2085X70807C6",
+    "linea": "C6",
+    "stops": [
+      {
+        "stop_id": "05509",
+        "arrival": 1791963720,
+        "arrival_hora": "2026-10-14 07:42:00"
       }
     ]
   },
   {
     "trip_id": "2085X22011C1",
-    "route_id": "",
+    "linea": "C1",
     "stops": [
       {
-        "stop_id": "15207",
-        "arrival": 1791963120
+        "stop_id": "15209",
+        "arrival": 1791963360,
+        "arrival_hora": "2026-10-14 07:36:00"
       }
     ]
   },
   {
     "trip_id": "2085X22012C1",
-    "route_id": "",
+    "linea": "C1",
     "stops": [
       {
         "stop_id": "15401",
-        "arrival": 1791963240
+        "arrival": 1791963300,
+        "arrival_hora": "2026-10-14 07:35:00"
       }
     ]
   },
   {
-    "trip_id": "4185X84906C2",
-    "route_id": "",
+    "trip_id": "2085X22210C2",
+    "linea": "C2",
     "stops": [
       {
-        "stop_id": "06005",
-        "arrival": 1791963480
-      }
-    ]
-  },
-  {
-    "trip_id": "4185X84904C2",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "07007",
-        "arrival": 1791963660
+        "stop_id": "15210",
+        "arrival": 1791963300,
+        "arrival_hora": "2026-10-14 07:35:00"
       }
     ]
   },
   {
     "trip_id": "4185X84905C2",
-    "route_id": "",
+    "linea": "C2",
     "stops": [
       {
         "stop_id": "06002",
-        "arrival": 1791965040
+        "arrival": 1791965220,
+        "arrival_hora": "2026-10-14 08:07:00"
       }
     ]
   },
   {
-    "trip_id": "4185X24706C1",
-    "route_id": "",
+    "trip_id": "4185X84906C2",
+    "linea": "C2",
     "stops": [
       {
-        "stop_id": "62002",
-        "arrival": 1791963420
+        "stop_id": "06005",
+        "arrival": 1791963660,
+        "arrival_hora": "2026-10-14 07:41:00"
       }
     ]
   },
   {
     "trip_id": "4185X14201C1",
-    "route_id": "",
+    "linea": "C1",
     "stops": [
       {
         "stop_id": "60911",
-        "arrival": 1791962280
-      }
-    ]
-  },
-  {
-    "trip_id": "4185X24707C1",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "62104",
-        "arrival": 1791963660
+        "arrival": 1791962280,
+        "arrival_hora": "2026-10-14 07:18:00"
       }
     ]
   },
   {
     "trip_id": "4185X32804C3",
-    "route_id": "",
+    "linea": "C3",
     "stops": [
       {
         "stop_id": "60914",
-        "arrival": 1791963960
-      }
-    ]
-  },
-  {
-    "trip_id": "4185X84907C2",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "06002",
-        "arrival": 1791966000
+        "arrival": 1791963960,
+        "arrival_hora": "2026-10-14 07:46:00"
       }
     ]
   },
   {
     "trip_id": "4185X32805C3",
-    "route_id": "",
+    "linea": "C3",
     "stops": [
       {
         "stop_id": "60914",
-        "arrival": 1791963540
+        "arrival": 1791963540,
+        "arrival_hora": "2026-10-14 07:39:00"
+      }
+    ]
+  },
+  {
+    "trip_id": "4185X32806C3",
+    "linea": "C3",
+    "stops": [
+      {
+        "stop_id": "60914",
+        "arrival": 1791964980,
+        "arrival_hora": "2026-10-14 08:03:00"
+      }
+    ]
+  },
+  {
+    "trip_id": "4185X84904C2",
+    "linea": "C2",
+    "stops": [
+      {
+        "stop_id": "07007",
+        "arrival": 1791963840,
+        "arrival_hora": "2026-10-14 07:44:00"
+      }
+    ]
+  },
+  {
+    "trip_id": "4185X24706C1",
+    "linea": "C1",
+    "stops": [
+      {
+        "stop_id": "62003",
+        "arrival": 1791963660,
+        "arrival_hora": "2026-10-14 07:41:00"
+      }
+    ]
+  },
+  {
+    "trip_id": "4185X24707C1",
+    "linea": "C1",
+    "stops": [
+      {
+        "stop_id": "62103",
+        "arrival": 1791963780,
+        "arrival_hora": "2026-10-14 07:43:00"
+      }
+    ]
+  },
+  {
+    "trip_id": "4185X84907C2",
+    "linea": "C2",
+    "stops": [
+      {
+        "stop_id": "06002",
+        "arrival": 1791966000,
+        "arrival_hora": "2026-10-14 08:20:00"
       }
     ]
   },
   {
     "trip_id": "4585X71609C1",
-    "route_id": "",
+    "linea": "C1",
     "stops": [
       {
-        "stop_id": "05975",
-        "arrival": 1791963000
+        "stop_id": "05977",
+        "arrival": 1791963300,
+        "arrival_hora": "2026-10-14 07:35:00"
       }
     ]
   },
   {
     "trip_id": "4585X71606C1",
-    "route_id": "",
+    "linea": "C1",
     "stops": [
       {
-        "stop_id": "05952",
-        "arrival": 1791963120
+        "stop_id": "05951",
+        "arrival": 1791963300,
+        "arrival_hora": "2026-10-14 07:35:00"
       }
     ]
   },
   {
     "trip_id": "4585X71608C1",
-    "route_id": "",
+    "linea": "C1",
     "stops": [
       {
         "stop_id": "05975",
-        "arrival": 1791963720
+        "arrival": 1791963720,
+        "arrival_hora": "2026-10-14 07:42:00"
       }
     ]
   },
   {
     "trip_id": "4585X71611C1",
-    "route_id": "",
+    "linea": "C1",
     "stops": [
       {
         "stop_id": "05952",
-        "arrival": 1791963720
+        "arrival": 1791963720,
+        "arrival_hora": "2026-10-14 07:42:00"
       }
     ]
   },
   {
     "trip_id": "7085X31513C1",
-    "route_id": "",
+    "linea": "C1",
     "stops": [
       {
         "stop_id": "70807",
-        "arrival": 1791963840
+        "arrival": 1791963840,
+        "arrival_hora": "2026-10-14 07:44:00"
       }
     ]
   },
   {
     "trip_id": "7085X31508C1",
-    "route_id": "",
+    "linea": "C1",
     "stops": [
       {
-        "stop_id": "70806",
-        "arrival": 1791963300
+        "stop_id": "71100",
+        "arrival": 1791963360,
+        "arrival_hora": "2026-10-14 07:36:00"
       }
     ]
   },
   {
-    "trip_id": "1085X20776C5",
-    "route_id": "",
+    "trip_id": "SPECIAL_10_91027C4A",
+    "linea": "C4A",
     "stops": [
       {
-        "stop_id": "35010",
-        "arrival": 1791963120
-      }
-    ]
-  },
-  {
-    "trip_id": "1085X20250C4a",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "19002",
-        "arrival": 1791963480
-      }
-    ]
-  },
-  {
-    "trip_id": "1085X19828C1",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "98003",
-        "arrival": 1791963660
-      }
-    ]
-  },
-  {
-    "trip_id": "1085X80681C9",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "12020",
-        "arrival": 1791964860
-      }
-    ]
-  },
-  {
-    "trip_id": "1085X19830C1",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "98003",
-        "arrival": 1791964440
-      }
-    ]
-  },
-  {
-    "trip_id": "1085X21116C10",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "10100",
-        "arrival": 1791963180
-      }
-    ]
-  },
-  {
-    "trip_id": "1085X20786C5",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "35605",
-        "arrival": 1791963060
-      }
-    ]
-  },
-  {
-    "trip_id": "1085X20027C3",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "17000",
-        "arrival": 1791962940
-      }
-    ]
-  },
-  {
-    "trip_id": "1085X20785C5",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "18003",
-        "arrival": 1791963180
-      }
-    ]
-  },
-  {
-    "trip_id": "1085X21114C10",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "18005",
-        "arrival": 1791963060
-      }
-    ]
-  },
-  {
-    "trip_id": "1085X19831C1",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "98003",
-        "arrival": 1791963360
-      }
-    ]
-  },
-  {
-    "trip_id": "1085X21112C10",
-    "route_id": "",
-    "stops": []
-  },
-  {
-    "trip_id": "1085X20782C5",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "18000",
-        "arrival": 1791963240
-      }
-    ]
-  },
-  {
-    "trip_id": "1085X21519C2",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "18001",
-        "arrival": 1791963180
-      }
-    ]
-  },
-  {
-    "trip_id": "1085X20428C4b",
-    "route_id": "",
-    "stops": [
+        "stop_id": "37012",
+        "arrival": 1791963120,
+        "arrival_hora": "2026-10-14 07:32:00",
+        "departure": 1791963120,
+        "departure_hora": "2026-10-14 07:32:00"
+      },
       {
         "stop_id": "37011",
-        "arrival": 1791963300
+        "arrival": 1791963420,
+        "arrival_hora": "2026-10-14 07:37:00",
+        "departure": 1791963420,
+        "departure_hora": "2026-10-14 07:37:00"
+      },
+      {
+        "stop_id": "37002",
+        "arrival": 1791963600,
+        "arrival_hora": "2026-10-14 07:40:00",
+        "departure": 1791963600,
+        "departure_hora": "2026-10-14 07:40:00"
+      },
+      {
+        "stop_id": "37010",
+        "arrival": 1791963720,
+        "arrival_hora": "2026-10-14 07:42:00",
+        "departure": 1791963720,
+        "departure_hora": "2026-10-14 07:42:00"
+      },
+      {
+        "stop_id": "37001",
+        "arrival": 1791963960,
+        "arrival_hora": "2026-10-14 07:46:00",
+        "departure": 1791963960,
+        "departure_hora": "2026-10-14 07:46:00"
+      },
+      {
+        "stop_id": "60100",
+        "arrival": 1791964140,
+        "arrival_hora": "2026-10-14 07:49:00",
+        "departure": 1791964140,
+        "departure_hora": "2026-10-14 07:49:00"
+      },
+      {
+        "stop_id": "18000",
+        "arrival": 1791964680,
+        "arrival_hora": "2026-10-14 07:58:00",
+        "departure": 1791964680,
+        "departure_hora": "2026-10-14 07:58:00"
+      },
+      {
+        "stop_id": "18101",
+        "arrival": 1791964920,
+        "arrival_hora": "2026-10-14 08:02:00",
+        "departure": 1791964920,
+        "departure_hora": "2026-10-14 08:02:00"
+      },
+      {
+        "stop_id": "18002",
+        "arrival": 1791965160,
+        "arrival_hora": "2026-10-14 08:06:00",
+        "departure": 1791965160,
+        "departure_hora": "2026-10-14 08:06:00"
+      },
+      {
+        "stop_id": "17000",
+        "arrival": 1791965460,
+        "arrival_hora": "2026-10-14 08:11:00",
+        "departure": 1791965460,
+        "departure_hora": "2026-10-14 08:11:00"
       }
     ]
   },
   {
     "trip_id": "1085X20607C8b",
-    "route_id": "",
+    "linea": "C8B",
     "stops": [
       {
         "stop_id": "12002",
-        "arrival": 1791963180
+        "arrival": 1791963360,
+        "arrival_hora": "2026-10-14 07:36:00"
       }
     ]
   },
   {
     "trip_id": "1085X21817C7",
-    "route_id": "",
+    "linea": "C7",
     "stops": [
       {
         "stop_id": "10000",
-        "arrival": 1791962940
+        "arrival": 1791963120,
+        "arrival_hora": "2026-10-14 07:32:00"
       }
     ]
   },
   {
     "trip_id": "1085X21816C7",
-    "route_id": "",
+    "linea": "C7",
     "stops": [
       {
-        "stop_id": "10007",
-        "arrival": 1791963180
+        "stop_id": "97100",
+        "arrival": 1791963960,
+        "arrival_hora": "2026-10-14 07:46:00"
       }
     ]
   },
   {
     "trip_id": "1085X21814C7",
-    "route_id": "",
+    "linea": "C7",
     "stops": [
       {
         "stop_id": "17000",
-        "arrival": 1791963480
+        "arrival": 1791963660,
+        "arrival_hora": "2026-10-14 07:41:00"
       }
     ]
   },
   {
     "trip_id": "1085X20449C4b",
-    "route_id": "",
+    "linea": "C4B",
     "stops": [
       {
         "stop_id": "37011",
-        "arrival": 1791963660
-      }
-    ]
-  },
-  {
-    "trip_id": "1085X21812C7",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "70003",
-        "arrival": 1791963060
+        "arrival": 1791963840,
+        "arrival_hora": "2026-10-14 07:44:00"
       }
     ]
   },
   {
     "trip_id": "1085X20447C4",
-    "route_id": "",
+    "linea": "C4",
     "stops": [
       {
         "stop_id": "37011",
-        "arrival": 1791963300
+        "arrival": 1791963480,
+        "arrival_hora": "2026-10-14 07:38:00"
       }
     ]
   },
   {
     "trip_id": "1085X19619C5",
-    "route_id": "",
+    "linea": "C5",
     "stops": [
       {
         "stop_id": "35002",
-        "arrival": 1791963600
+        "arrival": 1791963600,
+        "arrival_hora": "2026-10-14 07:40:00"
       }
     ]
   },
   {
     "trip_id": "1085X19614C5",
-    "route_id": "",
+    "linea": "C5",
     "stops": [
       {
-        "stop_id": "35606",
-        "arrival": 1791963360
+        "stop_id": "35610",
+        "arrival": 1791963300,
+        "arrival_hora": "2026-10-14 07:35:00"
       }
     ]
   },
   {
     "trip_id": "1085X19613C5",
-    "route_id": "",
+    "linea": "C5",
     "stops": [
       {
-        "stop_id": "35001",
-        "arrival": 1791963180
+        "stop_id": "37001",
+        "arrival": 1791963360,
+        "arrival_hora": "2026-10-14 07:36:00"
       }
     ]
   },
   {
     "trip_id": "1085X19616C5",
-    "route_id": "",
+    "linea": "C5",
     "stops": [
       {
         "stop_id": "35606",
-        "arrival": 1791964200
+        "arrival": 1791964200,
+        "arrival_hora": "2026-10-14 07:50:00"
       }
     ]
   },
   {
     "trip_id": "1085X20773C5",
-    "route_id": "",
+    "linea": "C5",
     "stops": [
       {
-        "stop_id": "35602",
-        "arrival": 1791963120
-      }
-    ]
-  },
-  {
-    "trip_id": "1085X20135C3",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "17000",
-        "arrival": 1791962940
+        "stop_id": "35604",
+        "arrival": 1791963300,
+        "arrival_hora": "2026-10-14 07:35:00"
       }
     ]
   },
   {
     "trip_id": "1085X20252C4a",
-    "route_id": "",
+    "linea": "C4A",
     "stops": [
       {
         "stop_id": "19002",
-        "arrival": 1791964500
+        "arrival": 1791964500,
+        "arrival_hora": "2026-10-14 07:55:00"
       }
     ]
   },
   {
     "trip_id": "1085X20779C5",
-    "route_id": "",
+    "linea": "C5",
     "stops": [
       {
-        "stop_id": "35600",
-        "arrival": 1791963120
+        "stop_id": "35601",
+        "arrival": 1791963240,
+        "arrival_hora": "2026-10-14 07:34:00"
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X20776C5",
+    "linea": "C5",
+    "stops": [
+      {
+        "stop_id": "35010",
+        "arrival": 1791963300,
+        "arrival_hora": "2026-10-14 07:35:00"
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X20250C4a",
+    "linea": "C4A",
+    "stops": [
+      {
+        "stop_id": "19002",
+        "arrival": 1791963660,
+        "arrival_hora": "2026-10-14 07:41:00"
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X19826C1",
+    "linea": "C1",
+    "stops": [
+      {
+        "stop_id": "98305",
+        "arrival": 1791963480,
+        "arrival_hora": "2026-10-14 07:38:00"
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X19828C1",
+    "linea": "C1",
+    "stops": [
+      {
+        "stop_id": "98003",
+        "arrival": 1791963840,
+        "arrival_hora": "2026-10-14 07:44:00"
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X80681C9",
+    "linea": "C9",
+    "stops": [
+      {
+        "stop_id": "12020",
+        "arrival": 1791964860,
+        "arrival_hora": "2026-10-14 08:01:00"
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X19830C1",
+    "linea": "C1",
+    "stops": [
+      {
+        "stop_id": "98003",
+        "arrival": 1791964440,
+        "arrival_hora": "2026-10-14 07:54:00"
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X21116C10",
+    "linea": "C10",
+    "stops": [
+      {
+        "stop_id": "10005",
+        "arrival": 1791963300,
+        "arrival_hora": "2026-10-14 07:35:00"
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X20786C5",
+    "linea": "C5",
+    "stops": [
+      {
+        "stop_id": "35605",
+        "arrival": 1791963300,
+        "arrival_hora": "2026-10-14 07:35:00"
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X20027C3",
+    "linea": "C3",
+    "stops": [
+      {
+        "stop_id": "17000",
+        "arrival": 1791963180,
+        "arrival_hora": "2026-10-14 07:33:00"
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X20785C5",
+    "linea": "C5",
+    "stops": [
+      {
+        "stop_id": "35609",
+        "arrival": 1791963360,
+        "arrival_hora": "2026-10-14 07:36:00"
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X21114C10",
+    "linea": "C10",
+    "stops": [
+      {
+        "stop_id": "18003",
+        "arrival": 1791963240,
+        "arrival_hora": "2026-10-14 07:34:00"
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X19831C1",
+    "linea": "C1",
+    "stops": [
+      {
+        "stop_id": "98003",
+        "arrival": 1791963480,
+        "arrival_hora": "2026-10-14 07:38:00"
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X21112C10",
+    "linea": "C10",
+    "stops": []
+  },
+  {
+    "trip_id": "1085X20782C5",
+    "linea": "C5",
+    "stops": [
+      {
+        "stop_id": "18000",
+        "arrival": 1791963420,
+        "arrival_hora": "2026-10-14 07:37:00"
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X21519C2",
+    "linea": "C2",
+    "stops": [
+      {
+        "stop_id": "18001",
+        "arrival": 1791963240,
+        "arrival_hora": "2026-10-14 07:34:00"
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X20428C4b",
+    "linea": "C4B",
+    "stops": [
+      {
+        "stop_id": "37011",
+        "arrival": 1791963300,
+        "arrival_hora": "2026-10-14 07:35:00"
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X21118C10",
+    "linea": "C10",
+    "stops": [
+      {
+        "stop_id": "10104",
+        "arrival": 1791964320,
+        "arrival_hora": "2026-10-14 07:52:00"
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X20029C3",
+    "linea": "C3",
+    "stops": [
+      {
+        "stop_id": "18101",
+        "arrival": 1791963240,
+        "arrival_hora": "2026-10-14 07:34:00"
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X20028C3",
+    "linea": "C3",
+    "stops": [
+      {
+        "stop_id": "60105",
+        "arrival": 1791963480,
+        "arrival_hora": "2026-10-14 07:38:00"
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X19833C1",
+    "linea": "C1",
+    "stops": [
+      {
+        "stop_id": "98304",
+        "arrival": 1791963840,
+        "arrival_hora": "2026-10-14 07:44:00"
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X19835C1",
+    "linea": "C1",
+    "stops": [
+      {
+        "stop_id": "98304",
+        "arrival": 1791964740,
+        "arrival_hora": "2026-10-14 07:59:00"
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X20235C4a",
+    "linea": "C4A",
+    "stops": [
+      {
+        "stop_id": "19002",
+        "arrival": 1791963300,
+        "arrival_hora": "2026-10-14 07:35:00"
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X21608C2",
+    "linea": "C2",
+    "stops": [
+      {
+        "stop_id": "70003",
+        "arrival": 1791963300,
+        "arrival_hora": "2026-10-14 07:35:00"
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X21729C2",
+    "linea": "C2",
+    "stops": [
+      {
+        "stop_id": "18001",
+        "arrival": 1791963240,
+        "arrival_hora": "2026-10-14 07:34:00"
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X21606C2",
+    "linea": "C2",
+    "stops": [
+      {
+        "stop_id": "70111",
+        "arrival": 1791963420,
+        "arrival_hora": "2026-10-14 07:37:00"
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X21208C10",
+    "linea": "C10",
+    "stops": [
+      {
+        "stop_id": "10200",
+        "arrival": 1791963120,
+        "arrival_hora": "2026-10-14 07:32:00"
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X21604C2",
+    "linea": "C2",
+    "stops": [
+      {
+        "stop_id": "70200",
+        "arrival": 1791963840,
+        "arrival_hora": "2026-10-14 07:44:00"
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X20239C4a",
+    "linea": "C4A",
+    "stops": [
+      {
+        "stop_id": "18002",
+        "arrival": 1791963480,
+        "arrival_hora": "2026-10-14 07:38:00"
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X21722C2",
+    "linea": "C2",
+    "stops": [
+      {
+        "stop_id": "18002",
+        "arrival": 1791964500,
+        "arrival_hora": "2026-10-14 07:55:00"
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X20247C4a",
+    "linea": "C4A",
+    "stops": [
+      {
+        "stop_id": "37011",
+        "arrival": 1791964080,
+        "arrival_hora": "2026-10-14 07:48:00"
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X21611C2",
+    "linea": "C2",
+    "stops": [
+      {
+        "stop_id": "70101",
+        "arrival": 1791963420,
+        "arrival_hora": "2026-10-14 07:37:00"
       }
     ]
   },
   {
     "trip_id": "1085X21610C2",
-    "route_id": "",
+    "linea": "C2",
     "stops": [
       {
         "stop_id": "18002",
-        "arrival": 1791963660
+        "arrival": 1791963660,
+        "arrival_hora": "2026-10-14 07:41:00"
       }
     ]
   },
   {
     "trip_id": "1085X21214C10",
-    "route_id": "",
+    "linea": "C10",
     "stops": [
       {
         "stop_id": "18002",
-        "arrival": 1791963240
+        "arrival": 1791963420,
+        "arrival_hora": "2026-10-14 07:37:00"
       }
     ]
   },
   {
     "trip_id": "1085X21731C2",
-    "route_id": "",
+    "linea": "C2",
     "stops": [
       {
-        "stop_id": "70108",
-        "arrival": 1791963240
+        "stop_id": "70100",
+        "arrival": 1791963420,
+        "arrival_hora": "2026-10-14 07:37:00"
       },
       {
         "stop_id": "18001"
@@ -2589,556 +3062,435 @@
   },
   {
     "trip_id": "1085X20246C4a",
-    "route_id": "",
+    "linea": "C4A",
     "stops": [
       {
         "stop_id": "18002",
-        "arrival": 1791963240
-      }
-    ]
-  },
-  {
-    "trip_id": "1085X20763C5",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "35607",
-        "arrival": 1791963240
+        "arrival": 1791963420,
+        "arrival_hora": "2026-10-14 07:37:00"
       }
     ]
   },
   {
     "trip_id": "1085X20245C4a",
-    "route_id": "",
+    "linea": "C4A",
     "stops": [
       {
         "stop_id": "37011",
-        "arrival": 1791963300
+        "arrival": 1791963480,
+        "arrival_hora": "2026-10-14 07:38:00"
       }
     ]
   },
   {
     "trip_id": "1085X20244C4a",
-    "route_id": "",
+    "linea": "C4A",
     "stops": [
       {
         "stop_id": "18101",
-        "arrival": 1791963180
+        "arrival": 1791963360,
+        "arrival_hora": "2026-10-14 07:36:00"
       }
     ]
   },
   {
     "trip_id": "1085X21212C10",
-    "route_id": "",
+    "linea": "C10",
     "stops": [
       {
-        "stop_id": "10000",
-        "arrival": 1791963300
+        "stop_id": "10001",
+        "arrival": 1791963420,
+        "arrival_hora": "2026-10-14 07:37:00"
       }
     ]
   },
   {
     "trip_id": "1085X20243C4a",
-    "route_id": "",
+    "linea": "C4A",
     "stops": [
       {
         "stop_id": "60100",
-        "arrival": 1791963180
+        "arrival": 1791963360,
+        "arrival_hora": "2026-10-14 07:36:00"
       }
     ]
   },
   {
     "trip_id": "1085X21210C10",
-    "route_id": "",
+    "linea": "C10",
     "stops": [
       {
-        "stop_id": "10100",
-        "arrival": 1791963180
-      }
-    ]
-  },
-  {
-    "trip_id": "1085X20241C4a",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "18000",
-        "arrival": 1791963600
+        "stop_id": "10101",
+        "arrival": 1791963300,
+        "arrival_hora": "2026-10-14 07:35:00"
       }
     ]
   },
   {
     "trip_id": "1085X20240C4a",
-    "route_id": "",
+    "linea": "C4A",
     "stops": [
       {
         "stop_id": "37012",
-        "arrival": 1791963360
+        "arrival": 1791963540,
+        "arrival_hora": "2026-10-14 07:39:00"
       }
     ]
   },
   {
     "trip_id": "1085X20769C5",
-    "route_id": "",
+    "linea": "C5",
     "stops": [
       {
         "stop_id": "35606",
-        "arrival": 1791963120
+        "arrival": 1791963300,
+        "arrival_hora": "2026-10-14 07:35:00"
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X20249C4a",
+    "linea": "C4A",
+    "stops": [
+      {
+        "stop_id": "37011",
+        "arrival": 1791965220,
+        "arrival_hora": "2026-10-14 08:07:00"
       }
     ]
   },
   {
     "trip_id": "1085X21613C2",
-    "route_id": "",
+    "linea": "C2",
     "stops": [
       {
         "stop_id": "70105",
-        "arrival": 1791965160
+        "arrival": 1791965160,
+        "arrival_hora": "2026-10-14 08:06:00"
       }
     ]
   },
   {
     "trip_id": "1085X20248C4a",
-    "route_id": "",
+    "linea": "C4A",
     "stops": []
   },
   {
     "trip_id": "1085X21733C2",
-    "route_id": "",
+    "linea": "C2",
     "stops": [
       {
         "stop_id": "70111",
-        "arrival": 1791963960
+        "arrival": 1791964140,
+        "arrival_hora": "2026-10-14 07:49:00"
       }
     ]
   },
   {
-    "trip_id": "1085X21118C10",
-    "route_id": "",
+    "trip_id": "1085X20035C3",
+    "linea": "C3",
     "stops": [
       {
-        "stop_id": "10104",
-        "arrival": 1791964140
-      }
-    ]
-  },
-  {
-    "trip_id": "1085X20029C3",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "18101",
-        "arrival": 1791963060
-      }
-    ]
-  },
-  {
-    "trip_id": "1085X20028C3",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "60104",
-        "arrival": 1791963240
-      }
-    ]
-  },
-  {
-    "trip_id": "1085X19833C1",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "98304",
-        "arrival": 1791963840
-      }
-    ]
-  },
-  {
-    "trip_id": "1085X19835C1",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "98304",
-        "arrival": 1791964740
-      }
-    ]
-  },
-  {
-    "trip_id": "1085X20235C4a",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "19001",
-        "arrival": 1791963120
-      }
-    ]
-  },
-  {
-    "trip_id": "1085X21608C2",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "70002",
-        "arrival": 1791963180
-      }
-    ]
-  },
-  {
-    "trip_id": "1085X21729C2",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "18001",
-        "arrival": 1791963120
-      }
-    ]
-  },
-  {
-    "trip_id": "1085X21606C2",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "70112",
-        "arrival": 1791963180
-      }
-    ]
-  },
-  {
-    "trip_id": "1085X21208C10",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "10200",
-        "arrival": 1791962940
-      }
-    ]
-  },
-  {
-    "trip_id": "1085X21604C2",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "70105",
-        "arrival": 1791963240
-      }
-    ]
-  },
-  {
-    "trip_id": "1085X20239C4a",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "18002",
-        "arrival": 1791963240
-      }
-    ]
-  },
-  {
-    "trip_id": "1085X21722C2",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "18002",
-        "arrival": 1791964500
-      }
-    ]
-  },
-  {
-    "trip_id": "1085X20247C4a",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "37011",
-        "arrival": 1791964080
-      }
-    ]
-  },
-  {
-    "trip_id": "1085X21611C2",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "70102",
-        "arrival": 1791963120
+        "stop_id": "60105",
+        "arrival": 1791964800,
+        "arrival_hora": "2026-10-14 08:00:00"
       }
     ]
   },
   {
     "trip_id": "1085X20034C3",
-    "route_id": "",
+    "linea": "C3",
     "stops": [
       {
         "stop_id": "18002",
-        "arrival": 1791964800
+        "arrival": 1791964800,
+        "arrival_hora": "2026-10-14 08:00:00"
       }
     ]
   },
   {
     "trip_id": "1085X20793C5",
-    "route_id": "",
+    "linea": "C5",
     "stops": [
       {
         "stop_id": "35010",
-        "arrival": 1791963120
+        "arrival": 1791963300,
+        "arrival_hora": "2026-10-14 07:35:00"
       }
     ]
   },
   {
     "trip_id": "1085X20430C4b",
-    "route_id": "",
+    "linea": "C4B",
     "stops": [
       {
         "stop_id": "60100",
-        "arrival": 1791963420
+        "arrival": 1791963600,
+        "arrival_hora": "2026-10-14 07:40:00"
       }
     ]
   },
   {
     "trip_id": "1085X20792C5",
-    "route_id": "",
+    "linea": "C5",
     "stops": [
       {
         "stop_id": "35606",
-        "arrival": 1791964800
+        "arrival": 1791964800,
+        "arrival_hora": "2026-10-14 08:00:00"
       }
     ]
   },
   {
     "trip_id": "1085X20033C3",
-    "route_id": "",
+    "linea": "C3",
     "stops": [
       {
         "stop_id": "60103",
-        "arrival": 1791963240
+        "arrival": 1791963420,
+        "arrival_hora": "2026-10-14 07:37:00"
       }
     ]
   },
   {
     "trip_id": "1085X20032C3",
-    "route_id": "",
+    "linea": "C3",
     "stops": [
       {
         "stop_id": "18002",
-        "arrival": 1791963180
+        "arrival": 1791963360,
+        "arrival_hora": "2026-10-14 07:36:00"
       }
     ]
   },
   {
     "trip_id": "1085X20790C5",
-    "route_id": "",
+    "linea": "C5",
     "stops": [
       {
         "stop_id": "35606",
-        "arrival": 1791963600
-      }
-    ]
-  },
-  {
-    "trip_id": "1085X20031C3",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "18000",
-        "arrival": 1791963540
+        "arrival": 1791963600,
+        "arrival_hora": "2026-10-14 07:40:00"
       }
     ]
   },
   {
     "trip_id": "1085X21528C2",
-    "route_id": "",
+    "linea": "C2",
     "stops": [
       {
         "stop_id": "18002",
-        "arrival": 1791963180
+        "arrival": 1791963360,
+        "arrival_hora": "2026-10-14 07:36:00"
       }
     ]
   },
   {
     "trip_id": "1085X20439C4b",
-    "route_id": "",
+    "linea": "C4B",
     "stops": [
       {
         "stop_id": "17001",
-        "arrival": 1791963180
+        "arrival": 1791963360,
+        "arrival_hora": "2026-10-14 07:36:00"
       }
     ]
   },
   {
     "trip_id": "1085X20438C4b",
-    "route_id": "",
+    "linea": "C4B",
     "stops": [
       {
         "stop_id": "17004",
-        "arrival": 1791963840
+        "arrival": 1791963840,
+        "arrival_hora": "2026-10-14 07:44:00"
       }
     ]
   },
   {
     "trip_id": "1085X21527C2",
-    "route_id": "",
+    "linea": "C2",
     "stops": [
       {
         "stop_id": "70105",
-        "arrival": 1791963420
+        "arrival": 1791963600,
+        "arrival_hora": "2026-10-14 07:40:00"
       }
     ]
   },
   {
     "trip_id": "1085X21526C2",
-    "route_id": "",
+    "linea": "C2",
     "stops": [
       {
-        "stop_id": "70100",
-        "arrival": 1791963180
+        "stop_id": "70108",
+        "arrival": 1791963300,
+        "arrival_hora": "2026-10-14 07:35:00"
       }
     ]
   },
   {
     "trip_id": "1085X20436C4b",
-    "route_id": "",
+    "linea": "C4B",
     "stops": [
       {
         "stop_id": "17001",
-        "arrival": 1791963480
+        "arrival": 1791963480,
+        "arrival_hora": "2026-10-14 07:38:00"
       }
     ]
   },
   {
     "trip_id": "1085X20435C4b",
-    "route_id": "",
+    "linea": "C4B",
     "stops": [
       {
         "stop_id": "17005",
-        "arrival": 1791963480
+        "arrival": 1791963660,
+        "arrival_hora": "2026-10-14 07:41:00"
       }
     ]
   },
   {
     "trip_id": "1085X20030C3",
-    "route_id": "",
+    "linea": "C3",
     "stops": [
       {
-        "stop_id": "60101",
-        "arrival": 1791963120
+        "stop_id": "60107",
+        "arrival": 1791963240,
+        "arrival_hora": "2026-10-14 07:34:00"
       }
     ]
   },
   {
     "trip_id": "1085X19606C5",
-    "route_id": "",
+    "linea": "C5",
     "stops": [
       {
-        "stop_id": "35602",
-        "arrival": 1791963060
+        "stop_id": "35601",
+        "arrival": 1791963240,
+        "arrival_hora": "2026-10-14 07:34:00"
       }
     ]
   },
   {
     "trip_id": "1085X19609C5",
-    "route_id": "",
+    "linea": "C5",
     "stops": [
       {
-        "stop_id": "35702",
-        "arrival": 1791963120
+        "stop_id": "18003",
+        "arrival": 1791963360,
+        "arrival_hora": "2026-10-14 07:36:00"
       }
     ]
   },
   {
     "trip_id": "1085X19602C5",
-    "route_id": "",
+    "linea": "C5",
     "stops": [
       {
-        "stop_id": "35600",
-        "arrival": 1791963000
+        "stop_id": "35609",
+        "arrival": 1791963420,
+        "arrival_hora": "2026-10-14 07:37:00"
       }
     ]
   },
   {
     "trip_id": "1085X19605C5",
-    "route_id": "",
+    "linea": "C5",
     "stops": [
       {
         "stop_id": "35609",
-        "arrival": 1791963060
+        "arrival": 1791963240,
+        "arrival_hora": "2026-10-14 07:34:00"
       }
     ]
   },
   {
     "trip_id": "1085X21017C8a",
-    "route_id": "",
+    "linea": "C8A",
     "stops": [
       {
         "stop_id": "97201",
-        "arrival": 1791963720
+        "arrival": 1791963720,
+        "arrival_hora": "2026-10-14 07:42:00"
       }
     ]
   },
   {
     "trip_id": "1085X19610C5",
-    "route_id": "",
+    "linea": "C5",
     "stops": [
       {
-        "stop_id": "35605",
-        "arrival": 1791963060
+        "stop_id": "35603",
+        "arrival": 1791963300,
+        "arrival_hora": "2026-10-14 07:35:00"
       }
     ]
   },
   {
     "trip_id": "1085X20445C4b",
-    "route_id": "",
+    "linea": "C4B",
     "stops": [
       {
         "stop_id": "37001",
-        "arrival": 1791963240
+        "arrival": 1791963420,
+        "arrival_hora": "2026-10-14 07:37:00"
       }
     ]
   },
   {
     "trip_id": "1085X21015C8a",
-    "route_id": "",
+    "linea": "C8A",
     "stops": [
       {
         "stop_id": "10100",
-        "arrival": 1791963600
+        "arrival": 1791963780,
+        "arrival_hora": "2026-10-14 07:43:00"
       }
     ]
   },
   {
     "trip_id": "1085X20443C4b",
-    "route_id": "",
+    "linea": "C4B",
     "stops": [
       {
         "stop_id": "18000",
-        "arrival": 1791963600
+        "arrival": 1791963780,
+        "arrival_hora": "2026-10-14 07:43:00"
       }
     ]
   },
   {
     "trip_id": "1085X21014C8a",
-    "route_id": "",
+    "linea": "C8A",
     "stops": [
       {
         "stop_id": "10103",
-        "arrival": 1791963300
+        "arrival": 1791963420,
+        "arrival_hora": "2026-10-14 07:37:00"
       }
     ]
   },
   {
     "trip_id": "1085X20441C4",
-    "route_id": "",
+    "linea": "C4",
     "stops": [
       {
         "stop_id": "18000",
-        "arrival": 1791962940
+        "arrival": 1791963120,
+        "arrival_hora": "2026-10-14 07:32:00"
       }
     ]
   },
   {
     "trip_id": "1085X21012C8a",
-    "route_id": "",
+    "linea": "C8A",
     "stops": [
       {
         "stop_id": "10202",
-        "arrival": 1791963240
+        "arrival": 1791963420,
+        "arrival_hora": "2026-10-14 07:37:00"
       },
       {
         "stop_id": "10203"
@@ -3147,463 +3499,489 @@
   },
   {
     "trip_id": "1085X20440C4b",
-    "route_id": "",
+    "linea": "C4B",
     "stops": [
       {
         "stop_id": "17004",
-        "arrival": 1791965040
+        "arrival": 1791965040,
+        "arrival_hora": "2026-10-14 08:04:00"
       }
     ]
   },
   {
     "trip_id": "1085X21011C8a",
-    "route_id": "",
+    "linea": "C8A",
     "stops": [
       {
-        "stop_id": "10202",
-        "arrival": 1791963120
-      }
-    ]
-  },
-  {
-    "trip_id": "SPECIAL_10_91027C4A",
-    "route_id": "10T0014C4a",
-    "stops": [
-      {
-        "stop_id": "37012",
-        "arrival": 1791962940,
-        "departure": 1791962940
-      },
-      {
-        "stop_id": "37011",
-        "arrival": 1791963240,
-        "departure": 1791963240
-      },
-      {
-        "stop_id": "37002",
-        "arrival": 1791963420,
-        "departure": 1791963420
-      },
-      {
-        "stop_id": "37010",
-        "arrival": 1791963540,
-        "departure": 1791963540
-      },
-      {
-        "stop_id": "37001",
-        "arrival": 1791963780,
-        "departure": 1791963780
-      },
-      {
-        "stop_id": "60100",
-        "arrival": 1791963960,
-        "departure": 1791963960
-      },
-      {
-        "stop_id": "18000",
-        "arrival": 1791964500,
-        "departure": 1791964500
-      },
-      {
-        "stop_id": "18101",
-        "arrival": 1791964740,
-        "departure": 1791964740
-      },
-      {
-        "stop_id": "18002",
-        "arrival": 1791964980,
-        "departure": 1791964980
-      },
-      {
-        "stop_id": "17000",
-        "arrival": 1791965280,
-        "departure": 1791965280
+        "stop_id": "10203",
+        "arrival": 1791963660,
+        "arrival_hora": "2026-10-14 07:41:00"
       }
     ]
   },
   {
     "trip_id": "1085X19621C5",
-    "route_id": "",
+    "linea": "C5",
     "stops": [
       {
         "stop_id": "35002",
-        "arrival": 1791964200
+        "arrival": 1791964200,
+        "arrival_hora": "2026-10-14 07:50:00"
       }
     ]
   },
   {
     "trip_id": "1085X20610C8b",
-    "route_id": "",
+    "linea": "C8B",
     "stops": [
       {
         "stop_id": "97100",
-        "arrival": 1791963660
+        "arrival": 1791963840,
+        "arrival_hora": "2026-10-14 07:44:00"
       }
     ]
   },
   {
     "trip_id": "1085X20451C4b",
-    "route_id": "",
+    "linea": "C4B",
     "stops": [
       {
         "stop_id": "37011",
-        "arrival": 1791964680
+        "arrival": 1791964680,
+        "arrival_hora": "2026-10-14 07:58:00"
       }
     ]
   },
   {
     "trip_id": "1085X19586C5",
-    "route_id": "",
+    "linea": "C5",
     "stops": [
       {
         "stop_id": "35012",
-        "arrival": 1791963180
+        "arrival": 1791963180,
+        "arrival_hora": "2026-10-14 07:33:00"
       }
     ]
   },
   {
     "trip_id": "1085X19580C5",
-    "route_id": "",
+    "linea": "C5",
     "stops": []
   },
   {
-    "trip_id": "1085X21825C7",
-    "route_id": "",
+    "trip_id": "1085X21827C7",
+    "linea": "C7",
     "stops": [
       {
         "stop_id": "70111",
-        "arrival": 1791964140
+        "arrival": 1791964920,
+        "arrival_hora": "2026-10-14 08:02:00"
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X21825C7",
+    "linea": "C7",
+    "stops": [
+      {
+        "stop_id": "70111",
+        "arrival": 1791964320,
+        "arrival_hora": "2026-10-14 07:52:00"
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X21823C7",
+    "linea": "C7",
+    "stops": [
+      {
+        "stop_id": "70002",
+        "arrival": 1791963300,
+        "arrival_hora": "2026-10-14 07:35:00"
       }
     ]
   },
   {
     "trip_id": "1085X20612C8b",
-    "route_id": "",
+    "linea": "C8B",
     "stops": [
       {
         "stop_id": "12005",
-        "arrival": 1791963300
+        "arrival": 1791963360,
+        "arrival_hora": "2026-10-14 07:36:00"
       }
     ]
   },
   {
     "trip_id": "1085X21821C7",
-    "route_id": "",
+    "linea": "C7",
     "stops": [
       {
         "stop_id": "97201",
-        "arrival": 1791963180
+        "arrival": 1791963300,
+        "arrival_hora": "2026-10-14 07:35:00"
       }
     ]
   },
   {
     "trip_id": "1085X20609C8b",
-    "route_id": "",
+    "linea": "C8B",
     "stops": [
       {
         "stop_id": "10100",
-        "arrival": 1791963600
+        "arrival": 1791963840,
+        "arrival_hora": "2026-10-14 07:44:00"
       }
     ]
   },
   {
     "trip_id": "1085X21819C7",
-    "route_id": "",
+    "linea": "C7",
     "stops": [
       {
         "stop_id": "10007",
-        "arrival": 1791963180
+        "arrival": 1791963360,
+        "arrival_hora": "2026-10-14 07:36:00"
       }
     ]
   },
   {
     "trip_id": "1085X21818C7",
-    "route_id": "",
+    "linea": "C7",
     "stops": [
       {
         "stop_id": "10001",
-        "arrival": 1791964140
+        "arrival": 1791964320,
+        "arrival_hora": "2026-10-14 07:52:00"
       }
     ]
   },
   {
     "trip_id": "SPECIAL_10_91009C10",
-    "route_id": "10T0077C10",
+    "linea": "C10",
     "stops": [
       {
         "stop_id": "10203",
         "arrival": 1791961020,
-        "departure": 1791961020
+        "arrival_hora": "2026-10-14 06:57:00",
+        "departure": 1791961020,
+        "departure_hora": "2026-10-14 06:57:00"
       },
       {
         "stop_id": "10202",
         "arrival": 1791961320,
-        "departure": 1791961320
+        "arrival_hora": "2026-10-14 07:02:00",
+        "departure": 1791961320,
+        "departure_hora": "2026-10-14 07:02:00"
       },
       {
         "stop_id": "10201",
         "arrival": 1791961440,
-        "departure": 1791961440
+        "arrival_hora": "2026-10-14 07:04:00",
+        "departure": 1791961440,
+        "departure_hora": "2026-10-14 07:04:00"
       },
       {
         "stop_id": "10200",
         "arrival": 1791961560,
-        "departure": 1791961560
+        "arrival_hora": "2026-10-14 07:06:00",
+        "departure": 1791961560,
+        "departure_hora": "2026-10-14 07:06:00"
       },
       {
         "stop_id": "10104",
         "arrival": 1791962100,
-        "departure": 1791962100
+        "arrival_hora": "2026-10-14 07:15:00",
+        "departure": 1791962100,
+        "departure_hora": "2026-10-14 07:15:00"
       },
       {
         "stop_id": "10103",
         "arrival": 1791962340,
-        "departure": 1791962340
+        "arrival_hora": "2026-10-14 07:19:00",
+        "departure": 1791962340,
+        "departure_hora": "2026-10-14 07:19:00"
       },
       {
         "stop_id": "10101",
         "arrival": 1791962640,
-        "departure": 1791962640
+        "arrival_hora": "2026-10-14 07:24:00",
+        "departure": 1791962640,
+        "departure_hora": "2026-10-14 07:24:00"
       },
       {
         "stop_id": "10100",
         "arrival": 1791962820,
-        "departure": 1791962820
+        "arrival_hora": "2026-10-14 07:27:00",
+        "departure": 1791962820,
+        "departure_hora": "2026-10-14 07:27:00"
       },
       {
         "stop_id": "10005",
         "arrival": 1791963060,
-        "departure": 1791963060
+        "arrival_hora": "2026-10-14 07:31:00",
+        "departure": 1791963060,
+        "departure_hora": "2026-10-14 07:31:00"
       },
       {
         "stop_id": "10007",
         "arrival": 1791963240,
-        "departure": 1791963240
+        "arrival_hora": "2026-10-14 07:34:00",
+        "departure": 1791963240,
+        "departure_hora": "2026-10-14 07:34:00"
       },
       {
         "stop_id": "10010",
         "arrival": 1791963420,
-        "departure": 1791963420
+        "arrival_hora": "2026-10-14 07:37:00",
+        "departure": 1791963420,
+        "departure_hora": "2026-10-14 07:37:00"
       },
       {
         "stop_id": "10002",
         "arrival": 1791963600,
-        "departure": 1791963600
+        "arrival_hora": "2026-10-14 07:40:00",
+        "departure": 1791963600,
+        "departure_hora": "2026-10-14 07:40:00"
       },
       {
         "stop_id": "10001",
         "arrival": 1791963780,
-        "departure": 1791963780
+        "arrival_hora": "2026-10-14 07:43:00",
+        "departure": 1791963780,
+        "departure_hora": "2026-10-14 07:43:00"
       },
       {
         "stop_id": "10000",
         "arrival": 1791961260,
-        "departure": 1791961260
+        "arrival_hora": "2026-10-14 07:01:00",
+        "departure": 1791961260,
+        "departure_hora": "2026-10-14 07:01:00"
       },
       {
         "stop_id": "18005",
         "arrival": 1791961440,
-        "departure": 1791961440
+        "arrival_hora": "2026-10-14 07:04:00",
+        "departure": 1791961440,
+        "departure_hora": "2026-10-14 07:04:00"
       },
       {
         "stop_id": "18004",
         "arrival": 1791961680,
-        "departure": 1791961680
+        "arrival_hora": "2026-10-14 07:08:00",
+        "departure": 1791961680,
+        "departure_hora": "2026-10-14 07:08:00"
       },
       {
         "stop_id": "18003",
         "arrival": 1791961860,
-        "departure": 1791961860
+        "arrival_hora": "2026-10-14 07:11:00",
+        "departure": 1791961860,
+        "departure_hora": "2026-10-14 07:11:00"
       },
       {
         "stop_id": "18000",
         "arrival": 1791962040,
-        "departure": 1791962040
+        "arrival_hora": "2026-10-14 07:14:00",
+        "departure": 1791962040,
+        "departure_hora": "2026-10-14 07:14:00"
       },
       {
         "stop_id": "18001",
         "arrival": 1791962220,
-        "departure": 1791962220
+        "arrival_hora": "2026-10-14 07:17:00",
+        "departure": 1791962220,
+        "departure_hora": "2026-10-14 07:17:00"
       },
       {
         "stop_id": "18002",
         "arrival": 1791962460,
-        "departure": 1791962460
+        "arrival_hora": "2026-10-14 07:21:00",
+        "departure": 1791962460,
+        "departure_hora": "2026-10-14 07:21:00"
       },
       {
         "stop_id": "17000",
-        "arrival": 1791963120,
-        "departure": 1791963120
+        "arrival": 1791963300,
+        "arrival_hora": "2026-10-14 07:35:00",
+        "departure": 1791963300,
+        "departure_hora": "2026-10-14 07:35:00"
       }
     ]
   },
   {
     "trip_id": "1085X21314C10",
-    "route_id": "",
+    "linea": "C10",
     "stops": [
       {
         "stop_id": "10007",
-        "arrival": 1791963240
+        "arrival": 1791963420,
+        "arrival_hora": "2026-10-14 07:37:00"
       }
     ]
   },
   {
     "trip_id": "1085X19599C5",
-    "route_id": "",
+    "linea": "C5",
     "stops": [
       {
-        "stop_id": "35601",
-        "arrival": 1791963120
+        "stop_id": "35602",
+        "arrival": 1791963240,
+        "arrival_hora": "2026-10-14 07:34:00"
       }
     ]
   },
   {
     "trip_id": "1085X19598C5",
-    "route_id": "",
+    "linea": "C5",
     "stops": [
       {
-        "stop_id": "35702",
-        "arrival": 1791963180
+        "stop_id": "35703",
+        "arrival": 1791963240,
+        "arrival_hora": "2026-10-14 07:34:00"
       }
     ]
   },
   {
     "trip_id": "1085X19595C5",
-    "route_id": "",
+    "linea": "C5",
     "stops": [
       {
-        "stop_id": "35604",
-        "arrival": 1791963180
+        "stop_id": "35605",
+        "arrival": 1791963240,
+        "arrival_hora": "2026-10-14 07:34:00"
       }
     ]
   },
   {
     "trip_id": "1085X19594C5",
-    "route_id": "",
+    "linea": "C5",
     "stops": [
       {
-        "stop_id": "37001",
-        "arrival": 1791963120
+        "stop_id": "35009",
+        "arrival": 1791963300,
+        "arrival_hora": "2026-10-14 07:35:00"
       }
     ]
   },
   {
     "trip_id": "1085X19591C5",
-    "route_id": "",
+    "linea": "C5",
     "stops": [
       {
         "stop_id": "35607",
-        "arrival": 1791963240
+        "arrival": 1791963420,
+        "arrival_hora": "2026-10-14 07:37:00"
       }
     ]
   },
   {
     "trip_id": "1085X19590C5",
-    "route_id": "",
+    "linea": "C5",
     "stops": [
       {
-        "stop_id": "35009",
-        "arrival": 1791963180
+        "stop_id": "35001",
+        "arrival": 1791963300,
+        "arrival_hora": "2026-10-14 07:35:00"
       }
     ]
   },
   {
     "trip_id": "1085X21716C2",
-    "route_id": "",
+    "linea": "C2",
     "stops": [
       {
-        "stop_id": "70101",
-        "arrival": 1791963180
+        "stop_id": "70102",
+        "arrival": 1791963420,
+        "arrival_hora": "2026-10-14 07:37:00"
       }
     ]
   },
   {
     "trip_id": "1085X21319C10",
-    "route_id": "",
+    "linea": "C10",
     "stops": [
       {
         "stop_id": "10005",
-        "arrival": 1791964020
+        "arrival": 1791964020,
+        "arrival_hora": "2026-10-14 07:47:00"
       }
     ]
   },
   {
     "trip_id": "1085X21318C10",
-    "route_id": "",
+    "linea": "C10",
     "stops": [
       {
         "stop_id": "18002",
-        "arrival": 1791964080
+        "arrival": 1791964080,
+        "arrival_hora": "2026-10-14 07:48:00"
       }
     ]
   },
   {
     "trip_id": "1085X21317C10",
-    "route_id": "",
+    "linea": "C10",
     "stops": [
       {
-        "stop_id": "10001",
-        "arrival": 1791963120
+        "stop_id": "10000",
+        "arrival": 1791963540,
+        "arrival_hora": "2026-10-14 07:39:00"
       }
     ]
   },
   {
     "trip_id": "1085X21316C10",
-    "route_id": "",
+    "linea": "C10",
     "stops": [
       {
-        "stop_id": "18000",
-        "arrival": 1791963360
+        "stop_id": "18003",
+        "arrival": 1791963300,
+        "arrival_hora": "2026-10-14 07:35:00"
       }
     ]
   },
   {
     "trip_id": "1085X21315C10",
-    "route_id": "",
+    "linea": "C10",
     "stops": [
       {
-        "stop_id": "18002",
-        "arrival": 1791963240
+        "stop_id": "17000",
+        "arrival": 1791963660,
+        "arrival_hora": "2026-10-14 07:41:00"
+      }
+    ]
+  },
+  {
+    "trip_id": "1085X20797C5",
+    "linea": "C5",
+    "stops": [
+      {
+        "stop_id": "35010",
+        "arrival": 1791964860,
+        "arrival_hora": "2026-10-14 08:01:00"
       }
     ]
   },
   {
     "trip_id": "1085X20434C4b",
-    "route_id": "",
+    "linea": "C4B",
     "stops": [
       {
         "stop_id": "18002",
-        "arrival": 1791963300
-      }
-    ]
-  },
-  {
-    "trip_id": "1085X21523C2",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "70109",
-        "arrival": 1791963120
+        "arrival": 1791963360,
+        "arrival_hora": "2026-10-14 07:36:00"
       }
     ]
   },
   {
     "trip_id": "1085X20432C4b",
-    "route_id": "",
+    "linea": "C4B",
     "stops": [
       {
-        "stop_id": "18000",
-        "arrival": 1791963300
-      }
-    ]
-  },
-  {
-    "trip_id": "1085X20035C3",
-    "route_id": "",
-    "stops": [
-      {
-        "stop_id": "60105",
-        "arrival": 1791964800
+        "stop_id": "60100",
+        "arrival": 1791963780,
+        "arrival_hora": "2026-10-14 07:43:00"
       }
     ]
   }
