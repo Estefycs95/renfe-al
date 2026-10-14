@@ -24,10 +24,8 @@ def distancia_km(lat1, lon1, lat2, lon2):
         sin(dlat / 2) ** 2
         +
         cos(radians(lat1))
-        *
-        cos(radians(lat2))
-        *
-        sin(dlon / 2) ** 2
+        * cos(radians(lat2))
+        * sin(dlon / 2) ** 2
     )
 
     c = 2 * atan2(
@@ -38,58 +36,51 @@ def distancia_km(lat1, lon1, lat2, lon2):
     return round(R * c, 2)
 
 
-ESTACIONES = {
+# ---------------------------------
+# Todas las estaciones de Madrid
+# ---------------------------------
 
-    "18000": {
-        "nombre": "Atocha",
-        "lat": 40.4066191,
-        "lon": -3.6894391
-    },
+with open(
+    "estaciones-madrid.json",
+    encoding="utf-8"
+) as f:
 
-    "18001": {
-        "nombre": "Recoletos",
-        "lat": 40.4233731,
-        "lon": -3.6909310
-    },
+    ESTACIONES = json.load(f)
 
-    "18002": {
-        "nombre": "Nuevos Ministerios",
-        "lat": 40.4466271,
-        "lon": -3.6923468
-    },
-
-    "18101": {
-        "nombre": "Sol",
-        "lat": 40.4168665,
-        "lon": -3.7028765
-    },
-
-    "17000": {
-        "nombre": "Chamartín",
-        "lat": 40.4711789,
-        "lon": -3.6829524
-    }
-
-}
-
+# ---------------------------------
+# Descargar feed
+# ---------------------------------
 
 feed = gtfs_realtime_pb2.FeedMessage()
 
-response = requests.get(URL, timeout=60)
+response = requests.get(
+    URL,
+    timeout=60
+)
+
 response.raise_for_status()
 
-feed.ParseFromString(response.content)
+feed.ParseFromString(
+    response.content
+)
 
 vehiculos = []
 
 resumen = {}
 
 for stop_id in ESTACIONES.keys():
+
     resumen[stop_id] = {}
+
+# ---------------------------------
+# Procesar vehículos
+# ---------------------------------
 
 for entity in feed.entity:
 
-    if not entity.HasField("vehicle"):
+    if not entity.HasField(
+        "vehicle"
+    ):
         continue
 
     vehicle = entity.vehicle
@@ -104,12 +95,15 @@ for entity in feed.entity:
     if not match:
         continue
 
-    linea = match.group(1).upper()
+    linea = (
+        match.group(1)
+        .upper()
+    )
 
     lat = vehicle.position.latitude
     lon = vehicle.position.longitude
 
-    # Solo Madrid
+    # Madrid
 
     if not (
         40.0 <= lat <= 41.1
@@ -129,12 +123,20 @@ for entity in feed.entity:
             estacion["lon"]
         )
 
-        distancias[estacion["nombre"]] = distancia
+        distancias[stop_id] = distancia
 
-        actual = resumen[stop_id].get(linea)
+        actual = resumen[stop_id].get(
+            linea
+        )
 
-        if actual is None or distancia < actual:
-            resumen[stop_id][linea] = distancia
+        if (
+            actual is None
+            or distancia < actual
+        ):
+
+            resumen[stop_id][linea] = (
+                distancia
+            )
 
     vehiculos.append({
 
@@ -152,6 +154,9 @@ for entity in feed.entity:
 
     })
 
+# ---------------------------------
+# Guardar detalle
+# ---------------------------------
 
 with open(
     "vehiculos.json",
@@ -166,6 +171,9 @@ with open(
         indent=2
     )
 
+# ---------------------------------
+# Guardar resumen
+# ---------------------------------
 
 with open(
     "vehiculos_resumen.json",
@@ -181,5 +189,9 @@ with open(
     )
 
 print(
-    f"{len(vehiculos)} trenes Madrid procesados"
+    f"Procesados {len(vehiculos)} trenes"
+)
+print(
+    f"Generadas distancias para "
+    f"{len(ESTACIONES)} estaciones"
 )
