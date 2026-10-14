@@ -11,10 +11,10 @@
 <style>
 
 body{
-    font-family: Arial, sans-serif;
-    max-width: 1100px;
-    margin: auto;
-    padding: 20px;
+    font-family: Arial,sans-serif;
+    max-width:1100px;
+    margin:auto;
+    padding:20px;
 }
 
 h1{
@@ -185,14 +185,10 @@ async function cargarEstaciones(){
         await obtenerEstaciones();
 
     const origen =
-        document.getElementById(
-            "origen"
-        );
+        document.getElementById("origen");
 
     const destino =
-        document.getElementById(
-            "destino"
-        );
+        document.getElementById("destino");
 
     origen.innerHTML = "";
     destino.innerHTML = "";
@@ -200,12 +196,10 @@ async function cargarEstaciones(){
     Object.entries(estaciones)
 
         .sort((a,b)=>
-
             a[1].nombre.localeCompare(
                 b[1].nombre,
                 "es"
             )
-
         )
 
         .forEach(([id,datos]) => {
@@ -276,21 +270,18 @@ async function buscarRuta(){
     const vehiculos =
         await obtenerVehiculos();
 
-    const estaciones =
-        await obtenerEstaciones();
-
     const afectadas =
         await obtenerLineasAfectadas();
 
     const lineasPosibles = [];
 
     Object.entries(rutas)
-        .forEach(([linea,paradas]) => {
+        .forEach(([linea, estaciones]) => {
 
             if(
-                paradas.includes(origen)
+                estaciones.includes(origen)
                 &&
-                paradas.includes(destino)
+                estaciones.includes(destino)
             ){
 
                 lineasPosibles.push(
@@ -304,52 +295,49 @@ async function buscarRuta(){
     const disponibles =
         lineasPosibles.filter(
             linea =>
-
-                !afectadas.includes(linea)
-
-                &&
-
-                salidas[origen]?.[linea]
+                !afectadas.includes(
+                    linea
+                )
         );
+
+    console.log(
+        "Origen:",
+        origen
+    );
+
+    console.log(
+        "Destino:",
+        destino
+    );
+
+    console.log(
+        "Lineas posibles:",
+        lineasPosibles
+    );
+
+    console.log(
+        "Disponibles:",
+        disponibles
+    );
 
     disponibles.sort((a,b)=>{
 
         const distanciaA =
-            vehiculos[origen]?.[a] ??
-            999;
+            vehiculos[origen]?.[a]
+            ?? 999;
 
         const distanciaB =
-            vehiculos[origen]?.[b] ??
-            999;
+            vehiculos[origen]?.[b]
+            ?? 999;
 
-        if(
-            distanciaA !== distanciaB
-        ){
-
-            return (
-                distanciaA -
-                distanciaB
-            );
-
-        }
-
-        const horaA =
-            salidas[origen]?.[a]
-            || "99:99:99";
-
-        const horaB =
-            salidas[origen]?.[b]
-            || "99:99:99";
-
-        return horaA.localeCompare(
-            horaB
-        );
+        return distanciaA -
+               distanciaB;
 
     });
 
     let html = "";
 
-    if(disponibles.length){
+    if(disponibles.length > 0){
 
         const recomendada =
             disponibles[0];
@@ -375,17 +363,23 @@ async function buscarRuta(){
                 Próxima salida:
 
                 <strong>
-                    ${salidas[origen]?.[recomendada]}
+
+                    ${salidas[origen]?.[recomendada]
+                    || "Sin datos"}
+
                 </strong>
 
             </p>
 
             <p>
 
-                Tren más cercano detectado:
+                Tren más cercano:
 
                 <strong>
-                    ${vehiculos[origen]?.[recomendada] ?? "?"} km
+
+                    ${vehiculos[origen]?.[recomendada]
+                    ?? "Sin datos"} km
+
                 </strong>
 
             </p>
@@ -393,7 +387,7 @@ async function buscarRuta(){
             <div class="info">
 
                 <strong>
-                    Alternativas
+                    Alternativas disponibles
                 </strong>
 
                 <br><br>
@@ -406,12 +400,12 @@ async function buscarRuta(){
                     <strong>${linea}</strong>
 
                     · Salida:
-
-                    ${salidas[origen]?.[linea]}
+                    ${salidas[origen]?.[linea]
+                    || "Sin datos"}
 
                     · Distancia:
-
-                    ${vehiculos[origen]?.[linea] ?? "?"} km
+                    ${vehiculos[origen]?.[linea]
+                    ?? "Sin datos"} km
 
                     </div>`
 
@@ -435,9 +429,8 @@ async function buscarRuta(){
 
             <p>
 
-                No se han encontrado
-                líneas disponibles para
-                este trayecto.
+                No existen líneas válidas
+                para este trayecto.
 
             </p>
 
