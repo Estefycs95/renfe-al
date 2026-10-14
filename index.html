@@ -16,7 +16,7 @@ body{
 
 select{
     padding:10px;
-    min-width:350px;
+    min-width:320px;
     margin:5px;
 }
 
@@ -52,11 +52,12 @@ button{
 }
 
 .linea{
-    padding:5px 0;
+    padding:6px 0;
 }
 
 </style>
 </head>
+
 <body>
 
 <h1>🚆 Información al Viajero</h1>
@@ -99,9 +100,7 @@ async function obtenerSentidos(){
 async function obtenerLineasAfectadas(){
 
     const r =
-        await fetch(
-            "./incidencias.json"
-        );
+        await fetch("./incidencias.json");
 
     const datos =
         await r.json();
@@ -109,8 +108,7 @@ async function obtenerLineasAfectadas(){
     const afectadas =
         new Set();
 
-    datos.entity?.forEach(
-        entidad=>{
+    datos.entity?.forEach(entidad => {
 
         const texto =
             entidad.alert
@@ -122,33 +120,18 @@ async function obtenerLineasAfectadas(){
 
         const grave =
 
-            texto.includes(
-                "sin servicio"
-            ) ||
-
-            texto.includes(
-                "interrumpido"
-            ) ||
-
-            texto.includes(
-                "suspendido"
-            ) ||
-
-            texto.includes(
-                "suprimido"
-            ) ||
-
-            texto.includes(
-                "no circulan"
-            );
+            texto.includes("sin servicio") ||
+            texto.includes("interrumpido") ||
+            texto.includes("suspendido") ||
+            texto.includes("suprimido") ||
+            texto.includes("suprimidos") ||
+            texto.includes("no circulan");
 
         if(!grave){
             return;
         }
 
-        entidad.alert
-        ?.informedEntity
-        ?.forEach(item=>{
+        entidad.alert?.informedEntity?.forEach(item => {
 
             const m =
                 item.routeId
@@ -172,60 +155,6 @@ async function obtenerLineasAfectadas(){
 
 }
 
-async function cargarEstaciones(){
-
-    const estaciones =
-        await obtenerEstaciones();
-
-    const origen =
-        document.getElementById(
-            "origen"
-        );
-
-    const destino =
-        document.getElementById(
-            "destino"
-        );
-
-    Object.entries(estaciones)
-
-    .sort((a,b)=>
-
-        a[1].nombre.localeCompare(
-            b[1].nombre,
-            "es"
-        )
-
-    )
-
-    .forEach(([id,datos])=>{
-
-        const o1 =
-            document.createElement(
-                "option"
-            );
-
-        o1.value = id;
-        o1.textContent =
-            datos.nombre;
-
-        origen.appendChild(o1);
-
-        const o2 =
-            document.createElement(
-                "option"
-            );
-
-        o2.value = id;
-        o2.textContent =
-            datos.nombre;
-
-        destino.appendChild(o2);
-
-    });
-
-}
-
 function obtenerDistancia(
     vehiculos,
     estacion,
@@ -233,7 +162,7 @@ function obtenerDistancia(
 ){
 
     const datos =
-        vehiculos[estacion];
+        vehiculos?.[estacion];
 
     if(!datos){
         return null;
@@ -279,27 +208,25 @@ function obtenerDistancia(
 
 function obtenerSentido(
     sentidos,
-    estacion,
     linea
 ){
 
-    const datos =
-        sentidos?.[estacion];
+    if(
+        sentidos[linea]
+        &&
+        sentidos[linea].length
+    ){
 
-    if(!datos){
-        return null;
-    }
+        return sentidos[linea][0];
 
-    if(datos[linea]){
-        return datos[linea];
     }
 
     if(linea === "C4"){
 
         return (
-            datos["C4A"]
+            sentidos["C4A"]?.[0]
             ||
-            datos["C4B"]
+            sentidos["C4B"]?.[0]
             ||
             null
         );
@@ -309,9 +236,9 @@ function obtenerSentido(
     if(linea === "C8"){
 
         return (
-            datos["C8A"]
+            sentidos["C8A"]?.[0]
             ||
-            datos["C8B"]
+            sentidos["C8B"]?.[0]
             ||
             null
         );
@@ -319,6 +246,60 @@ function obtenerSentido(
     }
 
     return null;
+
+}
+
+async function cargarEstaciones(){
+
+    const estaciones =
+        await obtenerEstaciones();
+
+    const origen =
+        document.getElementById(
+            "origen"
+        );
+
+    const destino =
+        document.getElementById(
+            "destino"
+        );
+
+    Object.entries(estaciones)
+
+        .sort((a,b)=>
+
+            a[1].nombre.localeCompare(
+                b[1].nombre,
+                "es"
+            )
+
+        )
+
+        .forEach(([id,datos]) => {
+
+            const o1 =
+                document.createElement(
+                    "option"
+                );
+
+            o1.value = id;
+            o1.textContent =
+                datos.nombre;
+
+            origen.appendChild(o1);
+
+            const o2 =
+                document.createElement(
+                    "option"
+                );
+
+            o2.value = id;
+            o2.textContent =
+                datos.nombre;
+
+            destino.appendChild(o2);
+
+        });
 
 }
 
@@ -333,6 +314,23 @@ async function buscarRuta(){
         document.getElementById(
             "destino"
         ).value;
+
+    if(origen === destino){
+
+        document
+            .getElementById(
+                "resultado"
+            )
+            .innerHTML =
+            `
+            <div class="error">
+            El origen y destino son iguales.
+            </div>
+            `;
+
+        return;
+
+    }
 
     const estaciones =
         await obtenerEstaciones();
@@ -353,42 +351,35 @@ async function buscarRuta(){
 
     Object.entries(rutas)
 
-    .forEach(([linea,paradas])=>{
+        .forEach(([linea,paradas]) => {
 
-        if(
+            if(
+                paradas.includes(origen)
+                &&
+                paradas.includes(destino)
+            ){
 
-            paradas.includes(
-                origen
-            )
+                lineasPosibles.push(
+                    linea
+                );
 
-            &&
+            }
 
-            paradas.includes(
-                destino
-            )
-
-        ){
-
-            lineasPosibles.push(
-                linea
-            );
-
-        }
-
-    });
+        });
 
     const disponibles =
 
         lineasPosibles.filter(
             linea =>
-            !afectadas.includes(
-                linea
-            )
+                !afectadas.includes(
+                    linea
+                )
         );
 
     disponibles.sort((a,b)=>{
 
         const da =
+
             obtenerDistancia(
                 vehiculos,
                 origen,
@@ -396,6 +387,7 @@ async function buscarRuta(){
             ) ?? 999;
 
         const db =
+
             obtenerDistancia(
                 vehiculos,
                 origen,
@@ -409,18 +401,17 @@ async function buscarRuta(){
     if(!disponibles.length){
 
         document
-        .getElementById(
-            "resultado"
-        )
-        .innerHTML =
-
-        `
-        <div class="error">
+            .getElementById(
+                "resultado"
+            )
+            .innerHTML =
+            `
+            <div class="error">
             <h2>
             🚨 Sin alternativa disponible
             </h2>
-        </div>
-        `;
+            </div>
+            `;
 
         return;
 
@@ -439,7 +430,6 @@ async function buscarRuta(){
     const sentido =
         obtenerSentido(
             sentidos,
-            origen,
             recomendada
         );
 
@@ -458,7 +448,7 @@ async function buscarRuta(){
 
         <p>
 
-        Próxima estación:
+        Tren detectado en:
 
         <strong>
 
@@ -531,8 +521,7 @@ async function buscarRuta(){
             <br><br>
     `;
 
-    disponibles.forEach(
-        linea=>{
+    disponibles.forEach(linea => {
 
         const d =
             obtenerDistancia(
@@ -544,44 +533,42 @@ async function buscarRuta(){
         const s =
             obtenerSentido(
                 sentidos,
-                origen,
                 linea
             );
 
         html +=
-
         `
         <div class="linea">
 
-            <strong>
-            ${linea}
-            </strong>
+        <strong>
+        ${linea}
+        </strong>
 
-            · Destino:
+        · Destino:
 
-            ${
-                s?.destino_viaje
-                ?
-                (
-                    estaciones[
-                        s.destino_viaje
-                    ]?.nombre
-                    ||
+        ${
+            s?.destino_viaje
+            ?
+            (
+                estaciones[
                     s.destino_viaje
-                )
-                :
-                "No disponible"
-            }
+                ]?.nombre
+                ||
+                s.destino_viaje
+            )
+            :
+            "No disponible"
+        }
 
-            · Distancia:
+        · Distancia:
 
-            ${
-                d != null
-                ?
-                d + " km"
-                :
-                "No disponible"
-            }
+        ${
+            d != null
+            ?
+            d + " km"
+            :
+            "No disponible"
+        }
 
         </div>
         `;
@@ -595,10 +582,10 @@ async function buscarRuta(){
     `;
 
     document
-    .getElementById(
-        "resultado"
-    )
-    .innerHTML = html;
+        .getElementById(
+            "resultado"
+        )
+        .innerHTML = html;
 
 }
 
