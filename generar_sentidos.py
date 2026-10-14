@@ -8,20 +8,12 @@ from google.transit import gtfs_realtime_pb2
 URL_TRIPS = "https://gtfsrt.renfe.com/trip_updates.pb"
 URL_VEHICLES = "https://gtfsrt.renfe.com/vehicle_positions.pb"
 
-# --------------------------------
-# Estaciones Madrid
-# --------------------------------
-
 with open(
     "estaciones-madrid.json",
     encoding="utf-8"
 ) as f:
 
     estaciones = json.load(f)
-
-# --------------------------------
-# trip_id -> linea
-# --------------------------------
 
 trip_linea = {}
 
@@ -44,13 +36,8 @@ with open(
         if m:
 
             trip_linea[trip_id] = (
-                m.group(1)
-                .upper()
+                m.group(1).upper()
             )
-
-# --------------------------------
-# trip_id -> recorrido
-# --------------------------------
 
 trip_stops = {}
 
@@ -75,10 +62,6 @@ with open(
                 []
             )\
             .append(stop_id)
-
-# --------------------------------
-# Cargar trip_updates
-# --------------------------------
 
 trip_feed = gtfs_realtime_pb2.FeedMessage()
 
@@ -108,29 +91,17 @@ for entity in trip_feed.entity:
         update.trip.trip_id
     )
 
-    siguiente = None
-
     for stop in update.stop_time_update:
 
         if stop.stop_id in estaciones:
 
-            siguiente = stop.stop_id
+            proxima_parada[
+                trip_id
+            ] = stop.stop_id
+
             break
 
-    if siguiente:
-
-        proxima_parada[
-            trip_id
-        ] = siguiente
-
-# --------------------------------
-# Cargar vehículos
-# --------------------------------
-
-vehicle_feed = (
-    gtfs_realtime_pb2
-    .FeedMessage()
-)
+vehicle_feed = gtfs_realtime_pb2.FeedMessage()
 
 r = requests.get(
     URL_VEHICLES,
@@ -165,9 +136,6 @@ for entity in vehicle_feed.entity:
     if not recorrido:
         continue
 
-    origen = recorrido[0]
-    destino = recorrido[-1]
-
     resultado.append({
 
         "linea":
@@ -179,25 +147,16 @@ for entity in vehicle_feed.entity:
         "trip_id":
             trip_id,
 
-        "latitud":
-            vehicle.position.latitude,
-
-        "longitud":
-            vehicle.position.longitude,
-
         "origen_viaje":
-            origen,
+            recorrido[0],
 
         "destino_viaje":
-            destino,
+            recorrido[-1],
 
         "proxima_estacion":
             proxima_parada.get(
                 trip_id
-            ),
-
-        "sentido":
-            f"hacia {destino}"
+            )
 
     })
 
