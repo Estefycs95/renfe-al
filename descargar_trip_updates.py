@@ -1,15 +1,18 @@
 import json
+import re
 import requests
 
+from datetime import datetime
 from google.transit import gtfs_realtime_pb2
 
 URL = "https://gtfsrt.renfe.com/trip_updates.pb"
 
 feed = gtfs_realtime_pb2.FeedMessage()
 
-data = requests.get(URL, timeout=60).content
+response = requests.get(URL, timeout=60)
+response.raise_for_status()
 
-feed.ParseFromString(data)
+feed.ParseFromString(response.content)
 
 salidas = []
 
@@ -20,27 +23,57 @@ for entity in feed.entity:
 
     trip = entity.trip_update
 
-    item = {
-        "trip_id": trip.trip.trip_id,
-        "route_id": trip.trip.route_id,
+    trip_id = trip.trip.trip_id
+
+    match = re.search(
+        r"(C\d+[ABab]?)$",
+        trip_id
+    )
+
+    linea = ""
+
+    if match:
+        linea = match.group(1).upper()
+
+    registro = {
+        "trip_id": trip_id,
+        "linea": linea,
         "stops": []
     }
 
     for stop in trip.stop_time_update:
 
-        registro = {
+        parada = {
             "stop_id": stop.stop_id
         }
 
         if stop.arrival.time:
-            registro["arrival"] = stop.arrival.time
+
+            parada["arrival"] = stop.arrival.time
+
+            parada["arrival_hora"] = (
+                datetime.fromtimestamp(
+                    stop.arrival.time
+                ).strftime("%Y-%m-%d %H:%M:%S")
+            )
 
         if stop.departure.time:
-            registro["departure"] = stop.departure.time
 
-        item["stops"].append(registro)
+            parada["departure"] = stop.departure.time
 
-    salidas.append(item)
+            parada["departure_hora"] = (
+                datetime.fromtimestamp(
+                    stop.departure.time
+                ).strftime("%Y-%m-%d %H:%M:%S")
+            )
+
+        registro["stops"].append(
+            parada
+        )
+
+    salidas.append(
+        registro
+    )
 
 with open(
     "trip_updates.json",
@@ -55,4 +88,6 @@ with open(
         indent=2
     )
 
-print(f"Guardados {len(salidas)} viajes")
+print(
+    f"Generados {len(salidas)} viajes"
+)
