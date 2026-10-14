@@ -8,12 +8,20 @@ from google.transit import gtfs_realtime_pb2
 URL_TRIPS = "https://gtfsrt.renfe.com/trip_updates.pb"
 URL_VEHICLES = "https://gtfsrt.renfe.com/vehicle_positions.pb"
 
+# ---------------------------------
+# Estaciones Madrid
+# ---------------------------------
+
 with open(
     "estaciones-madrid.json",
     encoding="utf-8"
 ) as f:
 
     estaciones = json.load(f)
+
+# ---------------------------------
+# trip_id -> linea
+# ---------------------------------
 
 trip_linea = {}
 
@@ -28,16 +36,24 @@ with open(
 
         trip_id = row["trip_id"]
 
-        m = re.search(
-            r"(C\d+[ABab]?)$",
-            trip_id
+        match = re.search(
+            r"(C\d+[A-Z]?)$",
+            trip_id,
+            re.IGNORECASE
         )
 
-        if m:
+        if match:
 
-            trip_linea[trip_id] = (
-                m.group(1).upper()
+            trip_linea[
+                trip_id
+            ] = (
+                match.group(1)
+                .upper()
             )
+
+# ---------------------------------
+# trip_id -> recorrido
+# ---------------------------------
 
 trip_stops = {}
 
@@ -63,17 +79,21 @@ with open(
             )\
             .append(stop_id)
 
+# ---------------------------------
+# Trip Updates
+# ---------------------------------
+
 trip_feed = gtfs_realtime_pb2.FeedMessage()
 
-r = requests.get(
+response = requests.get(
     URL_TRIPS,
     timeout=60
 )
 
-r.raise_for_status()
+response.raise_for_status()
 
 trip_feed.ParseFromString(
-    r.content
+    response.content
 )
 
 proxima_parada = {}
@@ -85,33 +105,46 @@ for entity in trip_feed.entity:
     ):
         continue
 
-    update = entity.trip_update
-
-    trip_id = (
-        update.trip.trip_id
+    trip_update = (
+        entity.trip_update
     )
 
-    for stop in update.stop_time_update:
+    trip_id = (
+        trip_update.trip.trip_id
+    )
 
-        if stop.stop_id in estaciones:
+    for stop in (
+        trip_update.stop_time_update
+    ):
+
+        stop_id = stop.stop_id
+
+        if stop_id in estaciones:
 
             proxima_parada[
                 trip_id
-            ] = stop.stop_id
+            ] = stop_id
 
             break
 
-vehicle_feed = gtfs_realtime_pb2.FeedMessage()
+# ---------------------------------
+# Vehicle Positions
+# ---------------------------------
 
-r = requests.get(
+vehicle_feed = (
+    gtfs_realtime_pb2
+    .FeedMessage()
+)
+
+response = requests.get(
     URL_VEHICLES,
     timeout=60
 )
 
-r.raise_for_status()
+response.raise_for_status()
 
 vehicle_feed.ParseFromString(
-    r.content
+    response.content
 )
 
 resultado = []
@@ -136,13 +169,15 @@ for entity in vehicle_feed.entity:
     if not recorrido:
         continue
 
+    linea = trip_linea.get(
+        trip_id,
+        ""
+    )
+
     resultado.append({
 
         "linea":
-            trip_linea.get(
-                trip_id,
-                ""
-            ),
+            linea,
 
         "trip_id":
             trip_id,
@@ -156,9 +191,19 @@ for entity in vehicle_feed.entity:
         "proxima_estacion":
             proxima_parada.get(
                 trip_id
-            )
+            ),
+
+        "latitud":
+            vehicle.position.latitude,
+
+        "longitud":
+            vehicle.position.longitude
 
     })
+
+# ---------------------------------
+# Guardar
+# ---------------------------------
 
 with open(
     "vehiculos_sentido.json",
@@ -173,6 +218,4 @@ with open(
         indent=2
     )
 
-print(
-    f"{len(resultado)} trenes procesados"
-)
+print
