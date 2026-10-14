@@ -11,27 +11,16 @@ resultado = {}
 
 for tren in vehiculos:
 
-    linea = tren["linea"]
+    linea = tren.get("linea")
 
     if not linea:
         continue
 
-    proxima = tren.get(
-        "proxima_estacion"
-    )
+    if linea not in resultado:
 
-    if not proxima:
-        continue
+        resultado[linea] = []
 
-    if proxima not in resultado:
-
-        resultado[
-            proxima
-        ] = {}
-
-    resultado[
-        proxima
-    ][linea] = {
+    resultado[linea].append({
 
         "trip_id":
             tren["trip_id"],
@@ -43,9 +32,11 @@ for tren in vehiculos:
             tren["destino_viaje"],
 
         "proxima_estacion":
-            proxima
+            tren.get(
+                "proxima_estacion"
+            )
 
-    }
+    })
 
 with open(
     "sentidos_resumen.json",
@@ -61,5 +52,5 @@ with open(
     )
 
 print(
-    f"{len(resultado)} estaciones generadas"
+    f"{len(resultado)} líneas generadas"
 )
