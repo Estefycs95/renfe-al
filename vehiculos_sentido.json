@@ -1,1 +1,11 @@
-[]
+[
+  {
+    "linea": "C5",
+    "trip_id": "1088S27997C5",
+    "origen_viaje": "35002",
+    "destino_viaje": "35607",
+    "proxima_estacion": "35602",
+    "latitud": 40.32875061035156,
+    "longitud": -3.863691568374634
+  }
+]
