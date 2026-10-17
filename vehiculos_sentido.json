@@ -4,117 +4,27 @@
     "trip_id": "1089D75644C2",
     "origen_viaje": "17000",
     "destino_viaje": "70200",
-    "proxima_estacion": "70111",
-    "latitud": 40.46417236328125,
-    "longitud": -3.441476583480835
+    "proxima_estacion": "70200",
+    "latitud": 40.56167221069336,
+    "longitud": -3.2643659114837646
   },
   {
-    "linea": "C10",
-    "trip_id": "1089D75268C10",
+    "linea": "C2",
+    "trip_id": "1089D75530C2",
     "origen_viaje": "17000",
-    "destino_viaje": "10200",
-    "proxima_estacion": "10200",
-    "latitud": 40.62599182128906,
-    "longitud": -4.008115291595459
-  },
-  {
-    "linea": "C8A",
-    "trip_id": "1089D75037C8a",
-    "origen_viaje": "17000",
-    "destino_viaje": "10203",
-    "proxima_estacion": "10200",
-    "latitud": 40.62628173828125,
-    "longitud": -4.008062362670898
-  },
-  {
-    "linea": "C5",
-    "trip_id": "1089D27815C5",
-    "origen_viaje": "35012",
-    "destino_viaje": "35607",
-    "proxima_estacion": "35607",
-    "latitud": 40.32688522338867,
-    "longitud": -3.8681418895721436
-  },
-  {
-    "linea": "C4",
-    "trip_id": "1089D27317C4",
-    "origen_viaje": "37012",
-    "destino_viaje": "17000",
-    "proxima_estacion": "18002",
-    "latitud": 40.44660186767578,
-    "longitud": -3.6920876502990723
-  },
-  {
-    "linea": "C8B",
-    "trip_id": "1089D27643C8b",
-    "origen_viaje": "17000",
-    "destino_viaje": "12006",
-    "proxima_estacion": "12006",
-    "latitud": 40.737613677978516,
-    "longitud": -4.066298484802246
-  },
-  {
-    "linea": "C4B",
-    "trip_id": "1089D27512C4b",
-    "origen_viaje": "17005",
-    "destino_viaje": "18000",
-    "proxima_estacion": "17000",
-    "latitud": 40.4713249206543,
-    "longitud": -3.683309555053711
-  },
-  {
-    "linea": "C3",
-    "trip_id": "1089D27095C3",
-    "origen_viaje": "60200",
-    "destino_viaje": "17000",
-    "proxima_estacion": "18000",
-    "latitud": 40.40653991699219,
-    "longitud": -3.6895105838775635
-  },
-  {
-    "linea": "C1",
-    "trip_id": "1089D19945C1",
-    "origen_viaje": "98305",
-    "destino_viaje": "18000",
-    "proxima_estacion": "17000",
-    "latitud": 40.48491668701172,
-    "longitud": -3.663029432296753
+    "destino_viaje": "70200",
+    "proxima_estacion": "70200",
+    "latitud": 40.644256591796875,
+    "longitud": -3.182323694229126
   },
   {
     "linea": "C5",
     "trip_id": "1089D27822C5",
     "origen_viaje": "35607",
     "destino_viaje": "35012",
-    "proxima_estacion": "35009",
-    "latitud": 40.34138107299805,
-    "longitud": -3.730668544769287
-  },
-  {
-    "linea": "C4B",
-    "trip_id": "1089D27508C4b",
-    "origen_viaje": "17005",
-    "destino_viaje": "37012",
-    "proxima_estacion": "37012",
-    "latitud": 40.24142837524414,
-    "longitud": -3.7691590785980225
-  },
-  {
-    "linea": "C5",
-    "trip_id": "1089D27813C5",
-    "origen_viaje": "35012",
-    "destino_viaje": "35607",
-    "proxima_estacion": "35607",
-    "latitud": 40.33088302612305,
-    "longitud": -3.882378339767456
-  },
-  {
-    "linea": "C5",
-    "trip_id": "1089D27817C5",
-    "origen_viaje": "35012",
-    "destino_viaje": "35607",
-    "proxima_estacion": "35603",
-    "latitud": 40.38126754760742,
-    "longitud": -3.780212640762329
+    "proxima_estacion": "35012",
+    "latitud": 40.25558853149414,
+    "longitud": -3.8284666538238525
   },
   {
     "linea": "C7",
@@ -130,8 +40,17 @@
     "trip_id": "1089D27094C3",
     "origen_viaje": "17000",
     "destino_viaje": "60200",
-    "proxima_estacion": "60104",
-    "latitud": 40.1961555480957,
-    "longitud": -3.6648213863372803
+    "proxima_estacion": "60200",
+    "latitud": 40.03502655029297,
+    "longitud": -3.618971347808838
+  },
+  {
+    "linea": "C1",
+    "trip_id": "1089D19945C1",
+    "origen_viaje": "98305",
+    "destino_viaje": "18000",
+    "proxima_estacion": "18000",
+    "latitud": 40.47099304199219,
+    "longitud": -3.6825814247131348
   }
 ]
