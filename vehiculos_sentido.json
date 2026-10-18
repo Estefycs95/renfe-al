@@ -1,1 +1,11 @@
-[]
+[
+  {
+    "linea": "C4A",
+    "trip_id": "1089D27203C4a",
+    "origen_viaje": "18000",
+    "destino_viaje": "19003",
+    "proxima_estacion": "18101",
+    "latitud": 40.40653991699219,
+    "longitud": -3.6895105838775635
+  }
+]
