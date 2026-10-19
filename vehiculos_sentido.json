@@ -1,1 +1,29 @@
-[]
+[
+  {
+    "linea": "C2",
+    "trip_id": "1091M21504C2",
+    "origen_viaje": "18002",
+    "destino_viaje": "70200",
+    "proxima_estacion": "18001",
+    "latitud": 40.44654846191406,
+    "longitud": -3.6914730072021484
+  },
+  {
+    "linea": "C1",
+    "trip_id": "1091M19800C1",
+    "origen_viaje": "17000",
+    "destino_viaje": "98305",
+    "proxima_estacion": "98003",
+    "latitud": 40.47101974487305,
+    "longitud": -3.6825692653656006
+  },
+  {
+    "linea": "C2",
+    "trip_id": "1091M21514C2",
+    "origen_viaje": "17000",
+    "destino_viaje": "70200",
+    "proxima_estacion": null,
+    "latitud": 40.470970153808594,
+    "longitud": -3.68245005607605
+  }
+]
