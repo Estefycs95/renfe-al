@@ -1,1 +1,10 @@
-{}
+{
+  "C5": [
+    {
+      "trip_id": "1091M19502C5",
+      "origen_viaje": "35607",
+      "destino_viaje": "35012",
+      "proxima_estacion": "35606"
+    }
+  ]
+}
