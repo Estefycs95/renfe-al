@@ -1,89 +1,8 @@
 [
   {
     "linea": "C5",
-    "trip_id": "1093J19790C5",
-    "origen_viaje": "35607",
-    "destino_viaje": "35012",
-    "proxima_estacion": "35012",
-    "latitud": 40.25558853149414,
-    "longitud": -3.8284666538238525
-  },
-  {
-    "linea": "C4B",
-    "trip_id": "1093J20524C4b",
-    "origen_viaje": "17005",
-    "destino_viaje": "18000",
-    "proxima_estacion": "18000",
-    "latitud": 40.417022705078125,
-    "longitud": -3.7031636238098145
-  },
-  {
-    "linea": "C4A",
-    "trip_id": "1093J20336C4a",
-    "origen_viaje": "19003",
-    "destino_viaje": "17000",
-    "proxima_estacion": "17000",
-    "latitud": 40.4713249206543,
-    "longitud": -3.683309555053711
-  },
-  {
-    "linea": "C3",
-    "trip_id": "1093J20113C3",
-    "origen_viaje": "60200",
-    "destino_viaje": "17000",
-    "proxima_estacion": "18000",
-    "latitud": 40.35267639160156,
-    "longitud": -3.6839325428009033
-  },
-  {
-    "linea": "C5",
     "trip_id": "1093J20941C5",
     "origen_viaje": "35002",
-    "destino_viaje": "35607",
-    "proxima_estacion": "35600",
-    "latitud": 40.39889907836914,
-    "longitud": -3.7442264556884766
-  },
-  {
-    "linea": "C8B",
-    "trip_id": "1093J20600C8b",
-    "origen_viaje": "12006",
-    "destino_viaje": "17000",
-    "proxima_estacion": "12005",
-    "latitud": 40.737613677978516,
-    "longitud": -4.066298484802246
-  },
-  {
-    "linea": "C2",
-    "trip_id": "1093J21644C2",
-    "origen_viaje": "17000",
-    "destino_viaje": "70200",
-    "proxima_estacion": "70104",
-    "latitud": 40.534549713134766,
-    "longitud": -3.2985827922821045
-  },
-  {
-    "linea": "C5",
-    "trip_id": "1093J19793C5",
-    "origen_viaje": "35012",
-    "destino_viaje": "35607",
-    "proxima_estacion": "35607",
-    "latitud": 40.32820510864258,
-    "longitud": -3.864382743835449
-  },
-  {
-    "linea": "C3",
-    "trip_id": "1093J20114C3",
-    "origen_viaje": "17000",
-    "destino_viaje": "60200",
-    "proxima_estacion": "60200",
-    "latitud": 40.06744384765625,
-    "longitud": -3.6365110874176025
-  },
-  {
-    "linea": "C5",
-    "trip_id": "1093J19791C5",
-    "origen_viaje": "35012",
     "destino_viaje": "35607",
     "proxima_estacion": "35607",
     "latitud": 40.33088302612305,
