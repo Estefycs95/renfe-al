@@ -1,1 +1,38 @@
-{}
+{
+  "C5": [
+    {
+      "trip_id": "1092X19502C5",
+      "origen_viaje": "35607",
+      "destino_viaje": "35012",
+      "proxima_estacion": "35606"
+    }
+  ],
+  "C2": [
+    {
+      "trip_id": "1092X21601C2",
+      "origen_viaje": "70200",
+      "destino_viaje": "17000",
+      "proxima_estacion": "70105"
+    },
+    {
+      "trip_id": "1092X21500C2",
+      "origen_viaje": "17000",
+      "destino_viaje": "70200",
+      "proxima_estacion": "18002"
+    }
+  ],
+  "C4A": [
+    {
+      "trip_id": "1092X20205C4a",
+      "origen_viaje": "37012",
+      "destino_viaje": "19003",
+      "proxima_estacion": "37011"
+    },
+    {
+      "trip_id": "1092X20203C4a",
+      "origen_viaje": "18000",
+      "destino_viaje": "19003",
+      "proxima_estacion": "18101"
+    }
+  ]
+}
