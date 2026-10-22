@@ -1,18 +1,1 @@
-{
-  "C2": [
-    {
-      "trip_id": "1093J35973C2",
-      "origen_viaje": "70103",
-      "destino_viaje": "17000",
-      "proxima_estacion": "70102"
-    }
-  ],
-  "C7": [
-    {
-      "trip_id": "1093J21811C7",
-      "origen_viaje": "70103",
-      "destino_viaje": "10000",
-      "proxima_estacion": "70111"
-    }
-  ]
-}
+{}
