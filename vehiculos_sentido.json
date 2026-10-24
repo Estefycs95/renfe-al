@@ -1,20 +1,11 @@
 [
   {
     "linea": "C3",
-    "trip_id": "1096D35095C3",
-    "origen_viaje": "60200",
-    "destino_viaje": "17000",
-    "proxima_estacion": "17000",
-    "latitud": 40.44660186767578,
-    "longitud": -3.6920876502990723
-  },
-  {
-    "linea": "C3",
     "trip_id": "1096D35132C3",
     "origen_viaje": "17000",
     "destino_viaje": "60200",
     "proxima_estacion": "60200",
-    "latitud": 40.11170196533203,
-    "longitud": -3.622448205947876
+    "latitud": 40.03502655029297,
+    "longitud": -3.618971347808838
   }
 ]

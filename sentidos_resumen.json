@@ -1,12 +1,6 @@
 {
   "C3": [
     {
-      "trip_id": "1096D35095C3",
-      "origen_viaje": "60200",
-      "destino_viaje": "17000",
-      "proxima_estacion": "17000"
-    },
-    {
       "trip_id": "1096D35132C3",
       "origen_viaje": "17000",
       "destino_viaje": "60200",
