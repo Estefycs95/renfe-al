@@ -1,226 +1,204 @@
 {
-  "C10": [
+  "C5": [
     {
-      "trip_id": "1096D75306C10",
-      "origen_viaje": "17000",
-      "destino_viaje": "10100",
-      "proxima_estacion": "18002"
+      "trip_id": "1096D76374C5",
+      "origen_viaje": "35607",
+      "destino_viaje": "18000",
+      "proxima_estacion": "35606"
     },
     {
-      "trip_id": "1096D75108C10",
-      "origen_viaje": "10200",
-      "destino_viaje": "17000",
-      "proxima_estacion": "10104"
-    },
-    {
-      "trip_id": "1096D75106C10",
-      "origen_viaje": "10200",
-      "destino_viaje": "17000",
-      "proxima_estacion": "10007"
-    },
-    {
-      "trip_id": "1096D75304C10",
-      "origen_viaje": "17000",
-      "destino_viaje": "10100",
-      "proxima_estacion": "18004"
-    },
-    {
-      "trip_id": "1096D75303C10",
-      "origen_viaje": "10100",
-      "destino_viaje": "17000",
-      "proxima_estacion": "10005"
-    },
-    {
-      "trip_id": "1096D75104C10",
-      "origen_viaje": "10200",
-      "destino_viaje": "17000",
-      "proxima_estacion": "17000"
-    },
-    {
-      "trip_id": "1096D75302C10",
-      "origen_viaje": "17000",
-      "destino_viaje": "10100",
-      "proxima_estacion": "10100"
-    },
-    {
-      "trip_id": "1096D75206C10",
-      "origen_viaje": "17000",
-      "destino_viaje": "10200",
-      "proxima_estacion": "18002"
-    },
-    {
-      "trip_id": "1096D75204C10",
-      "origen_viaje": "17000",
-      "destino_viaje": "10200",
-      "proxima_estacion": "18002"
-    },
-    {
-      "trip_id": "1096D75202C10",
+      "trip_id": "1096D76694C5",
       "origen_viaje": "18000",
-      "destino_viaje": "10200",
-      "proxima_estacion": "10010"
+      "destino_viaje": "35012",
+      "proxima_estacion": "18003"
+    },
+    {
+      "trip_id": "1096D76376C5",
+      "origen_viaje": "35607",
+      "destino_viaje": "18000",
+      "proxima_estacion": "35606"
+    },
+    {
+      "trip_id": "1096D76695C5",
+      "origen_viaje": "35012",
+      "destino_viaje": "18000",
+      "proxima_estacion": "37001"
+    },
+    {
+      "trip_id": "1096D76696C5",
+      "origen_viaje": "18000",
+      "destino_viaje": "35012",
+      "proxima_estacion": "18003"
+    },
+    {
+      "trip_id": "1096D76378C5",
+      "origen_viaje": "35607",
+      "destino_viaje": "18000",
+      "proxima_estacion": "35606"
+    },
+    {
+      "trip_id": "1096D76697C5",
+      "origen_viaje": "35012",
+      "destino_viaje": "18000",
+      "proxima_estacion": "35010"
+    },
+    {
+      "trip_id": "1096D76699C5",
+      "origen_viaje": "35012",
+      "destino_viaje": "18000",
+      "proxima_estacion": "35002"
+    },
+    {
+      "trip_id": "1096D76370C5",
+      "origen_viaje": "35607",
+      "destino_viaje": "18000",
+      "proxima_estacion": "35601"
+    },
+    {
+      "trip_id": "1096D76371C5",
+      "origen_viaje": "18000",
+      "destino_viaje": "35607",
+      "proxima_estacion": "35609"
+    },
+    {
+      "trip_id": "1096D76690C5",
+      "origen_viaje": "18000",
+      "destino_viaje": "35012",
+      "proxima_estacion": "35012"
+    },
+    {
+      "trip_id": "1096D76372C5",
+      "origen_viaje": "35607",
+      "destino_viaje": "18000",
+      "proxima_estacion": "35604"
+    },
+    {
+      "trip_id": "1096D76373C5",
+      "origen_viaje": "18000",
+      "destino_viaje": "35607",
+      "proxima_estacion": "35609"
+    },
+    {
+      "trip_id": "1096D76692C5",
+      "origen_viaje": "18000",
+      "destino_viaje": "35012",
+      "proxima_estacion": "35001"
+    },
+    {
+      "trip_id": "1096D76363C5",
+      "origen_viaje": "18000",
+      "destino_viaje": "35607",
+      "proxima_estacion": "35606"
+    },
+    {
+      "trip_id": "1096D76365C5",
+      "origen_viaje": "18000",
+      "destino_viaje": "35607",
+      "proxima_estacion": "35601"
+    },
+    {
+      "trip_id": "1096D76367C5",
+      "origen_viaje": "18000",
+      "destino_viaje": "35607",
+      "proxima_estacion": "35608"
+    },
+    {
+      "trip_id": "1096D76368C5",
+      "origen_viaje": "35607",
+      "destino_viaje": "18000",
+      "proxima_estacion": "18000"
+    },
+    {
+      "trip_id": "1096D76369C5",
+      "origen_viaje": "18000",
+      "destino_viaje": "35607",
+      "proxima_estacion": "35609"
+    },
+    {
+      "trip_id": "1096D77000C5",
+      "origen_viaje": "18000",
+      "destino_viaje": "35002",
+      "proxima_estacion": "35704"
+    },
+    {
+      "trip_id": "1096D77002C5",
+      "origen_viaje": "18000",
+      "destino_viaje": "35002",
+      "proxima_estacion": "18003"
+    },
+    {
+      "trip_id": "1096D77007C5",
+      "origen_viaje": "35002",
+      "destino_viaje": "18000",
+      "proxima_estacion": "35702"
+    },
+    {
+      "trip_id": "1096D76701C5",
+      "origen_viaje": "35012",
+      "destino_viaje": "18000",
+      "proxima_estacion": "35002"
+    },
+    {
+      "trip_id": "1096D76703C5",
+      "origen_viaje": "35012",
+      "destino_viaje": "18000",
+      "proxima_estacion": "35002"
     }
   ],
   "C7": [
     {
-      "trip_id": "1096D75815C7",
+      "trip_id": "1096D75813C7",
       "origen_viaje": "70103",
       "destino_viaje": "10000",
-      "proxima_estacion": "70111"
+      "proxima_estacion": "97100"
     },
     {
-      "trip_id": "1096D75811C7",
-      "origen_viaje": "70103",
-      "destino_viaje": "10000",
-      "proxima_estacion": "97200"
-    },
-    {
-      "trip_id": "1096D75809C7",
-      "origen_viaje": "18000",
-      "destino_viaje": "10000",
-      "proxima_estacion": "10010"
-    },
-    {
-      "trip_id": "1096D75808C7",
+      "trip_id": "1096D75812C7",
       "origen_viaje": "10000",
       "destino_viaje": "70103",
       "proxima_estacion": "10001"
     },
     {
+      "trip_id": "1096D75811C7",
+      "origen_viaje": "70103",
+      "destino_viaje": "10000",
+      "proxima_estacion": "10000"
+    },
+    {
+      "trip_id": "1096D75810C7",
+      "origen_viaje": "10000",
+      "destino_viaje": "70103",
+      "proxima_estacion": "10001"
+    },
+    {
+      "trip_id": "1096D75808C7",
+      "origen_viaje": "10000",
+      "destino_viaje": "70103",
+      "proxima_estacion": "97200"
+    },
+    {
       "trip_id": "1096D75806C7",
       "origen_viaje": "10000",
       "destino_viaje": "70103",
-      "proxima_estacion": "10005"
+      "proxima_estacion": "18000"
     },
     {
       "trip_id": "1096D75804C7",
       "origen_viaje": "10000",
       "destino_viaje": "70103",
-      "proxima_estacion": "70002"
-    },
-    {
-      "trip_id": "1096D75802C7",
-      "origen_viaje": "17000",
-      "destino_viaje": "70103",
       "proxima_estacion": "70111"
-    }
-  ],
-  "C2": [
-    {
-      "trip_id": "1096D75504C2",
-      "origen_viaje": "17000",
-      "destino_viaje": "70200",
-      "proxima_estacion": "70101"
     },
     {
-      "trip_id": "1096D75503C2",
+      "trip_id": "1096D75819C7",
       "origen_viaje": "70103",
-      "destino_viaje": "17000",
+      "destino_viaje": "10000",
       "proxima_estacion": "70111"
     },
     {
-      "trip_id": "1096D75502C2",
-      "origen_viaje": "17000",
-      "destino_viaje": "70200",
-      "proxima_estacion": "70112"
-    },
-    {
-      "trip_id": "1096D75501C2",
-      "origen_viaje": "70200",
-      "destino_viaje": "17000",
-      "proxima_estacion": "70108"
-    },
-    {
-      "trip_id": "1096D75607C2",
-      "origen_viaje": "70200",
-      "destino_viaje": "17000",
-      "proxima_estacion": "70105"
-    },
-    {
-      "trip_id": "1096D75605C2",
-      "origen_viaje": "70200",
-      "destino_viaje": "17000",
-      "proxima_estacion": "70104"
-    },
-    {
-      "trip_id": "1096D75603C2",
-      "origen_viaje": "70200",
-      "destino_viaje": "17000",
-      "proxima_estacion": "18002"
-    },
-    {
-      "trip_id": "1096D75600C2",
-      "origen_viaje": "17000",
-      "destino_viaje": "70200",
-      "proxima_estacion": "18002"
-    }
-  ],
-  "C4B": [
-    {
-      "trip_id": "1096D27414C4b",
-      "origen_viaje": "17005",
-      "destino_viaje": "37012",
-      "proxima_estacion": "17004"
-    },
-    {
-      "trip_id": "1096D27410C4b",
-      "origen_viaje": "17005",
-      "destino_viaje": "37012",
-      "proxima_estacion": "17003"
-    },
-    {
-      "trip_id": "1096D27415C4b",
-      "origen_viaje": "37012",
-      "destino_viaje": "17005",
-      "proxima_estacion": "18101"
-    },
-    {
-      "trip_id": "1096D27412C4b",
-      "origen_viaje": "17005",
-      "destino_viaje": "37012",
-      "proxima_estacion": "17004"
-    },
-    {
-      "trip_id": "1096D27413C4b",
-      "origen_viaje": "37012",
-      "destino_viaje": "17005",
-      "proxima_estacion": "17003"
-    },
-    {
-      "trip_id": "1096D27419C4b",
-      "origen_viaje": "37012",
-      "destino_viaje": "17005",
-      "proxima_estacion": "37011"
-    },
-    {
-      "trip_id": "1096D27417C4b",
-      "origen_viaje": "37012",
-      "destino_viaje": "17005",
-      "proxima_estacion": "37010"
-    },
-    {
-      "trip_id": "1096D27404C4b",
-      "origen_viaje": "17005",
-      "destino_viaje": "37012",
-      "proxima_estacion": "37010"
-    },
-    {
-      "trip_id": "1096D27421C4b",
-      "origen_viaje": "37012",
-      "destino_viaje": "17005",
-      "proxima_estacion": "37011"
-    },
-    {
-      "trip_id": "1096D27408C4b",
-      "origen_viaje": "17005",
-      "destino_viaje": "37012",
-      "proxima_estacion": "18002"
-    },
-    {
-      "trip_id": "1096D27406C4b",
-      "origen_viaje": "17005",
-      "destino_viaje": "37012",
-      "proxima_estacion": "60100"
+      "trip_id": "1096D75817C7",
+      "origen_viaje": "70103",
+      "destino_viaje": "10000",
+      "proxima_estacion": "70111"
     }
   ],
   "C3": [
@@ -231,52 +209,46 @@
       "proxima_estacion": "60102"
     },
     {
-      "trip_id": "1096D35065C3",
-      "origen_viaje": "60103",
-      "destino_viaje": "17000",
-      "proxima_estacion": "60100"
-    },
-    {
       "trip_id": "1096D35069C3",
       "origen_viaje": "60103",
       "destino_viaje": "17000",
-      "proxima_estacion": "60102"
-    },
-    {
-      "trip_id": "1096D35068C3",
-      "origen_viaje": "60103",
-      "destino_viaje": "60200",
-      "proxima_estacion": "60104"
-    },
-    {
-      "trip_id": "1096D35063C3",
-      "origen_viaje": "60200",
-      "destino_viaje": "60103",
-      "proxima_estacion": "60103"
-    },
-    {
-      "trip_id": "1096D35070C3",
-      "origen_viaje": "17000",
-      "destino_viaje": "60103",
-      "proxima_estacion": "60100"
+      "proxima_estacion": "60101"
     },
     {
       "trip_id": "1096D35078C3",
       "origen_viaje": "17000",
       "destino_viaje": "60103",
+      "proxima_estacion": "18101"
+    },
+    {
+      "trip_id": "1096D35080C3",
+      "origen_viaje": "17000",
+      "destino_viaje": "60103",
       "proxima_estacion": "18002"
+    },
+    {
+      "trip_id": "1096D35082C3",
+      "origen_viaje": "17000",
+      "destino_viaje": "60103",
+      "proxima_estacion": "18002"
+    },
+    {
+      "trip_id": "1096D35076C3",
+      "origen_viaje": "60103",
+      "destino_viaje": "60200",
+      "proxima_estacion": "60104"
     },
     {
       "trip_id": "1096D35074C3",
       "origen_viaje": "17000",
       "destino_viaje": "60103",
-      "proxima_estacion": "18002"
+      "proxima_estacion": "60100"
     },
     {
-      "trip_id": "1096D35072C3",
-      "origen_viaje": "17000",
-      "destino_viaje": "60103",
-      "proxima_estacion": "60107"
+      "trip_id": "1096D35073C3",
+      "origen_viaje": "60103",
+      "destino_viaje": "17000",
+      "proxima_estacion": "60102"
     },
     {
       "trip_id": "1096D35071C3",
@@ -285,144 +257,48 @@
       "proxima_estacion": "60105"
     }
   ],
-  "C5": [
+  "C4B": [
     {
-      "trip_id": "1096D76693C5",
-      "origen_viaje": "35012",
-      "destino_viaje": "18000",
-      "proxima_estacion": "35002"
+      "trip_id": "1096D27414C4b",
+      "origen_viaje": "17005",
+      "destino_viaje": "37012",
+      "proxima_estacion": "17003"
     },
     {
-      "trip_id": "1096D76695C5",
-      "origen_viaje": "35012",
-      "destino_viaje": "18000",
-      "proxima_estacion": "35002"
+      "trip_id": "1096D27415C4b",
+      "origen_viaje": "37012",
+      "destino_viaje": "17005",
+      "proxima_estacion": "17005"
     },
     {
-      "trip_id": "1096D76370C5",
-      "origen_viaje": "35607",
-      "destino_viaje": "18000",
-      "proxima_estacion": "35606"
+      "trip_id": "1096D27412C4b",
+      "origen_viaje": "17005",
+      "destino_viaje": "37012",
+      "proxima_estacion": "18002"
     },
     {
-      "trip_id": "1096D76690C5",
-      "origen_viaje": "18000",
-      "destino_viaje": "35012",
-      "proxima_estacion": "18003"
+      "trip_id": "1096D27419C4b",
+      "origen_viaje": "37012",
+      "destino_viaje": "17005",
+      "proxima_estacion": "60100"
     },
     {
-      "trip_id": "1096D76372C5",
-      "origen_viaje": "35607",
-      "destino_viaje": "18000",
-      "proxima_estacion": "35606"
+      "trip_id": "1096D27416C4b",
+      "origen_viaje": "17005",
+      "destino_viaje": "37012",
+      "proxima_estacion": "17004"
     },
     {
-      "trip_id": "1096D76691C5",
-      "origen_viaje": "35012",
-      "destino_viaje": "18000",
-      "proxima_estacion": "35011"
+      "trip_id": "1096D27423C4b",
+      "origen_viaje": "37012",
+      "destino_viaje": "17005",
+      "proxima_estacion": "37011"
     },
     {
-      "trip_id": "1096D76692C5",
-      "origen_viaje": "18000",
-      "destino_viaje": "35012",
-      "proxima_estacion": "18003"
-    },
-    {
-      "trip_id": "1096D76688C5",
-      "origen_viaje": "18000",
-      "destino_viaje": "35012",
-      "proxima_estacion": "18003"
-    },
-    {
-      "trip_id": "1096D76689C5",
-      "origen_viaje": "35012",
-      "destino_viaje": "18000",
-      "proxima_estacion": "18000"
-    },
-    {
-      "trip_id": "1096D77000C5",
-      "origen_viaje": "18000",
-      "destino_viaje": "35002",
-      "proxima_estacion": "18003"
-    },
-    {
-      "trip_id": "1096D77005C5",
-      "origen_viaje": "35002",
-      "destino_viaje": "18000",
-      "proxima_estacion": "35703"
-    },
-    {
-      "trip_id": "1096D76357C5",
-      "origen_viaje": "18000",
-      "destino_viaje": "35607",
-      "proxima_estacion": "35610"
-    },
-    {
-      "trip_id": "1096D77007C5",
-      "origen_viaje": "35002",
-      "destino_viaje": "18000",
-      "proxima_estacion": "35010"
-    },
-    {
-      "trip_id": "1096D76359C5",
-      "origen_viaje": "18000",
-      "destino_viaje": "35607",
-      "proxima_estacion": "35600"
-    },
-    {
-      "trip_id": "1096D76361C5",
-      "origen_viaje": "18000",
-      "destino_viaje": "35607",
-      "proxima_estacion": "35609"
-    },
-    {
-      "trip_id": "1096D76362C5",
-      "origen_viaje": "35607",
-      "destino_viaje": "18000",
-      "proxima_estacion": "35609"
-    },
-    {
-      "trip_id": "1096D76363C5",
-      "origen_viaje": "18000",
-      "destino_viaje": "35607",
-      "proxima_estacion": "35609"
-    },
-    {
-      "trip_id": "1096D76364C5",
-      "origen_viaje": "35607",
-      "destino_viaje": "18000",
-      "proxima_estacion": "35602"
-    },
-    {
-      "trip_id": "1096D76365C5",
-      "origen_viaje": "18000",
-      "destino_viaje": "35607",
-      "proxima_estacion": "35609"
-    },
-    {
-      "trip_id": "1096D76684C5",
-      "origen_viaje": "18000",
-      "destino_viaje": "35012",
-      "proxima_estacion": "35012"
-    },
-    {
-      "trip_id": "1096D76366C5",
-      "origen_viaje": "35607",
-      "destino_viaje": "18000",
-      "proxima_estacion": "35606"
-    },
-    {
-      "trip_id": "1096D76686C5",
-      "origen_viaje": "18000",
-      "destino_viaje": "35012",
-      "proxima_estacion": "35704"
-    },
-    {
-      "trip_id": "1096D76368C5",
-      "origen_viaje": "35607",
-      "destino_viaje": "18000",
-      "proxima_estacion": "35606"
+      "trip_id": "1096D27417C4b",
+      "origen_viaje": "37012",
+      "destino_viaje": "17005",
+      "proxima_estacion": "17009"
     }
   ],
   "C4A": [
@@ -430,67 +306,179 @@
       "trip_id": "1096D27216C4a",
       "origen_viaje": "19003",
       "destino_viaje": "37012",
-      "proxima_estacion": "17001"
-    },
-    {
-      "trip_id": "1096D27217C4a",
-      "origen_viaje": "37012",
-      "destino_viaje": "19003",
-      "proxima_estacion": "37011"
-    },
-    {
-      "trip_id": "1096D27212C4a",
-      "origen_viaje": "19003",
-      "destino_viaje": "37012",
-      "proxima_estacion": "37001"
-    },
-    {
-      "trip_id": "1096D27213C4a",
-      "origen_viaje": "37012",
-      "destino_viaje": "19003",
-      "proxima_estacion": "18002"
+      "proxima_estacion": "37002"
     },
     {
       "trip_id": "1096D27214C4a",
       "origen_viaje": "19003",
       "destino_viaje": "37012",
-      "proxima_estacion": "18101"
+      "proxima_estacion": "37012"
     },
     {
       "trip_id": "1096D27215C4a",
       "origen_viaje": "37012",
       "destino_viaje": "19003",
-      "proxima_estacion": "60100"
-    },
-    {
-      "trip_id": "1096D27210C4a",
-      "origen_viaje": "19003",
-      "destino_viaje": "37012",
-      "proxima_estacion": "37012"
-    },
-    {
-      "trip_id": "1096D27211C4a",
-      "origen_viaje": "37012",
-      "destino_viaje": "19003",
-      "proxima_estacion": "19003"
+      "proxima_estacion": "19001"
     },
     {
       "trip_id": "1096D27218C4a",
       "origen_viaje": "19003",
       "destino_viaje": "37012",
-      "proxima_estacion": "19002"
-    },
-    {
-      "trip_id": "1096D27219C4a",
-      "origen_viaje": "37012",
-      "destino_viaje": "19003",
-      "proxima_estacion": "37011"
+      "proxima_estacion": "18002"
     },
     {
       "trip_id": "1096D27220C4a",
       "origen_viaje": "19003",
       "destino_viaje": "37012",
+      "proxima_estacion": "19001"
+    },
+    {
+      "trip_id": "1096D27219C4a",
+      "origen_viaje": "37012",
+      "destino_viaje": "19003",
+      "proxima_estacion": "37010"
+    },
+    {
+      "trip_id": "1096D27223C4a",
+      "origen_viaje": "37012",
+      "destino_viaje": "19003",
+      "proxima_estacion": "37011"
+    },
+    {
+      "trip_id": "1096D27221C4a",
+      "origen_viaje": "37012",
+      "destino_viaje": "19003",
+      "proxima_estacion": "37011"
+    },
+    {
+      "trip_id": "1096D27222C4a",
+      "origen_viaje": "19003",
+      "destino_viaje": "37012",
       "proxima_estacion": "19002"
+    }
+  ],
+  "C2": [
+    {
+      "trip_id": "1096D75609C2",
+      "origen_viaje": "70200",
+      "destino_viaje": "17000",
+      "proxima_estacion": "70105"
+    },
+    {
+      "trip_id": "1096D75504C2",
+      "origen_viaje": "17000",
+      "destino_viaje": "70200",
+      "proxima_estacion": "70200"
+    },
+    {
+      "trip_id": "1096D75503C2",
+      "origen_viaje": "70103",
+      "destino_viaje": "17000",
+      "proxima_estacion": "70112"
+    },
+    {
+      "trip_id": "1096D75502C2",
+      "origen_viaje": "17000",
+      "destino_viaje": "70200",
+      "proxima_estacion": "70200"
+    },
+    {
+      "trip_id": "1096D75501C2",
+      "origen_viaje": "70200",
+      "destino_viaje": "17000",
+      "proxima_estacion": "18000"
+    },
+    {
+      "trip_id": "1096D75607C2",
+      "origen_viaje": "70200",
+      "destino_viaje": "17000",
+      "proxima_estacion": "70104"
+    },
+    {
+      "trip_id": "1096D75605C2",
+      "origen_viaje": "70200",
+      "destino_viaje": "17000",
+      "proxima_estacion": "70109"
+    },
+    {
+      "trip_id": "1096D75604C2",
+      "origen_viaje": "17000",
+      "destino_viaje": "70200",
+      "proxima_estacion": "18002"
+    },
+    {
+      "trip_id": "1096D75602C2",
+      "origen_viaje": "17000",
+      "destino_viaje": "70200",
+      "proxima_estacion": "18002"
+    }
+  ],
+  "C10": [
+    {
+      "trip_id": "1096D75308C10",
+      "origen_viaje": "17000",
+      "destino_viaje": "10100",
+      "proxima_estacion": "18002"
+    },
+    {
+      "trip_id": "1096D75108C10",
+      "origen_viaje": "10200",
+      "destino_viaje": "17000",
+      "proxima_estacion": "10002"
+    },
+    {
+      "trip_id": "1096D75306C10",
+      "origen_viaje": "17000",
+      "destino_viaje": "10100",
+      "proxima_estacion": "18004"
+    },
+    {
+      "trip_id": "1096D75305C10",
+      "origen_viaje": "10100",
+      "destino_viaje": "17000",
+      "proxima_estacion": "10005"
+    },
+    {
+      "trip_id": "1096D75106C10",
+      "origen_viaje": "10200",
+      "destino_viaje": "17000",
+      "proxima_estacion": "18002"
+    },
+    {
+      "trip_id": "1096D75303C10",
+      "origen_viaje": "10100",
+      "destino_viaje": "17000",
+      "proxima_estacion": "18004"
+    },
+    {
+      "trip_id": "1096D75208C10",
+      "origen_viaje": "17000",
+      "destino_viaje": "10200",
+      "proxima_estacion": "18002"
+    },
+    {
+      "trip_id": "1096D75206C10",
+      "origen_viaje": "17000",
+      "destino_viaje": "10200",
+      "proxima_estacion": "18001"
+    },
+    {
+      "trip_id": "1096D75204C10",
+      "origen_viaje": "17000",
+      "destino_viaje": "10200",
+      "proxima_estacion": "10007"
+    },
+    {
+      "trip_id": "1096D75202C10",
+      "origen_viaje": "18000",
+      "destino_viaje": "10200",
+      "proxima_estacion": "10200"
+    },
+    {
+      "trip_id": "1096D75110C10",
+      "origen_viaje": "10200",
+      "destino_viaje": "17000",
+      "proxima_estacion": "10104"
     }
   ],
   "C8A": [
@@ -498,30 +486,30 @@
       "trip_id": "1096D75004C8a",
       "origen_viaje": "10203",
       "destino_viaje": "17000",
-      "proxima_estacion": "10202"
+      "proxima_estacion": "97100"
     },
     {
-      "trip_id": "1096D75002C8a",
-      "origen_viaje": "10203",
-      "destino_viaje": "17000",
-      "proxima_estacion": "17000"
+      "trip_id": "1096D75003C8a",
+      "origen_viaje": "17000",
+      "destino_viaje": "10203",
+      "proxima_estacion": "97201"
     },
     {
       "trip_id": "1096D75001C8a",
       "origen_viaje": "17000",
       "destino_viaje": "10203",
-      "proxima_estacion": "10100"
+      "proxima_estacion": "10203"
     }
   ],
   "C1": [
     {
-      "trip_id": "1096D19806C1",
-      "origen_viaje": "17000",
-      "destino_viaje": "98305",
-      "proxima_estacion": "98305"
+      "trip_id": "1096D19819C1",
+      "origen_viaje": "98305",
+      "destino_viaje": "17000",
+      "proxima_estacion": "98304"
     },
     {
-      "trip_id": "1096D19810C1",
+      "trip_id": "1096D19816C1",
       "origen_viaje": "17000",
       "destino_viaje": "98305",
       "proxima_estacion": "98003"
@@ -530,16 +518,22 @@
       "trip_id": "1096D19815C1",
       "origen_viaje": "98305",
       "destino_viaje": "17000",
-      "proxima_estacion": "98304"
+      "proxima_estacion": "17000"
     },
     {
-      "trip_id": "1096D19813C1",
+      "trip_id": "1096D19817C1",
       "origen_viaje": "98305",
       "destino_viaje": "17000",
       "proxima_estacion": "98304"
     },
     {
-      "trip_id": "1096D19808C1",
+      "trip_id": "1096D19812C1",
+      "origen_viaje": "17000",
+      "destino_viaje": "98305",
+      "proxima_estacion": "98304"
+    },
+    {
+      "trip_id": "1096D19814C1",
       "origen_viaje": "17000",
       "destino_viaje": "98305",
       "proxima_estacion": "98003"
@@ -550,19 +544,19 @@
       "trip_id": "1096D27602C8b",
       "origen_viaje": "12006",
       "destino_viaje": "17000",
-      "proxima_estacion": "10103"
+      "proxima_estacion": "17000"
     },
     {
       "trip_id": "1096D27606C8b",
       "origen_viaje": "12006",
       "destino_viaje": "17000",
-      "proxima_estacion": "12005"
+      "proxima_estacion": "12004"
     },
     {
       "trip_id": "1096D27603C8b",
       "origen_viaje": "17000",
       "destino_viaje": "12006",
-      "proxima_estacion": "12004"
+      "proxima_estacion": "10101"
     }
   ]
 }
