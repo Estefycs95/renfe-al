@@ -1,18 +1,1 @@
-{
-  "C4A": [
-    {
-      "trip_id": "1097L20336C4a",
-      "origen_viaje": "19003",
-      "destino_viaje": "17000",
-      "proxima_estacion": "17000"
-    }
-  ],
-  "C1": [
-    {
-      "trip_id": "1097L19945C1",
-      "origen_viaje": "98305",
-      "destino_viaje": "18000",
-      "proxima_estacion": "17000"
-    }
-  ]
-}
+{}
