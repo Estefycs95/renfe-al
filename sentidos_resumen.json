@@ -1,1 +1,10 @@
-{}
+{
+  "C4A": [
+    {
+      "trip_id": "1098M20203C4a",
+      "origen_viaje": "18000",
+      "destino_viaje": "19003",
+      "proxima_estacion": "18101"
+    }
+  ]
+}
